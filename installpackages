@@ -10,7 +10,7 @@ sudo apt-get -y upgrade
 #Backup & Sync
 sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync 
 
-#OS & Utilities 
+#OS & Utilities
 sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit ubuntu-tweak y-ppa-manager
 sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
