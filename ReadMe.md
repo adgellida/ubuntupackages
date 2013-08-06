@@ -11,3 +11,9 @@ Compatible with:
 Ubuntu, Xubuntu, Kubuntu...
 
 if you modify a few things.
+
+Instructions
+=============================================
+
+1.Execute installsources
+2.Execute installpackages
