@@ -18,3 +18,7 @@ Instructions
 1.Execute installsources
 
 2.Execute installpackages
+
+Important
+=============================================
+It hasn't been tested 100% yet. Give feedback!
