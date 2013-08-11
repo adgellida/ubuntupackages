@@ -1,11 +1,9 @@
 #!/bin/bash
-####ubuntupackages v 0.1
+####ubuntupackages v2013.08.11
 ########################################################installpackages
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
-
-#Comienza la instalación de programas
 
 #Backup & Sync
 sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync 
@@ -18,6 +16,8 @@ sudo apt-get -y install hplip
 sudo apt-get -y install myspell-es myspell-en-gb myspell-en-us
 sudo apt-get -y install aspell aspell-en aspell-es
 sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu
+#sudo apt-get -y install alarm-clock gmrun unsettings jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
+#sudo apt-get -y install hplip-gui
 
 #Security & Privacy
 sudo apt-get -y install gufw seahorse 
@@ -27,9 +27,11 @@ sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso
 
 #Photos & Graphics
 sudo apt-get -y install shotwell gthumb photo xnviewmp gnome-exe-thumbnailer shutter gimp 
+#sudo apt-get -y install inkscape scribus gwenview xsane
 
 #Audio & Music
 sudo apt-get -y install sound-juicer spotify-client 
+#sudo apt-get -y install audacity mixxx
 
 #Videos & Movies
 sudo apt-get -y install kazam openshot  
@@ -49,181 +51,57 @@ sudo update-java-alternatives -s java-7-oracle
 sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
 sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 
-#Web Browsers
-sudo apt-get -y install google-chrome-stable
-
-#Social
-sudo apt-get -y install choqok skype
-
-#File Management
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha arj cabextract
-
-#File Sharing
-sudo apt-get -y install jdownloader
-
-#News & Books
-
-
-#Office & Productivity
-
-
-#Games
-
-
-#Actualizando el sistema
-#sudo apt-get -y upgrade
-
-#Reparando jdownloader
-sudo update-alternatives --config java
-
-
-
-
-########################################################installpackagesextra
-
-#sudo apt-get -y update
-#sudo apt-get -y upgrade
-
-#Comienza la instalación de programas
-
-#Backup & Sync
- 
-
-#OS & Utilities 
-#sudo apt-get -y install alarm-clock gmrun unsettings jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
-#sudo apt-get -y install hplip-gui
-
-#Security & Privacy
-
-
-#CD/DVD Tools
-
-
-#Photos & Graphics
-#sudo apt-get -y install inkscape scribus gwenview xsane
-
-#Audio & Music
-#sudo apt-get -y install audacity mixxx
-
-#Videos & Movies
- 
-
-#Audio & Music & Videos & Movies
-
-
-#Development
-
-#openjdk7
-#sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
-
-#Oracle Java6 u 8
-#sudo apt-get -y install oracle-java6-installer
-#sudo apt-get -y install oracle-java8-installer
-#sudo apt-get -y install vim
-
-#Web Browsers
-
-
-#Social
-#sudo apt-get -y install hotot
-#sudo apt-get -y install pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications
-
-#File Management
-#sudo apt-get -y install spacefm mc 
-#Thunar
-#sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
-#sudo apt-get -y install xfce4-goodies
-
-#File Sharing
-#sudo apt-get -y install amule deluge axel 
-
-#News & Books
-#sudo apt-get -y install gpodder calibre newsbeuter 
-
-#Office & Productivity
-#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okular lyx rednotebook zim txt2tags
-#sudo apt-get -y install poppler-utils pdftk
-
-#Games - FALTA GETDEB PLAYDEB
-#sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars  
-
-
-#Actualizando el sistema
-#sudo apt-get -y upgrade
-
-#Reparando jdownloader
-#sudo update-alternatives --config java
-
-
-
-########################################################installpackagespersonal
-
-#sudo apt-get -y update
-#sudo apt-get -y upgrade
-
-#Comienza la instalación de programas
-
-#Backup & Sync
- 
-
-#OS & Utilities 
-
-
-#Security & Privacy
-
-
-#CD/DVD Tools
-
-
-#Photos & Graphics
-
-
-#Audio & Music
-
-
-#Videos & Movies
- 
-
-#Audio & Music & Videos & Movies
-
-
-#Development
 #sudo apt-get -y install virtualbox-4.2
 #sudo apt-get -y install wine playonlinux
 #sudo apt-get -y install mono-complete mono-basic-dbg
 #sudo apt-get -y install meld
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 
-#Web Browsers
+##openjdk7
+#sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
+##Oracle Java6 u 8
+#sudo apt-get -y install oracle-java6-installer
+#sudo apt-get -y install oracle-java8-installer
+#sudo apt-get -y install vim
 
+#Web Browsers
+sudo apt-get -y install google-chrome-stable
 
 #Social
+sudo apt-get -y install choqok skype
+#sudo apt-get -y install hotot
+#sudo apt-get -y install pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications
 #sudo apt-get -y install xchat
 #wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
 #wine LineInst.exe
 
 #File Management
+sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha arj cabextract
 #sudo apt-get -y install filezilla
+#sudo apt-get -y install spacefm mc
+##Thunar
+#sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
+#sudo apt-get -y install xfce4-goodies
 
 #File Sharing
-
+#sudo apt-get -y install jdownloader - INSTALL v2 BETA
+#sudo apt-get -y install amule deluge axel
 
 #News & Books
-#sudo apt-get -y install rssowl
+#sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
 #Office & Productivity
-
+#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okular lyx rednotebook zim txt2tags
+#sudo apt-get -y install poppler-utils pdftk
 
 #Games
+#sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
 
-
-#Actualizando el sistema
+#Upgrading system
 #sudo apt-get -y upgrade
 
-#Reparando jdownloader
+#Repairing jdownloader v1 if is necessary
 #sudo update-alternatives --config java
-
-
 
 
 ########################################################installpackagesproblematic
@@ -255,21 +133,19 @@ sudo update-alternatives --config java
 #sudo apt-get -y install wally wallch
 
 
-
-
 ########################################################uninstallpackages
 
-#Desinstalación de programas innecesarios
+#Possibly needless programs
 #sudo apt-get remove -y chromium-browser firefox
 #sudo apt-get remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
 #sudo apt-get remove -y gxine libxine1 libxine1-x mplayer2
 #sudo apt-get remove -y libgmtk0 libgmtk0-data libgmlib0
 
 
-#Actualizando el sistema
+#Upgrading system
 #sudo apt-get -y upgrade
 
 
-#Limpiando el sistema
+#Cleaning system
 #sudo apt-get -y clean 
 #sudo apt-get -y autoremove
