@@ -22,3 +22,7 @@ Instructions
 Important
 =============================================
 It hasn't been tested 100% yet. Give feedback!
+
+Release notes
+=============================================
+ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.

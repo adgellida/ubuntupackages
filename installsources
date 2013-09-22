@@ -22,11 +22,6 @@ sudo add-apt-repository -y ppa:peterlevi/ppa
 #### VLC
 sudo add-apt-repository -y ppa:videolan/stable-daily
 
-#### Medibuntu
-sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
-sudo apt-get update
-sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
-
 #### Java
 sudo add-apt-repository -y ppa:webupd8team/java
 
@@ -49,6 +44,11 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
 
 #### backintime testing
 sudo add-apt-repository -y ppa:bit-team/stable
+
+#### Medibuntu
+#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
+#sudo apt-get update
+#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
 
 #### VirtualBox
 #wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -

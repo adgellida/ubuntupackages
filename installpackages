@@ -15,7 +15,8 @@ sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 sudo apt-get -y install hplip
 sudo apt-get -y install myspell-es myspell-en-gb myspell-en-us
 sudo apt-get -y install aspell aspell-en aspell-es
-sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu
+sudo apt-get -y install ubuntu-restricted-extras
+#sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu
 #sudo apt-get -y install alarm-clock gmrun unsettings jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
 #sudo apt-get -y install hplip-gui
 
