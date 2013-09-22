@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.08.11
+####ubuntupackages v2013.09.23
 ########################################################installpackages
 
 sudo apt-get -y update
