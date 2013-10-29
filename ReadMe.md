@@ -10,7 +10,7 @@ Compatible with:
 
 Ubuntu, Xubuntu, Kubuntu...
 
-if you modify a few things.
+any Debian based system if you modify a few things.
 
 Instructions
 =============================================
