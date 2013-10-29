@@ -2,7 +2,7 @@ ubuntupackages
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
-Only for 13.04
+Only for 13.04. On the next release compatible with 13.10.
 
 Designed exclusively for Lubuntu.
 
