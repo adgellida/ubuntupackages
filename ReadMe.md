@@ -25,10 +25,10 @@ It hasn't been tested 100% yet. Give feedback!
 
 Release notes
 =============================================
-v2013.09.23
+v2013.09.23 alpha
 
 ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.
 
-v2013.08.11
+v2013.08.11 alpha
 
 first serious version
