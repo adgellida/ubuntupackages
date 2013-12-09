@@ -25,6 +25,11 @@ It hasn't been tested 100% yet. Give feedback!
 
 Release notes
 =============================================
+v2013.12.09
+
+aurora added
+complete spanish support added
+
 v2013.09.23 alpha
 
 ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.

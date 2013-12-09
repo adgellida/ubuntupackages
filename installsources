@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.07 alpha
+####ubuntupackages v2013.12.09 alpha
 ########################################################installsources
 
 rm -f -r /etc/apt/sources.list.d/*
