@@ -1,4 +1,4 @@
-ubuntupackages
+ubuntupackages v2013.12.16 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -23,7 +23,7 @@ It hasn't been tested 100% yet. Give feedback!
 
 Release notes
 =============================================
-v2013.12.16
+v2013.12.16 alpha
 
 *appgrid added
 *muon added
@@ -34,11 +34,11 @@ v2013.12.16
 *diodon diodon-plugins added
 *unity-tweak-tool added
 
-v2013.12.15
+v2013.12.15alpha
 
 *classicmenu-indicator added
 
-v2013.12.09
+v2013.12.09 alpha
 
 *aurora added
 *complete spanish support added
