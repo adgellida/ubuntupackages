@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.15 alpha
+####ubuntupackages v2013.12.16 alpha
 ########################################################installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -47,11 +47,6 @@ sudo add-apt-repository -y ppa:bit-team/stable
 
 #### firefox aurora
 sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
-
-#### Medibuntu
-#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
-#sudo apt-get update
-#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
 
 #### VirtualBox
 #wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
@@ -149,6 +144,11 @@ sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
 #### Psensor
 #sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
 
+#### Medibuntu - DISCONTINUED
+#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
+#sudo apt-get update
+#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
+
 #### ONLY FOR UBUNTU WITH UNITY SURELY
 
 #### Ubuntu Tweak
@@ -156,3 +156,6 @@ sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
 
 #### classicmenu-indicator
 #sudo add-apt-repository -y ppa:diesch/testing
+
+#### appgrid
+#sudo add-apt-repository -y ppa:appgrid/stable

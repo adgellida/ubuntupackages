@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.15 alpha
+####ubuntupackages v2013.12.16 alpha
 ########################################################installpackages
 
 sudo apt-get -y update
@@ -18,8 +18,8 @@ sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-ba
 #sudo apt-get -y install myspell-en-gb myspell-en-us
 sudo apt-get -y install aspell aspell-en aspell-es
 sudo apt-get -y install ubuntu-restricted-extras
-#sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu
-#sudo apt-get -y install alarm-clock gmrun unsettings jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
+#sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
+#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
 #sudo apt-get -y install hplip-gui
 
 #Security & Privacy
@@ -110,15 +110,21 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha
 
 #sudo apt-get -y install ubuntu-tweak
 #sudo apt-get install -y classicmenu-indicator
+#sudo apt-get install -y appgrid
+#sudo apt-get install -y unsettings
+
+#### ONLY FOR KUBUNTU
+
+#sudo apt-get -y install muon
 
 ########################################################installpackagesproblematic
 
-#Paquetes finales
+#Final packages
 #sudo apt-get -y install unity-reboot
 #sudo apt-get -y install acroread-common acroread acroread-fonts
 #sudo apt-get -y install aptoncd multisystem remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
 #sudo apt-get -y install blender e17 gadmin-rsync mate-core mate-desktop-environment
-#sudo apt-get -y install mounty ddrescue - AÑADIR PPA si eso
+#sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
 #sudo apt-get -y install eog eog-plugins
 
 #Compiz + Cairo-dock + Emerald
@@ -127,16 +133,16 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha
 #sudo apt-get -y install emerald 
 #sudo apt-get -y install metacity
 
-#Codecs no libres
+#Not free codecs
 #sudo apt-get -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
 
 #ERROR
 #sudo apt-get -y install quickly quickly-widgets
-#sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  - ERROR
+#sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
 
-#Problemas
-#sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins - POSIBLE ERROR DE DEPENDENCIAS
-#sudo apt-get -y install mountmanager ntfsprogs - ERROR
+#PROBLEMS
+#sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
+#sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
 #sudo apt-get -y install wally wallch
 
 

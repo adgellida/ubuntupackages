@@ -2,7 +2,7 @@ ubuntupackages
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
-Only for 13.04. On the next release compatible with 13.10.
+Only for 13.04 sure. On the next release compatible with 13.10.
 
 Designed exclusively for Lubuntu.
 
@@ -25,6 +25,11 @@ It hasn't been tested 100% yet. Give feedback!
 
 Release notes
 =============================================
+v2013.12.16
+
+*appgrid added
+*muon added
+
 v2013.12.15
 
 *classicmenu-indicator added
