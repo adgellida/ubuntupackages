@@ -19,11 +19,12 @@ sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-ba
 sudo apt-get -y install aspell aspell-en aspell-es
 sudo apt-get -y install ubuntu-restricted-extras
 #sudo apt-get install -y app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
-#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop 
+#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
 
 #Security & Privacy
 sudo apt-get -y install gufw seahorse 
+#sudo apt-get -y install tor-browser
 
 #CD/DVD Tools
 sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 

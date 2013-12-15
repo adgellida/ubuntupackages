@@ -2,15 +2,13 @@ ubuntupackages
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
-Only for 13.04 sure. On the next release compatible with 13.10.
-
-Designed exclusively for Lubuntu.
-
-Compatible with:
+Compatible with any debian based system:
 
 Ubuntu, Xubuntu, Kubuntu...
 
-any Debian based system if you modify a few things.
+13.04 and upper version.
+
+For 13.10 should be compatible.
 
 Instructions
 =============================================
@@ -29,6 +27,7 @@ v2013.12.16
 
 *appgrid added
 *muon added
+*tor-browser added
 
 v2013.12.15
 
