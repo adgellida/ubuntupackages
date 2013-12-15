@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.09 alpha
+####ubuntupackages v2013.12.15 alpha
 ########################################################installpackages
 
 sudo apt-get -y update
@@ -9,7 +9,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync 
 
 #OS & Utilities
-sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit ubuntu-tweak y-ppa-manager
+sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit y-ppa-manager
 sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 sudo apt-get -y install hplip
@@ -106,6 +106,10 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha
 #Repairing jdownloader v1 if is necessary
 #sudo update-alternatives --config java
 
+#### ONLY FOR UBUNTU WITH UNITY SURELY
+
+#sudo apt-get -y install ubuntu-tweak
+#sudo apt-get install -y classicmenu-indicator
 
 ########################################################installpackagesproblematic
 

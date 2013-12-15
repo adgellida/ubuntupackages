@@ -25,10 +25,14 @@ It hasn't been tested 100% yet. Give feedback!
 
 Release notes
 =============================================
+v2013.12.15
+
+*classicmenu-indicator added
+
 v2013.12.09
 
-aurora added
-complete spanish support added
+*aurora added
+*complete spanish support added
 
 v2013.09.23 alpha
 
