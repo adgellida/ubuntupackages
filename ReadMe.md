@@ -28,6 +28,11 @@ v2013.12.16
 *appgrid added
 *muon added
 *tor-browser added
+*indicator-multiload added
+*indicator-cpufreq added
+*my-weather-indicator added
+*diodon diodon-plugins added
+*unity-tweak-tool added
 
 v2013.12.15
 
