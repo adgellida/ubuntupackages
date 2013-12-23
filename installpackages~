@@ -120,7 +120,7 @@ sudo apt-get -y install classicmenu-indicator
 #sudo apt-get -y install indicator-multiload indicator-cpufreq
 sudo apt-get -y install my-weather-indicator
 #sudo apt-get -y install diodon diodon-plugins
-sudo apt-get -y install unity-tweak-tool
+#sudo apt-get -y install unity-tweak-tool
 
 #### configuration
 
