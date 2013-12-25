@@ -26,6 +26,8 @@ It hasn't been tested 100% yet. Give feedback!
 TO DO
 =============================================
 *Modify virtualbox version
+*Add less brightness script
+*Add gksudo
 
 Release notes
 =============================================

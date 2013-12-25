@@ -3,8 +3,17 @@
 ########configurations
 
 ##Disable guest account and remote login - http://robersoft.blogcindario.com/2011/10/00036-deshabilitar-la-cuenta-de-invitado-en-ubuntu-11-10-oneiric-ocelot.html - http://linux-hispano.blogspot.com.es/2013/10/eliminar-cuenta-invitado-e-inicio-de.html
-sudo sh -c 'echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
-sudo sh -c 'echo "greeter-show-remote-login=false" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
+sudo sh -c 'echo "
+
+allow-guest=false
+
+" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
+
+sudo sh -c 'echo "
+
+greeter-show-remote-login=false
+
+" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
 
 ##Disable amazon lens - http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
 ##Step 1
@@ -30,15 +39,18 @@ ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
 
-##Disable wireless on boot
+##Disable wireless & bluetooth on startup
 sudo sh -c 'echo "
 
-" >> /xxx'
+rfkill block bluetooth
+rfkill block wifi
 
-##Less brightness
-sudo sh -c 'echo "
+" >> /etc/rc.local'
 
-" >> /xxx'
+##Less brightness ####WORKING
+#sudo sh -c 'echo "
+
+#" >> /xxx'
 
 
 
