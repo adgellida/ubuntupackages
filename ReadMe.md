@@ -1,4 +1,4 @@
-####ubuntupackages v2013.12.24 alpha
+####ubuntupackages v2013.12.25 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -17,12 +17,23 @@ Instructions
 
 2.Execute installpackages
 
+3.Execute configurations
+
 Important
 =============================================
 It hasn't been tested 100% yet. Give feedback!
 
+TO DO
+=============================================
+*Modify virtualbox version
+
 Release notes
 =============================================
+v2013.12.25 alpha
+
+*added configurations
+*a lot of general changes
+
 v2013.12.16 alpha
 
 *appgrid added

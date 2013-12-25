@@ -1,0 +1,48 @@
+#!/bin/bash
+####ubuntupackages v2013.12.25 alpha
+########configurations
+
+##Disable guest account and remote login - http://robersoft.blogcindario.com/2011/10/00036-deshabilitar-la-cuenta-de-invitado-en-ubuntu-11-10-oneiric-ocelot.html - http://linux-hispano.blogspot.com.es/2013/10/eliminar-cuenta-invitado-e-inicio-de.html
+sudo sh -c 'echo "allow-guest=false" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
+sudo sh -c 'echo "greeter-show-remote-login=false" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
+
+##Disable amazon lens - http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
+##Step 1
+#Open Dash, go to the Applications lens
+#(either do it manually using your mouse or use the Super + A keyboard shortcut),
+#click "Filter results" on the right and under "Type", select "Dash plugins".
+#All the Dash search plugins (scopes) should be listed
+##Step 2
+gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope', 'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
+
+##Enable hibernation - http://tutorfreebr.blogspot.com.es/2013/10/como-ativar-o-modo-de-hibernacao-no.html - http://www.taringa.net/posts/linux/14651627/Activar-funcion-Hibernar-en-Ubuntu-12-04-Precise-Pangoli.html - 
+sudo sh -c 'echo "
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
+
+" >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
+
+##Disable wireless on boot
+sudo sh -c 'echo "
+
+" >> /xxx'
+
+##Less brightness
+sudo sh -c 'echo "
+
+" >> /xxx'
+
+
+
+
+
+
+
