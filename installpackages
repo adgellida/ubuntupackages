@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.25 alpha
+####ubuntupackages v2013.12.28 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -49,7 +49,7 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 sudo apt-get -y install meld vim
-#sudo apt-get -y install virtualbox-4.2 wine playonlinux
+#sudo apt-get -y install virtualbox-4.3 wine playonlinux
 #sudo apt-get -y install mono-complete mono-basic-dbg
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 
@@ -95,7 +95,7 @@ sudo apt-get -y install filezilla
 #sudo apt-get -y install poppler-utils pdftk
 
 ####Games
-#sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
+#sudo apt-get -y install 0ad true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
 
 ####Extra
 

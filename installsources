@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2013.12.25 alpha
+####ubuntupackages v2013.12.28 alpha
 ########################################################installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -22,13 +22,16 @@ sudo add-apt-repository -y ppa:peterlevi/ppa
 #### VLC
 sudo add-apt-repository -y ppa:ed10vi86/video
 
-#### Java
-#sudo add-apt-repository -y ppa:webupd8team/java
+#### 0ad
+sudo add-apt-repository -y ppa:wfg/0ad
 
 #### Getdeb
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu raring-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu raring-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+
+#### Java
+#sudo add-apt-repository -y ppa:webupd8team/java
 
 #### Midori
 #sudo add-apt-repository -y ppa:midori/midori-dev
@@ -78,7 +81,7 @@ sudo add-apt-repository -y ppa:xorg-edgers/ppa
 
 #### VirtualBox
 #wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-#sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian raring contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+#sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #### PlayOnLinux - PRECISE - Download from http://www.playonlinux.com/script_files/PlayOnLinux/4.2.1/PlayOnLinux_4.2.1.deb
 #### wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
