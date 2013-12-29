@@ -6,9 +6,7 @@ Compatible with any debian based system:
 
 Ubuntu, Xubuntu, Kubuntu...
 
-13.04 and upper version.
-
-For 13.10 should be compatible.
+Designed for 13.10 by now.
 
 Instructions
 =============================================
@@ -30,7 +28,7 @@ TO DO
 
 Release notes
 =============================================
-v2013.12.25 alpha
+v2013.12.28 alpha
 *added 0ad
 *fixed getdeb repo
 *fixed virtualbox
