@@ -24,38 +24,41 @@ It hasn't been tested 100% yet. Give feedback!
 TO DO
 =============================================
 *Add less brightness script
+
 *Add gksudo
+
+*Create app and integrate selectable boxes
 
 Release notes
 =============================================
-v2013.12.28 alpha
-*added 0ad
-*fixed getdeb repo
-*fixed virtualbox
+*v2013.12.28 alpha
+**added 0ad
+**fixed getdeb repo
+**fixed virtualbox
 
-v2013.12.25 alpha
-*added configurations
-*a lot of general changes
+*v2013.12.25 alpha
+**added configurations
+**a lot of general changes
 
-v2013.12.16 alpha
-*appgrid added
-*muon added
-*tor-browser added
-*indicator-multiload added
-*indicator-cpufreq added
-*my-weather-indicator added
-*diodon diodon-plugins added
-*unity-tweak-tool added
+*v2013.12.16 alpha
+**appgrid added
+**muon added
+**tor-browser added
+**indicator-multiload added
+**indicator-cpufreq added
+**my-weather-indicator added
+**diodon diodon-plugins added
+**unity-tweak-tool added
 
-v2013.12.15alpha
-*classicmenu-indicator added
+*v2013.12.15alpha
+**classicmenu-indicator added
 
-v2013.12.09 alpha
-*aurora added
-*complete spanish support added
+*v2013.12.09 alpha
+**aurora added
+**complete spanish support added
 
-v2013.09.23 alpha
-*ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.
+*v2013.09.23 alpha
+**ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.
 
-v2013.08.11 alpha
-*first serious version
+*v2013.08.11 alpha
+**first serious version
