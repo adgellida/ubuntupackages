@@ -27,10 +27,10 @@ TO DO
 
 Release notes
 =============================================
-* v2013.12.28 alpha:
-   * added 0ad
-   * fixed getdeb repo
-   * fixed virtualbox
+* v2013.12.28 alpha
+  * added 0ad
+  * fixed getdeb repo
+  * fixed virtualbox
 
 * v2013.12.25 alpha
    * added configurations
