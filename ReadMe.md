@@ -35,8 +35,8 @@ Release notes
   *fixed virtualbox
 
 * v2013.12.25 alpha
-** added configurations
-** a lot of general changes
+ * added configurations
+ * a lot of general changes
 
 * v2013.12.16 alpha
 ** appgrid added
