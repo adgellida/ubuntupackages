@@ -60,3 +60,6 @@ Release notes
 
 * v2013.08.11 alpha
 ** first serious version
+
+* package type - this is one of the most important points:
+   * zip package:
