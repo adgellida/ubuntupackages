@@ -24,9 +24,7 @@ It hasn't been tested 100% yet. Give feedback!
 TO DO
 =============================================
 * Add less brightness script
-
 * Add gksudo
-
 * Create app and integrate selectable boxes
 
 Release notes
