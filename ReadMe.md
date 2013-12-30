@@ -12,9 +12,7 @@ Instructions
 =============================================
 
 1.Execute installsources
-
 2.Execute installpackages
-
 3.Execute configurations
 
 Important
@@ -30,36 +28,34 @@ TO DO
 Release notes
 =============================================
 * v2013.12.28 alpha:
-  *added 0ad
-  *fixed getdeb repo
-  *fixed virtualbox
+   *added 0ad
+   *fixed getdeb repo
+   *fixed virtualbox
 
 * v2013.12.25 alpha
- * added configurations
- * a lot of general changes
+   * added configurations
+   * a lot of general changes
 
 * v2013.12.16 alpha
-** appgrid added
-** muon added
-** tor-browser added
-** indicator-multiload added
-** indicator-cpufreq added
-** my-weather-indicator added
-** diodon diodon-plugins added
-** unity-tweak-tool added
+   * appgrid added
+   * muon added
+   * tor-browser added
+   * indicator-multiload added
+   * indicator-cpufreq added
+   * my-weather-indicator added
+   * diodon diodon-plugins added
+   * unity-tweak-tool added
 
 * v2013.12.15alpha
-** classicmenu-indicator added
+   * classicmenu-indicator added
 
 * v2013.12.09 alpha
-** aurora added
-** complete spanish support added
+   * aurora added
+   * complete spanish support added
 
 * v2013.09.23 alpha
-** ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.
+   * ubuntu-restricted-extras added - Medibuntu deleted, check if there's packages pointing to it and delete them and/or replace with others.
 
 * v2013.08.11 alpha
-** first serious version
+   * first serious version
 
-* package type - this is one of the most important points:
-   * zip package:
