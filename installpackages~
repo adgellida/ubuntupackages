@@ -20,7 +20,7 @@ sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras
 ####Language packages
 sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
 #sudo apt-get -y install myspell-en-gb myspell-en-us
-#sudo apt-get -y install aspell aspell-en aspell-es
+sudo apt-get -y install aspell aspell-en aspell-es
 
 ####Security & Privacy
 #sudo apt-get -y install gufw seahorse tor-browser
