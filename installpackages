@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.01.05 alpha
+####ubuntupackages v2014.01.11 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -10,6 +10,7 @@ sudo apt-get -y upgrade
 
 ####OS & Utilities
 sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras
+#sudo apt-get -y install laptop-mode-tools - NOT FOR 13.10 - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
@@ -41,6 +42,10 @@ sudo apt-get -y install kazam
 
 ####Audio & Music & Videos & Movies
 sudo apt-get -y install vlc
+
+#sudo apt-get -y pepflashplugin-installer - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
+#sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default' - possibly works
+
 sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
 sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
 sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
