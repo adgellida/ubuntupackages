@@ -1,4 +1,4 @@
-####ubuntupackages v2014.01.11 alpha
+####ubuntupackages v2014.01.12 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -34,6 +34,10 @@ TO DO
 
 Release notes
 =============================================
+* v2014.01.12 alpha
+ * added i-nex and another stuff
+ * ordered all
+ 
 * v2014.01.05 alpha
  * added steam and another repos
  * ordered all

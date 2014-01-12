@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.01.11 alpha
+####ubuntupackages v2014.01.12 alpha
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -59,6 +59,10 @@ sudo add-apt-repository -y ppa:xorg-edgers/ppa
 
 #### pepper-flash
 #sudo add-apt-repository -y ppa:skunk/pepper-flash
+
+#### i-nex
+#sudo add-apt-repository -y ppa:nemh/gambas3
+#sudo add-apt-repository -y ppa:i-nex-development-team/stable
 
 #### pidgin
 #sudo add-apt-repository -y ppa:pidgin-developers/ppa
