@@ -25,6 +25,7 @@ Important
  * WebUpd8 Unstable
 By default these two are enabled. High Careful!
 * If there are connectivity problems select your best server on Software & Updates!
+* If you want to know more, go to the wiki of this repo [here](https://github.com/tonigellida/ubuntupackages/wiki).
 
 TO DO
 =============================================
