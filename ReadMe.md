@@ -2,9 +2,9 @@
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
-Compatible with any debian based system:
+Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Kubuntu...
+Ubuntu, Xubuntu, Kubuntu, Lubuntu...
 
 Designed for 13.10 by now.
 
