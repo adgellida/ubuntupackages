@@ -1,4 +1,4 @@
-####ubuntupackages v2014.01.12 alpha
+####ubuntupackages v2014.01.18 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -11,11 +11,18 @@ Designed for 13.10 by now.
 Instructions
 =============================================
 
+Do a backup of your "/etc/apt/sources.list.d" folder. Coming soon automatic...
+Read the code and do your modifications.
+
+Then do these basics steps:
+
 1.Execute installsources
 
 2.Execute installpackages
 
-3.Execute configurations
+3.(Optional) Execute configurations
+
+Remember to add exec permissions to all of scripts!
 
 Important
 =============================================
@@ -35,6 +42,9 @@ TO DO
 
 Release notes
 =============================================
+* v2014.01.18 alpha
+ * added Intel Linux Graphics Installer
+ 
 * v2014.01.12 alpha
  * added i-nex and another stuff
  * ordered all

@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.01.12 alpha
+####ubuntupackages v2014.01.18 alpha
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -42,6 +42,11 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 #### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 #### how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
+
+#### Intel Linux Graphics Installer
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
+#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/13.10/main saucy main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
 
 #### EXTRA
 

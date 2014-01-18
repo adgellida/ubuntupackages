@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.01.12 alpha
+####ubuntupackages v2014.01.18 alpha
 ########installpackages
 
 sudo apt-get -y update
