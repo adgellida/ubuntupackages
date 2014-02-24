@@ -1,4 +1,4 @@
-####ubuntupackages v2014.01.18 alpha
+####ubuntupackages v2014.02.24 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -29,8 +29,8 @@ Important
 * It hasn't been tested 100% yet. Give feedback!
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
- * WebUpd8 Unstable
-By default these two are enabled. High Careful!
+ * WebUpd8 Unstable - NOT FOR 13.10
+By default these two are disabled now.
 * If there are connectivity problems select your best server on Software & Updates!
 * If you want to know more, go to the wiki of this repo [here](https://github.com/tonigellida/ubuntupackages/wiki).
 
@@ -42,6 +42,11 @@ TO DO
 
 Release notes
 =============================================
+
+* v2014.02.24 alpha
+ * added systemback
+ * modified a few enabled repos by default
+
 * v2014.01.18 alpha
  * added Intel Linux Graphics Installer
  

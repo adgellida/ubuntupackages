@@ -1,12 +1,13 @@
 #!/bin/bash
-####ubuntupackages v2014.01.18 alpha
+####ubuntupackages v2014.02.24 alpha
 ########installpackages
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync 
+sudo apt-get -y install systemback
+#sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync
 
 ####OS & Utilities
 sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras
