@@ -1,4 +1,4 @@
-####ubuntupackages v2014.02.24 alpha
+####ubuntupackages v2014.03.12 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -42,6 +42,8 @@ TO DO
 
 Release notes
 =============================================
+* v2014.03.12 alpha
+ * added winusb
 
 * v2014.02.24 alpha
  * added systemback
