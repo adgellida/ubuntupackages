@@ -60,19 +60,24 @@ sudo apt-get -y install meld vim
 #sudo apt-get -y install mono-complete mono-basic-dbg
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 
+##openjdk6
+#sudo apt-get -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
+
 ##openjdk7
-sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
+#sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 
 ##openjdk8
 sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
 
 ##Oracle Java6
 #sudo apt-get -y install oracle-java6-installer
+#sudo apt-get install oracle-java6-set-default
 
 ##Oracle Java7
 #sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-get -y install oracle-java7-installer
 #sudo update-java-alternatives -s java-7-oracle
+#sudo apt-get install oracle-java7-set-default
 
 ##Oracle Java8
 #sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
