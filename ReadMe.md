@@ -42,6 +42,9 @@ TO DO
 
 Release notes
 =============================================
+* v2014.03.23 alpha
+ * added java 8 full and openjdk8
+
 * v2014.03.12 alpha
  * added winusb
 

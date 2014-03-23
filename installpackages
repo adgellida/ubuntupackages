@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.03.12 alpha
+####ubuntupackages v2014.03.23 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -63,7 +63,10 @@ sudo apt-get -y install meld vim
 ##openjdk7
 sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 
-##Oracle Java6 u 8
+##openjdk8
+sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
+
+##Oracle Java6
 #sudo apt-get -y install oracle-java6-installer
 
 ##Oracle Java7
@@ -72,7 +75,9 @@ sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 #sudo update-java-alternatives -s java-7-oracle
 
 ##Oracle Java8
+#sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-get -y install oracle-java8-installer
+#sudo update-java-alternatives -s java-8-oracle
 
 ####Web Browsers
 #sudo apt-get -y install google-chrome-unstable
