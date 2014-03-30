@@ -6,7 +6,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Kubuntu, Lubuntu...
 
-Designed for 13.10 by now.
+Designed for 13.10 by now, but can supports 14.04 quite
 
 Instructions
 =============================================
