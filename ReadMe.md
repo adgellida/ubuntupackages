@@ -1,4 +1,4 @@
-####ubuntupackages v2014.03.31 alpha
+####ubuntupackages v2014.04.04 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -42,6 +42,8 @@ TO DO
 
 Release notes
 =============================================
+* v2014.04.04 alpha
+ * added pitivi
 * v2014.03.31 alpha
  * added ubuntu phone sdk
 * v2014.03.23 alpha
