@@ -88,7 +88,7 @@ sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
 #sudo apt-get install oracle-java8-set-default
 
 ####Web Browsers
-#sudo apt-get -y install google-chrome-unstable
+#sudo apt-get -y install google-chrome-unstable chromium-browser
 
 ####Social
 #sudo apt-get -y install choqok skype hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
