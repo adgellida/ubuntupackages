@@ -45,6 +45,8 @@ Release notes
 * v2014.04.04 alpha
  * added pitivi
  * added chromium dev & beta channel
+ * added TimeShift
+ 
 * v2014.03.31 alpha
  * added ubuntu phone sdk
 * v2014.03.23 alpha
