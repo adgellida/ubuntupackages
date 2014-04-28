@@ -1,4 +1,4 @@
-####ubuntupackages v2014.04.14 alpha
+####ubuntupackages v2014.04.28 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -42,6 +42,9 @@ TO DO
 
 Release notes
 =============================================
+* v2014.04.28 alpha
+ * added indicator-netspeed
+
 * v2014.04.14 alpha
  * added new apt version
 

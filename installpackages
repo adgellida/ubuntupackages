@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.04.14 alpha
+####ubuntupackages v2014.04.28 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -11,7 +11,7 @@ sudo apt-get -y install systemback
 
 ####OS & Utilities
 sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras winusb
-#sudo apt-get -y install i-nex
+#sudo apt-get -y install indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - NOT FOR 13.10 - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
