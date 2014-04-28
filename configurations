@@ -49,9 +49,12 @@ rfkill block wifi
 
 ###################################################Enable Progress Fancy in Apt & apt-get - http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
 
+#echo -e 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
+
 #sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 
-#sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf/99progressbar
+##sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf/99progressbar
+
 
 
 
