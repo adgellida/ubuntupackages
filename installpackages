@@ -45,12 +45,12 @@ sudo apt-get -y install kazam
 ####All multimedia content
 sudo apt-get -y install vlc
 
-#pepper-flash-player from official repos - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html - steps
+#pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html - steps
 #sudo apt-get -y install pepperflashplugin-nonfree
 #sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-#pepper-flash-player ancient from ppa - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
+#pepper-flash-player ancient from ppa for older Ubuntu versions- http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
 #sudo apt-get -y install pepflashplugin-installer
 #sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
 
