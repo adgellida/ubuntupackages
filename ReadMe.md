@@ -1,4 +1,4 @@
-####ubuntupackages v2014.04.28 alpha
+####ubuntupackages v2014.05.03 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -42,6 +42,10 @@ TO DO
 
 Release notes
 =============================================
+
+* v2014.05.03 alpha
+ * added pepper-flash-player from official ubuntu repos
+
 * v2014.04.28 alpha
  * added indicator-netspeed
 

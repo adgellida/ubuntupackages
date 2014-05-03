@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.04.28 alpha
+####ubuntupackages v2014.05.03 alpha
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
