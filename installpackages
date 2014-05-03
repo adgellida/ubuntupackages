@@ -50,9 +50,11 @@ sudo apt-get -y install vlc
 #sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-#pepper-flash-player ancient from ppa for older Ubuntu versions- http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
+#pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
 #sudo apt-get -y install pepflashplugin-installer
 #sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
+
+#best performance on flash - http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
 
 sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
 sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
