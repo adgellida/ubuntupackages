@@ -10,9 +10,9 @@ sudo apt-get -y install systemback
 #sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync timeshift
 
 ####OS & Utilities
-sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras winusb
-#sudo apt-get -y install indicator-netspeed i-nex
-#sudo apt-get -y install laptop-mode-tools - NOT FOR 13.10 - gksu lmt-config-gui - This to launch it
+sudo apt-get -y install y-ppa-manager ubuntu-restricted-extras 
+#sudo apt-get -y install hplip winusb indicator-netspeed i-nex
+#sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
@@ -21,12 +21,13 @@ sudo apt-get -y install y-ppa-manager hplip ubuntu-restricted-extras winusb
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ####Language packages
-sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
+#sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
 #sudo apt-get -y install myspell-en-gb myspell-en-us
 #sudo apt-get -y install aspell aspell-en aspell-es
 
 ####Security & Privacy
-#sudo apt-get -y install gufw seahorse tor-browser
+sudo apt-get -y install gufw
+#sudo apt-get -y install seahorse tor-browser
 
 ####CD/DVD Tools
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
@@ -39,18 +40,17 @@ sudo apt-get -y install shotwell gthumb photo xnviewmp gnome-exe-thumbnailer shu
 #sudo apt-get -y install sound-juicer spotify-client audacity mixxx
 
 ####Videos & Movies
-sudo apt-get -y install kazam
-#sudo apt-get -y install openshot pitivi
+#sudo apt-get -y install kazam openshot pitivi
 
 ####All multimedia content
 sudo apt-get -y install vlc
 
-#pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html - steps
+#pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
 #sudo apt-get -y install pepperflashplugin-nonfree
 #sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-#pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html - steps
+#pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html
 #sudo apt-get -y install pepflashplugin-installer
 #sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
 
@@ -62,13 +62,13 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 
 ####Development
 sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
+#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 #sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install meld vim
 #sudo apt-get -y install ubuntu-sdk
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
-#sudo apt-get -y install virtualbox-4.3 wine playonlinux
+#sudo apt-get -y install virtualbox wine playonlinux
 #sudo apt-get -y install mono-complete mono-basic-dbg
-#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 
 ##openjdk6
 #sudo apt-get -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
@@ -137,7 +137,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okul
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
-sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
+#sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins
 
@@ -156,8 +156,8 @@ sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install eog eog-plugins
 
 ####Compiz + Cairo-dock + Emerald
-#sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
-#sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
+sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
+sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
 #sudo apt-get -y install emerald 
 #sudo apt-get -y install metacity
 
@@ -166,7 +166,7 @@ sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 
 ####ERROR
 #sudo apt-get -y install quickly quickly-widgets
-#suuuujdo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
+#sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
 
 ####PROBLEMS
 #sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
