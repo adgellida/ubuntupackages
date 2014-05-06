@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.03 alpha
+####ubuntupackages v2014.05.06 alpha
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -21,17 +21,11 @@ sudo add-apt-repository -y ppa:wfg/0ad
 
 #### Getdeb
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu saucy-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 
 #### LibreOffice
 sudo add-apt-repository -y ppa:libreoffice/ppa
-
-#### firefox aurora
-sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
-
-#### GNOME3 Extra Apps: Nautilus, etc
-sudo add-apt-repository -y ppa:gnome3-team/gnome3
 
 #### photo
 sudo add-apt-repository -y ppa:samrog131/ppa
@@ -46,18 +40,22 @@ sudo apt-add-repository -y ppa:nemh/systemback
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
 #### New apt
-sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
+#sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
+
+#### firefox aurora
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
+
+#### GNOME3 Extra Apps: Nautilus, etc
+#sudo add-apt-repository -y ppa:gnome3-team/gnome3
 
 #### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable
 # sudo add-apt-repository -y ppa:xorg-edgers/ppa
 # how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
 
-#### Intel Linux Graphics Installer
-#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
-#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/13.10/main saucy main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+########################################################### EXTRA
 
-#### EXTRA
+#### cairo-dock
+#sudo add-apt-repository -y ppa:cairo-dock-team/weekly
 
 #### TimeShift
 #sudo add-apt-repository -y ppa:teejee2008/ppa
@@ -66,24 +64,12 @@ sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 #sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper
 #sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
 
-#### chromium dev & beta channel
+#### Chromium dev & beta channel
 #sudo add-apt-repository -y ppa:saiarcot895/chromium-dev  
 #sudo add-apt-repository -y ppa:saiarcot895/chromium-beta 
 
 #### X Updates - only recommended for latest graphic cards drivers
 #sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates/
-
-#### WebUpd8 Unstable: Synaptic - NOT FOR 13.10
-#sudo add-apt-repository -y ppa:webupd8team/unstable
-
-#### Gthumb - NOT FOR 13.10
-#sudo add-apt-repository -y ppa:webupd8team/gthumb
-
-#### Kazam - In official stable repo - NOT FOR 13.10
-#sudo add-apt-repository -y ppa:kazam-team/unstable-series
-
-#### pepper-flash
-#sudo add-apt-repository -y ppa:skunk/pepper-flash
 
 #### i-nex
 #sudo add-apt-repository -y ppa:nemh/gambas3
@@ -98,9 +84,6 @@ sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 #### Midori
 #sudo add-apt-repository -y ppa:midori/midori-dev
 #sudo add-apt-repository -y ppa:midori/ppa
-
-#### Chromium dev
-#sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
 
 #### Wine
 #sudo add-apt-repository -y ppa:ubuntu-wine/ppa
@@ -117,17 +100,13 @@ sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 #### tor-browser
 #sudo add-apt-repository -y ppa:webupd8team/tor-browser
 
-#### VirtualBox
+#### VirtualBox - also in official sources
 #wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 #sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 
 #### PlayOnLinux - PRECISE - Download from http://www.playonlinux.com/script_files/PlayOnLinux/4.2.1/PlayOnLinux_4.2.1.deb
 #wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
 #sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.list.d/playonlinux.list
-
-#### remastersys - PRECISE but works on RARING
-#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
-#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
 
 #### ualinux - PRECISE
 #wget -q -O- http://archive.ualinux.com/ualinux.key | sudo apt-key add -
@@ -159,9 +138,6 @@ sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 #### jupiter
 #sudo add-apt-repository -y ppa:webupd8team/jupiter
 
-#### cairo-dock
-#sudo add-apt-repository -y ppa:cairo-dock-team/weekly
-
 #### Audacity
 #sudo add-apt-repository -y ppa:audacity-team/daily
 
@@ -185,12 +161,14 @@ sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 #### Psensor
 #sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
 
-#### Medibuntu - DISCONTINUED
-#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
-#sudo apt-get update
-#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
+#### pepper-flash - only for chromium I think, but now is on official sources
+#sudo add-apt-repository -y ppa:skunk/pepper-flash
 
-#### ONLY FOR UBUNTU WITH UNITY SURELY
+#### remastersys - PRECISE but works on RARING - systemback is preferible
+#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+
+########################################################### ONLY FOR UBUNTU WITH UNITY SURELY
 
 #### unity-tweak-tool
 sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
@@ -207,3 +185,24 @@ sudo add-apt-repository -y ppa:diesch/testing
 
 #### my-weather-indicator
 #sudo add-apt-repository -y ppa:atareao/atareao
+
+########################################################### ONLY FOR...
+
+#### WebUpd8 Unstable: Synaptic - only for 13.10 or less
+#sudo add-apt-repository -y ppa:webupd8team/unstable
+
+#### Gthumb - only for 13.04 or less
+#sudo add-apt-repository -y ppa:webupd8team/gthumb
+
+#### Kazam - In official stable repo - only for 13.04 or less
+#sudo add-apt-repository -y ppa:kazam-team/unstable-series
+
+#### Intel Linux Graphics Installer - only for 13.10 or less
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
+#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/13.10/main saucy main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+
+#### Medibuntu - DISCONTINUED
+#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
+#sudo apt-get update
+#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring

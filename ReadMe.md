@@ -1,4 +1,4 @@
-####ubuntupackages v2014.05.03 alpha
+####ubuntupackages v2014.05.06 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -6,7 +6,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Kubuntu, Lubuntu...
 
-Designed for 13.10 by now, but can supports 14.04 quite.
+Designed for 14.04.
 
 Instructions
 =============================================
@@ -29,7 +29,7 @@ Important
 * It hasn't been tested 100% yet. Give feedback!
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
- * WebUpd8 Unstable - NOT FOR 13.10
+ * WebUpd8 Unstable - only for 13.10 or less
 By default these two are disabled now.
 * If there are connectivity problems select your best server on Software & Updates!
 * If you want to know more, go to the wiki of this repo [here](https://github.com/tonigellida/ubuntupackages/wiki).
@@ -43,6 +43,9 @@ TO DO
 Release notes
 =============================================
 
+* v2014.05.06 alpha
+ * fixed some bugs
+ 
 * v2014.05.03 alpha
  * added pepper-flash-player from official ubuntu repos
 
