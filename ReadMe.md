@@ -45,6 +45,7 @@ Release notes
 
 * v2014.05.06 alpha
  * fixed some bugs
+ * added google-chrome
  
 * v2014.05.03 alpha
  * added pepper-flash-player from official ubuntu repos
