@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.06 alpha
+####ubuntupackages v2014.05.11 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -18,6 +18,7 @@ sudo apt-get -y install y-ppa-manager ubuntu-restricted-extras
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 #sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
+#sudo apt-get -y install lxqt
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ####Language packages

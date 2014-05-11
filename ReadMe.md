@@ -1,4 +1,4 @@
-####ubuntupackages v2014.05.06 alpha
+####ubuntupackages v2014.05.11 alpha
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
@@ -42,6 +42,9 @@ TO DO
 
 Release notes
 =============================================
+
+* v2014.05.11 alpha
+ * added lxqt
 
 * v2014.05.06 alpha
  * fixed some bugs
