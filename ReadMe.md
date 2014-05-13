@@ -45,4 +45,4 @@ Release notes
 
 You can check it here
 
-https://github.com/tonigellida/ubuntupackages/blob/master/Releasenotes
+https://github.com/tonigellida/ubuntupackages/blob/master/Releasenotes.md
