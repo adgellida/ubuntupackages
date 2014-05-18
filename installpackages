@@ -10,8 +10,8 @@ sudo apt-get -y install systemback
 #sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync timeshift
 
 ####OS & Utilities
-sudo apt-get -y install y-ppa-manager ubuntu-restricted-extras 
-#sudo apt-get -y install hplip winusb indicator-netspeed i-nex
+sudo apt-get -y install ubuntu-restricted-extras 
+#sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
@@ -78,7 +78,7 @@ sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 
 ##openjdk8
-sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
+#sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
 
 ##Oracle Java6
 #sudo apt-get -y install oracle-java6-installer
@@ -102,12 +102,11 @@ sudo apt-get -y install google-chrome-stable
 
 ####Social
 #sudo apt-get -y install choqok skype hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
-#wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
-#wine LineInst.exe
 
 ####File Management
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack lha arj cabextract
+sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
 sudo apt-get -y install filezilla
+#sudo apt-get -y install lha #### unable to locate on 14.04
 #sudo apt-get -y install spacefm mc
 ##Thunar
 #sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
@@ -133,12 +132,16 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okul
 ##Upgrading system
 #sudo apt-get -y upgrade
 
+##Wine example
+#wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
+#wine LineInst.exe
+
 ##Repairing jdownloader v1 if is necessary
 #sudo update-alternatives --config java
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
-#sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
+sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins
 
