@@ -1,6 +1,9 @@
 Release notes
 =============================================
 
+* v2014.05.18 alpha
+ * added Intel Linux Graphics Installer 14.04 support
+
 * v2014.05.11 alpha
  * added lxqt
 

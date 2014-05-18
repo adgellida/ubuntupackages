@@ -2,14 +2,6 @@
 ####ubuntupackages v2014.05.18 alpha
 ########configurations
 
-###################################################Disable guest account & remote login - http://robersoft.blogcindario.com/2011/10/00036-deshabilitar-la-cuenta-de-invitado-en-ubuntu-11-10-oneiric-ocelot.html - http://linux-hispano.blogspot.com.es/2013/10/eliminar-cuenta-invitado-e-inicio-de.html
-sudo sh -c 'echo "
-
-allow-guest=false
-greeter-show-remote-login=false
-
-" >> /etc/lightdm/lightdm.conf.d/50-unity-greeter.conf'
-
 ###################################################Disable amazon lens - http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
 ##Step 1
 #Open Dash, go to the Applications lens
@@ -34,22 +26,9 @@ ResultActive=yes
 
 " >> /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla'
 
-###################################################Disable wireless & bluetooth on startup
-sudo sh -c 'echo "
-
-rfkill block bluetooth
-rfkill block wifi
-
-" >> /etc/rc.local'
-
-###################################################Less brightness ####WORKING
-#sudo sh -c 'echo "
-
-#" >> /xxx'
-
 ###################################################Enable Progress Fancy in Apt & apt-get - http://www.omgubuntu.co.uk/2014/04/how-to-enable-apt-terminal-progress-bar
 
-#echo -e 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
+echo -e 'Dpkg::Progress-Fancy "1";' | sudo tee /etc/apt/apt.conf.d/99progressbar
 
 #sudo echo 'Dpkg::Progress-Fancy "1";' > /etc/apt/apt.conf.d/99progressbar
 

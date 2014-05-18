@@ -1,4 +1,4 @@
-####ubuntupackages v2014.05.11 alpha
+####ubuntupackages
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 

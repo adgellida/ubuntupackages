@@ -1,0 +1,75 @@
+#!/bin/bash
+####ubuntupackages v2014.05.18 alpha
+########installpackages
+
+sudo apt-get -y update
+sudo apt-get -y upgrade
+
+####Backup & Sync
+sudo apt-get -y install systemback
+
+####OS & Utilities
+sudo apt-get -y install ubuntu-restricted-extras 
+sudo apt-get -y install gparted grub-customizer
+
+####Language packages
+#
+
+####Security & Privacy
+sudo apt-get -y install gufw
+
+####CD/DVD Tools
+#
+
+####Photos & Graphics
+sudo apt-get -y install gnome-exe-thumbnailer shutter gimp 
+
+####Audio & Music
+#
+
+####Videos & Movies
+#
+
+####All multimedia content
+sudo apt-get -y install vlc
+
+####Development
+sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
+sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
+sudo apt-get -y install ubuntu-sdk
+
+####Web Browsers
+sudo apt-get -y install google-chrome-stable
+
+####Social
+#
+
+####File Management
+sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
+
+####File Sharing
+#### recommended to INSTALL v2 BETA
+
+####News & Books
+#
+
+####Office & Productivity
+#
+
+####Games
+#
+
+####Extra
+
+##Upgrading system
+#sudo apt-get -y upgrade
+
+##ONLY FOR UBUNTU WITH UNITY SURELY
+sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
+
+####Upgrading system
+#sudo apt-get -y upgrade
+
+####Cleaning system
+#sudo apt-get -y clean
+#sudo apt-get -y autoremove
