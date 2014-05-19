@@ -1,5 +1,7 @@
 Release notes
 =============================================
+* v2014.05.19 alpha
+ * added cinnamon and ambiance-grey
 
 * v2014.05.18 alpha
  * added Intel Linux Graphics Installer 14.04 support

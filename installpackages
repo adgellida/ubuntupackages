@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.18 alpha
+####ubuntupackages v2014.05.19 alpha
 ########installpackages
 
 sudo apt-get -y update
@@ -23,7 +23,12 @@ sudo apt-get -y install ubuntu-restricted-extras
 ########Desktop Environment
 #lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
 #sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
+#cinnamon
+#sudo apt-get -y install cinnamon
 
+########Themes
+#ambiance-grey
+#sudo apt-get -y install ambiance-grey
 
 ####Language packages
 #sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
