@@ -28,7 +28,7 @@ Then do these basics steps:
 
 4.(Optional) Execute configurations.
 
-Remember to add exec permissions to all of scripts!
+Remember to add exec permissions to all scripts!
 
 Important
 =============================================
