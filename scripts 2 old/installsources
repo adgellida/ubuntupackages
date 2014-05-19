@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.18 alpha
+####ubuntupackages v2014.05.18 alpha - scripts 2 old example
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
