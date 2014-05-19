@@ -18,8 +18,12 @@ sudo apt-get -y install ubuntu-restricted-extras
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 #sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
-#sudo apt-get -y install lxqt
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
+
+########Desktop Environment
+#lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+#sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
+
 
 ####Language packages
 #sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
