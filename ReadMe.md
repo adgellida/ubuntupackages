@@ -2,9 +2,12 @@
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
+Right now is in command line interface.
+On the next months a graphical interface will be released.
+
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Kubuntu, Lubuntu...
+Ubuntu, Xubuntu, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
 Designed for 14.04.
 
