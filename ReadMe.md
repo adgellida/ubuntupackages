@@ -16,11 +16,13 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-1.Execute installsources
+1.Go to "scripts 1" folder (or "scripts 2" if you want to check another old example).
 
-2.Execute installpackages
+2.Execute installsources.
 
-3.(Optional) Execute configurations
+3.Execute installpackages.
+
+4.(Optional) Execute configurations.
 
 Remember to add exec permissions to all of scripts!
 
