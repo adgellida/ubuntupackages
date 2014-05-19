@@ -38,9 +38,9 @@ By default these two are disabled now.
 
 TO DO
 =============================================
+* Create app and integrate selectable boxes
 * Add less brightness script
 * Add gksudo
-* Create app and integrate selectable boxes
 
 Release notes
 =============================================
