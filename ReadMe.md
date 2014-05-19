@@ -2,7 +2,7 @@
 =============================================  
 ### Script to install all your packages and do a term any minor configuration
 
-Right now is in command line interface.
+Right now is in command line interface. Alpha version.
 On the next months a graphical interface will be released.
 
 Compatible with any Debian based system:
