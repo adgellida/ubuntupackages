@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.19 alpha - scripts 1
+####ubuntupackages v2014.05.22 alpha - scripts 1
 ########installpackages
 
 sudo apt-get -y update
@@ -150,6 +150,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okul
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
+sudo apt-get -y install gdebi
 sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins

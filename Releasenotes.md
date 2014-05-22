@@ -1,5 +1,9 @@
 Release notes
 =============================================
+
+* v2014.05.22 alpha
+ * added gdebi
+ 
 * v2014.05.19 alpha
  * added cinnamon and ambiance-grey
 
