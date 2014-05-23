@@ -1,6 +1,9 @@
 Release notes
 =============================================
 
+* v2014.05.23 alpha
+ * added popcorn-time
+
 * v2014.05.22 alpha
  * added gdebi
  

@@ -1,5 +1,5 @@
 #!/bin/bash
-####ubuntupackages v2014.05.22 alpha - scripts 1
+####ubuntupackages v2014.05.23 alpha - scripts 1
 ########installpackages
 
 sudo apt-get -y update
@@ -50,7 +50,7 @@ sudo apt-get -y install shotwell gthumb photo xnviewmp gnome-exe-thumbnailer shu
 #sudo apt-get -y install sound-juicer spotify-client audacity mixxx
 
 ####Videos & Movies
-#sudo apt-get -y install kazam openshot pitivi
+#sudo apt-get -y install kazam openshot pitivi popcorn-time
 
 ####All multimedia content
 sudo apt-get -y install vlc
