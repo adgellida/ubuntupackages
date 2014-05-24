@@ -6,14 +6,12 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-sudo apt-get -y install systemback
 #sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync timeshift
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras 
 #sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
-#sudo apt-get -y install gparted grub-customizer libfile-mimeinfo-perl catfish bleachbit
+#sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 #sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop pcmanfm
@@ -21,13 +19,17 @@ sudo apt-get -y install ubuntu-restricted-extras
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########Desktop Environment
-#lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+##lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
 #sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
-#cinnamon
+##cinnamon
 #sudo apt-get -y install cinnamon
+##mate
+#sudo apt-get -y install mate-desktop-environment
+##e17
+#sudo apt-get -y install e17
 
 ########Themes
-#ambiance-grey
+##ambiance-grey
 #sudo apt-get -y install ambiance-grey
 
 ####Language packages
@@ -36,14 +38,13 @@ sudo apt-get -y install ubuntu-restricted-extras
 #sudo apt-get -y install aspell aspell-en aspell-es
 
 ####Security & Privacy
-sudo apt-get -y install gufw
 #sudo apt-get -y install seahorse tor-browser
 
 ####CD/DVD Tools
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
 
 ####Photos & Graphics
-sudo apt-get -y install shotwell gthumb photo xnviewmp gnome-exe-thumbnailer shutter gimp 
+#sudo apt-get -y install shotwell gthumb photo xnviewmp
 #sudo apt-get -y install inkscape scribus gwenview xsane
 
 ####Audio & Music
@@ -53,29 +54,26 @@ sudo apt-get -y install shotwell gthumb photo xnviewmp gnome-exe-thumbnailer shu
 #sudo apt-get -y install kazam openshot pitivi popcorn-time
 
 ####All multimedia content
-sudo apt-get -y install vlc
-
-#pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
+##pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
 #sudo apt-get -y install pepperflashplugin-nonfree
 #sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-#pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html
+##pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html
 #sudo apt-get -y install pepflashplugin-installer
 #sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
 
-#best performance on flash - http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
+##best performance on flash - http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
 
 sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
 sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
 sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
 ####Development
-sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
+#sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
-#sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
+#sudo apt-get -y install ubuntu-sdk geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install meld vim
-#sudo apt-get -y install ubuntu-sdk
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
 #sudo apt-get -y install virtualbox wine playonlinux
 #sudo apt-get -y install mono-complete mono-basic-dbg
@@ -106,7 +104,6 @@ sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get install oracle-java8-set-default
 
 ####Web Browsers
-sudo apt-get -y install google-chrome-stable
 #sudo apt-get -y install chromium-browser
 
 ####Social
@@ -114,22 +111,21 @@ sudo apt-get -y install google-chrome-stable
 
 ####File Management
 sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
-sudo apt-get -y install filezilla
 #sudo apt-get -y install lha #### unable to locate on 14.04
+#sudo apt-get -y install filezilla
 #sudo apt-get -y install spacefm mc
 ##Thunar
 #sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
 #sudo apt-get -y install xfce4-goodies
 
 ####File Sharing
-#sudo apt-get -y install jdownloader #### recommended to INSTALL v2 BETA
 #sudo apt-get -y install amule deluge axel
 
 ####News & Books
 #sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
 ####Office & Productivity
-sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okular
+#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es okular
 #sudo apt-get -y install evince lyx rednotebook zim txt2tags poppler-utils pdftk
 
 ####Games
@@ -165,7 +161,7 @@ sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install unity-reboot
 #sudo apt-get -y install acroread-common acroread acroread-fonts
 #sudo apt-get -y install aptoncd multisystem remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
-#sudo apt-get -y install blender e17 gadmin-rsync mate-core mate-desktop-environment
+#sudo apt-get -y install blender gadmin-rsync mate-core
 #sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
 #sudo apt-get -y install eog eog-plugins
 

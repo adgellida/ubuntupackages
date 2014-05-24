@@ -20,7 +20,7 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-1.Go to "scripts 1" folder (or "scripts 2" if you want to check another old example).
+1.Go to "script 1" folder (or "script 2" if you want to check more extra packages).
 
 2.Execute installsources.
 
