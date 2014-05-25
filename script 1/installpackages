@@ -1,5 +1,4 @@
 #!/bin/bash
-####ubuntupackages v2014.05.18 alpha - scripts 2 old example
 ########installpackages
 
 sudo apt-get -y update
@@ -14,19 +13,8 @@ sudo apt-get -y install ubuntu-restricted-extras gparted grub-customizer
 ########Desktop Environment
 #
 
-
-
-
-
-
-
-
-
-
-
 ########Themes
 #
-
 
 ####Language packages
 #

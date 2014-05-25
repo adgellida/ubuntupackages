@@ -1,6 +1,8 @@
 Release notes
 =============================================
-
+* v2014.05.25 alpha
+ * added atom
+ 
 * v2014.05.23 alpha
  * added popcorn-time
 

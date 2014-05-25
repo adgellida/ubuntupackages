@@ -1,5 +1,4 @@
 #!/bin/bash
-####ubuntupackages v2014.05.23 alpha - scripts 1
 ########installsources
 
 rm -f -r /etc/apt/sources.list.d/*
@@ -44,6 +43,9 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 # how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
 
 ########################################################### EXTRA
+
+#### atom
+#sudo add-apt-repository -y ppa:webupd8team/atom
 
 #### cairo-dock
 #sudo add-apt-repository -y ppa:cairo-dock-team/weekly

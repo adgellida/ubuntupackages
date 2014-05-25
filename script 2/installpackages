@@ -1,5 +1,4 @@
 #!/bin/bash
-####ubuntupackages v2014.05.23 alpha - scripts 1
 ########installpackages
 
 sudo apt-get -y update
@@ -73,7 +72,7 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 #sudo apt-get -y install ubuntu-sdk geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
-#sudo apt-get -y install meld vim
+#sudo apt-get -y install atom meld vim
 #sudo apt-get -y install kicad
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
 #sudo apt-get -y install virtualbox wine playonlinux
