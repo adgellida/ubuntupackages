@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.05.31 alpha
+ * added sublime-text-3
+ 
 * v2014.05.25 alpha
  * added atom
  
