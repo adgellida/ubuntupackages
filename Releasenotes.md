@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.06.04 alpha
+ * added gnome-session-fallback
+
 * v2014.05.31 alpha
  * added sublime-text-3
  

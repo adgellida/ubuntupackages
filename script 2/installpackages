@@ -18,6 +18,8 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########Desktop Environment
+##gnome-session-fallback
+#sudo apt-get -y install gnome-session-fallback
 ##lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
 #sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
 ##cinnamon
