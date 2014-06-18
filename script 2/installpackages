@@ -13,7 +13,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
-#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky tmux xbindkeys xbindkeys-config htop pcmanfm
+#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky conky-manager tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
@@ -170,6 +170,8 @@ sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 ####Compiz + Cairo-dock + Emerald
 sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
 sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
+sudo apt-get -y install dockbarx
+
 #sudo apt-get -y install emerald 
 #sudo apt-get -y install metacity
 

@@ -1,5 +1,9 @@
 Release notes
 =============================================
+* v2014.06.18 alpha
+ * added dockbarx
+ * added conky-manager
+
 * v2014.06.04 alpha
  * added gnome-session-fallback
 
