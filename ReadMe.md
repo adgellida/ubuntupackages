@@ -4,8 +4,6 @@
 
 ![](http://www.extremetech.com/wp-content/uploads/2014/03/ubuntu-14.04-desktop-640x360.jpg)
 
-![](http://i.imgur.com/OVMJkCB.png)
-
 Right now is in command line interface. Alpha version.
 
 On the next months a graphical interface will be released.
