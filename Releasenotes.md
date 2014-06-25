@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.06.26 alpha
+ * added more cinnamon ppas
+
 * v2014.06.18 alpha
  * added dockbarx
  * added conky-manager
