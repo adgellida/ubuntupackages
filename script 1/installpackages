@@ -8,7 +8,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install systemback
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi gparted grub-customizer
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi
 
 ########Desktop Environment
 #

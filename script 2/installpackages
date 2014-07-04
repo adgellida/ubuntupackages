@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install backintime-gnome sbackup-plugins-fuse grsync timeshift
+#sudo apt-get -y install gparted grub-customizer backintime-gnome sbackup-plugins-fuse grsync timeshift
 
 ####OS & Utilities
 #sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex
