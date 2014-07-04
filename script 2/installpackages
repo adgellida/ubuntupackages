@@ -109,7 +109,8 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 #sudo apt-get -y install chromium-browser
 
 ####Social
-#sudo apt-get -y install choqok skype hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
+#sudo apt-get -y install choqok hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
+#skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
 
 ####File Management
 #sudo apt-get -y install lha #### unable to locate on 14.04
