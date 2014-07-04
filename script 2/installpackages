@@ -112,7 +112,6 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 #sudo apt-get -y install choqok skype hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
 
 ####File Management
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
 #sudo apt-get -y install lha #### unable to locate on 14.04
 #sudo apt-get -y install filezilla
 #sudo apt-get -y install spacefm mc
