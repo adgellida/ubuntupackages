@@ -56,7 +56,7 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 #
 
 ####Office & Productivity
-#
+sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ####Games
 #

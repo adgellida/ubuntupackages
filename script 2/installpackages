@@ -127,7 +127,6 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 #sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
 ####Office & Productivity
-#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
 
 ####Games
