@@ -148,7 +148,6 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
-sudo apt-get -y install gdebi
 sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins
