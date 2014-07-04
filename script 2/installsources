@@ -154,7 +154,8 @@ sudo add-apt-repository ppa:noobslab/themes
 #sudo add-apt-repository -y ppa:jd-team/jdownloader/
 
 #### spotify
-#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - ANCIENT
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E
 #sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 
 #### MATE Desktop Environment
