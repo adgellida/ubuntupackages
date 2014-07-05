@@ -49,8 +49,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install inkscape scribus gwenview xsane
 
 ####Audio & Music
-#sudo apt-get -y install sound-juicer audacity mixxx
-#spotify-client http://repository.spotify.com/pool/non-free/s/spotify/
+#sudo apt-get -y install sound-juicer audacity mixxx spotify-client
 
 ####Videos & Movies
 #sudo apt-get -y install kazam openshot pitivi popcorn-time

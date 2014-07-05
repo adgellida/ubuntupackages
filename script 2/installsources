@@ -153,9 +153,9 @@ sudo add-apt-repository ppa:noobslab/themes
 #### jdownloader - Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 #sudo add-apt-repository -y ppa:jd-team/jdownloader/
 
-#### spotify - http://repository.spotify.com/pool/non-free/s/spotify/
-#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - SOME ERRORS
-#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - SOME ERRORS
+#### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - TO TEST
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - TO TEST
 #sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 
 #### MATE Desktop Environment
