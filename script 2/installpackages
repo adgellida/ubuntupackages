@@ -146,6 +146,14 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 ##Repairing jdownloader v1 if is necessary
 #sudo update-alternatives --config java
 
+#### TO INSTALL MANUALLY
+
+http://www.opera.com/download/guide/?os=linux
+
+http://www.teamviewer.com/es/download/linux.aspx
+
+http://www.skype.com/es/download-skype/skype-for-linux/
+
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
 sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
