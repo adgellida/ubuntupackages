@@ -4,6 +4,8 @@
 
 ![](http://i.imgur.com/Pqs47my.png)
 
+![](http://i.imgur.com/ElTSatO.jpg)
+
 ![](http://www.extremetech.com/wp-content/uploads/2014/03/ubuntu-14.04-desktop-640x360.jpg)
 
 ![](http://2.bp.blogspot.com/-_WEEcpaUIr4/U05BO5d6i9I/AAAAAAAAAiI/AuKQ91hzMHM/s1600/How+to+install+Cairo-Dock+on+Ubuntu+14.04,+Debian+7,+or+Linux+Mint+17.png)
