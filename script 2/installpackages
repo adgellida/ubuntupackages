@@ -39,7 +39,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install aspell aspell-en aspell-es
 
 ####Security & Privacy
-#sudo apt-get -y install seahorse tor-browser
+#sudo apt-get -y install gufw seahorse tor-browser
 
 ####CD/DVD Tools
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
@@ -66,9 +66,9 @@ sudo apt-get -y upgrade
 
 ##best performance on flash - http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
 
-sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
-sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
-sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
+#sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
+#sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
+#sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
 ####Development
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
@@ -147,11 +147,11 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 
 #### TO INSTALL MANUALLY
 
-http://www.opera.com/download/guide/?os=linux
+#http://www.opera.com/download/guide/?os=linux
 
-http://www.teamviewer.com/es/download/linux.aspx
+#http://www.teamviewer.com/es/download/linux.aspx
 
-http://www.skype.com/es/download-skype/skype-for-linux/
+#http://www.skype.com/es/download-skype/skype-for-linux/
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 

@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.06 alpha
+ * added a lot of changes
+
 * v2014.07.04 alpha
  * added a lot of changes
 

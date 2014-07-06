@@ -12,7 +12,7 @@ On the next months a graphical interface will be released.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Kubuntu, Lubuntu, Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu Mate, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
 Designed for 14.04.
 

@@ -20,7 +20,7 @@ sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi
 #
 
 ####Security & Privacy
-sudo apt-get -y install gufw
+#
 
 ####CD/DVD Tools
 #
@@ -63,11 +63,8 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ####Extra
 
-##Upgrading system
-#sudo apt-get -y upgrade
-
 ##ONLY FOR UBUNTU WITH UNITY SURELY
-sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
+#
 
 #### ONLY FOR KUBUNTU
 #

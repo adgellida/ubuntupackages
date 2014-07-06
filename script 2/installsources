@@ -3,34 +3,40 @@
 
 rm -f -r /etc/apt/sources.list.d/*
 
+#### WebUpd8: Audacious, unity-reboot, etc
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+
+#### New apt
+#sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
+
+#### grub-customizer
+#sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
+
 #### y-ppa-manager - launchpad getkeys
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
 
 #### sublime-text-3
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+#sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 
 #### variety-peterlevi
-sudo add-apt-repository -y ppa:peterlevi/ppa
+#sudo add-apt-repository -y ppa:peterlevi/ppa
 
 #### 0ad
-sudo add-apt-repository -y ppa:wfg/0ad
+#sudo add-apt-repository -y ppa:wfg/0ad
 
 #### Getdeb
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 
 #### photo
-sudo add-apt-repository -y ppa:samrog131/ppa
+#sudo add-apt-repository -y ppa:samrog131/ppa
 
 #### winusb
-sudo add-apt-repository -y ppa:colingille/freshlight
-
-#### systemback - HIGHLY RECOMMENDED!
-sudo apt-add-repository -y ppa:nemh/systemback
+#sudo add-apt-repository -y ppa:colingille/freshlight
 
 #### WebUpd8: Audacious, unity-reboot, etc
-sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
 #### firefox aurora
 #sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
@@ -106,7 +112,7 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 
 ########Themes
 ##ambiance-grey
-sudo add-apt-repository ppa:noobslab/themes
+#sudo add-apt-repository ppa:noobslab/themes
 
 #### Steam Login
 #sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
@@ -184,6 +190,18 @@ sudo add-apt-repository ppa:noobslab/themes
 
 #### my-weather-indicator
 #sudo add-apt-repository -y ppa:atareao/atareao
+
+########################################################### ONLY FOR UBUNTU WITH UNITY SURELY
+
+#### unity-tweak-tool
+#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
+
+#### Ubuntu Tweak
+sudo add-apt-repository -y ppa:tualatrix/ppa
+#sudo add-apt-repository -y ppa:freyja-dev/tualatrix
+
+#### classicmenu-indicator & Unsettings
+#sudo add-apt-repository -y ppa:diesch/testing
 
 ########################################################### ONLY FOR...
 
