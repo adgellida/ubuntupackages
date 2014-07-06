@@ -18,7 +18,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu Mate, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
-Designed for 14.04.
+Designed for 14.04 (for 14.14 on "script 3").
 
 Instructions
 =============================================
@@ -28,7 +28,10 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-1.Go to "script 1" folder (or "script 2" if you want to check more extra packages).
+1.Go to your selected script folder.
+1.1."script 1" if you want to install some basic packages.
+1.2."script 2" if you want to check more extra packages.
+1.3."script 3" if you want to check the packages that I usually install.
 
 2.Execute installsources.
 

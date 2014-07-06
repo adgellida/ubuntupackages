@@ -2,6 +2,7 @@ Release notes
 =============================================
 * v2014.07.06 alpha
  * added a lot of changes
+ * added "script 3"
 
 * v2014.07.04 alpha
  * added a lot of changes

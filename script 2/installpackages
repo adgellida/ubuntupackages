@@ -15,7 +15,6 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 #sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky conky-manager tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
-#sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########Desktop Environment
 ##gnome-session-fallback
@@ -193,6 +192,8 @@ sudo apt-get -y install dockbarx
 #sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
 #sudo apt-get -y install wally wallch
 
+####DISCONTINUED
+#sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########uninstallpackages
 
