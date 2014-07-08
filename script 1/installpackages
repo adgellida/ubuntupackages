@@ -8,7 +8,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install systemback
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi gnome-system-tools
 
 ########Desktop Environment
 #
@@ -73,7 +73,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 #
 
 ########uninstallpackages
-#
+sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### ONLY FOR LUBUNTU
 #

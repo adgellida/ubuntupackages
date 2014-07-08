@@ -1,5 +1,10 @@
 Release notes
 =============================================
+* v2014.07.08 alpha
+ * added uninstall firefox packages on "script 1" and "script 3"
+ * added gnome-system-tools
+ * added "manual steps for ubuntu mate remix" on "script 3"
+
 * v2014.07.06 alpha
  * added a lot of changes
  * added "script 3"
