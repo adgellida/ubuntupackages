@@ -8,7 +8,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install systemback
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi gnome-system-tools
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock baobab gnome-system-tools
 
 ########Desktop Environment
 #
@@ -38,7 +38,7 @@ sudo apt-get -y install gnome-exe-thumbnailer shutter gimp
 sudo apt-get -y install vlc
 
 ####Development
-#
+sudo apt-get -y install openjdk-7-jre
 
 ####Web Browsers
 sudo apt-get -y install google-chrome-stable
