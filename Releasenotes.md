@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.09 alpha
+ * removed baobab from "script 1" and "script 2" for problems with chrome
+
 * v2014.07.08 alpha
  * added uninstall firefox packages on "script 1" and "script 3"
  * added gnome-system-tools
