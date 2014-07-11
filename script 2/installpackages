@@ -15,6 +15,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
 #sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky conky-manager tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
+#sudo apt-get -y install voice-commands
 
 ########Desktop Environment
 ##gnome-session-fallback
@@ -151,6 +152,8 @@ sudo apt-get -y upgrade
 #http://www.teamviewer.com/es/download/linux.aspx
 
 #http://www.skype.com/es/download-skype/skype-for-linux/
+
+#http://labs.sialan.org/projects/sigram
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
