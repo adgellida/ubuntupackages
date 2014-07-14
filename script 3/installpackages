@@ -13,8 +13,10 @@ sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock gnome
 ########Desktop Environment
 #mate - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
 sudo apt-get install --no-install-recommends mate-desktop-environment mate-desktop-environment-extra caja-gksu caja-sendto mate-indicator-applet mate-media-gstreamer mate-icon-theme-faenza
+sudo apt-get install mate-notification-daemon mate-media-pulse mate-system-tools
 sudo apt-get install ambiance-colors radiance-colors
 sudo apt-get remove gcalctool gnome-screenshot gedit file-roller eog gnome-system-monitor gnome-system-log baobab gnome-terminal gnome-applets gnome-media gnome-power-manager gnome-screensaver
+sudo apt-get remove gnome-calculator evince
 
 ########Themes
 #
@@ -60,7 +62,7 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 #
 
 ####Office & Productivity
-sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
 
 ####Games
 #
