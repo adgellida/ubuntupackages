@@ -33,11 +33,13 @@ Then do these basics steps:
 1.2."script 2" if you want to check more extra packages.
 1.3."script 3" if you want to check the packages that I usually install.
 
-2.Execute installsources.
+2.Execute "installsources".
 
-3.Execute installpackages.
+3.Execute "installpackages".
 
-4.(Optional) Execute configurations.
+4.(Optional) Execute "configurations".
+
+5.(Extra) Execute "mate configuration" if you choose "script 3". 
 
 Remember to add exec permissions to all scripts!
 
