@@ -2,7 +2,8 @@ Release notes
 =============================================
 * v2014.07.14 alpha
  * added mate on "script 3" (testing)
-
+ * added virtualbox from official sources on "script 3"
+ 
 * v2014.07.09 alpha
  * removed baobab from "script 1" and "script 2" for problems with chrome
 
