@@ -20,7 +20,7 @@ Ubuntu, Xubuntu, Ubuntu Mate Remix, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
 Designed for 14.04 (it has a few 14.10 lines commented by now).
 
-Recommended for Ubuntu if you have Mateon it on "script 3".
+Recommended for Ubuntu if you have Mate on it on "script 3".
 
 Instructions
 =============================================
