@@ -16,9 +16,11 @@ On the next months a graphical interface will be released.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu Mate, Kubuntu, Lubuntu, Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu Mate Remix, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
-Designed for 14.04 (for 14.14 on "script 3").
+Designed for 14.04 (it has a few 14.10 lines commented by now).
+
+Recommended for Ubuntu if you have Mateon it on "script 3".
 
 Instructions
 =============================================
