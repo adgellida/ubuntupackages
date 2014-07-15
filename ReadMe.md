@@ -48,6 +48,7 @@ Remember to add exec permissions to all scripts!
 Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
+* The objective is to use mate desktop, but there're problems to implement it on 14.04. The best option is to wait Ubuntu Mate Remix 14.10 stable version.
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
  * WebUpd8 Unstable - only for 13.10 or less
