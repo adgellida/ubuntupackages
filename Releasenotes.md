@@ -1,5 +1,9 @@
 Release notes
 =============================================
+* v2014.07.15 alpha
+ * fixing mate on "script 3" (testing)
+ * remove more unity remains
+
 * v2014.07.14 alpha
  * added mate on "script 3" (testing)
  * added virtualbox from official sources on "script 3"
