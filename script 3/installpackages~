@@ -86,9 +86,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-
 #
 
 ########uninstallpackages
-#sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
-sudo apt-get remove -y webbrowser-app
-sudo apt-get remove -y unity-lens* unity-scope*
+sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### ONLY FOR LUBUNTU
 #
