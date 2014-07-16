@@ -16,11 +16,9 @@ On the next months a graphical interface will be released.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu Mate Remix, Kubuntu, Lubuntu, Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu Mate Remix, Linux Mint Mate, Kubuntu, Lubuntu, Kylin, Edubuntu...
 
 Designed for 14.04 (it has a few 14.10 lines commented by now).
-
-Recommended for Ubuntu if you have Mate on it on "script 3".
 
 Instructions
 =============================================
@@ -33,22 +31,19 @@ Then do these basics steps:
 1.Go to your selected script folder.
 1.1."script 1" if you want to install some basic packages.
 1.2."script 2" if you want to check more extra packages.
-1.3."script 3" if you want to check the packages that I usually install.
 
 2.Execute "installsources".
 
 3.Execute "installpackages".
 
-4.(Optional) Execute "configurations".
-
-5.(Extra) Execute "mate configuration" if you choose "script 3". 
+4.(Optional) Execute "configurations", "mateconfiguration", see "manual steps for mate", etc.
 
 Remember to add exec permissions to all scripts!
 
 Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
-* The objective is to use mate desktop, but there're problems to implement it on ubuntu 14.04. The best option is to wait Ubuntu Mate Remix 14.10 stable version or to use Linux Mint Mate 14.04.
+* The desktop environment recommended tested right now is to use mate desktop, but there're problems to implement it on ubuntu 14.04. The best option is to wait Ubuntu Mate Remix 14.10 stable version (not use alpha never, never!) or to use Linux Mint Mate 14.04.
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
  * WebUpd8 Unstable - only for 13.10 or less
@@ -58,9 +53,9 @@ By default these two are disabled now.
 
 TO DO
 =============================================
-* Create app and integrate selectable boxes
-* Add less brightness script
-* Add gksudo
+* Create app and integrate selectable boxes.
+* Add less brightness script.
+* Add gksudo.
 
 Release notes
 =============================================

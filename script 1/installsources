@@ -10,11 +10,14 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 #### gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp/
 
-#### VLC
+#### VLC #### not compatible for 14.10
 sudo add-apt-repository -y ppa:ed10vi86/video
 
 #### systemback - HIGHLY RECOMMENDED!
 sudo apt-add-repository -y ppa:nemh/systemback
 
-#### LibreOffice
+#### LibreOffice #### not compatible for 14.10
 sudo add-apt-repository -y ppa:libreoffice/ppa
+
+#### cairo-dock
+sudo add-apt-repository -y ppa:cairo-dock-team/weekly

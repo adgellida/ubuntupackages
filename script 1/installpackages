@@ -8,7 +8,8 @@ sudo apt-get -y upgrade
 sudo apt-get -y install systemback
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock gnome-system-tools gnome-disk-utility
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock
+#gnome-system-tools gnome-disk-utility
 
 ########Desktop Environment
 #
@@ -39,6 +40,9 @@ sudo apt-get -y install vlc
 
 ####Development
 sudo apt-get -y install openjdk-7-jre
+#ubuntu-sdk geany
+
+#sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 ####Web Browsers
 sudo apt-get -y install google-chrome-stable
@@ -56,12 +60,16 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 #
 
 ####Office & Productivity
-sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
 
 ####Games
 #
 
 ####Extra
+
+#### TO INSTALL MANUALLY
+
+#http://www.teamviewer.com/es/download/linux.aspx
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 #
@@ -73,7 +81,11 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 #
 
 ########uninstallpackages
-sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+#sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+
+#### ONLY FOR UBUNTU
+#sudo apt-get remove -y webbrowser-app
+#sudo apt-get remove -y unity-lens* unity-scope*
 
 #### ONLY FOR LUBUNTU
 #

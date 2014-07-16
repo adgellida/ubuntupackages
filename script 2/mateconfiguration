@@ -1,9 +1,11 @@
 #!/bin/bash
 ########mate configuration
 
+#Not neccesarary if you have mate for default on your distro
+
 # Set default session in ubuntu for new users - mate - http://askubuntu.com/questions/456766/how-to-set-default-session-in-ubuntu-14-04-lts
 #sudo pluma /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf
-#Replace "ubuntu" with "mate"
+#Replace "ubuntu" with "mate.desktop" or "mate".
 
 # Folders:
 xdg-mime default caja-folder-handler.desktop inode/directory

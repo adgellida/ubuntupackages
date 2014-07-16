@@ -164,9 +164,15 @@ rm -f -r /etc/apt/sources.list.d/*
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - TO TEST
 #sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 
-#### MATE Desktop Environment
+#### MATE Desktop Environment (1)
 #sudo apt-get --yes --force-yes install mate-archive-keyring
 #sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
+
+#### MATE Desktop Environment (2)
+#echo "deb http://repo.mate-desktop.org/archive/1.8/ubuntu $(lsb_release -cs) #main" | sudo tee /etc/apt/sources.list.d/mate-desktop.list
+#wget -qO - http://mirror1.mate-desktop.org/debian/mate-archive-keyring.gpg | sudo apt-key add -
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
+
 
 #### CPU Frequency Scaling
 #sudo add-apt-repository -y ppa:artfwo/ppa

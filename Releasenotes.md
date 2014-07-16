@@ -1,6 +1,10 @@
 Release notes
 =============================================
 * v2014.07.15 alpha
+ * erased "script 3", use "script 1" instead.
+ * commented mate configurations due to problems, use it if you want with caution.
+
+* v2014.07.15 alpha
  * fixing mate on "script 3" (testing)
  * remove more unity remains
 
