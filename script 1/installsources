@@ -21,3 +21,6 @@ sudo add-apt-repository -y ppa:libreoffice/ppa
 
 #### cairo-dock
 sudo add-apt-repository -y ppa:cairo-dock-team/weekly
+
+#### ambiance and radiance themes
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
