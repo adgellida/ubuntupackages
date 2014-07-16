@@ -15,7 +15,7 @@ sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock
 #
 
 ########Themes
-sudo apt-get install ambiance-colors radiance-colors
+sudo apt-get install ambiance-colors radiance-colors ubuntu-mono
 
 ####Language packages
 #
