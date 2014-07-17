@@ -176,6 +176,9 @@ rm -f -r /etc/apt/sources.list.d/*
 #### CPU Frequency Scaling
 #sudo add-apt-repository -y ppa:artfwo/ppa
 
+#### quiterss
+#sudo add-apt-repository -y ppa:quiterss/quiterss
+
 #### Psensor
 #sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
 

@@ -131,7 +131,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install amule deluge axel
 
 ####News & Books
-#sudo apt-get -y install gpodder calibre newsbeuter rssowl
+#sudo apt-get -y install gpodder calibre newsbeuter rssowl quiterss
 
 ####Office & Productivity
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
