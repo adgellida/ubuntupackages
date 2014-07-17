@@ -84,7 +84,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install atom meld vim sublime-text-3
 #sudo apt-get -y install kicad
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
-#sudo apt-get -y install virtualbox wine playonlinux
+#sudo apt-get -y install wine1.7 playonlinux
 #sudo apt-get -y install mono-complete mono-basic-dbg
 
 ##openjdk6
