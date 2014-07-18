@@ -3,6 +3,7 @@ Release notes
 * v2014.07.15 alpha
  * added grive
  * added xsane
+ * added cinelerra
 
 * v2014.07.15 alpha
  * erased "script 3", use "script 1" instead.
