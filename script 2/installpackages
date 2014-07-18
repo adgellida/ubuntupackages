@@ -5,7 +5,8 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted grub-customizer backintime-gnome sbackup-plugins-fuse grsync timeshift
+#sudo apt-get -y install gparted grub-customizer backintime-gnome sbackup-plugins-fuse grsync timeshift grive-toolsxsane
+
 
 ####OS & Utilities
 #sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex
@@ -53,7 +54,7 @@ sudo apt-get -y upgrade
 
 ####Photos & Graphics
 #sudo apt-get -y install shotwell gthumb photo xnviewmp
-#sudo apt-get -y install inkscape scribus gwenview xsane
+#sudo apt-get -y install inkscape scribus gwenview
 
 ####Audio & Music
 #sudo apt-get -y install sound-juicer audacity mixxx spotify-client

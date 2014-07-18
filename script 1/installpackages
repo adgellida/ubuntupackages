@@ -27,7 +27,7 @@ sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
 #
 
 ####Photos & Graphics
-sudo apt-get -y install gnome-exe-thumbnailer shutter gimp 
+sudo apt-get -y install gnome-exe-thumbnailer shutter gimp xsane
 
 ####Audio & Music
 #
