@@ -61,6 +61,7 @@ sudo apt-get -y upgrade
 
 ####Videos & Movies
 #sudo apt-get -y install kazam openshot pitivi popcorn-time
+#kdenlive - CAREFULL, a lot of kde packages
 
 ####All multimedia content
 ##pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
