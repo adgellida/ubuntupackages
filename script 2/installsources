@@ -6,6 +6,9 @@ rm -f -r /etc/apt/sources.list.d/*
 #### grive-tools
 #sudo add-apt-repository -y ppa:thefanclub/grive-tools
 
+#### kdenlive
+#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+
 #### cinelerra
 #sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
 
