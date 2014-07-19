@@ -1,11 +1,14 @@
 Release notes
 =============================================
-* v2014.07.15 alpha
+* v2014.07.20 alpha
+ * added various docks
+
+* v2014.07.19 alpha
  * added grive
  * added xsane
  * added cinelerra
 
-* v2014.07.15 alpha
+* v2014.07.18 alpha
  * erased "script 3", use "script 1" instead.
  * commented mate configurations due to problems, use it if you want with caution.
 

@@ -189,7 +189,8 @@ sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
 ####Compiz + Cairo-dock + Emerald
 sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
 sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
-sudo apt-get -y install dockbarx
+sudo apt-get -y install dockbarx docky plank
+#sudo apt-get -y install avant-window-navigator - not for 14.04
 
 #sudo apt-get -y install emerald 
 #sudo apt-get -y install metacity
