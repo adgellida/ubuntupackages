@@ -9,6 +9,7 @@ sudo apt-get -y upgrade
 #wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip
 
 ####OS & Utilities
+#sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
