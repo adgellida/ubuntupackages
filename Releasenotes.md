@@ -2,6 +2,8 @@ Release notes
 =============================================
 * v2014.07.20 alpha
  * added various docks
+ * added microsoft online aaps
+ * added latest stable kernel installation
 
 * v2014.07.19 alpha
  * added grive

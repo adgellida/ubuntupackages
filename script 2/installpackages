@@ -137,6 +137,9 @@ sudo apt-get -y upgrade
 
 ####Office & Productivity
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
+#Office web apps
+#wget https://r2dyhw.dm2301.livefilestore.com/y2mYoBqI2lY_60166_aeABlMbb--9nC9Nly-G69IZxGQWugnBqXtv8FJYV69ews1_e_ZCukOtbH5Ksr0fNRiYfsox7kzTOWPmIXshatVyBK5sg/microsoft_online_apps.deb
+sudo dpkg -i micrososoft*.deb
 
 ####Games
 #sudo apt-get -y install steam steam-login
@@ -157,10 +160,6 @@ sudo apt-get -y upgrade
 #### TO INSTALL MANUALLY
 
 #http://www.opera.com/download/guide/?os=linux
-
-#http://www.teamviewer.com/es/download/linux.aspx
-
-#http://www.skype.com/es/download-skype/skype-for-linux/
 
 #http://labs.sialan.org/projects/sigram
 

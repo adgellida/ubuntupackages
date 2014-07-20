@@ -8,7 +8,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install systemback
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge
 #gnome-system-tools gnome-disk-utility
 
 ########Desktop Environment
@@ -70,6 +70,13 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-
 #### TO INSTALL MANUALLY
 
 #http://www.teamviewer.com/es/download/linux.aspx
+wget http://download.teamviewer.com/download/teamviewer_linux.deb
+
+#http://www.skype.com/es/download-skype/skype-for-linux/
+
+wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+
+sudo dpkg -i *.deb
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 #
