@@ -4,6 +4,7 @@ Release notes
  * added various docks
  * added microsoft online aaps
  * added latest stable kernel installation
+ * added DirSync Pro
 
 * v2014.07.19 alpha
  * added grive

@@ -5,8 +5,8 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted grub-customizer backintime-gnome sbackup-plugins-fuse grsync timeshift grive-toolsxsane
-
+#sudo apt-get -y install gparted grub-customizer backintime-gnome sbackup-plugins-fuse grsync timeshift grive-toolsxsane syncdrive
+#wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip
 
 ####OS & Utilities
 #sudo apt-get -y install y-ppa-manager hplip winusb indicator-netspeed i-nex

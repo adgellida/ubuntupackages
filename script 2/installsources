@@ -83,6 +83,10 @@ rm -f -r /etc/apt/sources.list.d/*
 
 #####################################################
 
+#### SyncDrive - dependencies error
+#sudo add-apt-repository -y ppa:nemh/gambas3
+#sudo add-apt-repository -y ppa:noobslab/pear-apps
+
 #### Conky Manager
 #sudo add-apt-repository -y ppa:teejee2008/ppa
 
