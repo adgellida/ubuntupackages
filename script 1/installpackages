@@ -9,6 +9,12 @@ sudo apt-get -y install systemback
 
 ####OS & Utilities
 sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge
+
+#Teamviewer
+#http://www.teamviewer.com/es/download/linux.aspx
+wget http://download.teamviewer.com/download/teamviewer_linux.deb
+sudo dpkg -i *.deb
+
 #gnome-system-tools gnome-disk-utility
 
 ########Desktop Environment
@@ -40,15 +46,18 @@ sudo apt-get -y install vlc
 
 ####Development
 sudo apt-get -y install openjdk-7-jre
-#ubuntu-sdk geany
-
+#sudo apt-get -y install ubuntu-sdk qt4-demos qtmultimedia5-examples
+#sudo apt-get -y install geany
 #sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 ####Web Browsers
 sudo apt-get -y install google-chrome-stable
 
 ####Social
-#
+#Skype
+#http://www.skype.com/es/download-skype/skype-for-linux/
+wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+sudo dpkg -i *.deb
 
 ####File Management
 sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
@@ -61,22 +70,14 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 
 ####Office & Productivity
 sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
+#Office web apps
+wget https://r2dyhw.dm2301.livefilestore.com/y2mYoBqI2lY_60166_aeABlMbb--9nC9Nly-G69IZxGQWugnBqXtv8FJYV69ews1_e_ZCukOtbH5Ksr0fNRiYfsox7kzTOWPmIXshatVyBK5sg/microsoft_online_apps.deb
+sudo dpkg -i micrososoft*.deb
 
 ####Games
 #
 
 ####Extra
-
-#### TO INSTALL MANUALLY
-
-#http://www.teamviewer.com/es/download/linux.aspx
-wget http://download.teamviewer.com/download/teamviewer_linux.deb
-
-#http://www.skype.com/es/download-skype/skype-for-linux/
-
-wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
-
-sudo dpkg -i *.deb
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 #

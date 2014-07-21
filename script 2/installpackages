@@ -62,7 +62,7 @@ sudo apt-get -y upgrade
 
 ####Videos & Movies
 #sudo apt-get -y install kazam openshot pitivi cinelerra-cv popcorn-time
-#kdenlive - CAREFULL, a lot of kde packages
+#sudo apt-get -y install kdenlive - CAREFULL, a lot of kde packages
 
 ####All multimedia content
 ##pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
@@ -83,7 +83,7 @@ sudo apt-get -y upgrade
 ####Development
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
-#sudo apt-get -y install ubuntu-sdk qt4-demos qtmultimedia5-examples geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
+#sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install atom meld vim sublime-text-3
 #sudo apt-get -y install kicad
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
@@ -138,9 +138,6 @@ sudo apt-get -y upgrade
 
 ####Office & Productivity
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
-#Office web apps
-#wget https://r2dyhw.dm2301.livefilestore.com/y2mYoBqI2lY_60166_aeABlMbb--9nC9Nly-G69IZxGQWugnBqXtv8FJYV69ews1_e_ZCukOtbH5Ksr0fNRiYfsox7kzTOWPmIXshatVyBK5sg/microsoft_online_apps.deb
-sudo dpkg -i micrososoft*.deb
 
 ####Games
 #sudo apt-get -y install steam steam-login
@@ -168,7 +165,7 @@ sudo dpkg -i micrososoft*.deb
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
-sudo apt-get -y install ubuntu-tweak classicmenu-indicator unity-tweak-tool
+sudo apt-get -y install ubuntu-tweak unity-tweak-tool classicmenu-indicator
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins
 
