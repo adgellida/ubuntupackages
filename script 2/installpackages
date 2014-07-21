@@ -48,7 +48,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install aspell aspell-en aspell-es
 
 ####Security & Privacy
-#sudo apt-get -y install gufw seahorse tor-browser
+#sudo apt-get -y install seahorse tor-browser
 
 ####CD/DVD Tools
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 

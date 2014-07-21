@@ -27,7 +27,7 @@ sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
 #
 
 ####Security & Privacy
-#
+sudo apt-get -y install gufw
 
 ####CD/DVD Tools
 #
