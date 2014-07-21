@@ -64,7 +64,9 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 
 ####File Sharing
 #sudo apt-get -y install jdownloader #### recommended to INSTALL v2 BETA
-
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+./JD2SilentSetup_x64.sh
 ####News & Books
 #
 
