@@ -6,6 +6,13 @@ sudo apt-get -y upgrade
 
 ####Backup & Sync
 sudo apt-get -y install systemback
+#DirSyncPro
+mkdir /home/usuario/.DirSyncPro
+wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip -O/home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
+unzip /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip -d /home/usuario/.DirSyncPro
+rm /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
+chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
+ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 ####OS & Utilities
 sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge
