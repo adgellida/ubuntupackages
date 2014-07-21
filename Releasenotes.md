@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.21 alpha
+ * added gnome-do
+
 * v2014.07.20 alpha
  * added various docks
  * added microsoft online aaps

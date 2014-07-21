@@ -78,6 +78,9 @@ rm -f -r /etc/apt/sources.list.d/*
 #### Plank Development PPA
 #sudo add-apt-repository -y ppa:ricotz/docky
 
+#### Gnome Do
+#sudo add-apt-repository -y ppa:do-testers/ppa
+
 #### avant window navigator
 #sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
 
