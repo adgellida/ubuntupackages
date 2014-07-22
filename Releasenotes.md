@@ -2,6 +2,7 @@ Release notes
 =============================================
 * v2014.07.22 alpha
  * added DyrSyncPro
+ * added a lot of changes
 
 * v2014.07.21 alpha
  * added gnome-do
