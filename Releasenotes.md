@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.24 alpha
+ * added xorg edgers to "script 1"
+
 * v2014.07.22 alpha
  * added DyrSyncPro
  * added a lot of changes
