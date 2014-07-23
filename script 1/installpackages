@@ -15,7 +15,7 @@ chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
 ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge y-ppa-manager grub-customizer
 
 #Teamviewer
 #http://www.teamviewer.com/es/download/linux.aspx
@@ -54,11 +54,13 @@ sudo apt-get -y install vlc
 
 ####Development
 sudo apt-get -y install openjdk-7-jre
-#sudo apt-get -y install ubuntu-sdk qt4-demos qtmultimedia5-examples
+#sudo apt-get -y install ubuntu-sdk qtmultimedia5-examples
+
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 #sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
+#sudo apt-get -y install qt4-demos
 
 ####Web Browsers
 sudo apt-get -y install google-chrome-stable
