@@ -87,7 +87,9 @@ rm JD2SilentSetup_x64.sh
 ####Office & Productivity
 sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
 #Office web apps
+wget https://github.com/tonigellida/ubuntupackages/blob/master/z.extra/microsoft_online_apps.deb
 sudo dpkg -i micrososoft*.deb
+rm micrososoft*.deb
 
 ####Games
 #
