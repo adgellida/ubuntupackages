@@ -1,10 +1,16 @@
-Go to control center
+-Go to control center
 
-Select combinations keys
+-Select combinations keys
 
-Exec in a terminal - ctrl+alt+t
+-Exec in a terminal - ctrl+alt+t
 
-Windows - Enable habilitar window manager of composition software
+-Windows - Enable habilitar window manager of composition software
 		  Enable positioning of windows side by side
 
-.deb - Select open with gdebi 
+-.deb - Select open with gdebi - Only necessary for non mate
+
+-Update kernel?
+
+-Switch to propietary graphic driver
+
+-Printer - Install all drivers, reboot, connect printer, go to printers, select as default and it will works! 
