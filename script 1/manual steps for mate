@@ -13,4 +13,6 @@
 
 -Switch to propietary graphic driver
 
--Printer - Install all drivers, reboot, connect printer, go to printers, select as default and it will works! 
+-Printer - Install all drivers, reboot, connect printer, go to printers, select as default and it will works!
+
+-Inicio cairo-dock -W - not necessary if you run script

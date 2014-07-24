@@ -2,6 +2,7 @@ Release notes
 =============================================
 * v2014.07.24 alpha
  * added xorg edgers to "script 1"
+ * added to run cairo-dock at startup in compatibility transparency mode with a few window managers
 
 * v2014.07.22 alpha
  * added DyrSyncPro

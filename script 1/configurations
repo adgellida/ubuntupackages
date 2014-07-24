@@ -1,9 +1,21 @@
 #!/bin/bash
 ########configurations
 
+######################Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+
+sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=cairo-dock -W
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[es_ES]=Cairo Dock
+Name=Cairo Dock
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/cairo-dock.desktop'
+
 ###################################################Add user to group scanner
 
-sudo adduser usuario scanner
+#sudo adduser usuario scanner
 
 ###################################################Disable amazon lens - http://www.webupd8.org/2013/10/how-to-disable-amazon-shopping.html
 ##Step 1
