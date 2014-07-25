@@ -3,6 +3,7 @@
 
 ######################Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
 
+mkdir ~/.config/autostart
 sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=cairo-dock -W

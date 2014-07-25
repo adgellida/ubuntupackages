@@ -11,8 +11,16 @@
 
 -Update kernel?
 
--Switch to propietary graphic driver
+-Install propietary graphic driver? Use script to repair plymouth.
 
 -Printer - Install all drivers, reboot, connect printer, go to printers, select as default and it will works!
 
+-Adblockplus chrome
+
+-gufw
+
 -Inicio cairo-dock -W - not necessary if you run script
+
+-Uninstall firefox - not necessary if you run script
+
+

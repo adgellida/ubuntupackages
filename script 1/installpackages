@@ -113,7 +113,7 @@ rm micrososoft*.deb
 #
 
 ########uninstallpackages
-#sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### ONLY FOR UBUNTU
 #sudo apt-get remove -y webbrowser-app
@@ -123,8 +123,8 @@ rm micrososoft*.deb
 #
 
 ####Upgrading system
-#sudo apt-get -y upgrade
+sudo apt-get -y upgrade
 
 ####Cleaning system
-#sudo apt-get -y clean
-#sudo apt-get -y autoremove
+sudo apt-get -y clean
+sudo apt-get -y autoremove
