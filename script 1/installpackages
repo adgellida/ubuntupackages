@@ -56,7 +56,7 @@ sudo apt-get -y install vlc
 sudo apt-get -y install openjdk-7-jre
 #sudo apt-get -y install ubuntu-sdk qtmultimedia5-examples qml
 
-#sudo apt-get -y install wine1.7 winetricks playonlinux
+#sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
 #export WINEPREFIX=prefix32
 #export WINEARCH=win32
 #winecfg

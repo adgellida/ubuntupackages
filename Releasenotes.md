@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.25 alpha
+ * added q4wine
+
 * v2014.07.24 alpha
  * added xorg edgers to "script 1"
  * added to run cairo-dock at startup in compatibility transparency mode with a few window managers
