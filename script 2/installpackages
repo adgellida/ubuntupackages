@@ -5,7 +5,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-toolsxsane syncdrive
+#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive
 #wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip
 
 ####OS & Utilities
