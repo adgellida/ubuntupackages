@@ -81,7 +81,7 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
 ####Development
-#sudo apt-get -y install atom meld vim sublime-text-3
+#sudo apt-get -y install atom vim sublime-text-3
 #sudo apt-get -y install kicad
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
 #sudo apt-get -y install mono-complete mono-basic-dbg
