@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.07.28 alpha
+ * added insync
+
 * v2014.07.25 alpha
  * added q4wine
 
