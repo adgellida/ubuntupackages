@@ -66,8 +66,7 @@ sudo apt-get -y install openjdk-7-jre
 #export WINEARCH=win32
 #winecfg
 
-#sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1
-#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
+#sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1 build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc
 #sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 #sudo apt-get -y install qt4-demos
