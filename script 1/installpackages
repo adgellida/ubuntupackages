@@ -6,7 +6,7 @@ sudo apt-get -y upgrade
 
 ####Backup & Sync
 sudo apt-get -y install systemback
-#sudo apt-get -y install insync
+#sudo apt-get -y install insync insync-caja
 
 #DirSyncPro
 mkdir /home/usuario/.DirSyncPro
