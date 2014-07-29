@@ -57,7 +57,7 @@ sudo apt-get -y install vlc
 ####Development
 sudo apt-get -y install openjdk-7-jre
 #sudo apt-get -y install ubuntu-sdk qtmultimedia5-examples qml
-
+#sudo apt-get -y install qtcreator qtcreator-plugin-ubuntu
 #sudo apt-get -y install zenity gtk3-engines-unico octave-zenity
 #sudo apt-get -y install meld
 #sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
