@@ -31,7 +31,7 @@ rm teamviewer_linux.deb
 #
 
 ########Themes
-sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
+#sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
 
 ####Language packages
 #
