@@ -125,6 +125,7 @@ sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufo
 
 ####Upgrading system
 sudo apt-get -y upgrade
+sudo apt-get dist-upgrade
 
 ####Cleaning system
 sudo apt-get -y clean
