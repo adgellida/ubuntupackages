@@ -1,5 +1,9 @@
 Release notes
 =============================================
+* v2014.09.06 alpha
+ * added Qt script - to test
+ * added PostInstallerF
+
 * v2014.07.28 alpha
  * added insync
 

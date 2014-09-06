@@ -19,6 +19,22 @@ ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuar
 ####OS & Utilities
 sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge y-ppa-manager grub-customizer
 
+wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+ 
+wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+ 
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+sudo apt-get update
+sudo apt-get install yad
+ 
+sudo apt-get install packagekit
+ 
+dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+ 
+dpkg -i postinstallerf_1.5-13_all.deb
+
+
+
 #Teamviewer
 #http://www.teamviewer.com/es/download/linux.aspx
 wget http://download.teamviewer.com/download/teamviewer_linux.deb
@@ -56,9 +72,39 @@ sudo apt-get -y install vlc
 
 ####Development
 sudo apt-get -y install openjdk-7-jre
+
+#Qt Linux
+
+#echo "Select a Qt version to download"
+#read electionChoosed
+
+#case ${electionChoosed} in
+#	1) echo "You selected online" 
+#	urlQt=http://download.qt-project.org/official_releases/online_installers/qt-opensource-linux-x64-1.6.0-4-online.run
+#	fileQt=qt-opensource-linux-x64-1.6.0-4-online.run
+#	;;
+#	2) echo "You selected linux" 
+#	urlQt=http://download.qt-project.org/official_releases/qt/5.3/5.3.1/qt-opensource-linux-x64-5.3.1.run
+#	fileQt=qt-opensource-linux-x64-5.3.1.run
+#	;;
+#	3) echo "You selected android" 
+#	urlQt=http://download.qt-project.org/official_releases/qt/5.3/5.3.1/qt-opensource-linux-x64-android-5.3.1.run
+#	fileQt=qt-opensource-linux-x64-android-5.3.1.run
+#	;;
+#	*) echo "INVALID NUMBER!" ;;
+#esac
+
+#mkdir /home/usuario/.${fileQt}
+#wget ${urlQt} -O/home/usuario/.${fileQt}/${fileQt}
+#chmod +rwx /home/usuario/.${fileQt}/${fileQt}
+#/home/usuario/.${fileQt}/${fileQt}
+#rm /home/usuario/.${fileQt}/${fileQt}
+
+#Ubuntu-SDK - With problems
 #sudo apt-get -y install ubuntu-sdk qml
 #qtmultimedia5-examples
 #sudo apt-get -y install qtcreator qt5-default - DON'T USE
+
 #sudo apt-get -y install zenity gtk3-engines-unico octave-zenity
 #sudo apt-get -y install meld
 #sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
