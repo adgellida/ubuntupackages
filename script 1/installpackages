@@ -75,7 +75,7 @@ sudo apt-get -y install openjdk-7-jre
 
 #Qt Linux
 
-#echo "Select a Qt version to download"
+#echo "Select a Qt version to download\n" !Choose 1)online x64 2)linux x64 3)android x64
 #read electionChoosed
 
 #case ${electionChoosed} in
