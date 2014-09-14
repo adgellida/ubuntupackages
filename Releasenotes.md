@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.09.14 alpha
+ * added more dev tools
+
 * v2014.09.06 alpha
  * added Qt script - to test
  * added PostInstallerF
