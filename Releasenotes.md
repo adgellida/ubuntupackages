@@ -1,5 +1,12 @@
 Release notes
 =============================================
+* v2014.09.22 alpha
+ * added spideroak
+ * added chromium-browser
+ * added conky-manager
+ * improved Qt script - to test
+ * reestructuration
+
 * v2014.09.14 alpha
  * added more dev tools
 

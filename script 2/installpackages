@@ -5,9 +5,10 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive
+#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive insync insync-caja
 
 ####OS & Utilities
+#sudo apt-get -y install grub-customizer
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install hplip winusb indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
@@ -80,10 +81,21 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
 ####Development
+#sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
+#export WINEPREFIX=prefix32
+#export WINEARCH=win32
+#winecfg
+
+#sudo apt-get -y install zenity gtk3-engines-unico octave-zenity
 #sudo apt-get -y install atom vim sublime-text-3
 #sudo apt-get -y install kicad
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
 #sudo apt-get -y install mono-complete mono-basic-dbg
+
+#Ubuntu-SDK - With problems
+#sudo apt-get -y install ubuntu-sdk qml
+#qtmultimedia5-examples
+#sudo apt-get -y install qtcreator qt5-default - DON'T USE
 
 ##openjdk6
 #sudo apt-get -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
@@ -111,7 +123,7 @@ sudo apt-get -y upgrade
 #sudo apt-get install oracle-java8-set-default
 
 ####Web Browsers
-#sudo apt-get -y install chromium-browser
+#
 
 ####Social
 #sudo apt-get -y install choqok hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 

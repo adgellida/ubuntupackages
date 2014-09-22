@@ -1,6 +1,6 @@
 #!/bin/bash
 # -*- ENCODING: UTF-8 -*-
-echo "¿Es usted un usuario básico? Teclee "s" si lo es"
+echo "¿Es usted un usuario básico? Teclee 's' si lo es"
 read "texto"
 if [ "$texto" = "s" ]; then
 echo "Es un usuario básico"
