@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.09.23 alpha
+ * added more changes
+ 
 * v2014.09.22 alpha
  * added spideroak
  * added chromium-browser

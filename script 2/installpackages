@@ -9,6 +9,14 @@ sudo apt-get -y upgrade
 
 ####OS & Utilities
 #sudo apt-get -y install grub-customizer
+
+#burg
+#sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
+#To revert back to GRUB enter following commands:
+#sudo apt-get remove --purge burg burg-themes
+#sudo add-apt-repository -r ppa:n-muench/burg
+#sudo update-grub
+
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install hplip winusb indicator-netspeed i-nex
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
