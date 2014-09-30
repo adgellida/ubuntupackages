@@ -16,7 +16,7 @@ chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
 ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 ####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge y-ppa-manager
+sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi cairo-dock ppa-purge y-ppa-manager apt-fast
 
 #conky-manager
 #sudo apt-get -y install conky-manager
