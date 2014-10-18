@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.10.18 alpha
+ * commented packages
+ 
 * v2014.09.30 alpha
  * added apt-fast
  * added tlp
