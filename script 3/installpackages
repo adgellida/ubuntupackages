@@ -1,0 +1,34 @@
+#!/bin/bash
+########installpackages
+
+####Backup & Sync
+#
+
+####OS & Utilities
+#conky-manager
+#sudo apt-get -y install conky-manager
+#wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
+
+#postinstallerf
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+#sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+#sudo apt-get update
+#sudo apt-get install yad
+#sudo apt-get install packagekit
+#dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+#dpkg -i postinstallerf_1.5-13_all.deb
+
+#apt-fast
+#sudo apt-get -y install apt-fast
+
+#tlp
+#sudo apt-get -y install tlp tlp-rdw
+#sudo tlp start
+
+#burg
+#sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
+#To revert back to GRUB enter following commands:
+#sudo apt-get remove --purge burg burg-themes
+#sudo add-apt-repository -r ppa:n-muench/burg
+#sudo update-grub

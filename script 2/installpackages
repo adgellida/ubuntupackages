@@ -9,7 +9,7 @@
 #sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive insync insync-caja spideroak
+#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools syncdrive insync insync-caja spideroak
 
 #DirSyncPro
 #mkdir /home/usuario/.DirSyncPro
@@ -20,10 +20,6 @@
 #ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 ####OS & Utilities
-
-#conky-manager
-#sudo apt-get -y install conky-manager
-#wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
 
 #postinstallerf
 #wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
@@ -41,19 +37,8 @@
 #sudo dpkg -i teamviewer_linux.deb
 #rm teamviewer_linux.deb
 
-#sudo apt-get -y install grub-customizer y-ppa-manager apt-fast
+#sudo apt-get -y install grub-customizer y-ppa-manager
 #sudo apt-get -y install gnome-system-tools gnome-disk-utility
-
-#tlp
-#sudo apt-get -y install tlp tlp-rdw
-#sudo tlp start
-
-#burg
-#sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
-#To revert back to GRUB enter following commands:
-#sudo apt-get remove --purge burg burg-themes
-#sudo add-apt-repository -r ppa:n-muench/burg
-#sudo update-grub
 
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install hplip winusb indicator-netspeed i-nex
@@ -61,7 +46,7 @@
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
-#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor conky conky-manager tmux xbindkeys xbindkeys-config htop pcmanfm
+#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor tmux xbindkeys xbindkeys-config htop pcmanfm
 #sudo apt-get -y install hplip-gui
 #sudo apt-get -y install voice-commands
 
@@ -102,7 +87,7 @@
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
 
 ####Photos & Graphics
-#sudo apt-get -y install shotwell gthumb photo xnviewmp
+#sudo apt-get -y install shotwell gthumb photo xnviewmp xsane
 #sudo apt-get -y install inkscape scribus gwenview
 
 ####Audio & Music

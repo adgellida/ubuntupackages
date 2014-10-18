@@ -44,7 +44,7 @@ sudo apt-get -y install gufw
 #
 
 ####Photos & Graphics
-sudo apt-get -y install gnome-exe-thumbnailer shutter gimp xsane
+sudo apt-get -y install gnome-exe-thumbnailer shutter gimp
 
 ####Audio & Music
 #
