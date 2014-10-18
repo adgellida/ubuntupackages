@@ -5,10 +5,40 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 
 ####Backup & Sync
-#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive insync insync-caja
+#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive insync insync-caja spideroak
+
+#DirSyncPro
+#mkdir /home/usuario/.DirSyncPro
+#wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip -O/home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
+#unzip /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip -d /home/usuario/.DirSyncPro
+#rm /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
+#chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
+#ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 ####OS & Utilities
-#sudo apt-get -y install grub-customizer
+
+#conky-manager
+#sudo apt-get -y install conky-manager
+#wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
+
+#postinstallerf
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+#sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+#sudo apt-get update
+#sudo apt-get install yad
+#sudo apt-get install packagekit
+#dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+#dpkg -i postinstallerf_1.5-13_all.deb
+
+#Teamviewer - view error
+#http://www.teamviewer.com/es/download/linux.aspx
+#wget http://download.teamviewer.com/download/teamviewer_linux.deb
+#sudo dpkg -i teamviewer_linux.deb
+#rm teamviewer_linux.deb
+
+#sudo apt-get -y install grub-customizer y-ppa-manager apt-fast
+#sudo apt-get -y install gnome-system-tools gnome-disk-utility
 
 #tlp
 #sudo apt-get -y install tlp tlp-rdw
@@ -51,6 +81,8 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install e17
 
 ########Themes
+#sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
+
 ##ambiance-grey
 #sudo apt-get -y install ambiance-grey
 
@@ -93,6 +125,14 @@ sudo apt-get -y upgrade
 #sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
 ####Development
+#sudo apt-get -y install meld
+#sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1 #### to check
+#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
+#sudo apt-get -y install ubuntu-developer-tools-center udtc android
+#sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
+#sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
+#sudo apt-get -y install qt4-demos
+
 #sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
 #export WINEPREFIX=prefix32
 #export WINEARCH=win32
@@ -135,9 +175,14 @@ sudo apt-get -y upgrade
 #sudo apt-get install oracle-java8-set-default
 
 ####Web Browsers
-#
+#sudo apt-get -y install chromium-browser chromium-browser-l10n
 
 ####Social
+#Skype
+#http://www.skype.com/es/download-skype/skype-for-linux/
+wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+sudo dpkg -i skype*.deb
+rm skype*.deb
 #sudo apt-get -y install choqok hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
 #skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
 
@@ -157,6 +202,10 @@ sudo apt-get -y upgrade
 
 ####Office & Productivity
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
+
+#Office web apps
+#cd ..
+#sudo dpkg -i ./z.extra/microsoft_online_apps.deb
 
 ####Games
 #sudo apt-get -y install steam steam-login
@@ -227,6 +276,9 @@ sudo apt-get -y install dockbarx docky plank gnome-do
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########uninstallpackages
+#### ONLY FOR UBUNTU
+#sudo apt-get remove -y webbrowser-app
+#sudo apt-get remove -y unity-lens* unity-scope*
 
 ####Possibly needless programs
 #sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
