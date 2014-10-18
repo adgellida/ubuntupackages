@@ -1,13 +1,6 @@
 #!/bin/bash
 ########installpackages
 
-####Repairing system 1
-#sudo apt-get -f install
-
-####Upgrading system
-#sudo apt-get -y update
-#sudo apt-get -y upgrade
-
 ####Backup & Sync
 #sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools syncdrive insync insync-caja spideroak
 
@@ -285,10 +278,3 @@ sudo apt-get -y install dockbarx docky plank gnome-do
 #sudo apt-get remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
 #sudo apt-get remove -y gxine libxine1 libxine1-x mplayer2
 #sudo apt-get remove -y libgmtk0 libgmtk0-data libgmlib0
-
-####Upgrading system
-#sudo apt-get -y upgrade
-
-####Cleaning system
-#sudo apt-get -y clean
-#sudo apt-get -y autoremove

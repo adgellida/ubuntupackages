@@ -1,8 +1,6 @@
 #!/bin/bash
 ########installsources
 
-rm -f -r /etc/apt/sources.list.d/*
-
 #### y-ppa-manager - launchpad getkeys
 #sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
 
