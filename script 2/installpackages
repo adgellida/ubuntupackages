@@ -1,8 +1,12 @@
 #!/bin/bash
 ########installpackages
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
+####Repairing system 1
+#sudo apt-get -f install
+
+####Upgrading system
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
 
 ####Backup & Sync
 #sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools xsane syncdrive insync insync-caja spideroak
@@ -180,9 +184,9 @@ sudo apt-get -y upgrade
 ####Social
 #Skype
 #http://www.skype.com/es/download-skype/skype-for-linux/
-wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
-sudo dpkg -i skype*.deb
-rm skype*.deb
+#wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+#sudo dpkg -i skype*.deb
+#rm skype*.deb
 #sudo apt-get -y install choqok hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
 #skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
 
@@ -233,7 +237,7 @@ rm skype*.deb
 
 ##ONLY FOR UBUNTU WITH UNITY SURELY
 
-sudo apt-get -y install ubuntu-tweak unity-tweak-tool classicmenu-indicator
+#sudo apt-get -y install ubuntu-tweak unity-tweak-tool classicmenu-indicator
 #sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
 #sudo apt-get -y install diodon diodon-plugins
 

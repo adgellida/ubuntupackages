@@ -1,6 +1,10 @@
 #!/bin/bash
 ########installpackages
 
+####Repairing system 1
+sudo apt-get -f install
+
+####Upgrading system
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
@@ -90,7 +94,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-
 #
 
 ########uninstallpackages
-sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox teamviewer* skype*
 
 #### ONLY FOR LUBUNTU
 #
@@ -99,6 +103,10 @@ sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufo
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
+####Repairing system 2
+sudo apt-get -f install
+
 ####Cleaning system
 sudo apt-get -y clean
 sudo apt-get -y autoremove
+
