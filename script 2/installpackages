@@ -186,6 +186,13 @@
 ####File Sharing
 #sudo apt-get -y install amule deluge axel
 
+#jdownloader
+#sudo apt-get -y install jdownloader #### recommended to INSTALL v2 BETA
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+su usuario -c ./JD2SilentSetup_x64.sh
+rm JD2SilentSetup_x64.sh
+
 ####News & Books
 #sudo apt-get -y install gpodder calibre newsbeuter rssowl quiterss
 
