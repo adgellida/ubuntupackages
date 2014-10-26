@@ -12,13 +12,13 @@
 
 Right now is in command line interface. Alpha version.
 
-On the next months a graphical interface will be released.
+On the next "years" (due to no time disponibiliy) a graphical interface will be released.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu Mate Remix, Linux Mint Mate, Kubuntu, Lubuntu, Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu Mate, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Designed for 14.04 (it has a few 14.10 lines commented by now).
+Designed for 14.10.
 
 Instructions
 =============================================
@@ -31,6 +31,7 @@ Then do these basics steps:
 1.Go to your selected script folder.
 1.1."script 1" if you want to install some basic packages.
 1.2."script 2" if you want to check more extra packages.
+1.2."script 3" if you want to check the test packages.
 
 2.Execute "installsources".
 
@@ -43,7 +44,7 @@ Remember to add exec permissions to all scripts!
 Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
-* The desktop environment recommended tested right now is to use mate desktop, but there're problems to implement it on ubuntu 14.04. The best option is to wait Ubuntu Mate Remix 14.10 stable version (not use alpha never, never!) or to use Linux Mint Mate 14.04.
+* The desktop environment recommended tested right now is to use mate desktop.
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
  * WebUpd8 Unstable - only for 13.10 or less
