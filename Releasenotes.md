@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.10.26 alpha
+ * repack in to only one script (on script 1)
+
 * v2014.10.18 alpha
  * commented packages
  * reorganized things
