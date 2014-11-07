@@ -63,4 +63,4 @@ Release notes
 
 You can check it here
 
-https://github.com/tonigellida/ubuntupackages/blob/master/Releasenotes.md
+https://github.com/adgellida/ubuntupackages/blob/master/Releasenotes.md
