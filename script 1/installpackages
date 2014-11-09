@@ -1,20 +1,26 @@
 #!/bin/bash
-########installpackages
+######## installpackages - Installs packages & necessary repos
 
-####Repairing system 1/2
+###### Remove all your repos
+rm -f -r /etc/apt/sources.list.d/*
+
+######## Repairing system 1/2
 #sudo apt-get -f install
 
-####Upgrading system
+######## Upgrading system
 sudo apt-get -y update
 sudo apt-get -y upgrade
 
-####Backup & Sync
+######## Backup & Sync
+#### systemback - HIGHLY RECOMMENDED!
+sudo apt-add-repository -y ppa:nemh/systemback
 sudo apt-get -y install systemback
 
-####OS & Utilities
-sudo apt-get -y install ubuntu-restricted-extras synaptic gdebi ppa-purge
+######## OS & Utilities
+sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purge
 
-#cairo-dock #Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+#### cairo-dock - Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+sudo add-apt-repository -y ppa:cairo-dock-team/weekly
 sudo apt-get -y install cairo-dock
 mkdir ~/.config/autostart
 rm ~/.config/autostart/cairo-dock.desktop
@@ -28,69 +34,76 @@ Name=Cairo Dock
 Comment[es_ES]=
 Comment=" >> ~/.config/autostart/cairo-dock.desktop'
 
-########Desktop Environment
+######## Desktop Environment
 #
 
-########Themes
+######## Themes
 #
 
-####Language packages
+######## Language packages
 #
 
-####Security & Privacy
+######## Security & Privacy
 sudo apt-get -y install gufw
 
-####CD/DVD Tools
+######## CD/DVD Tools
 #
 
-####Photos & Graphics
-sudo apt-get -y install gnome-exe-thumbnailer shutter gimp
+######## Photos & Graphics
+sudo apt-get -y install gnome-exe-thumbnailer shutter
 
-####Audio & Music
+#### gimp
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp/
+sudo apt-get -y install gimp
+
+######## Audio & Music
 #
 
-####Videos & Movies
+######## Videos & Movies
 #
 
-####All multimedia content
+######## All multimedia content
 sudo apt-get -y install vlc
 
-####Development
+######## Development
 sudo apt-get -y install openjdk-7-jre
 
-####Web Browsers
+######## Web Browsers
+#### google-chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get -y install google-chrome-stable
 
-####Social
+######## Social
 #
 
-####File Management
+######## File Management
 sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
 
-####File Sharing
+######## File Sharing
 #
 
-####News & Books
+######## News & Books
 #
 
-####Office & Productivity
+######## Office & Productivity
 sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
 
-####Games
+######## Games
 #
 
-####Extra
+######## Extra
 
-########uninstallpackages
+######## uninstallpackages
 sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
-####Upgrading system
+######## Upgrading system
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
-####Repairing system 2/2
+######## Repairing system 2/2
 #sudo apt-get -f install
 
-####Cleaning system
+######## Cleaning system
 sudo apt-get -y clean
 sudo apt-get -y autoremove

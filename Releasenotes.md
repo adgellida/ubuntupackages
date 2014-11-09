@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.11.09 alpha
+ * all in one script
+
 * v2014.10.26 alpha
  * unpack on two as before (on script 1)
 

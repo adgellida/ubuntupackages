@@ -1,10 +1,41 @@
 #!/bin/bash
-########installpackages
+######## installpackages - Installs packages & necessary repos
 
-####Backup & Sync
-#sudo apt-get -y install gparted backintime-gnome sbackup-plugins-fuse grsync timeshift grive-tools syncdrive insync insync-caja spideroak
+######## Backup & Sync
 
-#DirSyncPro
+#sudo apt-get -y install gparted sbackup-plugins-fuse grsync
+
+#### backintime testing
+#sudo add-apt-repository -y ppa:bit-team/stable
+#sudo apt-get -y install backintime-gnome
+
+#### TimeShift
+#sudo add-apt-repository -y ppa:teejee2008/ppa
+#sudo apt-get -y install timeshift
+
+#### SyncDrive - dependencies error
+#sudo add-apt-repository -y ppa:nemh/gambas3
+#sudo add-apt-repository -y ppa:noobslab/pear-apps
+#sudo apt-get -y install syncdrive 
+
+#### Insync
+#wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
+#referal
+#https://www.insynchq.com/r/106908789160316075573
+#sudo apt-get -y install insync insync-caja
+
+#### grive-tools
+#sudo add-apt-repository -y ppa:thefanclub/grive-tools
+#sudo apt-get -y install grive-tools 
+
+#### Spideroak - http://www.rubynginx.com/index.php/2012/10/11/install-spideroak-on-ubuntu-12-04/																												
+####			 https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/																												
+#wget -qO - https://spideroak.com/dist/spideroak-apt-2013.asc | sudo apt-key add -
+#sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
+#sudo apt-get -y install spideroak
+
+#### DirSyncPro
 #mkdir /home/usuario/.DirSyncPro
 #wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip -O/home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
 #unzip /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip -d /home/usuario/.DirSyncPro
@@ -12,91 +43,228 @@
 #chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
 #ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
-####OS & Utilities
+########OS & Utilities
 
-#postinstallerf
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
-#sudo add-apt-repository ppa:webupd8team/y-ppa-manager
-#sudo apt-get update
-#sudo apt-get install yad
-#sudo apt-get install packagekit
-#dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-#dpkg -i postinstallerf_1.5-13_all.deb
+#### VirtualBox - also in official sources
+#wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+#sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+#sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
-#Teamviewer - view error
+#### PlayOnLinux - also in official sources - PRECISE - Download from http://www.playonlinux.com/script_files/PlayOnLinux/4.2.1/PlayOnLinux_4.2.1.deb
+#wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+#sudo wget http://deb.playonlinux.com/playonlinux_precise.list -O /etc/apt/sources.list.d/playonlinux.list
+#sudo apt-get -y install playonlinux
+
+#### Intel Linux Graphics Installer
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
+#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/14.04/main/ trusty main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+
+#### muCommander (unstable)
+#sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
+#sudo apt-get -y install mucommander
+
+#### GNOME3 Extra Apps: Nautilus, etc
+#sudo add-apt-repository -y ppa:gnome3-team/gnome3
+
+#### New apt
+#sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
+
+#### Getdeb
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu trusty-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+
+#### Unstable Synaptic 
+#sudo add-apt-repository -y ppa:webupd8team/unstable
+#sudo apt-get -y install synaptics
+
+#### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+#sudo add-apt-repository -y ppa:xorg-edgers/ppa
+#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
+
+#### X Updates - only recommended for latest graphic cards drivers
+#sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates/
+
+#### Teamviewer - view error
 #http://www.teamviewer.com/es/download/linux.aspx
 #wget http://download.teamviewer.com/download/teamviewer_linux.deb
 #sudo dpkg -i teamviewer_linux.deb
 #rm teamviewer_linux.deb
 
-#sudo apt-get -y install grub-customizer y-ppa-manager
-#sudo apt-get -y install gnome-system-tools gnome-disk-utility
+#### grub-customizer
+#sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
+#sudo apt-get -y install grub-customizer
 
+#### y-ppa-manager - (launchpad getkeys)
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
+#sudo apt-get -y install y-ppa-manager
+ 
+#sudo apt-get -y install gnome-system-tools gnome-disk-utility
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
-#sudo apt-get -y install hplip winusb indicator-netspeed i-nex
+#sudo apt-get -y install indicator-netspeed
+
+#### i-nex
+#sudo add-apt-repository -y ppa:nemh/gambas3
+#sudo add-apt-repository -y ppa:i-nex-development-team/stable
+#sudo apt-get -y install i-nex
+
+#### winusb
+#sudo add-apt-repository -y ppa:colingille/freshlight
+#sudo apt-get -y install winusb
+
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
-#sudo apt-get -y install qtnx unetbootin usb-imagewriter gddrescue testdisk variety baobab gsmartcontrol calendar-indicator
+#sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
+
+#### UNetbootin - May be in official repo
+#sudo add-apt-repository -y ppa:gezakovacs/ppa
+#sudo apt-get -y install unetbootin
+
+#### Ubuplus - PRECISE
+#sudo add-apt-repository -y ppa:luismtc20/ppa
+#sudo apt-get -y install ubuplus
+
+#### variety-peterlevi
+#sudo add-apt-repository -y ppa:peterlevi/ppa
+#sudo apt-get -y install variety 
+
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
-#sudo apt-get -y install alarm-clock gmrun jupiter lm-sensors psensor tmux xbindkeys xbindkeys-config htop pcmanfm
-#sudo apt-get -y install hplip-gui
+#sudo apt-get -y install alarm-clock gmrun lm-sensors tmux xbindkeys xbindkeys-config htop pcmanfm
+
+#### Psensor
+#sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
+#sudo apt-get -y install psensor 
+
+#### jupiter
+#sudo add-apt-repository -y ppa:webupd8team/jupiter
+#sudo apt-get -y install jupiter
+
+#sudo apt-get -y install hplip hplip-gui
+
+#### voice-commands - http://www.noobslab.com/2014/06/control-your-ubuntulinux-mint-system.html
+#sudo add-apt-repository -y ppa:baitsart/voice-commands
 #sudo apt-get -y install voice-commands
 
 ########Desktop Environment
-##gnome-session-fallback
+
+#### gnome-session-fallback
 #sudo apt-get -y install gnome-session-fallback
-##lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+
+#### lxqt - http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+#sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
 #sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
-##cinnamon
+
+#### cinnamon
+#sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly #### nightly for 14.10 & 14.04
+#sudo add-apt-repository -y ppa:lestcape/cinnamon	#### stable for 14.04
+#sudo add-apt-repository -y ppa:tsvetko.tsvetkov/cinnamon	#### stable for 14.04 & 12.04
 #sudo apt-get -y install cinnamon
-##mate (1)
+
+#### MATE Desktop Environment (1)
+#sudo apt-get --yes --force-yes install mate-archive-keyring
+#sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
 #sudo apt-get -y install mate-desktop-environment
-#mate (2) - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
+
+#### MATE Desktop Environment (2) - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
+#echo "deb http://repo.mate-desktop.org/archive/1.8/ubuntu $(lsb_release -cs) #main" | sudo tee /etc/apt/sources.list.d/mate-desktop.list
+#wget -qO - http://mirror1.mate-desktop.org/debian/mate-archive-keyring.gpg | sudo apt-key add -
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
 #sudo apt-get install --no-install-recommends mate-desktop-environment mate-desktop-environment-extra caja-gksu caja-sendto mate-indicator-applet mate-icon-theme-faenza
 #sudo apt-get install mate-notification-daemon mate-media-pulse mate-system-tools mate-system-tools-common mate-system-monitor-common
 #sudo apt-get install ambiance-colors radiance-colors
 #sudo apt-get remove gcalctool gnome-screenshot gedit file-roller eog gnome-system-monitor gnome-system-log baobab gnome-terminal gnome-applets gnome-media gnome-power-manager gnome-screensaver
 #sudo apt-get remove gnome-calculator evince
 
-##e17
+#### e17
+#sudo add-apt-repository -y ppa:hannes-janetzek/enlightenment-svn
 #sudo apt-get -y install e17
 
 ########Themes
+#### ambiance and radiance themes
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
 #sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
 
-##ambiance-grey
+#### ambiance-grey
+#sudo add-apt-repository ppa:noobslab/themes
 #sudo apt-get -y install ambiance-grey
 
-####Language packages
+######## Language packages
 #sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
 #sudo apt-get -y install myspell-en-gb myspell-en-us
 #sudo apt-get -y install aspell aspell-en aspell-es
 
-####Security & Privacy
-#sudo apt-get -y install seahorse tor-browser
+######## Security & Privacy
+#sudo apt-get -y install seahorse
 
-####CD/DVD Tools
+#### tor-browser
+#sudo add-apt-repository -y ppa:webupd8team/tor-browser
+#sudo apt-get -y install tor-browser
+
+######## CD/DVD Tools
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
 
-####Photos & Graphics
-#sudo apt-get -y install shotwell gthumb photo xnviewmp xsane
+######## Photos & Graphics
+#sudo apt-get -y install shotwell
+
+#### Gthumb - only for 13.04 or less
+#sudo add-apt-repository -y ppa:webupd8team/gthumb
+#sudo apt-get -y install gthumb
+
+#### photo
+#sudo add-apt-repository -y ppa:samrog131/ppa
+#sudo apt-get -y install photo 
+
+#sudo apt-get -y install xnviewmp xsane
 #sudo apt-get -y install inkscape scribus gwenview
 
-####Audio & Music
-#sudo apt-get -y install sound-juicer audacity mixxx spotify-client
+######## Audio & Music
+#sudo apt-get -y install sound-juicer mixxx
 
-####Videos & Movies
-#sudo apt-get -y install kazam openshot pitivi cinelerra-cv popcorn-time
-#sudo apt-get -y install kdenlive - CAREFULL, a lot of kde packages
+#### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - TO TEST
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - TO TEST
+#sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+#sudo apt-get -y install spotify-client
+
+#### Audacity
+#sudo add-apt-repository -y ppa:audacity-team/daily
+#sudo apt-get -y install audacity
+
+######## Videos & Movies
+#### Kazam - In official stable repo - only for 13.04 or less
+#sudo add-apt-repository -y ppa:kazam-team/unstable-series
+#sudo apt-get -y install kazam
+
+#### VLC #### not compatible for 14.10
+#sudo add-apt-repository -y ppa:ed10vi86/video
+#sudo apt-get -y install vlc
+
+#### kdenlive - CAREFULL, a lot of kde packages
+#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+#sudo apt-get -y install kdenlive
+
+#### cinelerra
+#sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
+#sudo apt-get -y install cinelerra-cv
+
+#sudo apt-get -y install openshot pitivi
+
+#### Popcorn Time
+#sudo add-apt-repository -y ppa:webupd8team/popcorntime
+#sudo apt-get -y install popcorn-time
 
 ####All multimedia content
+
+#### pepper-flash - only for chromium I think, but now is on official sources
+#sudo add-apt-repository -y ppa:skunk/pepper-flash
 ##pepper-flash-player from official repos, ONLY FOR 14.04 - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
 #sudo apt-get -y install pepperflashplugin-nonfree
 #sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-##pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html
+####pepper-flash-player ancient from ppa for older Ubuntu versions - http://www.webupd8.org/2013/04/install-pepper-flash-player-for.html
 #sudo apt-get -y install pepflashplugin-installer
 #sudo sh -c 'echo ". /usr/lib/pepflashplugin-installer/pepflashplayer.sh" >> /etc/chromium-browser/default'
 
@@ -106,162 +274,298 @@
 #sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
 #sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
-####Development
+######## Development
+
 #sudo apt-get -y install meld
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1 #### to check
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
 #sudo apt-get -y install ubuntu-developer-tools-center udtc android
 #sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
-#sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 #sudo apt-get -y install qt4-demos
 
-#sudo apt-get -y install wine1.7 q4wine winetricks playonlinux
+#### Wine
+#sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+#sudo apt-get -y install wine1.7 q4wine winetricks
 #export WINEPREFIX=prefix32
 #export WINEARCH=win32
 #winecfg
 
 #sudo apt-get -y install zenity gtk3-engines-unico octave-zenity
-#sudo apt-get -y install atom vim sublime-text-3
+#sudo apt-get -y install vim
+
+#### atom
+#sudo add-apt-repository -y ppa:webupd8team/atom
+#sudo apt-get -y install atom
+
+#### sublime-text-3
+#sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+#sudo apt-get -y install sublime-text-3
+
+#### Kicad
+#sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
+#sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily - abandoned
 #sudo apt-get -y install kicad
+
 #sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
 #sudo apt-get -y install mono-complete mono-basic-dbg
 
-#Ubuntu-SDK - With problems
+#### Ubuntu phone sdk - With problems
+#sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
+#sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
+#sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper - DEPRECATED, NEVER USE
+#sudo add-apt-repository -y ppa:ui-toolkit/ppa - DEPRECATED, NEVER USE
 #sudo apt-get -y install ubuntu-sdk qml
 #qtmultimedia5-examples
 #sudo apt-get -y install qtcreator qt5-default - DON'T USE
 
-##openjdk6
+#### openjdk6
 #sudo apt-get -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
 
-##openjdk7
+#### openjdk7
 #sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 
-##openjdk8
+#### openjdk8
 #sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
 
-##Oracle Java6
+#### Java 6 7 8
+#sudo add-apt-repository -y ppa:webupd8team/java
+
+#### Oracle Java6
 #sudo apt-get -y install oracle-java6-installer
 #sudo apt-get install oracle-java6-set-default
 
-##Oracle Java7
+#### Oracle Java7
 #sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-get -y install oracle-java7-installer
 #sudo update-java-alternatives -s java-7-oracle
 #sudo apt-get install oracle-java7-set-default
 
-##Oracle Java8
+#### Oracle Java8
 #sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-get -y install oracle-java8-installer
 #sudo update-java-alternatives -s java-8-oracle
 #sudo apt-get install oracle-java8-set-default
 
-####Web Browsers
+######## Web Browsers
+#### Chromium dev & beta channel - Select
+#sudo add-apt-repository -y ppa:chromium-daily ### to test
+#sudo add-apt-repository -y ppa:saiarcot895/chromium-dev  
+#sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 #sudo apt-get -y install chromium-browser chromium-browser-l10n
 
-####Social
-#Skype
+#### firefox aurora
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
+#sudo apt-get -y install firefox
+
+#### Midori
+#sudo add-apt-repository -y ppa:midori/midori-dev
+#sudo add-apt-repository -y ppa:midori/ppa
+#sudo apt-get -y install midori
+
+######## Social
+##### Skype
 #http://www.skype.com/es/download-skype/skype-for-linux/
 #wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 #sudo dpkg -i skype*.deb
 #rm skype*.deb
-#sudo apt-get -y install choqok hotot xchat pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
+#sudo apt-get -y install choqok xchat
+
+#### Hotot - May be in official repo
+#sudo add-apt-repository -y ppa:jimmyxu/hotot
+#sudo apt-get -y install hotot
+
+#### pidgin
+#sudo add-apt-repository -y ppa:pidgin-developers/ppa
+#sudo apt-get -y install pidgin pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
 #skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
 
-####File Management
+######## File Management
 #sudo apt-get -y install lha #### unable to locate on 14.04
 #sudo apt-get -y install filezilla
-#sudo apt-get -y install spacefm mc
+#sudo apt-get -y install mc
+
+#### SpaceFM - problems
+#sudo add-apt-repository -y ppa:mati75/lubuntu
+#sudo apt-get -y install spacefm
 ##Thunar
 #sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
 #sudo apt-get -y install xfce4-goodies
 
-####File Sharing
+######## File Sharing
 #sudo apt-get -y install amule deluge axel
 
-#jdownloader
+#### jdownloader - Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+#sudo add-apt-repository -y ppa:jd-team/jdownloader/
 #sudo apt-get -y install jdownloader #### recommended to INSTALL v2 BETA
 wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 chmod +rwx JD2SilentSetup_x64.sh
 su usuario -c ./JD2SilentSetup_x64.sh
 rm JD2SilentSetup_x64.sh
 
-####News & Books
-#sudo apt-get -y install gpodder calibre newsbeuter rssowl quiterss
+######## News & Books
+#sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
-####Office & Productivity
+#### quiterss
+#sudo add-apt-repository -y ppa:quiterss/quiterss
+#sudo apt-get -y install quiterss
+
+######## Office & Productivity
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
 
-#Office web apps
+#### LibreOffice #### not compatible for 14.10
+#sudo add-apt-repository -y ppa:libreoffice/ppa
+#sudo apt-get -y install libreoffice
+
+#### Office web apps
 #cd ..
 #sudo dpkg -i ./z.extra/microsoft_online_apps.deb
 
-####Games
+######## Games
+#### Steam Login
+#sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
 #sudo apt-get -y install steam steam-login
-#sudo apt-get -y install 0ad true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
 
-####Extra
+#### 0ad
+#sudo add-apt-repository -y ppa:wfg/0ad
+#sudo apt-get -y install 0ad
 
-##Upgrading system
+#sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
+
+######## Extra
+
+########Upgrading system
 #sudo apt-get -y upgrade
 
-##Wine example
+#### Wine example
 #wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
 #wine LineInst.exe
 
-##Repairing jdownloader v1 if is necessary
+#### Repairing jdownloader v1 if is necessary
 #sudo update-alternatives --config java
 
-#### TO INSTALL MANUALLY
+######## TO INSTALL MANUALLY
 
-#http://www.opera.com/download/guide/?os=linux
+#### http://www.opera.com/download/guide/?os=linux
 
-#http://labs.sialan.org/projects/sigram
+#### http://labs.sialan.org/projects/sigram
 
-#http://www.time4popcorn.eu/
+#### http://www.time4popcorn.eu/
 
-##ONLY FOR UBUNTU WITH UNITY SURELY
+######## ONLY FOR UBUNTU WITH UNITY SURELY
 
-#sudo apt-get -y install ubuntu-tweak unity-tweak-tool classicmenu-indicator
-#sudo apt-get -y install appgrid unsettings indicator-multiload indicator-cpufreq my-weather-indicator 
+#### Ubuntu Tweak
+#sudo add-apt-repository -y ppa:tualatrix/ppa (NEW)
+#sudo add-apt-repository -y ppa:freyja-dev/tualatrix (ANCIENT)
+#sudo apt-get -y install ubuntu-tweak
+
+#### unity-tweak-tool
+#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
+#sudo apt-get -y install unity-tweak-tool
+
+#### classicmenu-indicator & Unsettings
+#sudo add-apt-repository -y ppa:diesch/testing
+#sudo apt-get -y install classicmenu-indicator unsettings 
+
+#### appgrid
+#sudo add-apt-repository -y ppa:appgrid/stable
+#sudo apt-get -y install appgrid
+
+#### CPU Frequency Scaling
+#sudo add-apt-repository -y ppa:artfwo/ppa
+#sudo apt-get -y install indicator-multiload indicator-cpufreq
+
+#### my-weather-indicator
+#sudo add-apt-repository -y ppa:atareao/atareao
+#sudo apt-get -y install my-weather-indicator 
+ 
 #sudo apt-get -y install diodon diodon-plugins
 
-#### ONLY FOR KUBUNTU
+######## ONLY FOR KUBUNTU
 
 #sudo apt-get -y install muon
 
-########installpackagesproblematic
+######## installpackagesproblematic
 
-####General packages
-#sudo apt-get -y install unity-reboot
+######## General packages
+
+#### Audacious, unity-reboot, etc
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-get -y install unity-reboot audacious
+
 #sudo apt-get -y install acroread-common acroread acroread-fonts
-#sudo apt-get -y install aptoncd multisystem remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
+#sudo apt-get -y install aptoncd
+
+#### remastersys - PRECISE but works on RARING - systemback is preferible
+#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+#sudo apt-get -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
+
+#### multisystem
+#wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
+#sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
+#sudo apt-get -y install multisystem
+
 #sudo apt-get -y install blender gadmin-rsync mate-core
 #sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
 #sudo apt-get -y install eog eog-plugins
 
-####Compiz + Cairo-dock + Emerald
+#### Compiz + Cairo-dock + Emerald
 sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
 sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
-sudo apt-get -y install dockbarx docky plank gnome-do
-#sudo apt-get -y install avant-window-navigator - not for 14.04
 
+#### DockBarX
+#sudo add-apt-repository -y ppa:dockbar-main/ppa
+#sudo apt-get -y install dockbarx
+ 
+#### Docky Development PPA & stable
+#sudo add-apt-repository -y ppa:docky-core/ppa
+#sudo add-apt-repository -y ppa:docky-core/stable
+#sudo apt-get -y install docky
+ 
+#### Plank Development PPA
+#sudo add-apt-repository -y ppa:ricotz/docky
+#sudo apt-get -y install plank
+
+#### Gnome Do
+#sudo add-apt-repository -y ppa:do-testers/ppa
+#sudo apt-get -y install gnome-do
+
+#### avant window navigator
+#sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
+#sudo apt-get -y install avant-window-navigator
+
+#### emerald
+#sudo add-apt-repository -y ppa:brainpower/testing/
 #sudo apt-get -y install emerald 
+
 #sudo apt-get -y install metacity
 
-####Not free codecs
+#### cairo-dock dev & stable
+#sudo add-apt-repository -y ppa:cairo-dock-team/weekly
+#sudo add-apt-repository -y ppa:cairo-dock-team/ppa
+#sudo apt-get -y install cairo-dock
+
+######## Not free codecs
 #sudo apt-get -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
 
-####ERROR
+#### ualinux - PRECISE
+#wget -q -O- http://archive.ualinux.com/ualinux.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://archive.ualinux.com/ubuntu precise main" >> /etc/apt/sources.list.d/ualinux.list'
+
+######## ERROR
 #sudo apt-get -y install quickly quickly-widgets
 #sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
 
-####PROBLEMS
+######## PROBLEMS
 #sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
 #sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
 #sudo apt-get -y install wally wallch
 
-####DISCONTINUED
+######## DISCONTINUED
+#### Medibuntu - DISCONTINUED
+#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
+#sudo apt-get update
+#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
 ########uninstallpackages
@@ -269,11 +573,10 @@ sudo apt-get -y install dockbarx docky plank gnome-do
 #sudo apt-get remove -y webbrowser-app
 #sudo apt-get remove -y unity-lens* unity-scope*
 
-####Possibly needless programs
+######## Possibly needless programs
 #sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
 
-#### ONLY FOR LUBUNTU
-
+######## ONLY FOR LUBUNTU
 #sudo apt-get remove -y chromium-browser firefox
 #sudo apt-get remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
 #sudo apt-get remove -y gxine libxine1 libxine1-x mplayer2
