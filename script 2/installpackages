@@ -93,10 +93,6 @@
 #sudo dpkg -i teamviewer_linux.deb
 #rm teamviewer_linux.deb
 
-#### grub-customizer
-#sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
-#sudo apt-get -y install grub-customizer
-
 #### y-ppa-manager - (launchpad getkeys)
 #sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
 #sudo apt-get -y install y-ppa-manager
