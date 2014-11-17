@@ -1,3 +1,5 @@
+-Install System Updates
+
 -Go to control center
 
 -Select combinations keys
@@ -11,11 +13,11 @@
 
 -Update kernel - no
 
--Install propietary graphic driver - yes - Use script to repair plymouth.
+-Install propietary graphic driver - no - Use script to repair plymouth.
 
 -Printer - Install all drivers, reboot, connect printer, go to printers, select as default and it will works!
 
--Adblockplus chrome
+-uBlock chrome
 
 -gufw
 
@@ -23,4 +25,6 @@
 
 -Uninstall firefox - not necessary if you run script
 
+-Run script
 
+-Configure SSD if exists: TRIM
