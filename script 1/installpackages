@@ -2,7 +2,7 @@
 ######## installpackages - Installs packages & necessary repos
 
 ###### Remove all your repos
-rm -f -r /etc/apt/sources.list.d/*
+sudo rm -f -r /etc/apt/sources.list.d/*
 
 ######## Repairing system 1/2
 #sudo apt-get -f install
