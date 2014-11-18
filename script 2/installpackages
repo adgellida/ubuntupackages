@@ -45,6 +45,21 @@
 
 ########OS & Utilities
 
+#### cairo-dock - Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+#sudo add-apt-repository -y ppa:cairo-dock-team/weekly
+#sudo apt-get -y install cairo-dock
+#mkdir ~/.config/autostart
+#rm ~/.config/autostart/cairo-dock.desktop
+#sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Exec=cairo-dock -W
+#Hidden=false
+#X-MATE-Autostart-enabled=true
+#Name[es_ES]=Cairo Dock
+#Name=Cairo Dock
+#Comment[es_ES]=
+#Comment=" >> ~/.config/autostart/cairo-dock.desktop'
+
 #### VirtualBox - also in official sources
 #wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 #sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
@@ -137,7 +152,7 @@
 #sudo add-apt-repository -y ppa:webupd8team/jupiter
 #sudo apt-get -y install jupiter
 
-#sudo apt-get -y install hplip hplip-gui
+#sudo apt-get -y install peazip hplip hplip-gui
 
 #### voice-commands - http://www.noobslab.com/2014/06/control-your-ubuntulinux-mint-system.html
 #sudo add-apt-repository -y ppa:baitsart/voice-commands

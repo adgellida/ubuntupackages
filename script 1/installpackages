@@ -23,21 +23,6 @@ sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purg
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
 sudo apt-get -y install grub-customizer
 
-#### cairo-dock - Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
-sudo add-apt-repository -y ppa:cairo-dock-team/weekly
-sudo apt-get -y install cairo-dock
-#mkdir ~/.config/autostart
-#rm ~/.config/autostart/cairo-dock.desktop
-#sh -c 'echo "[Desktop Entry]
-#Type=Application
-#Exec=cairo-dock -W
-#Hidden=false
-#X-MATE-Autostart-enabled=true
-#Name[es_ES]=Cairo Dock
-#Name=Cairo Dock
-#Comment[es_ES]=
-#Comment=" >> ~/.config/autostart/cairo-dock.desktop'
-
 ######## Desktop Environment
 #
 

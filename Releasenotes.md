@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.11.18 alpha
+ * minor changes
+
 * v2014.11.09 alpha
  * all in one script
 
