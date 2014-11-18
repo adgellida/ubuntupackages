@@ -7,10 +7,12 @@
 
 #### backintime testing
 #sudo add-apt-repository -y ppa:bit-team/stable
+#sudo apt-get -y update
 #sudo apt-get -y install backintime-gnome
 
 #### TimeShift
 #sudo add-apt-repository -y ppa:teejee2008/ppa
+#sudo apt-get -y update
 #sudo apt-get -y install timeshift
 
 #### SyncDrive - dependencies error
