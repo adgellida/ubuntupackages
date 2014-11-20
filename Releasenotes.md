@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.11.20 alpha
+ * added more ppas
+
 * v2014.11.18 alpha
  * minor changes
 

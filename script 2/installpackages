@@ -194,6 +194,12 @@
 #sudo apt-get -y update
 #sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
 
+#### budgie-desktop
+#sudo add-apt-repository -y ppa:sukso96100/budgie-desktop
+#sudo add-apt-repository -y ppa:evolve-os/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install budgie-desktop
+
 #### cinnamon
 #sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly #### nightly for 14.10 & 14.04
 #sudo add-apt-repository -y ppa:lestcape/cinnamon	#### stable for 14.04
@@ -224,6 +230,7 @@
 #sudo apt-get -y install e17
 
 ########Themes
+
 #### ambiance and radiance themes
 #sudo add-apt-repository -y ppa:ravefinity-project/ppa
 #sudo apt-get -y update
@@ -248,9 +255,11 @@
 #sudo apt-get -y install tor-browser
 
 ######## CD/DVD Tools
+
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
 
 ######## Photos & Graphics
+
 #sudo apt-get -y install shotwell
 
 #### Gthumb - only for 13.04 or less
@@ -282,6 +291,7 @@
 #sudo apt-get -y install audacity
 
 ######## Videos & Movies
+
 #### Kazam - In official stable repo - only for 13.04 or less
 #sudo add-apt-repository -y ppa:kazam-team/unstable-series
 #sudo apt-get -y update
@@ -408,6 +418,7 @@
 #sudo apt-get install oracle-java8-set-default
 
 ######## Web Browsers
+
 #### Chromium dev & beta channel - Select
 #sudo add-apt-repository -y ppa:chromium-daily ### to test
 #sudo add-apt-repository -y ppa:saiarcot895/chromium-dev  
@@ -427,6 +438,7 @@
 #sudo apt-get -y install midori
 
 ######## Social
+
 ##### Skype
 #http://www.skype.com/es/download-skype/skype-for-linux/
 #wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
@@ -446,6 +458,7 @@
 #skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
 
 ######## File Management
+
 #sudo apt-get -y install lha #### unable to locate on 14.04
 #sudo apt-get -y install filezilla
 #sudo apt-get -y install mc
@@ -459,6 +472,7 @@
 #sudo apt-get -y install xfce4-goodies
 
 ######## File Sharing
+
 #sudo apt-get -y install amule deluge axel
 
 #### jdownloader - Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
@@ -470,6 +484,7 @@ su usuario -c ./JD2SilentSetup_x64.sh
 rm JD2SilentSetup_x64.sh
 
 ######## News & Books
+
 #sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
 #### quiterss
@@ -478,6 +493,7 @@ rm JD2SilentSetup_x64.sh
 #sudo apt-get -y install quiterss
 
 ######## Office & Productivity
+
 #sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
 
 #### LibreOffice #### not compatible for 14.10
@@ -490,6 +506,7 @@ rm JD2SilentSetup_x64.sh
 #sudo dpkg -i ./z.extra/microsoft_online_apps.deb
 
 ######## Games
+
 #### Steam Login
 #sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
 #sudo apt-get -y update
@@ -504,7 +521,7 @@ rm JD2SilentSetup_x64.sh
 
 ######## Extra
 
-########Upgrading system
+####Upgrading system
 #sudo apt-get -y upgrade
 
 #### Wine example
@@ -646,11 +663,11 @@ sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins 
 ######## DISCONTINUED
 #### Medibuntu - DISCONTINUED
 #sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
-#sudo apt-get update
+#sudo apt-get -y update
 #sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
 #sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
 
-########uninstallpackages
+####uninstallpackages
 #### ONLY FOR UBUNTU
 #sudo apt-get remove -y webbrowser-app
 #sudo apt-get remove -y unity-lens* unity-scope*
