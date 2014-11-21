@@ -3,6 +3,7 @@ Release notes
 * v2014.11.21 alpha
  * added kdeconnect
  * added notepadqq
+ * added mtp support
 
 * v2014.11.20 alpha
  * added more ppas
