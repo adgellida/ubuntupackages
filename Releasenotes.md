@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.11.21 alpha
+ * added kdeconnect
+
 * v2014.11.20 alpha
  * added more ppas
 
