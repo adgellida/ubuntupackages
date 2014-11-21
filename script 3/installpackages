@@ -94,3 +94,8 @@
 sudo add-apt-repository -y ppa:vikoadi/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install indicator-kdeconnect kdeconnect
+
+##notepadqq
+sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+#sudo apt-get -y update
+#sudo apt-get -y install notepadqq
