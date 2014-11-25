@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.11.26 alpha
+ * added vibrancy-colors
+
 * v2014.11.21 alpha
  * added kdeconnect
  * added notepadqq

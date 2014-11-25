@@ -237,9 +237,14 @@
 #sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
 
 #### ambiance-grey
-#sudo add-apt-repository ppa:noobslab/themes
+#sudo add-apt-repository -y ppa:noobslab/themes
 #sudo apt-get -y update
 #sudo apt-get -y install ambiance-grey
+
+#### vibrancy-colors icon theme
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
+#sudo apt-get -y update
+#sudo apt-get install vibrancy-colors
 
 ######## Language packages
 #sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
