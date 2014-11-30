@@ -22,7 +22,6 @@ Designed for 14.10.
 
 Instructions
 =============================================
-
 Do a backup of your "/etc/apt/sources.list.d" folder. Coming soon automatic...
 Read the code and do your modifications.
 
@@ -59,7 +58,6 @@ TO DO
 
 Release notes
 =============================================
-
 You can check it here
 
 https://github.com/adgellida/ubuntupackages/blob/master/Releasenotes.md
