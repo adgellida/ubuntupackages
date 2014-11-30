@@ -29,6 +29,7 @@ Read the code and do your modifications.
 Then do these basics steps:
 
 Go to your selected script folder.
+
 * "script 1" if you want to install some basic packages.
 * "script 2" if you want to check more extra packages.
 * "script 3" if you want to check the test packages.
