@@ -28,15 +28,15 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-1.Go to your selected script folder.
+1. Go to your selected script folder.
 
 "script 1" if you want to install some basic packages.
 "script 2" if you want to check more extra packages.
 "script 3" if you want to check the test packages.
 
-2.Execute "installsources".
-3.Execute "installpackages".
-4.(Optional) Execute "configurations", "mateconfiguration", see "manual steps for mate", etc.
+1. Execute "installsources".
+1. Execute "installpackages".
+1. (Optional) Execute "configurations", "mateconfiguration", see "manual steps for mate", etc.
 
 Remember to add exec permissions to all scripts!
 
