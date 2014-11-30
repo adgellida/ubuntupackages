@@ -29,9 +29,9 @@ Read the code and do your modifications.
 Then do these basics steps:
 
 1.Go to your selected script folder.
-1.1."script 1" if you want to install some basic packages.
-1.2."script 2" if you want to check more extra packages.
-1.2."script 3" if you want to check the test packages.
+ 1.1."script 1" if you want to install some basic packages.
+ 1.2."script 2" if you want to check more extra packages.
+ 1.2."script 3" if you want to check the test packages.
 
 2.Execute "installsources".
 
