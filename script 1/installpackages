@@ -2,14 +2,14 @@
 ######## installpackages - Installs packages & necessary repos
 
 #### Remove all your repos
-sudo rm -f -r /etc/apt/sources.list.d/*
+#sudo rm -f -r /etc/apt/sources.list.d/*
 
 #### Repairing system 1/2
 #sudo apt-get -f install
 
 #### Upgrading system
-sudo apt-get -y update
-sudo apt-get -y upgrade
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
 
 ######## Backup & Sync
 
@@ -21,11 +21,6 @@ sudo apt-get -y install systemback
 ######## OS & Utilities
 
 sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purge
-
-#### grub-customizer
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
-sudo apt-get -y update
-sudo apt-get -y install grub-customizer
 
 ######## Desktop Environment
 
@@ -71,15 +66,17 @@ sudo apt-get -y install vlc
 
 ######## Development
 
-sudo apt-get -y install openjdk-7-jre
+#sudo apt-get -y install openjdk-7-jre
 
 ######## Web Browsers
 
-#### google-chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get -y update
-sudo apt-get -y install google-chrome-stable
+#sudo apt-get -y install chromium-browser chromium-browser-l10n
+
+#### pepper-flash
+##pepper-flash-player from official repos - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
+sudo apt-get -y install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
+#sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
 ######## Social
 
@@ -99,7 +96,7 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 
 ######## Office & Productivity
 
-sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es ttf-mscorefonts-installer
+#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ######## Games
 

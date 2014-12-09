@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.12.09 alpha
+ * minor changes
+
 * v2014.11.26 alpha
  * added vibrancy-colors
 

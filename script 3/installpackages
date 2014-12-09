@@ -7,7 +7,7 @@
 
 ######## OS & Utilities
 
-####conky-manager - http://bitelia.com/2014/09/administrar-conky-con-conky-manager
+#### conky-manager - http://bitelia.com/2014/09/administrar-conky-con-conky-manager
 #sudo add-apt-repository -y ppa:teejee2008/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install conky-manager
@@ -50,7 +50,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y install clicompanion
 
-#### indicator-usb
+#### indicator-usb - tested and fail!
 #sudo add-apt-repository -y ppa:yunnxx/gnome3
 #sudo apt-get -y update
 #sudo apt-get -y install indicator-usb
@@ -70,37 +70,37 @@
 #sudo add-apt-repository -y ppa:costales/folder-color
 #sudo apt-get -y update
 
-##nautilus
+#### nautilus
 #sudo apt-get -y install folder-color
 #nautilus -q
 
-##nemo
+#### nemo
 #sudo apt-get -y install folder-color-nemo
 #nemo -q
 
-##caja
+#### caja
 #sudo apt-get -y install folder-color-caja
 #caja -q
 #fix if proceed
 #sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
 
-##power-installer
+#### power-installer
 #sudo add-apt-repository -y ppa:elementary-os/daily
 #sudo add-apt-repository -y ppa:donadigo/power-installer
 #sudo apt-get -y update
 #sudo apt-get -y install power-installer
 
-##kdeconnect
+#### kdeconnect
 #sudo add-apt-repository -y ppa:vikoadi/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install indicator-kdeconnect kdeconnect
 
-##notepadqq
+#### notepadqq
 #sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 #sudo apt-get -y update
 #sudo apt-get -y install notepadqq
 
-##mtp support
+#### mtp support
 #sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
 #sudo apt-get -y update & dist-upgrade
 #sudo apt-get -y install mtp-tools mtpfs
