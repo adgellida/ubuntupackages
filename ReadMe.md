@@ -1,14 +1,7 @@
 ####ubuntupackages
 =============================================  
-### Script to install all your packages and do a term any minor configuration
 
-![](http://i.imgur.com/Pqs47my.png)
-
-![](http://i.imgur.com/ElTSatO.jpg)
-
-Right now is in command line interface. Alpha version.
-
-On the next "years" (due to no time disponibiliy) a graphical interface will be released.
+![](http://www.omgubuntu.co.uk/wp-content/uploads/2014/10/vervet.jpg)
 
 Compatible with any Debian based system:
 
@@ -55,6 +48,4 @@ TO DO
 
 Release notes
 =============================================
-You can check it here
-
-https://github.com/adgellida/ubuntupackages/blob/master/Releasenotes.md
+You can check it [here](https://github.com/adgellida/ubuntupackages/blob/master/Releasenotes.md)
