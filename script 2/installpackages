@@ -342,6 +342,10 @@
 #sudo apt-get -y install meld
 #sudo apt-get -y install ia32-libs libcurl3 libc6-i386 lib32asound2 lib32z1 #### to check
 #sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
+
+#### git extra
+#sudo apt-get -y install git-cola
+
 #sudo apt-get -y install ubuntu-developer-tools-center udtc android
 #sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
 #sudo apt-get -y install qt4-demos
