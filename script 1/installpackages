@@ -20,7 +20,7 @@ sudo apt-get -y install systemback
 
 ######## OS & Utilities
 
-sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purge
+sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purge gnome-disk-utility
 
 ######## Desktop Environment
 

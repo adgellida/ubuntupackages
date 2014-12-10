@@ -135,7 +135,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y install y-ppa-manager
  
-#sudo apt-get -y install gnome-system-tools gnome-disk-utility
+#sudo apt-get -y install gnome-system-tools
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install indicator-netspeed
 
