@@ -70,7 +70,7 @@ sudo apt-get -y install vlc
 
 ######## Web Browsers
 
-#sudo apt-get -y install chromium-browser chromium-browser-l10n
+sudo apt-get -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash
 ##pepper-flash-player from official repos - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
@@ -109,7 +109,7 @@ sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufo
 
 #### Upgrading system
 sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+#sudo apt-get -y dist-upgrade
 
 #### Repairing system 2/2
 #sudo apt-get -f install
