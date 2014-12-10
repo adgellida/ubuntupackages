@@ -28,6 +28,7 @@ Go to your selected script folder.
 * "script 1" if you want to install some basic packages.
 * "script 2" if you want to check more extra packages.
 * "script 3" if you want to check the test packages.
+* "script 4" if you want to check my extra installed packages.
 
 1. Execute "installsources".
 1. Execute "installpackages".
