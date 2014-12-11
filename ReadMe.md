@@ -1,5 +1,5 @@
 ####ubuntupackages
-=============================================  
+=============================================
 
 ![](http://www.omgubuntu.co.uk/wp-content/uploads/2014/10/vervet.jpg)
 
@@ -23,7 +23,6 @@ Go to your selected script folder.
 * "script 3" if you want to check the test packages.
 * "script 4" if you want to check my extra installed packages.
 
-1. Execute "installsources".
 1. Execute "installpackages".
 1. (Optional) Execute "configurations", "mateconfiguration", see "manual steps for mate", etc.
 
