@@ -85,7 +85,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y install playonlinux
 
-#sudo apt-get -y install peazip
+#sudo apt-get -y install peazip inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
 
 #### Intel Linux Graphics Installer
 #wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
