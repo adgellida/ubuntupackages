@@ -1,5 +1,5 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos
+######## installpackages - Installs packages & necessary repos - script 2
 
 ######## Backup & Sync
 
@@ -85,8 +85,6 @@
 #sudo apt-get -y update
 #sudo apt-get -y install playonlinux
 
-#sudo apt-get -y install peazip inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
-
 #### Intel Linux Graphics Installer
 #wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
 #wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
@@ -147,10 +145,6 @@
 #sudo apt-get -y update
 #sudo apt-get -y install winusb
 
-#sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
-#sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
-#sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
-
 #### UNetbootin - May be in official repo
 #sudo add-apt-repository -y ppa:gezakovacs/ppa
 #sudo apt-get -y update
@@ -178,6 +172,12 @@
 #sudo add-apt-repository -y ppa:baitsart/voice-commands
 #sudo apt-get -y update
 #sudo apt-get -y install voice-commands
+
+#### Various
+#sudo apt-get -y install peazip launchy inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
+#sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
+#sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
+#sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
 
 ########Desktop Environment
 
@@ -256,11 +256,10 @@
 
 ######## CD/DVD Tools
 
+#### Various
 #sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
 
 ######## Photos & Graphics
-
-#sudo apt-get -y install shotwell
 
 #### Gthumb - only for 13.04 or less
 #sudo add-apt-repository -y ppa:webupd8team/gthumb
@@ -272,12 +271,12 @@
 #sudo apt-get -y update
 #sudo apt-get -y install photo 
 
+#### Various
+#sudo apt-get -y install shotwell
 #sudo apt-get -y install xnviewmp xsane
 #sudo apt-get -y install inkscape scribus gwenview
 
 ######## Audio & Music
-
-#sudo apt-get -y install sound-juicer mixxx
 
 #### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - TO TEST
@@ -290,6 +289,9 @@
 #sudo add-apt-repository -y ppa:audacity-team/daily
 #sudo apt-get -y update
 #sudo apt-get -y install audacity
+
+#### Various
+#sudo apt-get -y install sound-juicer mixxx
 
 ######## Videos & Movies
 
@@ -313,12 +315,13 @@
 #sudo apt-get -y update
 #sudo apt-get -y install cinelerra-cv
 
-#sudo apt-get -y install openshot pitivi
-
 #### Popcorn Time
 #sudo add-apt-repository -y ppa:webupd8team/popcorntime
 #sudo apt-get -y update
 #sudo apt-get -y install popcorn-time
+
+#### Various
+#sudo apt-get -y install openshot pitivi
 
 ####All multimedia content
 
@@ -362,9 +365,6 @@
 #sudo apt-get -y update
 #sudo apt-get -y install sublime-text-3
 
-#sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
-#sudo apt-get -y install mono-complete mono-basic-dbg
-
 #### Ubuntu phone sdk - With problems
 #sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
 #sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
@@ -403,6 +403,10 @@
 #sudo apt-get -y install oracle-java8-installer
 #sudo update-java-alternatives -s java-8-oracle
 #sudo apt-get install oracle-java8-set-default
+
+#### Various
+#sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
+#sudo apt-get -y install mono-complete mono-basic-dbg
 
 ######## Web Browsers
 
@@ -452,10 +456,6 @@
 
 ######## File Management
 
-#sudo apt-get -y install lha #### unable to locate on 14.04
-#sudo apt-get -y install filezilla
-#sudo apt-get -y install mc
-
 #### SpaceFM - problems
 #sudo add-apt-repository -y ppa:mati75/lubuntu
 #sudo apt-get -y update
@@ -465,9 +465,10 @@
 #sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
 #sudo apt-get -y install xfce4-goodies
 
-######## File Sharing
+#### Various
+#sudo apt-get -y install lhasa filezilla mc
 
-#sudo apt-get -y install amule deluge axel
+######## File Sharing
 
 #### jdownloader - Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 #sudo add-apt-repository -y ppa:jd-team/jdownloader/
@@ -477,18 +478,20 @@
 #su usuario -c ./JD2SilentSetup_x64.sh
 #rm JD2SilentSetup_x64.sh
 
-######## News & Books
+#### Various
+#sudo apt-get -y install amule deluge axel
 
-#sudo apt-get -y install gpodder calibre newsbeuter rssowl
+######## News & Books
 
 #### quiterss
 #sudo add-apt-repository -y ppa:quiterss/quiterss
 #sudo apt-get -y update
 #sudo apt-get -y install quiterss
 
-######## Office & Productivity
+#### Various
+#sudo apt-get -y install gpodder calibre newsbeuter rssowl
 
-#sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
+######## Office & Productivity
 
 #### LibreOffice #### not compatible for 14.10
 #sudo add-apt-repository -y ppa:libreoffice/ppa
@@ -498,6 +501,9 @@
 #### Office web apps
 #cd ..
 #sudo dpkg -i ./z.extra/microsoft_online_apps.deb
+
+#### Various
+#sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
 
 ######## Games
 
@@ -511,6 +517,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y install 0ad
 
+#### Various
 #sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
 
 ######## Extra
@@ -565,11 +572,13 @@
 #sudo add-apt-repository -y ppa:atareao/atareao
 #sudo apt-get -y update
 #sudo apt-get -y install my-weather-indicator 
- 
+
+#### Various
 #sudo apt-get -y install diodon diodon-plugins
 
 ######## ONLY FOR KUBUNTU
 
+#### Various
 #sudo apt-get -y install muon
 
 ######## installpackagesproblematic
@@ -580,9 +589,6 @@
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
 #sudo apt-get -y update
 #sudo apt-get -y install unity-reboot audacious
-
-#sudo apt-get -y install acroread-common acroread acroread-fonts
-#sudo apt-get -y install aptoncd
 
 #### remastersys - PRECISE but works on RARING - systemback is preferible
 #wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
@@ -595,10 +601,6 @@
 #sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
 #sudo apt-get -y update
 #sudo apt-get -y install multisystem
-
-#sudo apt-get -y install blender gadmin-rsync mate-core
-#sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
-#sudo apt-get -y install eog eog-plugins
 
 #### Compiz + Cairo-dock + Emerald
 #sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
@@ -635,8 +637,6 @@
 #sudo apt-get -y update
 #sudo apt-get -y install emerald 
 
-#sudo apt-get -y install metacity
-
 ######## Not free codecs
 #sudo apt-get -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
 
@@ -645,26 +645,24 @@
 #sudo sh -c 'echo "deb http://archive.ualinux.com/ubuntu precise main" >> /etc/apt/sources.list.d/ualinux.list'
 #sudo apt-get -y update
 
-######## ERROR
+#### Various
+#sudo apt-get -y install acroread-common acroread acroread-fonts
+#sudo apt-get -y install aptoncd
+#sudo apt-get -y install blender gadmin-rsync mate-core
+#sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
+#sudo apt-get -y install eog eog-plugins
+#sudo apt-get -y install metacity
+
+######## ERROR - PROBLEMS
 #sudo apt-get -y install quickly quickly-widgets
 #sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
-
-######## PROBLEMS
 #sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
 #sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
 #sudo apt-get -y install wally wallch
 
-######## DISCONTINUED
-#### Medibuntu - DISCONTINUED
-#sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list
-#sudo apt-get -y update
-#sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring
-#sudo apt-get -y install app-install-data-medibuntu apport-hooks-medibuntu	#### DISCONTINUED
-
 ####uninstallpackages
 #### ONLY FOR UBUNTU
-#sudo apt-get remove -y webbrowser-app
-#sudo apt-get remove -y unity-lens* unity-scope*
+#sudo apt-get remove -y webbrowser-app unity-lens* unity-scope*
 
 ######## Possibly needless programs
 #sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin

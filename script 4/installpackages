@@ -1,5 +1,5 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos
+######## installpackages - Installs packages & necessary repos - script 4
 
 ######## Backup & Sync
 
@@ -37,6 +37,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y install variety
 
+#### HP
 #sudo apt-get -y install hplip hplip-gui
 
 ######## Desktop Environment
@@ -86,10 +87,6 @@
 #sudo apt-get -y update
 #sudo apt-get -y install notepadqq
 
-#sudo apt-get -y install meld
-
-#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
-
 #### git extra
 #sudo apt-get -y install git-cola
 
@@ -98,6 +95,10 @@
 #sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily - abandoned
 #sudo apt-get -y update
 #sudo apt-get -y install kicad
+
+#### Various
+#sudo apt-get -y install meld
+#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
 
 ######## Web Browsers
 

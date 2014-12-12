@@ -1,11 +1,5 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos
-
-######## Backup & Sync
-
-#
-
-######## OS & Utilities
+######## installpackages - Installs packages & necessary repos - script 3
 
 #### conky-manager - http://bitelia.com/2014/09/administrar-conky-con-conky-manager
 #sudo add-apt-repository -y ppa:teejee2008/ppa

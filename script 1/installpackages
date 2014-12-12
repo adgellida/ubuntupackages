@@ -1,5 +1,5 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos
+######## installpackages - Installs packages & necessary repos - script 1
 
 #### Remove all your repos
 #sudo rm -f -r /etc/apt/sources.list.d/*
@@ -20,6 +20,7 @@ sudo apt-get -y install systemback
 
 ######## OS & Utilities
 
+#### Various
 sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purge gnome-disk-utility
 
 ######## Desktop Environment
@@ -36,6 +37,7 @@ sudo apt-get -y install ubuntu-restricted-extras synaptic preload gdebi ppa-purg
 
 ######## Security & Privacy
 
+#### Various
 sudo apt-get -y install gufw
 
 ######## CD/DVD Tools
@@ -44,10 +46,10 @@ sudo apt-get -y install gufw
 
 ######## Photos & Graphics
 
+#### Various
 sudo apt-get -y install gnome-exe-thumbnailer shutter
 
 #### gimp
-
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp/
 sudo apt-get -y update
 sudo apt-get -y install gimp
@@ -62,6 +64,7 @@ sudo apt-get -y install gimp
 
 ######## All multimedia content
 
+#### Various
 sudo apt-get -y install vlc
 
 ######## Development
@@ -70,6 +73,7 @@ sudo apt-get -y install vlc
 
 ######## Web Browsers
 
+#### chromium
 sudo apt-get -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash
@@ -84,6 +88,7 @@ sudo update-pepperflashplugin-nonfree --install
 
 ######## File Management
 
+#### Various
 sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
 
 ######## File Sharing
