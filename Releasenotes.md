@@ -1,5 +1,9 @@
 Release notes
 =============================================
+* v2014.12.15 alpha
+ * added virtual pets
+ * minor changes
+
 * v2014.12.12 alpha
  * minor changes
 

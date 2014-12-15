@@ -88,3 +88,18 @@
 #sudo apt-get -y install alien dpkg-dev debhelper build-essential
 #sudo alien packagename.rpm
 #sudo dpkg -i packagename.deb
+
+#### sigram		#MATE PROBLEM
+#sudo add-apt-repository -y ppa:sialan/desktop
+#sudo apt-get -y update
+#sudo apt-get -y install sigram
+
+#### touchpad-indicator
+#sudo add-apt-repository -y ppa:atareao/atareao
+#sudo apt-get -y update
+#sudo apt-get -y install touchpad-indicator
+
+#### qllauncher - http://www.webupd8.org/2014/12/qllauncher-quake-live-launcher-for-linux.html
+#sudo add-apt-repository -y ppa:broken/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install qllauncher

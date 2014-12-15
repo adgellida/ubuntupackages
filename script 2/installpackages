@@ -126,9 +126,9 @@
 
 #### Teamviewer - view error
 #http://www.teamviewer.com/es/download/linux.aspx
-#wget http://download.teamviewer.com/download/teamviewer_linux.deb
-#sudo dpkg -i teamviewer_linux.deb
-#rm teamviewer_linux.deb
+#wget http://download.teamviewer.com/download/teamviewer_i386.deb
+#sudo dpkg -i teamviewer_i386.deb
+#rm teamviewer_i386.deb
  
 #sudo apt-get -y install gnome-system-tools
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
@@ -230,6 +230,7 @@
 #sudo add-apt-repository -y ppa:ravefinity-project/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
+#sudo apt-get -y install ambiance-blackout-flat-colors
 
 #### ambiance-grey
 #sudo add-apt-repository -y ppa:noobslab/themes
@@ -295,7 +296,8 @@
 
 ######## Videos & Movies
 
-#### Kazam - In official stable repo - only for 13.04 or less
+#### Kazam - In official stable repo
+#sudo add-apt-repository -y ppa:kazam-team/stable-series
 #sudo add-apt-repository -y ppa:kazam-team/unstable-series
 #sudo apt-get -y update
 #sudo apt-get -y install kazam
@@ -441,7 +443,6 @@
 #wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 #sudo dpkg -i skype*.deb
 #rm skype*.deb
-#sudo apt-get -y install choqok xchat
 
 #### Hotot - May be in official repo
 #sudo add-apt-repository -y ppa:jimmyxu/hotot
@@ -453,6 +454,9 @@
 #sudo apt-get -y update
 #sudo apt-get -y install pidgin pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
 #skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
+
+#### Various
+#sudo apt-get -y install choqok xchat
 
 ######## File Management
 
@@ -477,6 +481,12 @@
 #chmod +rwx JD2SilentSetup_x64.sh
 #su usuario -c ./JD2SilentSetup_x64.sh
 #rm JD2SilentSetup_x64.sh
+
+##### Frostwire
+#http://www.frostwire.com/
+#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
+#sudo dpkg -i frostwire*.deb
+#rm frostwire*.deb
 
 #### Various
 #sudo apt-get -y install amule deluge axel
@@ -519,6 +529,7 @@
 
 #### Various
 #sudo apt-get -y install true-combat-elite americas-army:i386 lincity-ng crossover-games crossover-pro gamedevelop djl ogs-mahjong ogs-mahjong-music-addon sandboxgamemaker opencity teeworlds d2x-rebirth-full d2x-xl-executable numptyphysics violetland kolf neverputt maximinigolf assaultcube sorr iconqueru hedgewars
+#sudo apt-get -y install amor macopix-gtk2 oneko
 
 ######## Extra
 
@@ -534,9 +545,9 @@
 
 ######## TO INSTALL MANUALLY
 
-#### http://www.opera.com/download/guide/?os=linux
+#### http://labs.sialan.org/projects/limoo
 
-#### http://labs.sialan.org/projects/sigram		#PROBLEM ON UBUNTU MATE
+#### http://www.opera.com/download/guide/?os=linux
 
 #### http://www.time4popcorn.eu/
 
