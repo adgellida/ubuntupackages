@@ -1,5 +1,10 @@
 Release notes
 =============================================
+* v2014.12.18 alpha
+ * renamed "scripts" to "installpackages"
+ * added "installpackages5"
+ * minor changes
+
 * v2014.12.15 alpha
  * added virtual pets
  * minor changes
