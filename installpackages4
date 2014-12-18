@@ -1,0 +1,138 @@
+#!/bin/bash
+######## installpackages - Installs packages & necessary repos - script 4
+
+######## Backup & Sync
+
+#
+
+######## OS & Utilities
+
+#### postinstallerf
+## ancient version
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+#sudo apt-get -y update
+#sudo apt-get -y install yad packagekit
+#sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+#sudo dpkg -i postinstallerf_1.5-13_all.deb
+## latest version
+#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+#wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/21/x86_64/postinstallerf-1.5-21.fc21.noarch.rpm
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+#sudo apt-get -y update
+#sudo apt-get -y install yad packagekit
+#sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+#sudo apt-get -y install alien dpkg-dev debhelper build-essential
+#sudo alien postinstallerf-1.5-21.fc21.noarch.rpm
+#sudo dpkg -i postinstallerf_1.5-22_all.deb
+
+#### y-ppa-manager - (launchpad getkeys)
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
+#sudo apt-get -y update
+#sudo apt-get -y install y-ppa-manager
+
+#### variety-peterlevi
+#sudo add-apt-repository -y ppa:peterlevi/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install variety
+
+#### HP
+#sudo apt-get -y install hplip hplip-gui
+
+#### UNetbootin
+#sudo add-apt-repository -y ppa:n-muench/programs-ppa
+#sudo apt-get -y update
+#sudo apt-get -y install unetbootin
+
+#### Various
+#sudo apt-get -y install gparted freefilesync
+
+######## Desktop Environment
+
+#
+
+######## Themes
+
+#
+
+######## Language packages
+
+#
+
+######## Security & Privacy
+
+#
+
+######## CD/DVD Tools
+
+#
+
+######## Photos & Graphics
+
+#
+
+######## Audio & Music
+
+#### nuvolaplayer
+#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
+#sudo apt-get install nuvolaplayer
+
+######## Videos & Movies
+
+#
+
+######## All multimedia content
+
+#
+
+######## Development
+
+#### notepadqq
+#sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+#sudo apt-get -y update
+#sudo apt-get -y install notepadqq
+
+#### git extra
+#sudo apt-get -y install git-cola
+
+#### Kicad
+#sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
+#sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily - abandoned
+#sudo apt-get -y update
+#sudo apt-get -y install kicad
+
+#### Various
+#sudo apt-get -y install meld
+#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
+
+######## Web Browsers
+
+#
+
+
+######## Social
+
+#
+
+######## File Management
+
+#
+
+######## File Sharing
+
+#
+
+######## News & Books
+
+#
+
+######## Office & Productivity
+
+#
+
+######## Games
+
+#

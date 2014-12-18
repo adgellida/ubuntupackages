@@ -1,0 +1,9 @@
+#Qt Linux
+
+wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
+chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
+~/qt-opensource-linux-x64-5.4.0.run
+rm ~/qt-opensource-linux-x64-5.4.0.run
+
+sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
+sudo apt-get -y install mesa-common-dev libglu1-mesa-dev
