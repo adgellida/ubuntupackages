@@ -5,7 +5,7 @@
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu Mate, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
 Designed for 14.10.
 
@@ -16,22 +16,22 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-Go to your selected script folder.
+Go to your selected script and modified it.
 
-* "script 1" if you want to install some basic packages.
-* "script 2" if you want to check more extra packages.
-* "script 3" if you want to check the test packages.
-* "script 4" if you want to check my extra installed packages.
-* "script 5" if you want to check more extra packages(2).
-1. Execute "installpackages".
-1. (Optional) Execute "configurations", "mateconfiguration", see "manual steps for mate", etc.
+* "installpackages1" if you want to install some basic packages.
+* "installpackages2" if you want to check more extra packages.
+* "installpackages3" if you want to check the test packages.
+* "installpackages4" if you want to check my extra installed packages.
+* "installpackages5" if you want to check more extra packages(2).
+1. Execute it.
+1. (Optional) Check all the other content.
 
 Remember to add exec permissions to all scripts!
 
 Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
-* The desktop environment recommended tested right now is to use mate desktop.
+* The desktop environment recommended tested right now is to use MATE desktop.
 * Be careful with unstables repos, comment them if you want, for example:
  * Xorg Edgers
  * WebUpd8 Unstable - only for 13.10 or less
