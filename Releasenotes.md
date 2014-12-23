@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.12.23 alpha
+ * added a lot of changes
+
 * v2014.12.18 alpha
  * renamed "scripts" to "installpackages"
  * added "installpackages5"

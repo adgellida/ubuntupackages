@@ -103,3 +103,13 @@
 #sudo add-apt-repository -y ppa:broken/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install qllauncher
+
+#### paper-gtk-theme
+#sudo add-apt-repository -y ppa:snwh/pulp
+#sudo apt-get -y update
+#sudo apt-get -y install paper-gtk-theme
+
+#### hollywood
+#sudo apt-add-repository -y ppa:hollywood/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install hollywood

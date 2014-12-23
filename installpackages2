@@ -3,6 +3,36 @@
 
 ######## Backup & Sync
 
+#### DirSyncPro
+#sudo mkdir /opt/DirSyncPro
+#sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+#sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
+#sudo unzip /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip -d /opt/DirSyncPro
+#sudo rm /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+#sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+#sudo sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Name=DirSyncPro
+#Comment=Sync your files!
+#Categories=System
+#Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+#Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
+##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
+
+#### Holo Backup
+#sudo mkdir "/opt/Holo Backup"
+#wget https://codeload.github.com/omegavesko/SimpleADBBackup/legacy.tar.gz/master -O "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+#tar xvfz "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+#sudo chmod +rwx "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+#sudo sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Name=Holo Backup
+#Comment=Backup your droid!
+#Categories=System
+#Exec="/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+#Icon='
+##sudo ln -s "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux" "~/Escritorio/Holo Backup"
+
 #### backintime testing
 #sudo add-apt-repository -y ppa:bit-team/stable
 #sudo apt-get -y update
@@ -27,14 +57,6 @@
 #sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
 #sudo apt-get -y update
 #sudo apt-get -y install spideroak
-
-#### DirSyncPro
-#mkdir /home/usuario/.DirSyncPro
-#wget http://downloads.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.49/DirSyncPro-1.49-Linux.zip -O/home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
-#unzip /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip -d /home/usuario/.DirSyncPro
-#rm /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux.zip
-#chmod +rwx /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar
-#ln -s /home/usuario/.DirSyncPro/DirSyncPro-1.49-Linux/dirsyncpro.jar /home/usuario/Escritorio/dirsyncpro.jar
 
 #### Various
 #sudo apt-get -y install sbackup-plugins-fuse grsync unison-gtk		#http://planetubuntu.es/post/como-sincronizar-2-equipos-de-manera-bidireccional-con-unison
@@ -170,7 +192,7 @@
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
-#sudo apt-get -y install gnome-system-tools
+#sudo apt-get -y install gnome-system-tools gnome-tweak-tool
 #sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
 #sudo apt-get -y install indicator-netspeed
 #sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
@@ -191,6 +213,11 @@
 #sudo add-apt-repository -y ppa:evolve-os/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install budgie-desktop
+
+####razorqt
+#sudo add-apt-repository -y ppa:razor-qt/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install razorqt razorqt-config
 
 #### cinnamon
 #sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly #### nightly for 14.10 & 14.04
@@ -353,6 +380,16 @@
 #sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
 #sudo apt-get -y update
 #sudo apt-get -y install ubuntu-make
+##Android Studio using Ubuntu Make
+#sudo umake android
+#sudo umake android --remove	#TO REMOVE
+##Eclipse using Ubuntu Make
+#sudo umake ide eclipse
+#sudo umake ide eclipse --remove	#TO REMOVE
+##Android Studio from web - TO IMPROVE - https://developer.android.com/sdk/installing/index.html?pkg=studio
+#wget https://dl.google.com/dl/android/studio/ide-zips/1.0.1/android-studio-ide-135.1641136-linux.zip
+#unzip android-studio-ide-135.1641136-linux.zip -d /home/usuario/tools/android
+#sudo /home/usuario/tools/android/android-studio/bin/studio.sh
 
 #### Wine
 #sudo add-apt-repository -y ppa:ubuntu-wine/ppa
@@ -426,8 +463,7 @@
 #sudo apt-get -y install google-chrome-stable
 
 #### Chromium dev & beta channel - Select
-#sudo add-apt-repository -y ppa:chromium-daily ### to test
-#sudo add-apt-repository -y ppa:saiarcot895/chromium-dev  
+#sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
 #sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 #sudo apt-get -y update
 #sudo apt-get -y install chromium-browser chromium-browser-l10n
@@ -444,6 +480,16 @@
 #sudo apt-get -y install midori
 
 ######## Social
+
+##### Telegram - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+#sudo add-apt-repository -y ppa:noobslab/apps
+#sudo apt-get -y update
+#sudo apt-get -y install telegram-desktop
+
+##### Facebook Messenger - DEPRECATED!
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-get -y update
+#sudo apt-get -y install fbmessenger
 
 ##### Skype
 #http://www.skype.com/es/download-skype/skype-for-linux/
@@ -500,6 +546,12 @@
 #wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
 #sudo dpkg -i frostwire*.deb
 #rm frostwire*.deb
+
+##### Tribler
+#http://www.frostwire.com/
+#wget https://github.com/Tribler/tribler/releases/download/v6.4.0/tribler_6.4.0_all.deb
+#sudo dpkg -i tribler*.deb
+#rm tribler*.deb
 
 #### Various
 #sudo apt-get -y install amule deluge axel
