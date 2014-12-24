@@ -1,138 +1,115 @@
 #!/bin/bash
 ######## installpackages - Installs packages & necessary repos - script 4
 
-######## Backup & Sync
-
-#
-
-######## OS & Utilities
-
-#### postinstallerf
-## ancient version
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
-#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+#### conky-manager - http://bitelia.com/2014/09/administrar-conky-con-conky-manager
+#sudo add-apt-repository -y ppa:teejee2008/ppa
 #sudo apt-get -y update
-#sudo apt-get -y install yad packagekit
-#sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-#sudo dpkg -i postinstallerf_1.5-13_all.deb
-## latest version
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-#wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/21/x86_64/postinstallerf-1.5-21.fc21.noarch.rpm
-#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+#sudo apt-get -y install conky-manager
+#wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
+
+#### apt-fast
+#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
+#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
+#sudo add-apt-repository -y ppa:saiarcot895/myppa
 #sudo apt-get -y update
-#sudo apt-get -y install yad packagekit
-#sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+#sudo apt-get -y install apt-fast
+
+#### tlp
+#sudo add-apt-repository -y ppa:linrunner/tlp
+#sudo apt-get -y update
+#sudo apt-get -y install tlp tlp-rdw
+#sudo tlp start
+
+#### burg - http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
+#sudo add-apt-repository -y ppa:n-muench/burg
+#sudo apt-get -y update
+#sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
+#To revert back to GRUB enter following commands:
+#sudo apt-get remove --purge burg burg-themes
+#sudo add-apt-repository -r ppa:n-muench/burg
+#sudo update-grub
+
+#### clicompanion
+#sudo add-apt-repository -y ppa:clicompanion-devs/clicompanion-nightlies
+#sudo apt-get -y update
+#sudo apt-get -y install clicompanion
+
+#### indicator-usb - tested and fail!
+#sudo add-apt-repository -y ppa:yunnxx/gnome3
+#sudo apt-get -y update
+#sudo apt-get -y install indicator-usb
+
+#### ubutricks - http://www.tuxarena.com/apps/ubutricks/
+#sudo apt-get -y install zenity gksu
+#wget http://www.tuxarena.com/intro/files/ubutricks.sh
+#chmod +x ubutricks.sh
+#./ubutricks.sh
+
+#### photoqt
+#sudo add-apt-repository -y ppa:samrog131/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install photoqt
+
+#### folder-color
+#sudo add-apt-repository -y ppa:costales/folder-color
+#sudo apt-get -y update
+
+#### nautilus
+#sudo apt-get -y install folder-color
+#nautilus -q
+
+#### nemo
+#sudo apt-get -y install folder-color-nemo
+#nemo -q
+
+#### caja
+#sudo apt-get -y install folder-color-caja
+#caja -q
+#fix if proceed
+#sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
+
+#### power-installer
+#sudo add-apt-repository -y ppa:elementary-os/daily
+#sudo add-apt-repository -y ppa:donadigo/power-installer
+#sudo apt-get -y update
+#sudo apt-get -y install power-installer
+
+#### kdeconnect
+#sudo add-apt-repository -y ppa:vikoadi/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install indicator-kdeconnect kdeconnect
+
+#### mtp support
+#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
+#sudo apt-get -y update & dist-upgrade
+#sudo apt-get -y install mtp-tools mtpfs
+
+#### Install an RPM Package on Ubuntu Linux - http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
 #sudo apt-get -y install alien dpkg-dev debhelper build-essential
-#sudo alien postinstallerf-1.5-21.fc21.noarch.rpm
-#sudo dpkg -i postinstallerf_1.5-22_all.deb
+#sudo alien packagename.rpm
+#sudo dpkg -i packagename.deb
 
-#### y-ppa-manager - (launchpad getkeys)
-#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
+#### sigram		#MATE PROBLEM
+#sudo add-apt-repository -y ppa:sialan/desktop
 #sudo apt-get -y update
-#sudo apt-get -y install y-ppa-manager
+#sudo apt-get -y install sigram
 
-#### variety-peterlevi
-#sudo add-apt-repository -y ppa:peterlevi/ppa
+#### touchpad-indicator
+#sudo add-apt-repository -y ppa:atareao/atareao
 #sudo apt-get -y update
-#sudo apt-get -y install variety
+#sudo apt-get -y install touchpad-indicator
 
-#### HP
-#sudo apt-get -y install hplip hplip-gui
-
-#### UNetbootin
-#sudo add-apt-repository -y ppa:n-muench/programs-ppa
+#### qllauncher - http://www.webupd8.org/2014/12/qllauncher-quake-live-launcher-for-linux.html
+#sudo add-apt-repository -y ppa:broken/ppa
 #sudo apt-get -y update
-#sudo apt-get -y install unetbootin
+#sudo apt-get -y install qllauncher
 
-#### Various
-#sudo apt-get -y install gparted freefilesync
-
-######## Desktop Environment
-
-#
-
-######## Themes
-
-#
-
-######## Language packages
-
-#
-
-######## Security & Privacy
-
-#
-
-######## CD/DVD Tools
-
-#
-
-######## Photos & Graphics
-
-#
-
-######## Audio & Music
-
-#### nuvolaplayer
-#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
+#### paper-gtk-theme
+#sudo add-apt-repository -y ppa:snwh/pulp
 #sudo apt-get -y update
-#sudo apt-get -y upgrade
-#sudo apt-get install nuvolaplayer
+#sudo apt-get -y install paper-gtk-theme
 
-######## Videos & Movies
-
-#
-
-######## All multimedia content
-
-#
-
-######## Development
-
-#### notepadqq
-#sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+#### hollywood
+#sudo apt-add-repository -y ppa:hollywood/ppa
 #sudo apt-get -y update
-#sudo apt-get -y install notepadqq
-
-#### git extra
-#sudo apt-get -y install git-cola
-
-#### Kicad
-#sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
-#sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily - abandoned
-#sudo apt-get -y update
-#sudo apt-get -y install kicad
-
-#### Various
-#sudo apt-get -y install meld
-#sudo apt-get -y install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb
-
-######## Web Browsers
-
-#
-
-
-######## Social
-
-#
-
-######## File Management
-
-#
-
-######## File Sharing
-
-#
-
-######## News & Books
-
-#
-
-######## Office & Productivity
-
-#
-
-######## Games
-
-#
+#sudo apt-get -y install hollywood

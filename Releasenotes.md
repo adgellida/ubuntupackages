@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2014.12.24 alpha
+ * reorganizated scripts
+
 * v2014.12.23 alpha
  * added a lot of changes
 
