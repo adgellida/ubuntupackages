@@ -113,3 +113,10 @@
 #sudo apt-add-repository -y ppa:hollywood/ppa
 #sudo apt-get -y update
 #sudo apt-get -y install hollywood
+
+#### Trojitá
+#sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/jkt-gentoo:/trojita/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/trojita.list"
+#wget http://download.opensuse.org/repositories/home:jkt-gentoo:trojita/xUbuntu_14.10/Release.key
+#sudo apt-key add - < Release.key
+#sudo apt-get -y update
+#sudo apt-get -y install trojita

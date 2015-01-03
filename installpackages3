@@ -188,7 +188,7 @@
 #sudo apt-get -y install voice-commands
 
 #### Various
-#sudo apt-get -y install peazip launchy inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
+#sudo apt-get -y install peazip inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
 #sudo apt-get -y install laptop-mode-tools - gksu lmt-config-gui - This to launch it
 #sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
 #sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
@@ -327,6 +327,11 @@
 #sudo apt-get -y install sound-juicer mixxx qtractor performous
 
 ######## Videos & Movies
+
+#### ffmpeg
+#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
+#sudo apt-get -y update
+#sudo apt-get -y install ffmpeg
 
 #### Kazam - In official stable repo
 #sudo add-apt-repository -y ppa:kazam-team/stable-series
@@ -481,7 +486,12 @@
 
 ######## Social
 
-##### Telegram - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+##### Telegram (1) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+#sudo add-apt-repository -y ppa:atareao/telegram
+#sudo apt-get -y update
+#sudo apt-get -y install telegram
+
+##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
 #sudo add-apt-repository -y ppa:noobslab/apps
 #sudo apt-get -y update
 #sudo apt-get -y install telegram-desktop

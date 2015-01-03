@@ -46,7 +46,7 @@ sudo apt-get -y update
 sudo apt-get -y install unetbootin
 
 #### Various
-sudo apt-get -y install gparted 
+sudo apt-get -y install gparted launchy keepassx12
 #sudo apt-get -y install freefilesync
 
 ######## Desktop Environment
@@ -79,7 +79,7 @@ sudo apt-get -y install gparted
 sudo add-apt-repository -y ppa:nuvola-player-builders/stable
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get install nuvolaplayer
+sudo apt-get -y install nuvolaplayer
 
 ######## Videos & Movies
 
@@ -145,8 +145,3 @@ sudo apt-get -y install mesa-common-dev libglu1-mesa-dev	####Qt dependencies
 ######## Games
 
 #
-
-######## Extra
-
-#### uninstallpackages
-sudo apt-get remove -y pidgin* thunderbird*
