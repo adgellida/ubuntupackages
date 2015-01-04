@@ -3,7 +3,10 @@
 
 ######## Backup & Sync
 
-#
+#aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get -y update
+sudo apt-get -y install aptik
 
 ######## OS & Utilities
 
