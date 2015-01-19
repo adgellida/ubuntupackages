@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2015.01.19 alpha
+ * minor changes
+
 * v2015.01.04 alpha
  * minor changes
 
