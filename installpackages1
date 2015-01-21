@@ -19,7 +19,7 @@ sudo apt-get -y install systemback
 ######## OS & Utilities
 
 #### Various
-sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload gdebi ppa-purge gnome-disk-utility
+sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility
 
 ######## Desktop Environment
 
@@ -50,7 +50,7 @@ sudo apt-get -y install gnome-exe-thumbnailer shutter
 #### gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp/
 sudo apt-get -y update
-sudo apt-get -y install gimp
+sudo apt-get -y install gimp gimp-plugin-registry
 
 ######## Audio & Music
 
@@ -63,7 +63,7 @@ sudo apt-get -y install gimp
 ######## All multimedia content
 
 #### Various
-sudo apt-get -y install vlc
+sudo apt-get -y install vlc vlc-plugin-pulse libvlc5
 
 ######## Development
 
@@ -76,7 +76,8 @@ sudo apt-get -y install vlc
 sudo apt-get -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash
-##pepper-flash-player from official repos - http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
+##pepper-flash-player from official repos
+#http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
 sudo apt-get -y install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL

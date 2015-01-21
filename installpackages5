@@ -1,150 +1,129 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos - script 5
+######## installpackages - Installs packages & necessary repos - script 4
 
-#### SyncDrive - dependencies error
-sudo add-apt-repository -y ppa:nemh/gambas3
-sudo add-apt-repository -y ppa:noobslab/pear-apps
+#### conky-manager
+#http://bitelia.com/2014/09/administrar-conky-con-conky-manager
+sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get -y update
-sudo apt-get -y install syncdrive
+sudo apt-get -y install conky-manager
+wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
 
-#### grive-tools
-sudo add-apt-repository -y ppa:thefanclub/grive-tools
+#### apt-fast
+#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
+#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
+sudo add-apt-repository -y ppa:saiarcot895/myppa
 sudo apt-get -y update
-sudo apt-get -y install grive-tools
+sudo apt-get -y install apt-fast
 
-#### ualinux - http://www.ualinux.com/en/how-to-connect # Be careful, it installs a special search google provider
-wget http://archive.ualinux.com/ubuntu/main/all/ualinux-repository.deb
-sudo dpkg -i ualinux*.deb
-rm ualinux*.deb
+#### tlp
+sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get -y update
-sudo apt-get -y dist-upgrade
+sudo apt-get -y install tlp tlp-rdw
+#sudo tlp start
 
-#### Compiz + Cairo-dock + Emerald
-sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
-sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
-
-#### emerald
-sudo add-apt-repository -y ppa:brainpower/testing/
+#### burg
+#http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
+sudo add-apt-repository -y ppa:n-muench/burg
 sudo apt-get -y update
-sudo apt-get -y install emerald
+sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
+#To revert back to GRUB enter following commands:
+#sudo apt-get remove --purge burg burg-themes
+#sudo add-apt-repository -r ppa:n-muench/burg
+#sudo update-grub
 
-#### remastersys - PRECISE but works on RARING - systemback is preferible
-#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
-#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+#### clicompanion
+sudo add-apt-repository -y ppa:clicompanion-devs/clicompanion-nightlies
+sudo apt-get -y update
+sudo apt-get -y install clicompanion
+
+#### indicator-usb - tested and fail!
+#sudo add-apt-repository -y ppa:yunnxx/gnome3
 #sudo apt-get -y update
-#sudo apt-get -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
+#sudo apt-get -y install indicator-usb
 
-#### multisystem
-wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
-sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
+#### ubutricks
+#http://www.tuxarena.com/apps/ubutricks/
+#sudo apt-get -y install zenity gksu
+#wget http://www.tuxarena.com/intro/files/ubutricks.sh
+#chmod +x ubutricks.sh
+#./ubutricks.sh
+
+#### photoqt
+sudo add-apt-repository -y ppa:samrog131/ppa
 sudo apt-get -y update
-sudo apt-get -y install multisystem
+sudo apt-get -y install photoqt
 
-#### UltraStar Deluxe - http://ultrastardx.sourceforge.net/usdx-downloads/usdx/ - dependencies error
-#https://launchpad.net/~jon-severinsson/+archive/ubuntu/ffmpeg
-#https://launchpad.net/~tobydox/+archive/ubuntu/ultrastardx
-
-######## TO INSTALL MANUALLY
-
-#### http://labs.sialan.org/projects/limoo
-
-#### http://www.opera.com/download/guide/?os=linux
-
-#### http://www.time4popcorn.eu/
-
-######## ONLY FOR UBUNTU WITH UNITY SURELY
-
-#### Ubuntu Tweak
-sudo add-apt-repository -y ppa:tualatrix/ppa (NEW)
-sudo add-apt-repository -y ppa:freyja-dev/tualatrix (ANCIENT)
+#### folder-color
+sudo add-apt-repository -y ppa:costales/folder-color
 sudo apt-get -y update
-sudo apt-get -y install ubuntu-tweak
+#### nautilus
+#sudo apt-get -y install folder-color
+#nautilus -q
+#### nemo
+#sudo apt-get -y install folder-color-nemo
+#nemo -q
+#### caja
+#sudo apt-get -y install folder-color-caja
+#caja -q
+#fix if proceed
+#sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
 
-#### unity-tweak-tool
-sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
+#### power-installer
+#sudo add-apt-repository -y ppa:donadigo/power-installer
+sudo add-apt-repository -y ppa:elementary-os/daily
 sudo apt-get -y update
-sudo apt-get -y install unity-tweak-tool
+sudo apt-get -y install power-installer
 
-#### classicmenu-indicator & Unsettings
-sudo add-apt-repository -y ppa:diesch/testing
+#### kdeconnect
+sudo add-apt-repository -y ppa:vikoadi/ppa
 sudo apt-get -y update
-sudo apt-get -y install classicmenu-indicator unsettings
+sudo apt-get -y install indicator-kdeconnect kdeconnect
 
-#### CPU Frequency Scaling
-sudo add-apt-repository -y ppa:artfwo/ppa
+#### mtp support
+sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
+sudo apt-get -y update & dist-upgrade
+sudo apt-get -y install mtp-tools mtpfs
+
+#### Install an RPM Package on Ubuntu Linux
+#http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
+#sudo apt-get -y install alien dpkg-dev debhelper build-essential
+#sudo alien packagename.rpm
+#sudo dpkg -i packagename.deb
+
+#### sigram		#MATE PROBLEM
+sudo add-apt-repository -y ppa:sialan/desktop
 sudo apt-get -y update
-sudo apt-get -y install indicator-multiload indicator-cpufreq
+sudo apt-get -y install sigram
 
-#### my-weather-indicator
+#### cutegram		#MATE PROBLEM
+sudo add-apt-repository -y ppa:aseman/desktop-apps
+sudo apt-get -y update
+sudo apt-get -y install cutegram libqtelegram
+
+#### touchpad-indicator
 sudo add-apt-repository -y ppa:atareao/atareao
 sudo apt-get -y update
-sudo apt-get -y install my-weather-indicator 
+sudo apt-get -y install touchpad-indicator
 
-######## ONLY FOR KUBUNTU
+#### qllauncher
+#http://www.webupd8.org/2014/12/qllauncher-quake-live-launcher-for-linux.html
+sudo add-apt-repository -y ppa:broken/ppa
+sudo apt-get -y update
+sudo apt-get -y install qllauncher
 
-#### Various
-sudo apt-get -y install muon
+#### paper-gtk-theme
+sudo add-apt-repository -y ppa:snwh/pulp
+sudo apt-get -y update
+sudo apt-get -y install paper-gtk-theme
 
-######## ERROR - PROBLEMS
-#sudo apt-get -y install quickly quickly-widgets
-#sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
-#sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
-#sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
-#sudo apt-get -y install wally wallch
+#### hollywood
+sudo apt-add-repository -y ppa:hollywood/ppa
+sudo apt-get -y update
+sudo apt-get -y install hollywood byobu
 
-####uninstallpackages
-#### ONLY FOR UBUNTU
-#sudo apt-get remove -y webbrowser-app unity-lens* unity-scope*
-
-######## Possibly needless programs
-#sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
-
-######## ONLY FOR LUBUNTU
-#sudo apt-get remove -y chromium-browser firefox
-#sudo apt-get remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
-#sudo apt-get remove -y gxine libxine1 libxine1-x mplayer2
-#sudo apt-get remove -y libgmtk0 libgmtk0-data libgmlib0
-
-######## installpackagesproblematic
-
-#### Audacious, unity-reboot, etc
-#sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-get -y update
-#sudo apt-get -y install unity-reboot audacious
-
-#### DockBarX
-#sudo add-apt-repository -y ppa:dockbar-main/ppa
-#sudo apt-get -y update
-#sudo apt-get -y install dockbarx
- 
-#### Docky Development PPA & stable
-#sudo add-apt-repository -y ppa:docky-core/ppa
-#sudo add-apt-repository -y ppa:docky-core/stable
-#sudo apt-get -y update
-#sudo apt-get -y install docky
- 
-#### Plank Development PPA
-#sudo add-apt-repository -y ppa:ricotz/docky
-#sudo apt-get -y update
-#sudo apt-get -y install plank
-
-#### Gnome Do
-#sudo add-apt-repository -y ppa:do-testers/ppa
-#sudo apt-get -y update
-#sudo apt-get -y install gnome-do
-
-#### avant window navigator
-#sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
-#sudo apt-get -y update
-#sudo apt-get -y install avant-window-navigator
-
-######## Not free codecs
-#sudo apt-get -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
-
-#### Various
-#sudo apt-get -y install acroread-common acroread acroread-fonts
-#sudo apt-get -y install aptoncd
-#sudo apt-get -y install blender gadmin-rsync mate-core
-#sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
-#sudo apt-get -y install eog eog-plugins
-#sudo apt-get -y install metacity
+#### Trojitá
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/jkt-gentoo:/trojita/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/trojita.list"
+wget http://download.opensuse.org/repositories/home:jkt-gentoo:trojita/xUbuntu_14.10/Release.key
+sudo apt-key add - < Release.key
+sudo apt-get -y update
+sudo apt-get -y install trojita

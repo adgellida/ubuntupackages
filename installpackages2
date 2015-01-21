@@ -3,55 +3,17 @@
 
 ######## Backup & Sync
 
-#aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
+#### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
 sudo apt-add-repository -y ppa:teejee2008/ppa
 sudo apt-get -y update
 sudo apt-get -y install aptik
 
 ######## OS & Utilities
 
-#### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
-sudo apt-get -y install undistract-me
-
-#### appgrid
-sudo add-apt-repository -y ppa:appgrid/stable
-sudo apt-get -y update
-sudo apt-get -y install appgrid
-
-#### postinstallerf
-## ancient version
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-#wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
-#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-#sudo apt-get -y update
-#sudo apt-get -y install yad packagekit
-#sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-#sudo dpkg -i postinstallerf_1.5-13_all.deb
-## latest version
-wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/21/x86_64/postinstallerf-1.5-21.fc21.noarch.rpm
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt-get -y update
-sudo apt-get -y install yad packagekit
-sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-sudo apt-get -y install alien dpkg-dev debhelper build-essential
-sudo alien postinstallerf-1.5-21.fc21.noarch.rpm
-sudo dpkg -i postinstallerf_1.5-22_all.deb
-
 #### y-ppa-manager - (launchpad getkeys)
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
 sudo apt-get -y update
 sudo apt-get -y install y-ppa-manager
-
-#### variety-peterlevi
-#sudo add-apt-repository -y ppa:peterlevi/ppa
-#sudo add-apt-repository -y ppa:variety/next
-sudo add-apt-repository -y ppa:variety/daily
-sudo apt-get -y update
-sudo apt-get -y install variety
-
-#### HP
-#sudo apt-get -y install hplip hplip-gui
 
 #### UNetbootin
 sudo add-apt-repository -y ppa:n-muench/programs-ppa
@@ -59,8 +21,7 @@ sudo apt-get -y update
 sudo apt-get -y install unetbootin
 
 #### Various
-sudo apt-get -y install gparted launchy keepassx #thewindowfactory (twf)
-#sudo apt-get -y install freefilesync
+sudo apt-get -y install gparted keepassx #thewindowfactory (twf)
 
 ######## Desktop Environment
 
@@ -84,11 +45,7 @@ sudo apt-get -y install gparted launchy keepassx #thewindowfactory (twf)
 
 ######## Photos & Graphics
 
-#### krita - http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-##sudo apt-get -y install krita
-sudo add-apt-repository -y ppa:dimula73/krita
-sudo apt-get -y update
-sudo apt-get -y install krita-testing krita-testing-dbg krita-testing-l10n-es
+#
 
 ######## Audio & Music
 
@@ -116,28 +73,12 @@ sudo apt-get -y install notepadqq
 #### git extra
 sudo apt-get -y install git-cola
 
-#### ubuntu-emulator - http://www.webupd8.org/2014/03/ubuntu-touch-emulator-installation-and.html - http://www.webupd8.org/2013/11/experimental-ubuntu-touch-emulator.html
-sudo apt-get -y install ubuntu-emulator
-
-#### Kicad
-sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
-sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily - abandoned
-sudo apt-get -y update
-sudo apt-get -y install kicad
-
-####Qt Linux
+#### Qt Linux
 sudo apt-get -y install mesa-common-dev libglu1-mesa-dev	####Qt dependencies
 wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
 chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
 ~/qt-opensource-linux-x64-5.4.0.run
 rm ~/qt-opensource-linux-x64-5.4.0.run
-
-##### Fritzing
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-get -y update
-sudo apt-get -y install fritzing
 
 #### Various
 sudo apt-get -y install meld
@@ -170,5 +111,4 @@ sudo apt-get -y install build-essential packaging-dev checkinstall cdbs devscrip
 
 ######## Games
 
-#### Various
-sudo apt-get -y install scourge violetland bofh
+#

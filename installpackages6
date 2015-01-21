@@ -1,0 +1,151 @@
+#!/bin/bash
+######## installpackages - Installs packages & necessary repos - script 5
+
+#### SyncDrive - dependencies error
+sudo add-apt-repository -y ppa:nemh/gambas3
+sudo add-apt-repository -y ppa:noobslab/pear-apps
+sudo apt-get -y update
+sudo apt-get -y install syncdrive
+
+#### grive-tools
+sudo add-apt-repository -y ppa:thefanclub/grive-tools
+sudo apt-get -y update
+sudo apt-get -y install grive-tools
+
+#### ualinux
+#http://www.ualinux.com/en/how-to-connect # Be careful, it installs a special search google provider
+wget http://archive.ualinux.com/ubuntu/main/all/ualinux-repository.deb
+sudo dpkg -i ualinux*.deb
+rm ualinux*.deb
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+
+#### Compiz + Cairo-dock + Emerald
+sudo apt-get -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
+sudo apt-get -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
+
+#### emerald
+sudo add-apt-repository -y ppa:brainpower/testing/
+sudo apt-get -y update
+sudo apt-get -y install emerald
+
+#### remastersys - PRECISE but works on RARING - systemback is preferible
+#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
+#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+#sudo apt-get -y update
+#sudo apt-get -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
+
+#### multisystem
+wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
+sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
+sudo apt-get -y update
+sudo apt-get -y install multisystem
+
+#### UltraStar Deluxe - http://ultrastardx.sourceforge.net/usdx-downloads/usdx/ - dependencies error
+#https://launchpad.net/~jon-severinsson/+archive/ubuntu/ffmpeg
+#https://launchpad.net/~tobydox/+archive/ubuntu/ultrastardx
+
+######## TO INSTALL MANUALLY
+
+#### http://labs.sialan.org/projects/limoo
+
+#### http://www.opera.com/download/guide/?os=linux
+
+#### http://www.time4popcorn.eu/
+
+######## ONLY FOR UBUNTU WITH UNITY SURELY
+
+#### Ubuntu Tweak
+sudo add-apt-repository -y ppa:tualatrix/ppa (NEW)
+sudo add-apt-repository -y ppa:freyja-dev/tualatrix (ANCIENT)
+sudo apt-get -y update
+sudo apt-get -y install ubuntu-tweak
+
+#### unity-tweak-tool
+sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
+sudo apt-get -y update
+sudo apt-get -y install unity-tweak-tool
+
+#### classicmenu-indicator & Unsettings
+sudo add-apt-repository -y ppa:diesch/testing
+sudo apt-get -y update
+sudo apt-get -y install classicmenu-indicator unsettings
+
+#### CPU Frequency Scaling
+sudo add-apt-repository -y ppa:artfwo/ppa
+sudo apt-get -y update
+sudo apt-get -y install indicator-multiload indicator-cpufreq
+
+#### my-weather-indicator
+sudo add-apt-repository -y ppa:atareao/atareao
+sudo apt-get -y update
+sudo apt-get -y install my-weather-indicator 
+
+######## ONLY FOR KUBUNTU
+
+#### Various
+sudo apt-get -y install muon
+
+######## ERROR - PROBLEMS
+#sudo apt-get -y install quickly quickly-widgets
+#sudo apt-get -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
+#sudo apt-get -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
+#sudo apt-get -y install mountmanager ntfsprogs  #### ERROR
+#sudo apt-get -y install wally wallch
+
+####uninstallpackages
+#### ONLY FOR UBUNTU
+#sudo apt-get remove -y webbrowser-app unity-lens* unity-scope*
+
+######## Possibly needless programs
+#sudo apt-get -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
+
+######## ONLY FOR LUBUNTU
+#sudo apt-get remove -y chromium-browser firefox
+#sudo apt-get remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
+#sudo apt-get remove -y gxine libxine1 libxine1-x mplayer2
+#sudo apt-get remove -y libgmtk0 libgmtk0-data libgmlib0
+
+######## installpackagesproblematic
+
+#### Audacious, unity-reboot, etc
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-get -y update
+#sudo apt-get -y install unity-reboot audacious
+
+#### DockBarX
+#sudo add-apt-repository -y ppa:dockbar-main/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install dockbarx
+ 
+#### Docky Development PPA & stable
+#sudo add-apt-repository -y ppa:docky-core/ppa
+#sudo add-apt-repository -y ppa:docky-core/stable
+#sudo apt-get -y update
+#sudo apt-get -y install docky
+ 
+#### Plank Development PPA
+#sudo add-apt-repository -y ppa:ricotz/docky
+#sudo apt-get -y update
+#sudo apt-get -y install plank
+
+#### Gnome Do
+#sudo add-apt-repository -y ppa:do-testers/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install gnome-do
+
+#### avant window navigator
+#sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
+#sudo apt-get -y update
+#sudo apt-get -y install avant-window-navigator
+
+######## Not free codecs
+#sudo apt-get -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
+
+#### Various
+#sudo apt-get -y install acroread-common acroread acroread-fonts
+#sudo apt-get -y install aptoncd
+#sudo apt-get -y install blender gadmin-rsync mate-core
+#sudo apt-get -y install mounty ddrescue  #### NEED TO ADD PPA
+#sudo apt-get -y install eog eog-plugins
+#sudo apt-get -y install metacity

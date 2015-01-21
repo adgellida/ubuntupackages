@@ -1,124 +1,763 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos - script 4
+######## installpackages - Installs packages & necessary repos - script 3
 
-#### conky-manager - http://bitelia.com/2014/09/administrar-conky-con-conky-manager
+######## Backup & Sync
+
+#### DirSyncPro
+sudo mkdir /opt/DirSyncPro
+sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
+sudo unzip /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip -d /opt/DirSyncPro
+sudo rm /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+sudo sh -c 'echo "[Desktop Entry]
+Type=Application
+Name=DirSyncPro
+Comment=Sync your files!
+Categories=System
+Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
+##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
+
+#### Holo Backup
+sudo mkdir "/opt/Holo Backup"
+wget https://codeload.github.com/omegavesko/SimpleADBBackup/legacy.tar.gz/master -O "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+tar xvfz "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
+sudo chmod +rwx "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+sudo sh -c 'echo "[Desktop Entry]
+Type=Application
+Name=Holo Backup
+Comment=Backup your droid!
+Categories=System
+Exec="/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
+Icon='
+##sudo ln -s "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux" "~/Escritorio/Holo Backup"
+
+#### backintime testing
+sudo add-apt-repository -y ppa:bit-team/stable
+sudo apt-get -y update
+sudo apt-get -y install backintime-gnome
+
+#### TimeShift
+#http://www.howtogeek.com/206491/how-to-restore-your-ubuntu-linux-system-to-its-previous-state/
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get -y update
-sudo apt-get -y install conky-manager
-wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
+sudo apt-get -y install timeshift
 
-#### apt-fast
-#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
-#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
-sudo add-apt-repository -y ppa:saiarcot895/myppa
+#### Insync
+wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
 sudo apt-get -y update
-sudo apt-get -y install apt-fast
+sudo apt-get -y install insync insync-caja
+##referal
+#https://www.insynchq.com/r/106908789160316075573
 
-#### tlp
-sudo add-apt-repository -y ppa:linrunner/tlp
+#### Spideroak
+#http://www.rubynginx.com/index.php/2012/10/11/install-spideroak-on-ubuntu-12-04/																												
+####			 https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/																												
+wget -qO - https://spideroak.com/dist/spideroak-apt-2013.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
 sudo apt-get -y update
-sudo apt-get -y install tlp tlp-rdw
-#sudo tlp start
+sudo apt-get -y install spideroak
 
-#### burg - http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
-sudo add-apt-repository -y ppa:n-muench/burg
+#### Various
+sudo apt-get -y install sbackup-plugins-fuse grsync unison-gtk freefilesync	#http://planetubuntu.es/post/como-sincronizar-2-equipos-de-manera-bidireccional-con-unison
+
+########OS & Utilities
+
+#### cairo-dock
+#Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+sudo add-apt-repository -y ppa:cairo-dock-team/weekly
+sudo add-apt-repository -y ppa:cairo-dock-team/ppa
 sudo apt-get -y update
-sudo apt-get -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
-#To revert back to GRUB enter following commands:
-#sudo apt-get remove --purge burg burg-themes
-#sudo add-apt-repository -r ppa:n-muench/burg
-#sudo update-grub
+sudo apt-get -y install cairo-dock
+mkdir ~/.config/autostart
+rm ~/.config/autostart/cairo-dock.desktop
+sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=cairo-dock -W
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[es_ES]=Cairo Dock
+Name=Cairo Dock
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/cairo-dock.desktop'
 
-#### clicompanion
-sudo add-apt-repository -y ppa:clicompanion-devs/clicompanion-nightlies
+# Disable bug error notifications
+sudo sed -i s/enabled=1/enabled=0/g /etc/default/apport
+
+#### unattended-upgrades - NOT WORKING
+#http://almamu.com/wordpress/configurar-las-actualizaciones-automaticas-en-ubuntu-server/
+#http://241931348f64b1d1.wordpress.com/2013/01/24/how-to-configure-automatic-update-on-ubuntu-server/
+#http://www.redeszone.net/2014/12/12/habilita-las-actualizaciones-de-seguridad-automaticas-en-ubuntu/
+#http://www.taringa.net/posts/linux/13681417/Instalar-automaticamente-actualizaciones-en-Ubuntu.html
+#http://askubuntu.com/questions/172524/how-can-i-check-if-automatic-updates-are-enabled#172527
+sudo apt-get -y install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
+
+## /etc/apt/apt.conf.d/10periodic
+
+#Replace this:
+
+#APT::Periodic::Update-Package-Lists "1";
+#APT::Periodic::Download-Upgradeable-Packages "0";
+#APT::Periodic::AutocleanInterval "0";
+
+#With this:
+
+#APT::Periodic::Enable "1";
+#APT::Periodic::Update-Package-Lists "1";
+#APT::Periodic::Download-Upgradeable-Packages "1";
+#APT::Periodic::AutocleanInterval "5";
+#APT::Periodic::Unattended-Upgrade "1";
+#APT::Periodic::RandomSleep "1800";
+
+## /etc/apt/apt.conf.d/50unattended-upgrades
+#uncomment - "${distro_id}:${distro_codename}-updates";
+
+#### mutate
+sudo apt-add-repository -y ppa:mutate/ppa
 sudo apt-get -y update
-sudo apt-get -y install clicompanion
+sudo apt-get -y install mutate
 
-#### indicator-usb - tested and fail!
-#sudo add-apt-repository -y ppa:yunnxx/gnome3
+#### grub-customizer
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
+sudo apt-get -y update
+sudo apt-get -y install grub-customizer
+
+#### VirtualBox (1)
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+sudo apt-get -y update
+sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
+
+#### VirtualBox (2)
+#wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
+#sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
 #sudo apt-get -y update
-#sudo apt-get -y install indicator-usb
+#sudo apt-get -y upgrade
+#sudo apt-get -y install virtualbox-4.3 virtualbox-guest-additions-iso
 
-#### ubutricks - http://www.tuxarena.com/apps/ubutricks/
-#sudo apt-get -y install zenity gksu
-#wget http://www.tuxarena.com/intro/files/ubutricks.sh
-#chmod +x ubutricks.sh
-#./ubutricks.sh
+#### PlayOnLinux
+wget http://www.playonlinux.com/script_files/PlayOnLinux/4.2.5/PlayOnLinux_4.2.5.deb
+sudo dpkg -i PlayOnLinux*.deb
+rm PlayOnLinux*.deb
 
-#### photoqt
+#### Intel Linux Graphics Installer
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
+#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
+#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/14.04/main/ trusty main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+
+#### muCommander (unstable)
+sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
+sudo apt-get -y update
+sudo apt-get -y install mucommander
+
+#### GNOME3 Extra Apps: Nautilus, etc
+sudo add-apt-repository -y ppa:gnome3-team/gnome3
+sudo apt-get -y update
+
+#### New apt
+sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
+sudo apt-get -y update
+
+#### Getdeb (1)
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-get -y update
+
+#### Getdeb (2)
+#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
+#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
+#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
+#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
+#rm -f playdeb_0.3-1~getdeb1_all.deb
+
+#### Unstable Synaptic 
+sudo add-apt-repository -y ppa:webupd8team/unstable
+sudo apt-get -y update
+sudo apt-get -y install synaptic
+
+#### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+sudo add-apt-repository -y ppa:xorg-edgers/ppa
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+##sudo apt-get install nvidia-graphics-drivers-346	#EXAMPLE
+#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
+
+#### X Updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
+sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates/
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+
+#### Teamviewer - POSSIBLY ERROR
+#http://www.teamviewer.com/es/download/linux.aspx
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo dpkg -i teamviewer_i386.deb
+rm teamviewer_i386.deb
+
+#### i-nex
+sudo add-apt-repository -y ppa:nemh/gambas3
+sudo add-apt-repository -y ppa:i-nex-development-team/stable
+sudo apt-get -y update
+sudo apt-get -y install i-nex
+
+#### winusb
+sudo add-apt-repository -y ppa:colingille/freshlight
+sudo apt-get -y update
+sudo apt-get -y install winusb
+
+#### Ubuplus - PRECISE
+#sudo add-apt-repository -y ppa:luismtc20/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install ubuplus
+
+#### jupiter	#POSSIBLY DEPRECATED
+#sudo add-apt-repository -y ppa:webupd8team/jupiter
+#sudo apt-get -y update
+#sudo apt-get -y install jupiter
+
+#### Psensor
+sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
+sudo apt-get -y update
+sudo apt-get -y install psensor 
+
+#### voice-commands
+#http://www.noobslab.com/2014/06/control-your-ubuntulinux-mint-system.html
+sudo add-apt-repository -y ppa:baitsart/voice-commands
+sudo apt-get -y update
+sudo apt-get -y install voice-commands
+
+#### Various
+sudo apt-get -y install inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
+sudo apt-get -y install laptop-mode-tools	#gksu lmt-config-gui - This to launch it
+sudo apt-get -y install libfile-mimeinfo-perl catfish bleachbit
+sudo apt-get -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
+sudo apt-get -y install gnome-system-tools gnome-tweak-tool
+#sudo apt-get -y install checkbox-qt - SYSTEM TESTING APP
+sudo apt-get -y install indicator-netspeed launchy
+sudo apt-get -y install xscreensaver-gl xscreensaver-gl-extra
+sudo apt-get -y install alarm-clock gmrun lm-sensors tmux xbindkeys xbindkeys-config htop pcmanfm
+
+########Desktop Environment
+
+#### gnome-session-fallback
+sudo apt-get -y install gnome-session-fallback
+
+#### lxqt
+#http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
+sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
+sudo apt-get -y update
+sudo apt-get -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
+
+#### budgie-desktop
+#sudo add-apt-repository -y ppa:sukso96100/budgie-desktop
+sudo add-apt-repository -y ppa:evolve-os/ppa	#POSSIBLY LATEST
+sudo apt-get -y update
+sudo apt-get -y install budgie-desktop
+
+#### razorqt
+sudo add-apt-repository -y ppa:razor-qt/ppa
+sudo apt-get -y update
+sudo apt-get -y install razorqt razorqt-config
+
+#### cinnamon
+#sudo add-apt-repository -y ppa:lestcape/cinnamon	#### stable for 14.04
+#sudo add-apt-repository -y ppa:tsvetko.tsvetkov/cinnamon	#### stable for 14.04 & 12.04
+sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly		#### nightly for 14.10 & 14.04
+sudo apt-get -y update
+sudo apt-get -y install cinnamon
+
+#### MATE Desktop Environment (1)
+sudo apt-get --yes --force-yes install mate-archive-keyring
+sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
+sudo apt-get -y update
+sudo apt-get -y install mate-desktop-environment
+
+#### MATE Desktop Environment (2) - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
+#echo "deb http://repo.mate-desktop.org/archive/1.8/ubuntu $(lsb_release -cs) #main" | sudo tee /etc/apt/sources.list.d/mate-desktop.list
+#wget -qO - http://mirror1.mate-desktop.org/debian/mate-archive-keyring.gpg | sudo apt-key add -
+#sudo add-apt-repository -y ppa:ravefinity-project/ppa
+#sudo apt-get -y update
+#sudo apt-get install --no-install-recommends mate-desktop-environment mate-desktop-environment-extra caja-gksu caja-sendto mate-indicator-applet mate-icon-theme-faenza
+#sudo apt-get install mate-notification-daemon mate-media-pulse mate-system-tools mate-system-tools-common mate-system-monitor-common
+#sudo apt-get install ambiance-colors radiance-colors
+#sudo apt-get remove gcalctool gnome-screenshot gedit file-roller eog gnome-system-monitor gnome-system-log baobab gnome-terminal gnome-applets gnome-media gnome-power-manager gnome-screensaver
+#sudo apt-get remove gnome-calculator evince
+
+#### enlightenment
+##e20
+sudo add-apt-repository -y ppa:enlightenment-git/ppa
+sudo apt-get -y update
+sudo apt-get -y install e20 terminology
+##e19
+#sudo add-apt-repository -y ppa:martinx/enlightenment
+#sudo apt-get -y update
+#sudo apt-get -y install enlightenment terminology
+
+########Themes
+
+#### ambiance and radiance themes
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
+sudo apt-get -y update
+sudo apt-get -y install ambiance-colors radiance-colors ubuntu-mono
+sudo apt-get -y install ambiance-blackout-flat-colors
+
+#### ambiance-grey
+sudo add-apt-repository -y ppa:noobslab/themes
+sudo apt-get -y update
+sudo apt-get -y install ambiance-grey
+
+#### vibrancy-colors icon theme
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
+sudo apt-get -y update
+sudo apt-get install vibrancy-colors
+
+######## Language packages
+sudo apt-get -y install myspell-es wspanish language-pack-es language-pack-es-base 
+sudo apt-get -y install myspell-en-gb myspell-en-us
+sudo apt-get -y install aspell aspell-en aspell-es
+
+######## Security & Privacy
+sudo apt-get -y install seahorse
+
+#### tor-browser
+sudo add-apt-repository -y ppa:webupd8team/tor-browser
+sudo apt-get -y update
+sudo apt-get -y install tor-browser
+
+######## CD/DVD Tools
+
+#### Various
+sudo apt-get -y install furiusisomount devede isomaster k3b acetoneiso 
+
+######## Photos & Graphics
+
+#### Gthumb - only for 13.04 or less
+sudo add-apt-repository -y ppa:webupd8team/gthumb
+sudo apt-get -y update
+sudo apt-get -y install gthumb
+
+#### photo
 sudo add-apt-repository -y ppa:samrog131/ppa
 sudo apt-get -y update
-sudo apt-get -y install photoqt
+sudo apt-get -y install photo 
 
-#### folder-color
-sudo add-apt-repository -y ppa:costales/folder-color
+#### Various
+sudo apt-get -y install shotwell
+sudo apt-get -y install xnviewmp xsane
+sudo apt-get -y install inkscape karbon scribus gwenview		#scribus-ng - DEV VERSION
+
+######## Audio & Music
+
+#### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - TO TEST
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - TO TEST
+#sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+#sudo apt-get -y update
+#sudo apt-get -y install spotify-client
+
+#### Audacity
+sudo add-apt-repository -y ppa:audacity-team/daily
 sudo apt-get -y update
-#### nautilus
-#sudo apt-get -y install folder-color
-#nautilus -q
-#### nemo
-#sudo apt-get -y install folder-color-nemo
-#nemo -q
-#### caja
-#sudo apt-get -y install folder-color-caja
-#caja -q
-#fix if proceed
-#sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
+sudo apt-get -y install audacity
 
-#### power-installer
-#sudo add-apt-repository -y ppa:donadigo/power-installer
-sudo add-apt-repository -y ppa:elementary-os/daily
+#### PyKaraoke
+#wget http://heanet.dl.sourceforge.net/project/pykaraoke/pykaraoke/0.7.5/pykaraoke-0.7.5.zip
+#unzip pykaraoke-0.7.5.zip
+#sudo apt-get -y install python-dev python-pygame libwxgtk-python libsdl-dev python-mutagen
+#cd pykaraoke-0.7.5
+#python setup.py install
+#pykaraoke
+
+#### Various
+sudo apt-get -y install sound-juicer mixxx qtractor performous
+
+######## Videos & Movies
+
+#### ffmpeg
+sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
 sudo apt-get -y update
-sudo apt-get -y install power-installer
+sudo apt-get -y install ffmpeg
 
-#### kdeconnect
-sudo add-apt-repository -y ppa:vikoadi/ppa
+#### Kazam - In official stable repo
+#sudo add-apt-repository -y ppa:kazam-team/stable-series
+#sudo add-apt-repository -y ppa:kazam-team/unstable-series
+#sudo apt-get -y update
+#sudo apt-get -y install kazam
+
+#### VLC #### not compatible for 14.10
+#sudo add-apt-repository -y ppa:ed10vi86/video
+#sudo apt-get -y update
+#sudo apt-get -y install vlc
+
+#### kdenlive - CAREFULL, a lot of kde packages
+#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+#sudo apt-get -y update
+#sudo apt-get -y install kdenlive
+
+#### natron
+#https://natron.inria.fr/
+wget http://skylink.dl.sourceforge.net/project/natron/Natron_Linux_x86_64bits_v1.1.0.tar.gz
+#more...
+
+#### cinelerra
+sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
 sudo apt-get -y update
-sudo apt-get -y install indicator-kdeconnect kdeconnect
+sudo apt-get -y install cinelerra-cv
 
-#### mtp support
-sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
-sudo apt-get -y update & dist-upgrade
-sudo apt-get -y install mtp-tools mtpfs
-
-#### Install an RPM Package on Ubuntu Linux - http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
-#sudo apt-get -y install alien dpkg-dev debhelper build-essential
-#sudo alien packagename.rpm
-#sudo dpkg -i packagename.deb
-
-#### sigram		#MATE PROBLEM
-sudo add-apt-repository -y ppa:sialan/desktop
+#### Popcorn Time
+sudo add-apt-repository -y ppa:webupd8team/popcorntime
 sudo apt-get -y update
-sudo apt-get -y install sigram
+sudo apt-get -y install popcorn-time
 
-#### cutegram		#MATE PROBLEM
-sudo add-apt-repository -y ppa:aseman/desktop-apps
-sudo apt-get -y update
-sudo apt-get -y install cutegram libqtelegram
+#### Various
+sudo apt-get -y install openshot pitivi
 
-#### touchpad-indicator
-sudo add-apt-repository -y ppa:atareao/atareao
-sudo apt-get -y update
-sudo apt-get -y install touchpad-indicator
+####All multimedia content
 
-#### qllauncher - http://www.webupd8.org/2014/12/qllauncher-quake-live-launcher-for-linux.html
-sudo add-apt-repository -y ppa:broken/ppa
-sudo apt-get -y update
-sudo apt-get -y install qllauncher
+##best performance on flash
+#http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
 
-#### paper-gtk-theme
-sudo add-apt-repository -y ppa:snwh/pulp
-sudo apt-get -y update
-sudo apt-get -y install paper-gtk-theme
+sudo apt-get -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
+sudo apt-get -y install libavcodec-extra libdvdread4 libappindicator1 x264 uudeview
+sudo /usr/share/doc/libdvdread4/./install-css.sh
+sudo apt-get -y install gstreamer0.10-ffmpeg gstreamer0.10-fluendo-mp3 gstreamer0.10-gnonlin gstreamer0.10-plugins-bad-multiverse totem gstreamer-dbus-media-service gstreamer-tools
+sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu libdvdcss2 w64codecs
 
-#### hollywood
-sudo apt-add-repository -y ppa:hollywood/ppa
-sudo apt-get -y update
-sudo apt-get -y install hollywood byobu
+######## Development
 
-#### Trojitá
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/jkt-gentoo:/trojita/xUbuntu_14.10/ /' >> /etc/apt/sources.list.d/trojita.list"
-wget http://download.opensuse.org/repositories/home:jkt-gentoo:trojita/xUbuntu_14.10/Release.key
-sudo apt-key add - < Release.key
+##### enigma - http://enigma-dev.org/docs/Wiki/Install:Linux
+#more...
+
+##### MakeHuman
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 sudo apt-get -y update
-sudo apt-get -y install trojita
+sudo apt-get -y install makehuman
+
+#### ubuntu-make - (new android studio) http://www.webupd8.org/2014/12/ubuntu-developer-tools-center-renamed.html
+##Android Studio from web
+#RECOMMENDED - TO IMPROVE - https://developer.android.com/sdk/installing/index.html?pkg=studio
+wget https://dl.google.com/dl/android/studio/ide-zips/1.0.1/android-studio-ide-135.1641136-linux.zip
+unzip android-studio-ide-135.1641136-linux.zip -d /home/usuario/tools/android
+sudo /home/usuario/tools/android/android-studio/bin/studio.sh
+
+sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get -y update
+sudo apt-get -y install ubuntu-make
+##Android Studio using Ubuntu Make
+#sudo umake android
+#sudo umake android --remove	#TO REMOVE
+##Eclipse using Ubuntu Make
+#sudo umake ide eclipse
+#sudo umake ide eclipse --remove	#TO REMOVE
+
+#### Wine
+sudo add-apt-repository -y ppa:ubuntu-wine/ppa
+sudo apt-get -y update
+sudo apt-get -y install wine1.7
+## Wine config
+#sudo apt-get -y install q4wine winetricks
+#export WINEPREFIX=prefix32
+#export WINEARCH=win32
+#winecfg
+
+#### atom
+sudo add-apt-repository -y ppa:webupd8team/atom
+sudo apt-get -y update
+sudo apt-get -y install atom
+
+#### sublime-text
+#http://www.webupd8.org/2013/07/sublime-text-3-ubuntu-ppa-now-available.html
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+sudo apt-get -y update
+sudo apt-get -y install sublime-text-installer
+
+#### Ubuntu phone sdk - With problems
+#sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
+#sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
+#sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper - DEPRECATED, NEVER USE
+#sudo add-apt-repository -y ppa:ui-toolkit/ppa - DEPRECATED, NEVER USE
+#sudo apt-get -y update
+#sudo apt-get -y install ubuntu-sdk qml
+#qtmultimedia5-examples
+#sudo apt-get -y install qtcreator qt5-default - DON'T USE
+
+#### openjdk6
+#sudo apt-get -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
+
+#### openjdk7
+#sudo apt-get -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
+
+#### openjdk8
+sudo apt-get -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
+
+#### Oracle Java 6 7 8
+#sudo add-apt-repository -y ppa:webupd8team/java
+#sudo apt-get -y update
+
+#### Oracle Java6
+#sudo apt-get -y install oracle-java6-installer
+#sudo apt-get install oracle-java6-set-default
+
+#### Oracle Java7
+#sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+#sudo apt-get -y install oracle-java7-installer
+#sudo update-java-alternatives -s java-7-oracle
+#sudo apt-get install oracle-java7-set-default
+
+#### Oracle Java8
+#sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
+#sudo apt-get -y install oracle-java8-installer
+#sudo update-java-alternatives -s java-8-oracle
+#sudo apt-get install oracle-java8-set-default
+
+#### Various
+#sudo apt-get -y install ia32-libs lib32asound2		#REMOVED 
+sudo apt-get -y install libcurl3 libc6-i386 lib32z1
+
+sudo apt-get -y install terminator zenity gtk3-engines-unico octave-zenity
+sudo apt-get -y install vim
+
+#sudo apt-get -y install ubuntu-developer-tools-center udtc android		#DEPRECATED
+sudo apt-get -y install geany geany-plugin-spellcheck geany-plugin-addons geany-plugin-extrasel
+#sudo apt-get -y install qt4-demos
+
+#sudo apt-get -y install notepad-qml qtcreator #### Dependencies problem, be careful.
+sudo apt-get -y install mono-complete mono-basic-dbg
+
+######## Web Browsers
+
+#### google-chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get -y update
+sudo apt-get -y install google-chrome-stable
+
+#### Chromium dev & beta channel - Select
+sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
+sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
+sudo apt-get -y update
+sudo apt-get -y install chromium-browser chromium-browser-l10n
+
+#### PPA for Ubuntu Mozilla Security Team
+sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
+sudo apt-get -y update
+sudo apt-get -y install firefox
+
+#### firefox developer edition ( aurora - fx10)
+sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
+sudo apt-get -y update
+sudo apt-get -y install firefox
+
+#### firefox daily
+sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
+sudo apt-get -y update
+sudo apt-get -y install firefox-trunk
+
+#### Midori
+##sudo add-apt-repository -y ppa:midori/ppa
+sudo add-apt-repository -y ppa:midori/midori-dev
+sudo apt-get -y update
+sudo apt-get -y install midori
+
+######## Social
+
+##### Telegram (1) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+sudo add-apt-repository -y ppa:atareao/telegram
+sudo apt-get -y update
+sudo apt-get -y install telegram
+
+##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+#sudo add-apt-repository -y ppa:noobslab/apps
+#sudo apt-get -y update
+#sudo apt-get -y install telegram-desktop
+
+##### Facebook Messenger - DEPRECATED!
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-get -y update
+#sudo apt-get -y install fbmessenger
+
+##### Skype
+#http://www.skype.com/es/download-skype/skype-for-linux/
+wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+sudo dpkg -i skype*.deb
+rm skype*.deb
+
+#### Hotot - May be in official repo
+sudo add-apt-repository -y ppa:jimmyxu/hotot
+sudo apt-get -y update
+sudo apt-get -y install hotot
+
+#### pidgin
+sudo add-apt-repository -y ppa:pidgin-developers/ppa
+sudo apt-get -y update
+sudo apt-get -y install pidgin pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
+##skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
+
+#### telegram-purple
+#http://www.webupd8.org/2014/11/add-telegram-support-to-pidgin-with.html
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-get -y update
+#sudo apt-get -y install telegram-purple
+##sudo apt-get dist-upgrade
+
+#### Various
+sudo apt-get -y install choqok xchat
+
+######## File Management
+
+#### SpaceFM - problems
+#sudo add-apt-repository -y ppa:mati75/lubuntu
+#sudo apt-get -y update
+#sudo apt-get -y install spacefm
+
+####Thunar
+sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
+sudo apt-get -y install xfce4-goodies
+
+#### Various
+sudo apt-get -y install lhasa filezilla mc
+
+######## File Sharing
+
+#### jdownloader
+#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+sudo add-apt-repository -y ppa:jd-team/jdownloader/
+sudo apt-get -y install jdownloader #### recommended to INSTALL v2 BETA
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+su usuario -c ./JD2SilentSetup_x64.sh
+rm JD2SilentSetup_x64.sh
+
+##### Frostwire
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-get -y update
+sudo apt-get -y install frostwire
+##ancient
+#http://www.frostwire.com/
+#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
+#sudo dpkg -i frostwire*.deb
+#rm frostwire*.deb
+
+##### qbittorrent
+sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
+sudo apt-get -y update
+sudo apt-get -y install qbittorrent
+
+##### Vuze
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-get -y update
+sudo apt-get -y install vuze
+
+##### Tribler
+wget https://github.com/Tribler/tribler/releases/download/v6.4.0/tribler_6.4.0_all.deb
+sudo dpkg -i tribler*.deb
+rm tribler*.deb
+
+#### Various
+sudo apt-get -y install amule deluge axel
+
+######## News & Books
+
+#### quiterss
+sudo add-apt-repository -y ppa:quiterss/quiterss
+sudo apt-get -y update
+sudo apt-get -y install quiterss
+
+#### Various
+sudo apt-get -y install gpodder calibre newsbeuter rssowl
+
+######## Office & Productivity
+
+#### LibreOffice #### not compatible for 14.10
+#sudo add-apt-repository -y ppa:libreoffice/ppa
+#sudo apt-get -y update
+#sudo apt-get -y install libreoffice
+
+#### Office web apps
+#cd ..
+#sudo dpkg -i ./z.extra/microsoft_online_apps.deb
+
+#### Various
+sudo apt-get -y install okular evince lyx rednotebook zim txt2tags poppler-utils pdftk
+sudo apt-get -y install gnucash (python-gnucash) grisbi hombank skrooge abtransfers codeka adempiere (sugarcrm - not in repos)
+
+######## Games
+
+#### Steam Login
+sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
+sudo apt-get -y update
+sudo apt-get -y install steam steam-login
+
+#### 0ad
+sudo add-apt-repository -y ppa:wfg/0ad
+sudo apt-get -y update
+sudo apt-get -y install 0ad
+
+#### lutris
+#https://lutris.net/games/
+wget http://lutris.net/releases/lutris_0.3.6.3_all.deb
+sudo dpkg -i lutris*.deb
+rm lutris*.deb
+
+#### dustrac
+sudo add-apt-repository -y ppa:jussi-lind/dustrac
+sudo apt-get -y update
+sudo apt-get -y install dustrac
+
+#### Various
+#sudo apt-get -y install true-combat-elite
+#americas-army:i386
+#lincity-ng
+#crossover-games crossover-pro
+#gamedevelop
+#djl
+#ogs-mahjong ogs-mahjong-music-addon
+#sandboxgamemaker
+#opencity
+#teeworlds
+#d2x-rebirth-full d2x-xl-executable
+#numptyphysics
+#violetland
+#kolf
+#neverputt
+#maximinigolf
+#assaultcube
+#sorr
+#iconqueru
+#hedgewars
+#freeminer
+#torcs
+#vdrift
+#trigger-rally
+#stuntrally
+#speed-dreams
+#gweled
+#sgt-puzzles
+#djl
+#sudo apt-get -y install amor macopix-gtk2 oneko
+
+######## Extra
+
+####Upgrading system
+#sudo apt-get -y upgrade
+
+#### Wine example
+#wget http://dl.desktop.line.naver.jp/naver/LINE/win/LineInst.exe
+#wine LineInst.exe
+
+#### Repairing jdownloader v1 if is necessary
+#sudo update-alternatives --config java
+
+#### Various
+#sudo apt-get -y install diodon diodon-plugins

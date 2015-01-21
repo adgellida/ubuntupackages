@@ -20,9 +20,10 @@ Go to your selected script and modified it.
 
 * "installpackages1" if you want to install some basic packages.
 * "installpackages2" if you want to check my extra installed packages.
-* "installpackages3" if you want to check more extra packages.
-* "installpackages4" if you want to check the test packages.
-* "installpackages5" if you want to check more extra packages(2).
+* "installpackages3" if you want to check my extra proposed packages.
+* "installpackages4" if you want to check more extra packages.
+* "installpackages5" if you want to check the test packages.
+* "installpackages6" if you want to check more extra packages(2).
 1. Execute it.
 1. (Optional) Check all the other content.
 
