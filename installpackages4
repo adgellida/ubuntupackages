@@ -1,23 +1,7 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos - script 3
+######## installpackages - Installs packages & necessary repos - script 4
 
 ######## Backup & Sync
-
-#### DirSyncPro
-sudo mkdir /opt/DirSyncPro
-sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
-sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
-sudo unzip /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip -d /opt/DirSyncPro
-sudo rm /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
-sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
-sudo sh -c 'echo "[Desktop Entry]
-Type=Application
-Name=DirSyncPro
-Comment=Sync your files!
-Categories=System
-Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
-Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
-##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
 
 #### Holo Backup
 sudo mkdir "/opt/Holo Backup"
@@ -46,7 +30,7 @@ sudo apt-get -y install timeshift
 
 #### Insync
 wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
+test -f /etc/apt/sources.list.d/insync.list || sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
 sudo apt-get -y update
 sudo apt-get -y install insync insync-caja
 ##referal
@@ -54,9 +38,9 @@ sudo apt-get -y install insync insync-caja
 
 #### Spideroak
 #http://www.rubynginx.com/index.php/2012/10/11/install-spideroak-on-ubuntu-12-04/																												
-####			 https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/																												
+#https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/																												
 wget -qO - https://spideroak.com/dist/spideroak-apt-2013.asc | sudo apt-key add -
-sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
+test -f /etc/apt/sources.list.d/spideroak.list || sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
 sudo apt-get -y update
 sudo apt-get -y install spideroak
 
@@ -65,15 +49,15 @@ sudo apt-get -y install sbackup-plugins-fuse grsync unison-gtk freefilesync	#htt
 
 ########OS & Utilities
 
-#### cairo-dock
+#### cairo-dock - TO TEST
 #Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
+#sudo add-apt-repository -y ppa:cairo-dock-team/ppa
 sudo add-apt-repository -y ppa:cairo-dock-team/weekly
-sudo add-apt-repository -y ppa:cairo-dock-team/ppa
 sudo apt-get -y update
 sudo apt-get -y install cairo-dock
 mkdir ~/.config/autostart
 rm ~/.config/autostart/cairo-dock.desktop
-sh -c 'echo "[Desktop Entry]
+test -f ~/.config/autostart/cairo-dock.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=cairo-dock -W
 Hidden=false
@@ -115,11 +99,6 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 ## /etc/apt/apt.conf.d/50unattended-upgrades
 #uncomment - "${distro_id}:${distro_codename}-updates";
 
-#### mutate
-sudo apt-add-repository -y ppa:mutate/ppa
-sudo apt-get -y update
-sudo apt-get -y install mutate
-
 #### grub-customizer
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
 sudo apt-get -y update
@@ -127,13 +106,13 @@ sudo apt-get -y install grub-customizer
 
 #### VirtualBox (1)
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 sudo apt-get -y update
 sudo apt-get -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 #### VirtualBox (2)
 #wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
-#sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
+#test -f /etc/apt/sources.list.d/virtualbox.org.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
 #sudo apt-get -y update
 #sudo apt-get -y upgrade
 #sudo apt-get -y install virtualbox-4.3 virtualbox-guest-additions-iso
@@ -146,11 +125,11 @@ rm PlayOnLinux*.deb
 #### Intel Linux Graphics Installer
 #wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
 #wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-#sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/14.04/main/ trusty main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+#test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/14.04/main/ trusty main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
 
 #### muCommander (unstable)
 sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
+test -f /etc/apt/sources.list.d/mucommander.list || sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
 sudo apt-get -y update
 sudo apt-get -y install mucommander
 
@@ -162,31 +141,10 @@ sudo apt-get -y update
 sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
 sudo apt-get -y update
 
-#### Getdeb (1)
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-get -y update
-
-#### Getdeb (2)
-#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
-#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
-#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-#rm -f playdeb_0.3-1~getdeb1_all.deb
-
 #### Unstable Synaptic 
 sudo add-apt-repository -y ppa:webupd8team/unstable
 sudo apt-get -y update
 sudo apt-get -y install synaptic
-
-#### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-sudo add-apt-repository -y ppa:xorg-edgers/ppa
-sudo apt-get -y update
-sudo apt-get -y dist-upgrade
-##sudo apt-get install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
 
 #### X Updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
 sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates/
@@ -273,7 +231,7 @@ sudo apt-get -y install cinnamon
 
 #### MATE Desktop Environment (1)
 sudo apt-get --yes --force-yes install mate-archive-keyring
-sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
+test -f /etc/apt/sources.list.d/MATE.list || sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
 sudo apt-get -y update
 sudo apt-get -y install mate-desktop-environment
 
@@ -356,7 +314,7 @@ sudo apt-get -y install inkscape karbon scribus gwenview		#scribus-ng - DEV VERS
 #### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 - TO TEST
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E - TO TEST
-#sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
+#test -f /etc/apt/sources.list.d/spotify.list || sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 #sudo apt-get -y update
 #sudo apt-get -y install spotify-client
 
@@ -389,7 +347,7 @@ sudo apt-get -y install ffmpeg
 #sudo apt-get -y update
 #sudo apt-get -y install kazam
 
-#### VLC #### not compatible for 14.10
+#### VLC #### only compatible with 14.04
 #sudo add-apt-repository -y ppa:ed10vi86/video
 #sudo apt-get -y update
 #sudo apt-get -y install vlc
@@ -414,6 +372,10 @@ sudo add-apt-repository -y ppa:webupd8team/popcorntime
 sudo apt-get -y update
 sudo apt-get -y install popcorn-time
 
+#### waifu
+wget http://www.waifu.ca/waifu-linux64.tar.gz
+#more...
+
 #### Various
 sudo apt-get -y install openshot pitivi
 
@@ -435,8 +397,8 @@ sudo apt-get -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu 
 
 ##### MakeHuman
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 sudo apt-get -y update
 sudo apt-get -y install makehuman
 
@@ -535,7 +497,7 @@ sudo apt-get -y install mono-complete mono-basic-dbg
 
 #### google-chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get -y update
 sudo apt-get -y install google-chrome-stable
 
@@ -567,16 +529,6 @@ sudo apt-get -y update
 sudo apt-get -y install midori
 
 ######## Social
-
-##### Telegram (1) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-sudo add-apt-repository -y ppa:atareao/telegram
-sudo apt-get -y update
-sudo apt-get -y install telegram
-
-##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-#sudo add-apt-repository -y ppa:noobslab/apps
-#sudo apt-get -y update
-#sudo apt-get -y install telegram-desktop
 
 ##### Facebook Messenger - DEPRECATED!
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
@@ -617,7 +569,7 @@ sudo apt-get -y install choqok xchat
 #sudo apt-get -y update
 #sudo apt-get -y install spacefm
 
-####Thunar
+#### Thunar
 sudo apt-get -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
 sudo apt-get -y install xfce4-goodies
 
@@ -635,18 +587,6 @@ chmod +rwx JD2SilentSetup_x64.sh
 su usuario -c ./JD2SilentSetup_x64.sh
 rm JD2SilentSetup_x64.sh
 
-##### Frostwire
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-get -y update
-sudo apt-get -y install frostwire
-##ancient
-#http://www.frostwire.com/
-#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
-#sudo dpkg -i frostwire*.deb
-#rm frostwire*.deb
-
 ##### qbittorrent
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
 sudo apt-get -y update
@@ -654,15 +594,10 @@ sudo apt-get -y install qbittorrent
 
 ##### Vuze
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 sudo apt-get -y update
 sudo apt-get -y install vuze
-
-##### Tribler
-wget https://github.com/Tribler/tribler/releases/download/v6.4.0/tribler_6.4.0_all.deb
-sudo dpkg -i tribler*.deb
-rm tribler*.deb
 
 #### Various
 sudo apt-get -y install amule deluge axel
@@ -721,14 +656,12 @@ sudo apt-get -y install dustrac
 #lincity-ng
 #crossover-games crossover-pro
 #gamedevelop
-#djl
 #ogs-mahjong ogs-mahjong-music-addon
 #sandboxgamemaker
 #opencity
 #teeworlds
 #d2x-rebirth-full d2x-xl-executable
 #numptyphysics
-#violetland
 #kolf
 #neverputt
 #maximinigolf
@@ -744,8 +677,8 @@ sudo apt-get -y install dustrac
 #speed-dreams
 #gweled
 #sgt-puzzles
-#djl
-#sudo apt-get -y install amor macopix-gtk2 oneko
+#kulic
+#amor macopix-gtk2 oneko
 
 ######## Extra
 

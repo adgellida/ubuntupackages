@@ -1,5 +1,5 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos - script 5
+######## installpackages - Installs packages & necessary repos - script 6
 
 #### SyncDrive - dependencies error
 sudo add-apt-repository -y ppa:nemh/gambas3
@@ -31,13 +31,13 @@ sudo apt-get -y install emerald
 
 #### remastersys - PRECISE but works on RARING - systemback is preferible
 #wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
-#sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+#test -f /etc/apt/sources.list.d/remastersys.list || sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
 #sudo apt-get -y update
 #sudo apt-get -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
 
 #### multisystem
 wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
-sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
+test -f /etc/apt/sources.list.d/multisystem.list || sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
 sudo apt-get -y update
 sudo apt-get -y install multisystem
 

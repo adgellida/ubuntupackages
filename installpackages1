@@ -11,10 +11,7 @@ sudo apt-get -y upgrade
 
 ######## Backup & Sync
 
-#### systemback - HIGHLY RECOMMENDED!
-sudo apt-add-repository -y ppa:nemh/systemback
-sudo apt-get -y update
-sudo apt-get -y install systemback
+#
 
 ######## OS & Utilities
 
@@ -68,7 +65,7 @@ sudo apt-get -y install vlc vlc-plugin-pulse libvlc5
 ######## Development
 
 #### Various
-#sudo apt-get -y install openjdk-8-jre
+sudo apt-get -y install openjdk-7-jre openjdk-8-jre
 
 ######## Web Browsers
 
@@ -89,8 +86,7 @@ sudo update-pepperflashplugin-nonfree --install
 ######## File Management
 
 #### Various
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract
-#sudo apt-get -y install p7zip
+sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
 
 ######## File Sharing
 
@@ -122,6 +118,6 @@ sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufo
 
 #### Cleaning system
 #sudo apt-get -f install
-#sudo apt-get -y autoremove
+sudo apt-get -y autoremove
 #sudo apt-get -y autoclean
 #sudo apt-get -y clean

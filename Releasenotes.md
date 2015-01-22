@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2015.01.23 alpha
+ * minor changes
+
 * v2015.01.21 alpha
  * added "installpackages6"
  * minor changes

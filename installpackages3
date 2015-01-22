@@ -1,9 +1,29 @@
 #!/bin/bash
-######## installpackages - Installs packages & necessary repos - script 2
+######## installpackages - Installs packages & necessary repos - script 3
 
 ######## Backup & Sync
 
-#
+#### DirSyncPro
+sudo mkdir /opt/DirSyncPro
+sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
+sudo unzip /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip -d /opt/DirSyncPro
+sudo rm /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+
+test -f /usr/share/applications/dirsyncpro.desktop || sudo sh -c 'echo "[Desktop Entry]
+Type=Application
+Name=DirSyncPro
+Comment=Sync your files!
+Categories=System
+Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
+##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
+
+#### systemback - HIGHLY RECOMMENDED!
+sudo apt-add-repository -y ppa:nemh/systemback
+sudo apt-get -y update
+sudo apt-get -y install systemback
 
 ######## OS & Utilities
 
@@ -11,6 +31,11 @@
 sudo apt-add-repository -y ppa:nilarimogard/webupd8
 sudo apt-get -y update
 sudo apt-get -y install albert
+
+#### mutate
+sudo apt-add-repository -y ppa:mutate/ppa
+sudo apt-get -y update
+sudo apt-get -y install mutate
 
 #### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
 sudo apt-get -y install undistract-me
@@ -48,18 +73,10 @@ sudo apt-get -y update
 sudo apt-get -y install variety
 
 #### HP
-#sudo apt-get -y install hplip hplip-gui
-
-#### variety-peterlevi
-#sudo add-apt-repository -y ppa:peterlevi/ppa
-#sudo add-apt-repository -y ppa:variety/next
-sudo add-apt-repository -y ppa:variety/daily
-sudo apt-get -y update
-sudo apt-get -y install variety
+sudo apt-get -y install hplip hplip-gui
 
 #### Various
-sudo apt-get -y install gparted launchy keepassx #thewindowfactory (twf)
-#sudo apt-get -y install freefilesync
+sudo apt-get -y install uck		#ubuntu customization kit
 
 ######## Desktop Environment
 
@@ -120,8 +137,8 @@ sudo apt-get -y install kicad
 
 ##### Fritzing
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 sudo apt-get -y update
 sudo apt-get -y install fritzing
 
@@ -153,4 +170,4 @@ sudo apt-get -y install fritzing
 ######## Games
 
 #### Various
-sudo apt-get -y install scourge violetland bofh
+sudo apt-get -y install scourge violetland bofh csmash cdogs-sdl djl
