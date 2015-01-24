@@ -5,9 +5,9 @@
 #sudo rm -f -r /etc/apt/sources.list.d/*
 
 #### Upgrading system
-sudo apt-get -y update
-sudo apt-get -y upgrade
-##sudo apt-get -y dist-upgrade
+#sudo apt-fast -y update
+#sudo apt-fast -y upgrade
+##sudo apt-fast -y dist-upgrade
 
 ######## Backup & Sync
 
@@ -15,8 +15,35 @@ sudo apt-get -y upgrade
 
 ######## OS & Utilities
 
+#### apt-fast
+#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
+#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
+#sudo add-apt-repository -y ppa:apt-fast/stable
+sudo add-apt-repository -y ppa:saiarcot895/myppa
+sudo apt-get -y update
+sudo apt-get -y install apt-fast
+
+#### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
+sudo apt-fast -y update
+sudo apt-fast -y install y-ppa-manager
+
+#### Getdeb (1)
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-fast -y update
+
+#### Getdeb (2)
+#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
+#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
+#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
+#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
+#rm -f playdeb_0.3-1~getdeb1_all.deb
+
 #### Various
-sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility
+sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
 
 ######## Desktop Environment
 
@@ -33,7 +60,7 @@ sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic prel
 ######## Security & Privacy
 
 #### Various
-sudo apt-get -y install gufw
+sudo apt-fast -y install gufw
 
 ######## CD/DVD Tools
 
@@ -42,12 +69,12 @@ sudo apt-get -y install gufw
 ######## Photos & Graphics
 
 #### Various
-sudo apt-get -y install gnome-exe-thumbnailer shutter
+sudo apt-fast -y install gnome-exe-thumbnailer shutter
 
 #### gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp/
-sudo apt-get -y update
-sudo apt-get -y install gimp gimp-plugin-registry
+sudo apt-fast -y update
+sudo apt-fast -y install gimp gimp-plugin-registry
 
 ######## Audio & Music
 
@@ -60,24 +87,38 @@ sudo apt-get -y install gimp gimp-plugin-registry
 ######## All multimedia content
 
 #### Various
-sudo apt-get -y install vlc vlc-plugin-pulse libvlc5
+sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 
 ######## Development
 
 #### Various
-sudo apt-get -y install openjdk-7-jre openjdk-8-jre
+sudo apt-fast -y install openjdk-7-jre openjdk-8-jre
 
 ######## Web Browsers
 
 #### chromium
-sudo apt-get -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n
 
-#### pepper-flash
+#### pepper-flash - for chromium
 ##pepper-flash-player from official repos
 #http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
-sudo apt-get -y install pepperflashplugin-nonfree
+sudo apt-fast -y install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
+
+#### pepper-flash - for chromium (2)
+#https://launchpad.net/~skunk/+archive/ubuntu/pepper-flash
+#sudo add-apt-repository -y ppa:skunk/pepper-flash
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepflashplugin-nonfree
+#/etc/chromium-browser/default
+#. /usr/lib/pepflashplugin-installer/pepflashplayer.sh
+#chromium restart
+
+#### pepper-flash - for firefox
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin
 
 ######## Social
 
@@ -86,7 +127,7 @@ sudo update-pepperflashplugin-nonfree --install
 ######## File Management
 
 #### Various
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
+sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
 
 ######## File Sharing
 
@@ -98,7 +139,7 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 
 ######## Office & Productivity
 
-#sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+#sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ######## Games
 
@@ -107,17 +148,17 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 ######## Extra
 
 #### uninstallpackages
-sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox pidgin* thunderbird*
+sudo apt-fast remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
 
 #### Upgrading system
-#sudo apt-get -y upgrade
-#sudo apt-get -y dist-upgrade
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y dist-upgrade
 
 #### Repairing system 2/2
-#sudo apt-get -f install
+#sudo apt-fast -f install
 
 #### Cleaning system
-#sudo apt-get -f install
-sudo apt-get -y autoremove
-#sudo apt-get -y autoclean
-#sudo apt-get -y clean
+#sudo apt-fast -f install
+sudo apt-fast -y autoremove
+#sudo apt-fast -y autoclean
+#sudo apt-fast -y clean

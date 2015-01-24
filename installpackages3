@@ -22,46 +22,46 @@ Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.deskt
 
 #### systemback - HIGHLY RECOMMENDED!
 sudo apt-add-repository -y ppa:nemh/systemback
-sudo apt-get -y update
-sudo apt-get -y install systemback
+sudo apt-fast -y update
+sudo apt-fast -y install systemback
 
 ######## OS & Utilities
 
 #### albert
 sudo apt-add-repository -y ppa:nilarimogard/webupd8
-sudo apt-get -y update
-sudo apt-get -y install albert
+sudo apt-fast -y update
+sudo apt-fast -y install albert
 
 #### mutate
 sudo apt-add-repository -y ppa:mutate/ppa
-sudo apt-get -y update
-sudo apt-get -y install mutate
+sudo apt-fast -y update
+sudo apt-fast -y install mutate
 
 #### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
-sudo apt-get -y install undistract-me
+sudo apt-fast -y install undistract-me
 
 #### appgrid
 sudo add-apt-repository -y ppa:appgrid/stable
-sudo apt-get -y update
-sudo apt-get -y install appgrid
+sudo apt-fast -y update
+sudo apt-fast -y install appgrid
 
 #### postinstallerf
 ## ancient version
 #wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
 #wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
 #sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-#sudo apt-get -y update
-#sudo apt-get -y install yad packagekit
+#sudo apt-fast -y update
+#sudo apt-fast -y install yad packagekit
 #sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
 #sudo dpkg -i postinstallerf_1.5-13_all.deb
 ## latest version
 wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
 wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/21/x86_64/postinstallerf-1.5-21.fc21.noarch.rpm
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt-get -y update
-sudo apt-get -y install yad packagekit
+sudo apt-fast -y update
+sudo apt-fast -y install yad packagekit
 sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-sudo apt-get -y install alien dpkg-dev debhelper build-essential
+sudo apt-fast -y install alien dpkg-dev debhelper build-essential
 sudo alien postinstallerf-1.5-21.fc21.noarch.rpm
 sudo dpkg -i postinstallerf_1.5-22_all.deb
 
@@ -69,14 +69,14 @@ sudo dpkg -i postinstallerf_1.5-22_all.deb
 #sudo add-apt-repository -y ppa:peterlevi/ppa
 #sudo add-apt-repository -y ppa:variety/next
 sudo add-apt-repository -y ppa:variety/daily
-sudo apt-get -y update
-sudo apt-get -y install variety
+sudo apt-fast -y update
+sudo apt-fast -y install variety
 
 #### HP
-sudo apt-get -y install hplip hplip-gui
+sudo apt-fast -y install hplip hplip-gui
 
 #### Various
-sudo apt-get -y install uck		#ubuntu customization kit
+sudo apt-fast -y install uck	#ubuntu customization kit
 
 ######## Desktop Environment
 
@@ -101,14 +101,16 @@ sudo apt-get -y install uck		#ubuntu customization kit
 ######## Photos & Graphics
 
 #### krita
-sudo add-apt-repository ppa:kubuntu-ppa/backports
-sudo apt-get update
-sudo apt-get install krita kritasketch
 #http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-##sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
-##sudo apt-get -y update
-##sudo apt-get -y install krita-testing krita-testing-dbg krita-testing-l10n-es
+#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
+sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
+sudo apt-fast -y update
+sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n-es
+#sudo restart lightdm
 #to execute run "krita"
+#sudo add-apt-repository ppa:kubuntu-ppa/backports
+#sudo apt-fast update
+#sudo apt-fast install krita kritasketch
 
 ######## Audio & Music
 
@@ -127,20 +129,20 @@ sudo apt-get install krita kritasketch
 #### ubuntu-emulator
 #http://www.webupd8.org/2014/03/ubuntu-touch-emulator-installation-and.html
 #http://www.webupd8.org/2013/11/experimental-ubuntu-touch-emulator.html
-sudo apt-get -y install ubuntu-emulator
+sudo apt-fast -y install ubuntu-emulator
 
 #### Kicad
 sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
 sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily		#abandoned
-sudo apt-get -y update
-sudo apt-get -y install kicad
+sudo apt-fast -y update
+sudo apt-fast -y install kicad
 
 ##### Fritzing
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
 test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-get -y update
-sudo apt-get -y install fritzing
+sudo apt-fast -y update
+sudo apt-fast -y install fritzing
 
 ######## Web Browsers
 
@@ -170,4 +172,4 @@ sudo apt-get -y install fritzing
 ######## Games
 
 #### Various
-sudo apt-get -y install scourge violetland bofh csmash cdogs-sdl djl
+sudo apt-fast -y install scourge violetland bofh csmash cdogs-sdl djl
