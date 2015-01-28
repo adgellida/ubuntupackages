@@ -28,20 +28,6 @@ sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager/
 sudo apt-fast -y update
 sudo apt-fast -y install y-ppa-manager
 
-#### Getdeb (1)
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-fast -y update
-
-#### Getdeb (2)
-#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
-#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
-#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-#rm -f playdeb_0.3-1~getdeb1_all.deb
-
 #### Various
 sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
 

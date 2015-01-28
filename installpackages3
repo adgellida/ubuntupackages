@@ -148,7 +148,6 @@ sudo apt-fast -y install fritzing
 
 #
 
-
 ######## Social
 
 #
@@ -167,7 +166,20 @@ sudo apt-fast -y install fritzing
 
 ######## Office & Productivity
 
-#
+#### evolution
+sudo add-apt-repository -y ppa:fta/gnome3
+sudo apt-fast -y update
+sudo apt-fast -y install evolution
+
+#### claws-mail
+sudo add-apt-repository -y ppa:claws-mail/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install claws-mail claws-mail-extra-plugins
+
+#### geary
+sudo add-apt-repository -y ppa:yorba/daily-builds
+sudo apt-fast -y update
+sudo apt-fast -y install geary
 
 ######## Games
 

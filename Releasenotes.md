@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2015.01.29 alpha
+ * minor changes
+
 * v2015.01.25 alpha
  * replaced apt-get with apt-fast
 

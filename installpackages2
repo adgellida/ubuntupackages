@@ -22,6 +22,20 @@ sudo apt-fast -y dist-upgrade
 ##sudo apt-fast install nvidia-graphics-drivers-346	#EXAMPLE
 #how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
 
+#### Getdeb (1)
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+sudo apt-fast -y update
+
+#### Getdeb (2)
+#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
+#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
+#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
+#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
+#rm -f playdeb_0.3-1~getdeb1_all.deb
+
 #### Various
 sudo apt-fast -y install keepassx bum	#thewindowfactory (twf)
 
