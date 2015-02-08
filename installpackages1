@@ -125,7 +125,11 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack ar
 
 ######## Office & Productivity
 
-#sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+#### libreoffice
+#sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
+sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
+sudo apt-fast -y update
+sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ######## Games
 
