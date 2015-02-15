@@ -1,5 +1,8 @@
 Release notes
 =============================================
+* v2015.02.15 alpha
+ * minor changes
+
 * v2015.02.08 alpha
  * minor libreoffice changes
 

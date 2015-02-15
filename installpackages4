@@ -108,14 +108,14 @@ sudo apt-fast -y install grub-customizer
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 sudo apt-fast -y update
-sudo apt-fast -y install virtualbox virtualbox-dkms virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
+sudo apt-fast -y install virtualbox-4.3 dkms
 
 #### VirtualBox (2)
 #wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/virtualbox.org.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
 #sudo apt-fast -y update
 #sudo apt-fast -y upgrade
-#sudo apt-fast -y install virtualbox-4.3 virtualbox-guest-additions-iso
+#sudo apt-fast -y install virtualbox-4.3 virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 #### PlayOnLinux
 wget http://www.playonlinux.com/script_files/PlayOnLinux/4.2.5/PlayOnLinux_4.2.5.deb
