@@ -55,14 +55,18 @@ sudo apt-fast -y install multisystem
 
 ######## ONLY FOR UBUNTU WITH UNITY SURELY
 
-#### Ubuntu Tweak
-sudo add-apt-repository -y ppa:tualatrix/ppa (NEW)
-sudo add-apt-repository -y ppa:freyja-dev/tualatrix (ANCIENT)
+#### ubuntu-tweak
+sudo add-apt-repository -y ppa:tualatrix/next #NEW
+#sudo add-apt-repository -y ppa:tualatrix/ppa #ANCIENT 2
+#sudo add-apt-repository -y ppa:freyja-dev/tualatrix #ANCIENT 1
 sudo apt-fast -y update
 sudo apt-fast -y install ubuntu-tweak
 
+#### gnome-tweak-tool
+sudo apt-fast -y install gnome-tweak-tool
+
 #### unity-tweak-tool
-sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
+#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily #14.04
 sudo apt-fast -y update
 sudo apt-fast -y install unity-tweak-tool
 
