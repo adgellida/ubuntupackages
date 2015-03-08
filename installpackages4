@@ -100,7 +100,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 #uncomment - "${distro_id}:${distro_codename}-updates";
 
 #### grub-customizer
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer/
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo apt-fast -y update
 sudo apt-fast -y install grub-customizer
 
@@ -147,7 +147,7 @@ sudo apt-fast -y update
 sudo apt-fast -y install synaptic
 
 #### X Updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
-sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates/
+sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
 sudo apt-fast -y update
 sudo apt-fast -y dist-upgrade
 
@@ -464,27 +464,33 @@ sudo apt-fast -y install sublime-text-installer
 #sudo apt-fast -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
 
 #### openjdk8
-sudo apt-fast -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
+#sudo apt-fast -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
+
+#### openjdk9
+#sudo apt-fast -y install openjdk-9-jre openjdk-9-jdk icedtea-9-plugin
 
 #### Oracle Java 6 7 8
 #sudo add-apt-repository -y ppa:webupd8team/java
 #sudo apt-fast -y update
 
-#### Oracle Java6
+#### Oracle Java 6
 #sudo apt-fast -y install oracle-java6-installer
 #sudo apt-fast install oracle-java6-set-default
 
-#### Oracle Java7
+#### Oracle Java 7
 #sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-fast -y install oracle-java7-installer
 #sudo update-java-alternatives -s java-7-oracle
 #sudo apt-fast install oracle-java7-set-default
 
-#### Oracle Java8
+#### Oracle Java 8
 #sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 #sudo apt-fast -y install oracle-java8-installer
 #sudo update-java-alternatives -s java-8-oracle
 #sudo apt-fast install oracle-java8-set-default
+
+#### Oracle Java 9
+#to add, actually present
 
 #### Various
 #sudo apt-fast -y install ia32-libs lib32asound2		#REMOVED 
@@ -587,7 +593,7 @@ sudo apt-fast -y install lhasa filezilla mc
 
 #### jdownloader
 #Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-sudo add-apt-repository -y ppa:jd-team/jdownloader/
+sudo add-apt-repository -y ppa:jd-team/jdownloader
 sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
 wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 chmod +rwx JD2SilentSetup_x64.sh
