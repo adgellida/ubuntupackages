@@ -118,14 +118,17 @@ sudo apt-fast -y install virtualbox-4.3 dkms
 #sudo apt-fast -y install virtualbox-4.3 virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 #### PlayOnLinux
-wget http://www.playonlinux.com/script_files/PlayOnLinux/4.2.5/PlayOnLinux_4.2.5.deb
-sudo dpkg -i PlayOnLinux*.deb
-rm PlayOnLinux*.deb
+sudo add-apt-repository -y ppa:noobslab/apps
+sudo apt-get -y update
+sudo apt-get -y install playonlinux
+#wget http://www.playonlinux.com/script_files/PlayOnLinux/4.2.5/PlayOnLinux_4.2.5.deb
+#sudo dpkg -i PlayOnLinux*.deb
+#rm PlayOnLinux*.deb
 
-#### Intel Linux Graphics Installer
-#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
-#wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo echo "deb https://download.01.org/gfx/ubuntu/14.04/main/ trusty main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+#### Intel Linux Graphics Installer - Official
+wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
+wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
+test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo "deb https://download.01.org/gfx/ubuntu/14.10/main/ utopic main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
 
 #### muCommander (unstable)
 sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
@@ -257,6 +260,21 @@ sudo apt-fast -y install e20 terminology
 #sudo apt-fast -y install enlightenment terminology
 
 ########Themes
+
+#### azure-gtk-theme
+sudo add-apt-repository -y ppa:noobslab/themes
+sudo apt-fast -y update
+sudo apt-fast -y install azure-gtk-theme
+
+#### lhun-magol-theme
+sudo add-apt-repository -y ppa:noobslab/themes
+sudo apt-fast -y update
+sudo apt-fast -y install lhun-magol-theme
+
+#### paper-gtk-theme
+sudo add-apt-repository -y ppa:snwh/pulp
+sudo apt-fast -y update
+sudo apt-fast -y install paper-gtk-theme
 
 #### ambiance and radiance themes
 sudo add-apt-repository -y ppa:ravefinity-project/ppa
@@ -490,7 +508,10 @@ sudo apt-fast -y install sublime-text-installer
 #sudo apt-fast install oracle-java8-set-default
 
 #### Oracle Java 9
-#to add, actually present
+#sudo add-apt-repository -y ppa:webupd8team/java
+#sudo apt-get -y update
+#sudo apt-get -y install oracle-java9-installer
+#sudo apt-get -y install oracle-java9-set-default
 
 #### Various
 #sudo apt-fast -y install ia32-libs lib32asound2		#REMOVED 

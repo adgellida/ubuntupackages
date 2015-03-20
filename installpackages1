@@ -19,17 +19,17 @@
 #http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
 #http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
 ##sudo add-apt-repository -y ppa:apt-fast/stable
-#sudo add-apt-repository -y ppa:saiarcot895/myppa
-#sudo apt-get -y update
-#sudo apt-get -y install apt-fast
+sudo add-apt-repository -y ppa:saiarcot895/myppa
+sudo apt-get -y update
+sudo apt-get -y install apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors) - ONLY 14.10
 sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt-get -y update
-sudo apt-get -y install y-ppa-manager
+sudo apt-fast -y update
+sudo apt-fast -y install y-ppa-manager
 
 #### Various
-sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
+sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
 
 ######## Desktop Environment
 
@@ -46,7 +46,7 @@ sudo apt-get -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic prel
 ######## Security & Privacy
 
 #### Various
-sudo apt-get -y install gufw
+sudo apt-fast -y install gufw
 
 ######## CD/DVD Tools
 
@@ -55,12 +55,12 @@ sudo apt-get -y install gufw
 ######## Photos & Graphics
 
 #### Various
-sudo apt-get -y install gnome-exe-thumbnailer shutter
+sudo apt-fast -y install gnome-exe-thumbnailer shutter
 
 #### gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
-sudo apt-get -y update
-sudo apt-get -y install gimp gimp-plugin-registry
+sudo apt-fast -y update
+sudo apt-fast -y install gimp gimp-plugin-registry
 
 ######## Audio & Music
 
@@ -73,38 +73,42 @@ sudo apt-get -y install gimp gimp-plugin-registry
 ######## All multimedia content
 
 #### Various
-sudo apt-get -y install vlc vlc-plugin-pulse libvlc5
+
+####vlc
+sudo add-apt-repository -y ppa:videolan/stable-daily
+sudo apt-fast -y update
+sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 
 ######## Development
 
 #### Various
-sudo apt-get -y install openjdk-7-jre #openjdk-8-jre openjdk-9-jre
+sudo apt-fast -y install openjdk-7-jre #openjdk-8-jre openjdk-9-jre
 
 ######## Web Browsers
 
 #### chromium
-sudo apt-get -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos
 #http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
-sudo apt-get -y install pepperflashplugin-nonfree
+sudo apt-fast -y install pepperflashplugin-nonfree
 sudo update-pepperflashplugin-nonfree --install
 #sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
 #### pepper-flash - for chromium (2)
 #https://launchpad.net/~skunk/+archive/ubuntu/pepper-flash
 #sudo add-apt-repository -y ppa:skunk/pepper-flash
-#sudo apt-get -y update
-#sudo apt-get -y install pepflashplugin-nonfree
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepflashplugin-nonfree
 #/etc/chromium-browser/default
 #. /usr/lib/pepflashplugin-installer/pepflashplayer.sh
 #chromium restart
 
 #### pepper-flash - for firefox
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-get -y update
-#sudo apt-get -y install pepperflashplugin-nonfree freshplayerplugin
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin
 
 ######## Social
 
@@ -113,7 +117,7 @@ sudo update-pepperflashplugin-nonfree --install
 ######## File Management
 
 #### Various
-sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
+sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
 
 ######## File Sharing
 
@@ -128,8 +132,8 @@ sudo apt-get -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj
 #### libreoffice
 #sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
-sudo apt-get -y update
-sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+sudo apt-fast -y update
+sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 
 ######## Games
 
@@ -138,7 +142,7 @@ sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 ######## Extra
 
 #### uninstallpackages
-sudo apt-get remove -y firefox firefox-locale-es firefox-locale-en xul-ext-ubufox pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
+sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
 
 #### Upgrading system
 #sudo apt-get -y upgrade

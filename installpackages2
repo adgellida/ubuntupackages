@@ -4,41 +4,56 @@
 ######## Backup & Sync
 
 #### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
-#sudo apt-add-repository -y ppa:teejee2008/ppa
-#sudo apt-get -y update
-#sudo apt-get -y install aptik
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install aptik
 
-#### syncthing
+#### syncthing - OUTDATED
 
-sudo add-apt-repository -y ppa:ytvwld/syncthing
-sudo apt-get -y update
-sudo apt-get -y install syncthing
+#sudo add-apt-repository -y ppa:ytvwld/syncthing
+#sudo apt-fast -y update
+#sudo apt-fast -y install syncthing
 
 #### syncthing-gtk
 
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-get -y update
-#sudo apt-get -y install syncthing-gtk
+#sudo apt-fast -y update
+#sudo apt-fast -y install syncthing-gtk
 
 ######## OS & Utilities
 
+#### mtp support
+#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
+#sudo apt-fast -y update & dist-upgrade
+sudo apt-fast -y install mtp-tools mtpfs
+
 #### UNetbootin - ONLY 14.10
 sudo add-apt-repository -y ppa:n-muench/programs-ppa
-sudo apt-get -y update
-sudo apt-get -y install unetbootin
+sudo apt-fast -y update
+sudo apt-fast -y install unetbootin
 
-#### Xorg Edgers - Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-#sudo add-apt-repository -y ppa:xorg-edgers/ppa
-#sudo apt-get -y update
-#sudo apt-get -y dist-upgrade
-##sudo apt-get install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat
+#### qterminal
+sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
+sudo apt-fast -y update
+sudo apt-fast -y install qterminal
+
+#### Xorg Edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+sudo add-apt-repository -y ppa:xorg-edgers/ppa
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
+##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
+#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat -> sudo ppa-purge oibaf
+
+#### oibaf - Possibly Unstable
+sudo add-apt-repository -y ppa:oibaf/graphics-drivers
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
 
 #### Getdeb (1)
 #wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
 #test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-get -y update
+#sudo apt-fast -y  update
 
 #### Getdeb (2)
 #wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
@@ -49,7 +64,7 @@ sudo apt-get -y install unetbootin
 #rm -f playdeb_0.3-1~getdeb1_all.deb
 
 #### Various
-sudo apt-get -y install keepassx bum	#thewindowfactory (twf)
+sudo apt-fast -y install keepassx bum tilda	#thewindowfactory (twf)
 
 ######## Desktop Environment
 
@@ -79,9 +94,16 @@ sudo apt-get -y install keepassx bum	#thewindowfactory (twf)
 
 #### nuvolaplayer - ONLY 14.10
 sudo add-apt-repository -y ppa:nuvola-player-builders/stable
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install nuvolaplayer
+sudo apt-fast -y update
+sudo apt-fast -y upgrade
+sudo apt-fast -y install nuvolaplayer
+
+#### nuvolaplayer dev
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
+#test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
+test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
+sudo apt-fast -y update
+sudo apt-fast -y install nuvolaplayer3
 
 ######## Videos & Movies
 
@@ -89,28 +111,31 @@ sudo apt-get -y install nuvolaplayer
 
 ######## All multimedia content
 
-#
+#### ffmpeg
+sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
+sudo apt-fast -y update
+sudo apt-fast -y install ffmpeg
 
 ######## Development
 
 #### notepadqq - ONLY 14.10
 #sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
-#sudo apt-get -y update
-#sudo apt-get -y install notepadqq
+#sudo apt-fast -y update
+#sudo apt-fast -y install notepadqq
 
 #### git extra
-sudo apt-get -y install git-cola qgit
+sudo apt-fast -y install git-cola git-gui #qgit 
 
 #### Qt Linux
-#sudo apt-get -y install mesa-common-dev libglu1-mesa-dev	####Qt dependencies
+#sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev	####Qt dependencies
 #wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
 #chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
 #~/qt-opensource-linux-x64-5.4.0.run
 #rm ~/qt-opensource-linux-x64-5.4.0.run
 
 #### Various
-sudo apt-get -y install meld
-sudo apt-get -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
+sudo apt-fast -y install meld
+sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 ######## Web Browsers
 
@@ -119,14 +144,15 @@ sudo apt-get -y install build-essential packaging-dev checkinstall cdbs devscrip
 ######## Social
 
 ##### Telegram (1) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-sudo add-apt-repository -y ppa:atareao/telegram
-sudo apt-get -y update
-sudo apt-get -y install telegram
+##/opt/telegram/Telegram -- %u
+#sudo add-apt-repository -y ppa:atareao/telegram
+#sudo apt-fast -y update
+#sudo apt-fast -y install telegram
 
 ##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
 #sudo add-apt-repository -y ppa:noobslab/apps
-#sudo apt-get -y update
-#sudo apt-get -y install telegram-desktop
+#sudo apt-fast -y update
+#sudo apt-fast -y install telegram-desktop
 
 ######## File Management
 
@@ -136,18 +162,22 @@ sudo apt-get -y install telegram
 
 #### peerflix - ONLY 14.10
 sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo apt-get -y update
-sudo apt-get -y install nodejs
+sudo apt-fast -y update
+sudo apt-fast -y install nodejs
 sudo npm install -g peerflix
 ##peerflix "magnet url" --vlc
 ##peerflix "torrent url" --vlc
+
+#### samba
+##sudo smbpasswd -a usuario
+sudo apt-fast -y install samba system-config-samba cifs-utils winbind caja-share
 
 ##### Frostwire
 #wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
 #test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-get -y update
-#sudo apt-get -y install frostwire
+#sudo apt-fast -y update
+#sudo apt-fast -y install frostwire
 ##ancient
 #http://www.frostwire.com/
 #wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
@@ -185,6 +215,6 @@ sudo npm install -g peerflix
 
 #### Cleaning system
 #sudo apt-get -f install
-sudo apt-get -y autoremove
+sudo apt-fast -y autoremove
 #sudo apt-get -y autoclean
 #sudo apt-get -y clean

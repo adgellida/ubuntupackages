@@ -48,21 +48,6 @@ sudo add-apt-repository -y ppa:samrog131/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install photoqt
 
-#### folder-color
-sudo add-apt-repository -y ppa:costales/folder-color
-sudo apt-fast -y update
-#### nautilus
-#sudo apt-fast -y install folder-color
-#nautilus -q
-#### nemo
-#sudo apt-fast -y install folder-color-nemo
-#nemo -q
-#### caja
-#sudo apt-fast -y install folder-color-caja
-#caja -q
-#fix if proceed
-#sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
-
 #### power-installer
 #sudo add-apt-repository -y ppa:donadigo/power-installer
 sudo add-apt-repository -y ppa:elementary-os/daily
@@ -73,11 +58,6 @@ sudo apt-fast -y install power-installer
 sudo add-apt-repository -y ppa:vikoadi/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install indicator-kdeconnect kdeconnect
-
-#### mtp support
-sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
-sudo apt-fast -y update & dist-upgrade
-sudo apt-fast -y install mtp-tools mtpfs
 
 #### Install an RPM Package on Ubuntu Linux
 #http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
@@ -105,16 +85,6 @@ sudo apt-fast -y install touchpad-indicator
 sudo add-apt-repository -y ppa:broken/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install qllauncher
-
-#### azure-gtk-theme
-sudo add-apt-repository -y ppa:noobslab/themes
-sudo apt-fast -y update
-sudo apt-fast -y install azure-gtk-theme
-
-#### paper-gtk-theme
-sudo add-apt-repository -y ppa:snwh/pulp
-sudo apt-fast -y update
-sudo apt-fast -y install paper-gtk-theme
 
 #### hollywood
 sudo apt-add-repository -y ppa:hollywood/ppa
