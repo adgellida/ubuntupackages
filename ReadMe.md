@@ -48,4 +48,4 @@ TO DO
 
 Release notes
 =============================================
-You can check it [here](https://github.com/adgellida/ubuntupackages/blob/master/Releasenotes.md)
+You can check it [here](https://github.com/adgellida/ubuntupackages/releases)
