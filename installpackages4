@@ -292,11 +292,6 @@ sudo add-apt-repository -y ppa:ravefinity-project/ppa
 sudo apt-fast -y update
 sudo apt-fast install vibrancy-colors
 
-######## Language packages
-sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
-sudo apt-fast -y install myspell-en-gb myspell-en-us
-sudo apt-fast -y install aspell aspell-en aspell-es
-
 ######## Security & Privacy
 sudo apt-fast -y install seahorse
 
@@ -614,8 +609,8 @@ sudo apt-fast -y install lhasa filezilla mc
 
 #### jdownloader
 #Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-sudo add-apt-repository -y ppa:jd-team/jdownloader
-sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
+#sudo add-apt-repository -y ppa:jd-team/jdownloader
+#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
 wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 chmod +rwx JD2SilentSetup_x64.sh
 su usuario -c ./JD2SilentSetup_x64.sh

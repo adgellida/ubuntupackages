@@ -25,7 +25,31 @@ sudo apt-add-repository -y ppa:nemh/systemback
 sudo apt-fast -y update
 sudo apt-fast -y install systemback
 
+#### syncthing - OUTDATED
+#sudo add-apt-repository -y ppa:ytvwld/syncthing
+#sudo apt-fast -y update
+#sudo apt-fast -y install syncthing
+
+#### syncthing-gtk
+#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#sudo apt-fast -y update
+#sudo apt-fast -y install syncthing-gtk
+
 ######## OS & Utilities
+
+#### gnome-multiwriter
+#sudo apt-fast -y install gnome-common yelp-tools libcanberra-gtk3-dev libudisks2-dev gobject-introspection
+#cd /tmp
+#rm -rf GNOME_MULTI_WRITER*
+#wget --no-check-certificate https://github.com/GNOME/gnome-multi-writer/tarball/master -O GNOME_MULTI_WRITER.tar.gz
+#tar xzf GNOME_MULTI_WRITER.tar.gz
+#cd gnome-multi-writer-GNOME_MULTI_WRITER_*
+##execute
+
+#### pushbullet-indicator
+sudo add-apt-repository -y ppa:atareao/atareao
+sudo apt-fast -y update
+sudo apt-fast -y install pushbullet-indicator
 
 #### albert
 sudo apt-add-repository -y ppa:nilarimogard/webupd8

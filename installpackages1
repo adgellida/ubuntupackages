@@ -40,13 +40,14 @@ sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic pre
 #
 
 ######## Language packages
-
-#
+#sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
+#sudo apt-fast -y install myspell-en-gb myspell-en-us
+sudo apt-fast -y install aspell aspell-en aspell-es
 
 ######## Security & Privacy
 
 #### Various
-sudo apt-fast -y install gufw
+sudo apt-fast -y install gufw mate-tweak
 
 ######## CD/DVD Tools
 
@@ -82,7 +83,7 @@ sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 ######## Development
 
 #### Various
-sudo apt-fast -y install openjdk-7-jre #openjdk-8-jre openjdk-9-jre
+sudo apt-fast -y install openjdk-8-jre #openjdk-7-jre openjdk-9-jre
 
 ######## Web Browsers
 
