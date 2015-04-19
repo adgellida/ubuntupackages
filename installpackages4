@@ -282,10 +282,10 @@ sudo apt-fast -y update
 sudo apt-fast -y install ambiance-colors radiance-colors ubuntu-mono
 sudo apt-fast -y install ambiance-blackout-flat-colors
 
-#### ambiance-grey
+#### ambiance-grey ambiance-dark-blue ambiance-dark-red
 sudo add-apt-repository -y ppa:noobslab/themes
 sudo apt-fast -y update
-sudo apt-fast -y install ambiance-grey
+sudo apt-fast -y install ambiance-grey ambiance-dark-blue ambiance-dark-red
 
 #### vibrancy-colors icon theme
 sudo add-apt-repository -y ppa:ravefinity-project/ppa

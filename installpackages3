@@ -37,6 +37,11 @@ sudo apt-fast -y install systemback
 
 ######## OS & Utilities
 
+#### synapse
+sudo add-apt-repository -y ppa:synapse-core/testing
+sudo apt-fast -y update
+sudo apt-fast -y install synapse
+
 #### gnome-multiwriter
 #sudo apt-fast -y install gnome-common yelp-tools libcanberra-gtk3-dev libudisks2-dev gobject-introspection
 #cd /tmp
@@ -188,7 +193,35 @@ sudo apt-fast -y install fritzing
 
 ######## Social
 
-#
+##### messenger
+wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.2.2/Messenger_linux64.run
+chmod +x Messenger_linux64.run
+sudo Messenger_linux64.run
+#wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.1.0/messenger_linux32-64.zip
+#unzip messenger_linux32-64.zip
+#sudo mkdir /opt/extras.ubuntu.com/facebook_messenger
+#sudo cp linux64/* /opt/extras.ubuntu.com/facebook_messenger    
+#chmod +x /opt/extras.ubuntu.com/facebook_messenger/Messenger
+#sudo wget https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/icon_1024.png
+#mv icon_1024.png Messenger.png
+#convert Messenger.png -resize 48 Messenger.png
+#sudo mv Messenger.png /opt/extras.ubuntu.com/facebook_messenger/
+
+
+[Desktop Entry]
+Version=1.2.2
+Type=Application
+Name=Facebook Messenger
+Icon=/usr/share/MessengerForDesktop/Messenger.png
+Exec=/usr/share/MessengerForDesktop/Messenger
+Comment=Facebook Messenger
+Categories=GNOME;GTK;Network;
+Terminal=false
+
+~/.local/share/applications
+
+facebook_messenger.desktop
+
 
 ######## File Management
 

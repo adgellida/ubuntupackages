@@ -55,6 +55,30 @@ sudo apt-fast -y install multisystem
 
 ######## ONLY FOR UBUNTU WITH UNITY SURELY
 
+#### tint2 - http://www.howtogeek.com/189819/how-to-add-a-taskbar-to-the-desktop-in-ubuntu-14.04/
+sudo apt-fast -y install tint2
+#at start:
+#Taskbar - Tint2
+#tint2
+#Windows-like Taskbar
+
+#### classicmenu-indicator & Unsettings
+sudo add-apt-repository -y ppa:diesch/testing
+sudo apt-fast -y update
+sudo apt-fast -y install classicmenu-indicator unsettings
+
+#### unity-tweak-tool
+#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily #14.04
+sudo apt-fast -y update
+sudo apt-fast -y install unity-tweak-tool
+
+#### window-list - http://www.noobslab.com/2014/08/useful-panel-indicators-collection-for.html
+#http://askubuntu.com/questions/38505/how-can-i-see-a-list-of-all-open-windows-in-a-panel-in-unity
+#https://launchpad.net/~jwigley/+archive/ubuntu/window-list
+sudo add-apt-repository -y ppa:noobslab/indicators
+sudo apt-fast -y update
+sudo apt-fast -y install window-list
+
 #### ubuntu-tweak
 sudo add-apt-repository -y ppa:tualatrix/next #NEW
 #sudo add-apt-repository -y ppa:tualatrix/ppa #ANCIENT 2
@@ -64,16 +88,6 @@ sudo apt-fast -y install ubuntu-tweak
 
 #### gnome-tweak-tool
 sudo apt-fast -y install gnome-tweak-tool
-
-#### unity-tweak-tool
-#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily #14.04
-sudo apt-fast -y update
-sudo apt-fast -y install unity-tweak-tool
-
-#### classicmenu-indicator & Unsettings
-sudo add-apt-repository -y ppa:diesch/testing
-sudo apt-fast -y update
-sudo apt-fast -y install classicmenu-indicator unsettings
 
 #### CPU Frequency Scaling
 sudo add-apt-repository -y ppa:artfwo/ppa
@@ -128,8 +142,9 @@ sudo apt-fast -y install muon
 #sudo apt-fast -y update
 #sudo apt-fast -y install docky
  
-#### Plank Development PPA
+#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
 #sudo add-apt-repository -y ppa:ricotz/docky
+#sudo add-apt-repository -y ppa:docky-core/stable
 #sudo apt-fast -y update
 #sudo apt-fast -y install plank
 
