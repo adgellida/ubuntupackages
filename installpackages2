@@ -4,18 +4,28 @@
 ######## Backup & Sync
 
 #### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
-sudo apt-add-repository -y ppa:teejee2008/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install aptik
+#sudo apt-add-repository -y ppa:teejee2008/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install aptik
 
 ######## OS & Utilities
+
+#### synapse
+sudo add-apt-repository -y ppa:synapse-core/testing
+sudo apt-fast -y update
+sudo apt-fast -y install synapse
+
+#### grub-customizer
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+sudo apt-fast -y update
+sudo apt-fast -y install grub-customizer
 
 #### mtp support
 #sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
 #sudo apt-fast -y update & dist-upgrade
 sudo apt-fast -y install mtp-tools mtpfs
 
-#### UNetbootin - ONLY 14.10
+#### UNetbootin
 sudo add-apt-repository -y ppa:n-muench/programs-ppa
 sudo apt-fast -y update
 sudo apt-fast -y install unetbootin
@@ -52,7 +62,7 @@ sudo apt-fast -y install unetbootin
 #rm -f playdeb_0.3-1~getdeb1_all.deb
 
 #### Various
-sudo apt-fast -y install keepassx bum tilda	#thewindowfactory (twf)
+sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Desktop Environment
 
@@ -111,13 +121,13 @@ sudo apt-fast -y install ffmpeg
 #sudo apt-fast -y update
 #sudo apt-fast -y install notepadqq
 
-#### git extra
-sudo apt-fast -y install git-gui #git-cola qgit 
-
 #### git stable
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install git
+
+#### git extra
+sudo apt-fast -y install git-gui #git-cola qgit 
 
 #### git rc's
 #sudo add-apt-repository -y ppa:git-core/candidate
@@ -141,23 +151,23 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 
 ######## Social
 
-##### Telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
+##### Telegram (1)- http://deshack.net/install-telegram-for-linux-as-an-application/
 
-mkdir /home/usuario/Telegram
-wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
-wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
-cd /home/usuario
-tar -xf telegram.tar.xz
+#mkdir /home/usuario/Telegram
+#wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
+#wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
+#cd /home/usuario
+#tar -xf telegram.tar.xz
 
-rm /home/usuario/telegram.tar.xz
+#rm /home/usuario/telegram.tar.xz
 
-test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
-Type=Application
-Name=Telegram
-Comment=Official desktop version of Telegram messaging app
-Categories=Network
-Exec=/home/usuario/Telegram/Telegram -- %u
-Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/dirsyncpro.desktop'
+#test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Name=Telegram
+#Comment=Official desktop version of Telegram messaging app
+#Categories=Network
+#Exec=/home/usuario/Telegram/Telegram -- %u
+#Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/telegram.desktop'
 
 ##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
 ##/opt/telegram/Telegram -- %u
@@ -176,9 +186,9 @@ Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/dirsyncpro.d
 
 ######## File Sharing
 
-#### peerflix - ONLY 14.10
-sudo add-apt-repository -y ppa:chris-lea/node.js
-sudo apt-fast -y update
+#### peerflix
+#sudo add-apt-repository -y ppa:chris-lea/node.js
+#sudo apt-fast -y update
 sudo apt-fast -y install nodejs
 sudo npm install -g peerflix
 ##peerflix "magnet url" --vlc
@@ -186,9 +196,9 @@ sudo npm install -g peerflix
 
 #### samba
 ##sudo smbpasswd -a usuario
-sudo apt-fast -y install samba system-config-samba cifs-utils winbind caja-share
+sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
 
-##### Frostwire
+##### Frostwire - go to web or getdeb
 #wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
 #test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'

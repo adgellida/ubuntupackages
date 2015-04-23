@@ -72,12 +72,12 @@ sudo apt-fast -y install classicmenu-indicator unsettings
 sudo apt-fast -y update
 sudo apt-fast -y install unity-tweak-tool
 
-#### window-list - http://www.noobslab.com/2014/08/useful-panel-indicators-collection-for.html
+#### window-list - indicator-places - http://www.noobslab.com/2014/08/useful-panel-indicators-collection-for.html
 #http://askubuntu.com/questions/38505/how-can-i-see-a-list-of-all-open-windows-in-a-panel-in-unity
 #https://launchpad.net/~jwigley/+archive/ubuntu/window-list
 sudo add-apt-repository -y ppa:noobslab/indicators
 sudo apt-fast -y update
-sudo apt-fast -y install window-list
+sudo apt-fast -y install window-list indicator-places
 
 #### ubuntu-tweak
 sudo add-apt-repository -y ppa:tualatrix/next #NEW
@@ -141,12 +141,6 @@ sudo apt-fast -y install muon
 #sudo add-apt-repository -y ppa:docky-core/stable
 #sudo apt-fast -y update
 #sudo apt-fast -y install docky
- 
-#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-#sudo add-apt-repository -y ppa:ricotz/docky
-#sudo add-apt-repository -y ppa:docky-core/stable
-#sudo apt-fast -y update
-#sudo apt-fast -y install plank
 
 #### Gnome Do
 #sudo add-apt-repository -y ppa:do-testers/ppa

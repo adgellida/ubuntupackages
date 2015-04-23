@@ -25,6 +25,12 @@ sudo apt-add-repository -y ppa:nemh/systemback
 sudo apt-fast -y update
 sudo apt-fast -y install systemback
 
+#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#sudo add-apt-repository -y ppa:docky-core/stable
+sudo add-apt-repository -y ppa:ricotz/docky
+sudo apt-fast -y update
+sudo apt-fast -y install plank
+
 #### syncthing - OUTDATED
 #sudo add-apt-repository -y ppa:ytvwld/syncthing
 #sudo apt-fast -y update
@@ -36,11 +42,6 @@ sudo apt-fast -y install systemback
 #sudo apt-fast -y install syncthing-gtk
 
 ######## OS & Utilities
-
-#### synapse
-sudo add-apt-repository -y ppa:synapse-core/testing
-sudo apt-fast -y update
-sudo apt-fast -y install synapse
 
 #### gnome-multiwriter
 #sudo apt-fast -y install gnome-common yelp-tools libcanberra-gtk3-dev libudisks2-dev gobject-introspection
