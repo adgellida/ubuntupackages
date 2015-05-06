@@ -1,0 +1,3 @@
+#!/bin/bash
+unset QT_STYLE_OVERRIDE
+/home/usuario/Telegram/Telegram -- %u

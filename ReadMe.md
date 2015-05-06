@@ -7,7 +7,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Designed for 14.10.
+Designed for 15.04 (Vivid).
 
 Instructions
 =============================================

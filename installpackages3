@@ -25,12 +25,6 @@ sudo apt-add-repository -y ppa:nemh/systemback
 sudo apt-fast -y update
 sudo apt-fast -y install systemback
 
-#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-#sudo add-apt-repository -y ppa:docky-core/stable
-sudo add-apt-repository -y ppa:ricotz/docky
-sudo apt-fast -y update
-sudo apt-fast -y install plank
-
 #### syncthing - OUTDATED
 #sudo add-apt-repository -y ppa:ytvwld/syncthing
 #sudo apt-fast -y update
@@ -144,17 +138,7 @@ caja -q
 
 ######## Photos & Graphics
 
-#### krita
-#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
-sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
-sudo apt-fast -y update
-sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n-es
-#sudo restart lightdm
-#to execute run "krita"
-#sudo add-apt-repository ppa:kubuntu-ppa/backports
-#sudo apt-fast update
-#sudo apt-fast install krita kritasketch
+#
 
 ######## Audio & Music
 

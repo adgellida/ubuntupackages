@@ -30,6 +30,21 @@ sudo add-apt-repository -y ppa:n-muench/programs-ppa
 sudo apt-fast -y update
 sudo apt-fast -y install unetbootin
 
+#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#sudo add-apt-repository -y ppa:docky-core/stable
+sudo add-apt-repository -y ppa:ricotz/docky
+sudo apt-fast -y update
+sudo apt-fast -y install plank
+
+#### Ubuntu Partner Repo
+test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
+sudo apt-fast -y update
+
+#### gnome-pie
+#sudo add-apt-repository -y ppa:simonschneegans/testing
+#sudo apt-fast -y update
+#sudo apt-fast -y install gnome-pie
+
 #### qterminal
 #sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
 #sudo apt-fast -y update
@@ -48,18 +63,18 @@ sudo apt-fast -y install unetbootin
 #sudo apt-fast -y dist-upgrade
 
 #### Getdeb (1)
+wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb &&
+wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
+sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb &&
+sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
+rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
+rm -f playdeb_0.3-1~getdeb1_all.deb
+
+#### Getdeb (2)
 #wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
 #test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y  update
-
-#### Getdeb (2)
-#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
-#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
-#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-#rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-#rm -f playdeb_0.3-1~getdeb1_all.deb
+#sudo apt-fast -y update
 
 #### Various
 sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
@@ -86,9 +101,25 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Photos & Graphics
 
-#
+#### krita
+#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
+#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
+#sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
+#sudo apt-fast -y update
+sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es
+#sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n-es
+#sudo restart lightdm
+#to execute run "krita"
+#sudo add-apt-repository ppa:kubuntu-ppa/backports
+#sudo apt-fast update
+#sudo apt-fast install krita kritasketch
 
 ######## Audio & Music
+
+#### tomahawk
+#sudo add-apt-repository -y ppa:tomahawk/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install tomahawk
 
 #### nuvolaplayer 2 - ONLY 14.10
 #sudo add-apt-repository -y ppa:nuvola-player-builders/stable
@@ -110,8 +141,8 @@ sudo apt-fast -y install nuvolaplayer3
 ######## All multimedia content
 
 #### ffmpeg
-sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
-sudo apt-fast -y update
+#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
+#sudo apt-fast -y update
 sudo apt-fast -y install ffmpeg
 
 ######## Development
@@ -153,13 +184,16 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 
 ##### Telegram (1)- http://deshack.net/install-telegram-for-linux-as-an-application/
 
-#mkdir /home/usuario/Telegram
-#wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
-#wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
-#cd /home/usuario
-#tar -xf telegram.tar.xz
+mkdir /home/usuario/Telegram
+wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
 
-#rm /home/usuario/telegram.tar.xz
+wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
+cd /home/usuario
+tar -xf telegram.tar.xz
+
+rm /home/usuario/telegram.tar.xz
+
+#Exec=bash -c "unset QT_STYLE_OVERRIDE ; /home/usuario/Telegram/Telegram -- %u"
 
 #test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
 #Type=Application
@@ -189,8 +223,8 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 #### peerflix
 #sudo add-apt-repository -y ppa:chris-lea/node.js
 #sudo apt-fast -y update
-sudo apt-fast -y install nodejs
-sudo npm install -g peerflix
+#sudo apt-fast -y install nodejs npm
+#sudo npm install -g peerflix
 ##peerflix "magnet url" --vlc
 ##peerflix "torrent url" --vlc
 
