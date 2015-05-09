@@ -37,7 +37,7 @@ sudo apt-fast -y update
 sudo apt-fast -y install plank
 
 #### Ubuntu Partner Repo
-test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
+test -f /etc/apt/sources.list.d/ubuntu-partner.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
 sudo apt-fast -y update
 
 #### gnome-pie
@@ -55,7 +55,7 @@ sudo apt-fast -y update
 #sudo apt-fast -y update
 #sudo apt-fast -y dist-upgrade
 ##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat -> sudo ppa-purge oibaf
+#how to uninstall it -> sudo ppa-purge xorg-edgers -> sudo ppa-purge oibaf -> sudo ppa-purge ubuntu-x-swat
 
 #### oibaf - Possibly Unstable
 #sudo add-apt-repository -y ppa:oibaf/graphics-drivers
@@ -128,11 +128,11 @@ sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es
 #sudo apt-fast -y install nuvolaplayer
 
 #### nuvolaplayer 3 devel
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
+#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
 ##test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-sudo apt-fast -y update
-sudo apt-fast -y install nuvolaplayer3
+#test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install nuvolaplayer3
 
 ######## Videos & Movies
 
@@ -214,11 +214,26 @@ rm /home/usuario/telegram.tar.xz
 #sudo apt-fast -y update
 #sudo apt-fast -y install telegram-desktop
 
+##### messenger
+##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
+wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.3.3/Messenger_linux64.deb
+sudo dpkg -i Messenger_linux64.deb
+rm Messenger_linux64.deb
+
 ######## File Management
 
 #
 
 ######## File Sharing
+
+#### jdownloader
+#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+#sudo add-apt-repository -y ppa:jd-team/jdownloader
+#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+su usuario -c ./JD2SilentSetup_x64.sh
+rm JD2SilentSetup_x64.sh
 
 #### peerflix
 #sudo add-apt-repository -y ppa:chris-lea/node.js

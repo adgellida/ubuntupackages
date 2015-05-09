@@ -22,12 +22,6 @@ sudo add-apt-repository -y ppa:bit-team/stable
 sudo apt-fast -y update
 sudo apt-fast -y install backintime-gnome
 
-#### TimeShift
-#http://www.howtogeek.com/206491/how-to-restore-your-ubuntu-linux-system-to-its-previous-state/
-sudo add-apt-repository -y ppa:teejee2008/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install timeshift
-
 #### Insync
 wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
 test -f /etc/apt/sources.list.d/insync.list || sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
@@ -580,15 +574,6 @@ sudo apt-fast -y install xfce4-goodies
 sudo apt-fast -y install lhasa filezilla mc
 
 ######## File Sharing
-
-#### jdownloader
-#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-#sudo add-apt-repository -y ppa:jd-team/jdownloader
-#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
-wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-chmod +rwx JD2SilentSetup_x64.sh
-su usuario -c ./JD2SilentSetup_x64.sh
-rm JD2SilentSetup_x64.sh
 
 ##### qbittorrent
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable

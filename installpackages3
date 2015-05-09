@@ -25,6 +25,12 @@ sudo apt-add-repository -y ppa:nemh/systemback
 sudo apt-fast -y update
 sudo apt-fast -y install systemback
 
+#### TimeShift
+#http://www.howtogeek.com/206491/how-to-restore-your-ubuntu-linux-system-to-its-previous-state/
+#sudo add-apt-repository -y ppa:teejee2008/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install timeshift
+
 #### syncthing - OUTDATED
 #sudo add-apt-repository -y ppa:ytvwld/syncthing
 #sudo apt-fast -y update
@@ -178,35 +184,7 @@ sudo apt-fast -y install fritzing
 
 ######## Social
 
-##### messenger
-wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.2.2/Messenger_linux64.run
-chmod +x Messenger_linux64.run
-sudo Messenger_linux64.run
-#wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.1.0/messenger_linux32-64.zip
-#unzip messenger_linux32-64.zip
-#sudo mkdir /opt/extras.ubuntu.com/facebook_messenger
-#sudo cp linux64/* /opt/extras.ubuntu.com/facebook_messenger    
-#chmod +x /opt/extras.ubuntu.com/facebook_messenger/Messenger
-#sudo wget https://raw.githubusercontent.com/Aluxian/Facebook-Messenger-Desktop/master/icon_1024.png
-#mv icon_1024.png Messenger.png
-#convert Messenger.png -resize 48 Messenger.png
-#sudo mv Messenger.png /opt/extras.ubuntu.com/facebook_messenger/
-
-
-[Desktop Entry]
-Version=1.2.2
-Type=Application
-Name=Facebook Messenger
-Icon=/usr/share/MessengerForDesktop/Messenger.png
-Exec=/usr/share/MessengerForDesktop/Messenger
-Comment=Facebook Messenger
-Categories=GNOME;GTK;Network;
-Terminal=false
-
-~/.local/share/applications
-
-facebook_messenger.desktop
-
+#
 
 ######## File Management
 
@@ -222,6 +200,11 @@ facebook_messenger.desktop
 
 ######## Office & Productivity
 
+#### geary
+sudo add-apt-repository -y ppa:yorba/daily-builds
+sudo apt-fast -y update
+sudo apt-fast -y install geary
+
 #### evolution
 sudo add-apt-repository -y ppa:fta/gnome3
 sudo apt-fast -y update
@@ -231,11 +214,6 @@ sudo apt-fast -y install evolution
 sudo add-apt-repository -y ppa:claws-mail/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install claws-mail claws-mail-extra-plugins
-
-#### geary
-sudo add-apt-repository -y ppa:yorba/daily-builds
-sudo apt-fast -y update
-sudo apt-fast -y install geary
 
 ######## Games
 

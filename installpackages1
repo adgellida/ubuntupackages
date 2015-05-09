@@ -15,7 +15,7 @@
 
 ######## OS & Utilities
 
-#### apt-fast - ONLY 14.10
+#### apt-fast
 #http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
 #http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
 ##sudo add-apt-repository -y ppa:apt-fast/stable
@@ -96,9 +96,9 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #openjdk-7-jre openjdk-9
 
 ######## Web Browsers
 
-#### google-chrome
+#### google-chrome-unstable
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+test -f /etc/apt/sources.list.d/google-chrome-unstable.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome-unstable.list'
 sudo apt-fast -y update
 sudo apt-fast -y install google-chrome-unstable
 
