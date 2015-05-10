@@ -96,20 +96,26 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #openjdk-7-jre openjdk-9
 
 ######## Web Browsers
 
+#### google-chrome
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install google-chrome
+
 #### google-chrome-unstable
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-test -f /etc/apt/sources.list.d/google-chrome-unstable.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome-unstable.list'
-sudo apt-fast -y update
-sudo apt-fast -y install google-chrome-unstable
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/google-chrome-unstable.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome-unstable.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install google-chrome-unstable
 
 #### chromium
-#sudo apt-fast -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos
 ##http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
-#sudo apt-fast -y install pepperflashplugin-nonfree
-#sudo update-pepperflashplugin-nonfree --install
+sudo apt-fast -y install pepperflashplugin-nonfree
+sudo update-pepperflashplugin-nonfree --install
 ##sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
 #### pepper-flash - for chromium (2)
