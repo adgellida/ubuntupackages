@@ -336,7 +336,7 @@ sudo apt-fast -y install audacity
 #pykaraoke
 
 #### Various
-sudo apt-fast -y install sound-juicer mixxx qtractor performous
+sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
 
 ######## Videos & Movies
 
