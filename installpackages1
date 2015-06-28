@@ -152,7 +152,7 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack ar
 ######## Office & Productivity
 
 #### libreoffice
-#sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
+sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 #sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo apt-fast -y update
