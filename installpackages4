@@ -359,20 +359,10 @@ sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
 #sudo apt-fast -y update
 #sudo apt-fast -y install vlc
 
-#### kdenlive - CAREFULL, a lot of kde packages
-#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
-#sudo apt-fast -y update
-#sudo apt-fast -y install kdenlive
-
 #### natron
 #https://natron.inria.fr/
 wget http://skylink.dl.sourceforge.net/project/natron/Natron_Linux_x86_64bits_v1.1.0.tar.gz
 #more...
-
-#### cinelerra
-sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install cinelerra-cv
 
 #### Popcorn Time
 sudo add-apt-repository -y ppa:webupd8team/popcorntime
@@ -382,9 +372,6 @@ sudo apt-fast -y install popcorn-time
 #### waifu
 wget http://www.waifu.ca/waifu-linux64.tar.gz
 #more...
-
-#### Various
-sudo apt-fast -y install openshot pitivi
 
 ####All multimedia content
 
@@ -433,9 +420,10 @@ sudo apt-fast -y install wine1.7
 
 #### Wine Staging
 sudo apt-fast -y install wine
-sudo add-apt-repository -y pa:pipelight/stable
+sudo add-apt-repository -y ppa:pipelight/stable
 sudo apt-fast -y update
 sudo apt-fast -y install --install-recommends wine-staging
+sudo apt-fast -y install wine-staging-compat
 
 ## Wine config
 #sudo apt-fast -y install q4wine winetricks

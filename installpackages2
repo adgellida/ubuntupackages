@@ -20,11 +20,6 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo apt-fast -y update
 sudo apt-fast -y install grub-customizer
 
-#### mtp support
-#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
-#sudo apt-fast -y update & dist-upgrade
-sudo apt-fast -y install mtp-tools mtpfs
-
 #### UNetbootin
 sudo add-apt-repository -y ppa:n-muench/programs-ppa
 sudo apt-fast -y update
@@ -55,7 +50,7 @@ sudo apt-fast -y update
 #sudo apt-fast -y update
 #sudo apt-fast -y dist-upgrade
 ##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge xorg-edgers -> sudo ppa-purge oibaf -> sudo ppa-purge ubuntu-x-swat
+#how to uninstall it -> sudo ppa-purge -y xorg-edgers -> sudo ppa-purge -y oibaf graphics-drivers -> sudo ppa-purge -y ubuntu-x-swat
 
 #### oibaf - Possibly Unstable
 #sudo add-apt-repository -y ppa:oibaf/graphics-drivers
@@ -66,20 +61,6 @@ sudo apt-fast -y update
 #sudo add-apt-repository -y ppa:canonical-kernel-team/ppa
 #sudo apt-fast -y update
 #sudo apt-fast -y dist-upgrade
-
-#### Getdeb (1)
-wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb &&
-wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb &&
-sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-rm -f playdeb_0.3-1~getdeb1_all.deb
-
-#### Getdeb (2)
-#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y update
 
 #### Various
 sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
@@ -106,18 +87,7 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Photos & Graphics
 
-#### krita
-#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
-sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
-sudo apt-fast -y update
-sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n
-#sudo restart lightdm
-#to execute run "krita"
-#sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es	# official
-#sudo add-apt-repository ppa:kubuntu-ppa/backports		# another method
-#sudo apt-fast update
-#sudo apt-fast install krita kritasketch
+#
 
 ######## Audio & Music
 
@@ -141,21 +111,51 @@ sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n
 
 ######## Videos & Movies
 
-#
+#### qmmp
+sudo add-apt-repository -y ppa:forkotov02/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install qmmp qmmp-plugin-pack
 
-######## All multimedia content
+#### lmms
+sudo apt-fast -y install lmms
 
-#### ffmpeg
-#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
-#sudo apt-fast -y update
-sudo apt-fast -y install ffmpeg
+#### Hydrogen
+sudo apt-fast -y install hydrogen
+
+#### natron
+sudo apt-fast -y install libegl1-mesa
+wget -c https://sourceforge.net/projects/natron/files/Natron_Linux_x86-64bits_v1.2.1.tar.gz
+tar xzvf Natron_Linux_x86*
+./Natron_*
+
+#### cinelerra
+sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install cinelerra-cv
+
+#### kdenlive - CAREFULL, a lot of kde packages
+sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+sudo apt-fast -y update
+sudo apt-fast -y install kdenlive
+
+#### Various
+sudo apt-fast -y install openshot pitivi
 
 ######## Development
 
-#### notepadqq - ONLY 14.10
-#sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+#### arduino ide
+wget http://download.arduino.org/IDE/1.7.6/arduino-1.7.6.org-linux64.tar.xz
+tar -xf arduino-1.7.6.org-linux64.tar.xz
+
+#### gnoduino	14.04
+#sudo add-apt-repository -y ppa:pmjdebruijn/gnoduino-release
 #sudo apt-fast -y update
-#sudo apt-fast -y install notepadqq
+#sudo apt-fast -y install gnoduino
+
+#### notepadqq
+sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+sudo apt-fast -y update
+sudo apt-fast -y install notepadqq
 
 #### git stable
 sudo add-apt-repository -y ppa:git-core/ppa
@@ -219,20 +219,18 @@ rm /home/usuario/telegram.tar.xz
 #sudo apt-fast -y update
 #sudo apt-fast -y install telegram-desktop
 
-##### messenger
+##### Facebook-Messenger-Desktop
 ##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
 wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.3.3/Messenger_linux64.deb
 sudo dpkg -i Messenger_linux64.deb
 rm Messenger_linux64.deb
 
-##### WhatsApp
+##### WhatsApp-Desktop
 wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb
 sudo dpkg -i UnofficialWhatsApp_linux64.deb
 rm UnofficialWhatsApp_linux64.deb
 ##another way https://rhoconlinux.wordpress.com/2015/06/27/whatsapp-en-ubuntu-como-instalarlo-y-configurarlo-super-facil/
 #cd /tmp/ && clear ; wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb -O whatsapp.deb && sudo apt-get install gdebi -y ; sudo gdebi -n whatsapp.deb ; cd ; clear
-
-
 
 ######## File Management
 

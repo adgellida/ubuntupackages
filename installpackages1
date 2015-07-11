@@ -28,6 +28,25 @@ sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo apt-fast -y update
 sudo apt-fast -y install y-ppa-manager
 
+#### Getdeb (1)
+wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb &&
+wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
+sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb &&
+sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
+rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
+rm -f playdeb_0.3-1~getdeb1_all.deb
+
+#### Getdeb (2)
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+#sudo apt-fast -y update
+
+#### mtp support
+#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
+#sudo apt-fast -y update & dist-upgrade
+sudo apt-fast -y install mtp-tools mtpfs
+
 #### Various
 sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
 
@@ -67,6 +86,19 @@ sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 sudo apt-fast -y update
 sudo apt-fast -y install gimp gimp-plugin-registry
 
+#### krita
+#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
+#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
+sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
+sudo apt-fast -y update
+sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n
+#sudo restart lightdm
+#to execute run "krita"
+#sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es	# official
+#sudo add-apt-repository ppa:kubuntu-ppa/backports		# another method
+#sudo apt-fast update
+#sudo apt-fast install krita kritasketch
+
 ######## Audio & Music
 
 #
@@ -76,6 +108,11 @@ sudo apt-fast -y install gimp gimp-plugin-registry
 #
 
 ######## All multimedia content
+
+#### ffmpeg
+#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
+#sudo apt-fast -y update
+sudo apt-fast -y install ffmpeg
 
 #### Various
 
@@ -92,7 +129,7 @@ sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 #sudo add-apt-repository -y ppa:maarten-fonville/ppa
 sudo add-apt-repository -y ppa:mamarley/updates
 sudo apt-fast -y update
-sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #openjdk-7-jre openjdk-9-jre
+sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjdk-7-jre icedtea-9-plugin openjdk-9-jre
 
 ######## Web Browsers
 
@@ -114,8 +151,8 @@ sudo apt-fast -y install google-chrome-stable
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos
 ##http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
-sudo apt-fast -y install pepperflashplugin-nonfree
-sudo update-pepperflashplugin-nonfree --install
+#sudo apt-fast -y install pepperflashplugin-nonfree
+##sudo update-pepperflashplugin-nonfree --install
 ##sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
 #### pepper-flash - for chromium (2)
@@ -152,8 +189,8 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack ar
 ######## Office & Productivity
 
 #### libreoffice
-sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 #sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
+sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
