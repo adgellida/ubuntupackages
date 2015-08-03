@@ -1,0 +1,66 @@
+#!/bin/bash
+######## installpackages - Installs packages & necessary repos - script 7
+
+#### Getdeb (2)
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+#sudo apt-fast -y update
+
+#### krita testing
+#sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n		#testing
+#sudo restart lightdm
+#to execute run "krita"
+#sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es	# official
+#sudo add-apt-repository ppa:kubuntu-ppa/backports		# another method
+#sudo apt-fast update
+#sudo apt-fast install krita kritasketch
+
+#### pepper-flash - for chromium (2)
+#https://launchpad.net/~skunk/+archive/ubuntu/pepper-flash
+#sudo add-apt-repository -y ppa:skunk/pepper-flash
+#sudo apt-fast -y update
+#sudo apt-fast -y install pepflashplugin-nonfree
+#/etc/chromium-browser/default
+#. /usr/lib/pepflashplugin-installer/pepflashplayer.sh
+#chromium restart
+
+#### nuvolaplayer 2 - ONLY 14.10
+#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
+#sudo apt-fast -y update
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y install nuvolaplayer
+
+#### gnoduino	14.04
+#sudo add-apt-repository -y ppa:pmjdebruijn/gnoduino-release
+#sudo apt-fast -y update
+#sudo apt-fast -y install gnoduino
+
+##### Telegram (1b)
+#Exec=bash -c "unset QT_STYLE_OVERRIDE ; /home/usuario/Telegram/Telegram -- %u"
+
+#test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Name=Telegram
+#Comment=Official desktop version of Telegram messaging app
+#Categories=Network
+#Exec=/home/usuario/Telegram/Telegram -- %u
+#Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/telegram.desktop'
+
+##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+##/opt/telegram/Telegram -- %u
+#sudo add-apt-repository -y ppa:atareao/telegram
+#sudo apt-fast -y update
+#sudo apt-fast -y install telegram
+
+##### Telegram (3) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+#sudo add-apt-repository -y ppa:noobslab/apps
+#sudo apt-fast -y update
+#sudo apt-fast -y install telegram-desktop
+
+##### Frostwire - go to web or getdeb - ancient version
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install frostwire

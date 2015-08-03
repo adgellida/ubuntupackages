@@ -24,6 +24,7 @@ Go to your selected script and modified it.
 * "installpackages4" if you want to check more extra packages.
 * "installpackages5" if you want to check the test packages.
 * "installpackages6" if you want to check more extra packages(2).
+* "installpackages7" if you want to check more extra ancient packages.
 1. Execute it.
 1. (Optional) Check all the other content.
 

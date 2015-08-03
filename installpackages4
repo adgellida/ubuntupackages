@@ -97,7 +97,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 sudo apt-fast -y update
-sudo apt-fast -y install virtualbox-4.3 dkms
+sudo apt-fast -y install virtualbox-5.0 #virtualbox-4.3 dkms
 
 #### VirtualBox (2)
 #wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
@@ -149,8 +149,8 @@ wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo dpkg -i teamviewer_i386.deb
 rm teamviewer_i386.deb
 
-#### i-nex
-sudo add-apt-repository -y ppa:nemh/gambas3
+#### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
+sudo add-apt-repository -y ppa:gambas-team/gambas3
 sudo add-apt-repository -y ppa:i-nex-development-team/stable
 sudo apt-fast -y update
 sudo apt-fast -y install i-nex
@@ -329,11 +329,6 @@ sudo apt-fast -y install spotify-client
 sudo apt-fast -y install python-pip python-wnck
 sudo pip install http://github.com/mikar/blockify/archive/v1.7.2.zip
 echo -e '[Desktop Entry]\nName=Blockify\nComment=Blocks Spotify commercials\nExec=blockify-ui\nIcon='$(python -c 'import pkg_resources; print pkg_resources.resource_filename("blockify", "data/icon-red-512.png")')'\nType=Application\nCategories=AudioVideo' | sudo tee /usr/share/applications/blockify.desktop
-
-#### Audacity
-sudo add-apt-repository -y ppa:audacity-team/daily
-sudo apt-fast -y update
-sudo apt-fast -y install audacity
 
 #### PyKaraoke
 #wget http://heanet.dl.sourceforge.net/project/pykaraoke/pykaraoke/0.7.5/pykaraoke-0.7.5.zip

@@ -60,6 +60,11 @@ sudo customizer-gui
 #cd gnome-multi-writer-GNOME_MULTI_WRITER_*
 ##execute
 
+#### ubuntu-touch-coreapps
+sudo add-apt-repository -y ppa:ubuntu-touch-coreapps-drivers/daily
+sudo apt-fast -y update
+#sudo apt-fast -y install calendar-app music-app help-app reminders-app ubuntu-clock-app ubuntu-docviewer-app ubuntu-rssreader-app ubuntu-terminal-app ubuntu-weather-app sudoku-app dropping-letters-app
+
 #### pushbullet-indicator
 sudo add-apt-repository -y ppa:atareao/atareao
 sudo apt-fast -y update
@@ -186,12 +191,6 @@ sudo mv Shotcut /home/usuario
 #http://www.webupd8.org/2014/03/ubuntu-touch-emulator-installation-and.html
 #http://www.webupd8.org/2013/11/experimental-ubuntu-touch-emulator.html
 sudo apt-fast -y install ubuntu-emulator
-
-#### Kicad
-sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
-sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily		#abandoned
-sudo apt-fast -y update
-sudo apt-fast -y install kicad
 
 ##### Fritzing
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -

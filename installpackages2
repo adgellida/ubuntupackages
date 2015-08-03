@@ -10,30 +10,27 @@
 
 ######## OS & Utilities
 
+#### lshw
+#sudo apt-fast -y install lshw-gtk
+
 #### synapse
 sudo add-apt-repository -y ppa:synapse-core/testing
 sudo apt-fast -y update
 sudo apt-fast -y install synapse
 
 #### grub-customizer
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-sudo apt-fast -y update
-sudo apt-fast -y install grub-customizer
+#sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+#sudo apt-fast -y update
+#sudo apt-fast -y install grub-customizer
 
 #### UNetbootin
-sudo add-apt-repository -y ppa:n-muench/programs-ppa
-sudo apt-fast -y update
-sudo apt-fast -y install unetbootin
-
-#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-#sudo add-apt-repository -y ppa:docky-core/stable
-sudo add-apt-repository -y ppa:ricotz/docky
-sudo apt-fast -y update
-sudo apt-fast -y install plank
+#sudo add-apt-repository -y ppa:n-muench/programs-ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install unetbootin
 
 #### Ubuntu Partner Repo
-test -f /etc/apt/sources.list.d/ubuntu-partner.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
-sudo apt-fast -y update
+#test -f /etc/apt/sources.list.d/ubuntu-partner.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
+#sudo apt-fast -y update
 
 #### gnome-pie
 #sudo add-apt-repository -y ppa:simonschneegans/testing
@@ -45,25 +42,10 @@ sudo apt-fast -y update
 #sudo apt-fast -y update
 #sudo apt-fast -y install qterminal
 
-#### Xorg Edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-#sudo add-apt-repository -y ppa:xorg-edgers/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
-##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge -y xorg-edgers -> sudo ppa-purge -y oibaf graphics-drivers -> sudo ppa-purge -y ubuntu-x-swat
-
-#### oibaf - Possibly Unstable
-#sudo add-apt-repository -y ppa:oibaf/graphics-drivers
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
-
 #### canonical-kernel-team - Possibly Unstable - Not recommendable
 #sudo add-apt-repository -y ppa:canonical-kernel-team/ppa
 #sudo apt-fast -y update
 #sudo apt-fast -y dist-upgrade
-
-#### Various
-sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Desktop Environment
 
@@ -96,12 +78,6 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 #sudo apt-fast -y update
 #sudo apt-fast -y install tomahawk
 
-#### nuvolaplayer 2 - ONLY 14.10
-#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
-#sudo apt-fast -y update
-#sudo apt-fast -y upgrade
-#sudo apt-fast -y install nuvolaplayer
-
 #### nuvolaplayer 3 devel
 #sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
 ##test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
@@ -112,50 +88,55 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 ######## Videos & Movies
 
 #### qmmp
-sudo add-apt-repository -y ppa:forkotov02/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install qmmp qmmp-plugin-pack
+#sudo add-apt-repository -y ppa:forkotov02/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install qmmp qmmp-plugin-pack
 
 #### lmms
-sudo apt-fast -y install lmms
+#sudo apt-fast -y install lmms
+
+#### muse
+#sudo apt-fast -y install muse
+
+#### Audacity
+#sudo add-apt-repository -y ppa:audacity-team/daily
+#sudo add-apt-repository -y ppa:ubuntuhandbook1/audacity
+#sudo apt-fast -y update
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y install audacity
+
+#### ocenaudio
+#wget http://www.ocenaudio.com.br/start_download/ocenaudio64.deb
+#sudo dpkg -i ocenaudio64.deb
+#rm ocenaudio64.deb
 
 #### Hydrogen
-sudo apt-fast -y install hydrogen
+#sudo apt-fast -y install hydrogen
 
 #### natron
-sudo apt-fast -y install libegl1-mesa
-wget -c https://sourceforge.net/projects/natron/files/Natron_Linux_x86-64bits_v1.2.1.tar.gz
-tar xzvf Natron_Linux_x86*
-./Natron_*
+#sudo apt-fast -y install libegl1-mesa
+#wget -c https://sourceforge.net/projects/natron/files/Natron_Linux_x86-64bits_v1.2.1.tar.gz
+#tar xzvf Natron_Linux_x86*
+#./Natron_*
 
 #### cinelerra
-sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install cinelerra-cv
+#sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install cinelerra-cv
 
 #### kdenlive - CAREFULL, a lot of kde packages
-sudo add-apt-repository -y ppa:sunab/kdenlive-svn
-sudo apt-fast -y update
-sudo apt-fast -y install kdenlive
+#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
+#sudo apt-fast -y update
+#sudo apt-fast -y install kdenlive
 
 #### Various
-sudo apt-fast -y install openshot pitivi
+#sudo apt-fast -y install openshot pitivi
 
 ######## Development
 
 #### arduino ide
-wget http://download.arduino.org/IDE/1.7.6/arduino-1.7.6.org-linux64.tar.xz
-tar -xf arduino-1.7.6.org-linux64.tar.xz
-
-#### gnoduino	14.04
-#sudo add-apt-repository -y ppa:pmjdebruijn/gnoduino-release
-#sudo apt-fast -y update
-#sudo apt-fast -y install gnoduino
-
-#### notepadqq
-sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
-sudo apt-fast -y update
-sudo apt-fast -y install notepadqq
+#wget http://download.arduino.org/IDE/1.7.6/arduino-1.7.6.org-linux64.tar.xz
+#tar -xf arduino-1.7.6.org-linux64.tar.xz
 
 #### git stable
 sudo add-apt-repository -y ppa:git-core/ppa
@@ -176,6 +157,12 @@ sudo apt-fast -y install git-gui #git-cola qgit
 #chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
 #~/qt-opensource-linux-x64-5.4.0.run
 #rm ~/qt-opensource-linux-x64-5.4.0.run
+
+#### Kicad
+#sudo add-apt-repository -y ppa:adamwolf/kicad-testing-daily		#abandoned
+sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
+sudo apt-fast -y update
+sudo apt-fast -y install kicad
 
 #### Various
 sudo apt-fast -y install meld
@@ -198,27 +185,6 @@ tar -xf telegram.tar.xz
 
 rm /home/usuario/telegram.tar.xz
 
-#Exec=bash -c "unset QT_STYLE_OVERRIDE ; /home/usuario/Telegram/Telegram -- %u"
-
-#test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
-#Type=Application
-#Name=Telegram
-#Comment=Official desktop version of Telegram messaging app
-#Categories=Network
-#Exec=/home/usuario/Telegram/Telegram -- %u
-#Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/telegram.desktop'
-
-##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-##/opt/telegram/Telegram -- %u
-#sudo add-apt-repository -y ppa:atareao/telegram
-#sudo apt-fast -y update
-#sudo apt-fast -y install telegram
-
-##### Telegram (3) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-#sudo add-apt-repository -y ppa:noobslab/apps
-#sudo apt-fast -y update
-#sudo apt-fast -y install telegram-desktop
-
 ##### Facebook-Messenger-Desktop
 ##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
 wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.3.3/Messenger_linux64.deb
@@ -238,15 +204,6 @@ rm UnofficialWhatsApp_linux64.deb
 
 ######## File Sharing
 
-#### jdownloader
-#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-#sudo add-apt-repository -y ppa:jd-team/jdownloader
-#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
-wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-chmod +rwx JD2SilentSetup_x64.sh
-su usuario -c ./JD2SilentSetup_x64.sh
-rm JD2SilentSetup_x64.sh
-
 #### peerflix
 #sudo add-apt-repository -y ppa:chris-lea/node.js
 #sudo add-apt-repository -y ppa:rwky/nodejs
@@ -261,20 +218,14 @@ sudo npm install -g peerflix
 ##sudo smbpasswd -a usuario
 sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
 
-##### Frostwire - go to web or getdeb
-#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install frostwire
-##ancient
+##### Frostwire
 #http://www.frostwire.com/
-#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
+#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.1.3.amd64.deb
 #sudo dpkg -i frostwire*.deb
 #rm frostwire*.deb
 
 ##### Tribler
-#wget https://github.com/Tribler/tribler/releases/download/v6.4.1/tribler_6.4.1_all.deb
+#wget https://github.com/Tribler/tribler/releases/download/v6.4.3/tribler_6.4.3_all.deb
 #sudo dpkg -i tribler*.deb
 #rm tribler*.deb
 

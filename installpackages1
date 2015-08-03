@@ -36,19 +36,32 @@ sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
 rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
 rm -f playdeb_0.3-1~getdeb1_all.deb
 
-#### Getdeb (2)
-#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y update
-
 #### mtp support
 #sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
 #sudo apt-fast -y update & dist-upgrade
 sudo apt-fast -y install mtp-tools mtpfs
 
+#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#sudo add-apt-repository -y ppa:docky-core/stable
+sudo add-apt-repository -y ppa:ricotz/docky
+sudo apt-fast -y update
+sudo apt-fast -y install plank
+
+#### Xorg Edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+sudo add-apt-repository -y ppa:xorg-edgers/ppa
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
+##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
+#how to uninstall it -> sudo ppa-purge -y xorg-edgers -> sudo ppa-purge -y oibaf graphics-drivers -> sudo ppa-purge -y ubuntu-x-swat
+
+#### oibaf - Possibly Unstable
+sudo add-apt-repository -y ppa:oibaf/graphics-drivers
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
+
 #### Various
 sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
+sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Desktop Environment
 
@@ -77,9 +90,6 @@ sudo apt-fast -y install gufw mate-tweak
 
 ######## Photos & Graphics
 
-#### Various
-sudo apt-fast -y install gnome-exe-thumbnailer shutter
-
 #### gimp
 #sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp-edge
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
@@ -91,13 +101,11 @@ sudo apt-fast -y install gimp gimp-plugin-registry
 #http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
 sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
 sudo apt-fast -y update
-sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n
-#sudo restart lightdm
-#to execute run "krita"
-#sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es	# official
-#sudo add-apt-repository ppa:kubuntu-ppa/backports		# another method
-#sudo apt-fast update
-#sudo apt-fast install krita kritasketch
+sudo apt-fast -y install krita-2.9
+sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/
+
+#### Various
+sudo apt-fast -y install gnome-exe-thumbnailer shutter
 
 ######## Audio & Music
 
@@ -123,7 +131,10 @@ sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 
 ######## Development
 
-#### Various
+#### notepadqq
+sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
+sudo apt-fast -y update
+sudo apt-fast -y install notepadqq
 
 ####openjdk-8
 #sudo add-apt-repository -y ppa:maarten-fonville/ppa
@@ -134,10 +145,10 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjd
 ######## Web Browsers
 
 #### google-chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-fast -y update
-sudo apt-fast -y install google-chrome-stable
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install google-chrome-stable
 
 #### google-chrome-unstable
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -146,23 +157,14 @@ sudo apt-fast -y install google-chrome-stable
 #sudo apt-fast -y install google-chrome-unstable
 
 #### chromium
-#sudo apt-fast -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos
 ##http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
-#sudo apt-fast -y install pepperflashplugin-nonfree
+sudo apt-fast -y install pepperflashplugin-nonfree
 ##sudo update-pepperflashplugin-nonfree --install
 ##sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
-
-#### pepper-flash - for chromium (2)
-#https://launchpad.net/~skunk/+archive/ubuntu/pepper-flash
-#sudo add-apt-repository -y ppa:skunk/pepper-flash
-#sudo apt-fast -y update
-#sudo apt-fast -y install pepflashplugin-nonfree
-#/etc/chromium-browser/default
-#. /usr/lib/pepflashplugin-installer/pepflashplayer.sh
-#chromium restart
 
 #### pepper-flash - for firefox
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
@@ -180,7 +182,14 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack ar
 
 ######## File Sharing
 
-#
+#### jdownloader
+#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+#sudo add-apt-repository -y ppa:jd-team/jdownloader
+#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
+wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+chmod +rwx JD2SilentSetup_x64.sh
+su usuario -c ./JD2SilentSetup_x64.sh
+rm JD2SilentSetup_x64.sh
 
 ######## News & Books
 
