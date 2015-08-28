@@ -1,28 +1,15 @@
 #!/bin/bash
 ######## installpackages - Installs packages & necessary repos - script 5
 
+#### lshw
+#sudo apt-fast -y install lshw-gtk
+
 #### conky-manager
 #http://bitelia.com/2014/09/administrar-conky-con-conky-manager
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install conky-manager
 wget http://www.deviantart.com/download/426662366/conky_harmattan_by_zagortenay333-d720use.zip?token=9fd2773e70622067bb63125af9c3565e85317bfe&ts=1411158738 $ unzip conky_harmattan_by_zagortenay333-d720use.zip $ cp -R Harmattan/ ~/.conky
-
-#### tlp
-sudo add-apt-repository -y ppa:linrunner/tlp
-sudo apt-fast -y update
-sudo apt-fast -y install tlp tlp-rdw
-#sudo tlp start
-
-#### burg
-#http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
-sudo add-apt-repository -y ppa:n-muench/burg
-sudo apt-fast -y update
-sudo apt-fast -y install burg burg-themes ### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
-#To revert back to GRUB enter following commands:
-#sudo apt-fast remove --purge burg burg-themes
-#sudo add-apt-repository -r ppa:n-muench/burg
-#sudo update-grub
 
 #### clicompanion
 #sudo add-apt-repository -y ppa:clicompanion-devs/clicompanion-nightlies
@@ -35,13 +22,6 @@ sudo dpkg -i clicompanion*.deb
 #sudo add-apt-repository -y ppa:yunnxx/gnome3
 #sudo apt-fast -y update
 #sudo apt-fast -y install indicator-usb
-
-#### ubutricks
-#http://www.tuxarena.com/apps/ubutricks/
-#sudo apt-fast -y install zenity gksu
-#wget http://www.tuxarena.com/intro/files/ubutricks.sh
-#chmod +x ubutricks.sh
-#./ubutricks.sh
 
 #### photoqt
 sudo add-apt-repository -y ppa:samrog131/ppa
@@ -97,3 +77,13 @@ wget http://download.opensuse.org/repositories/home:jkt-gentoo:trojita/xUbuntu_1
 sudo apt-key add - < Release.key
 sudo apt-fast -y update
 sudo apt-fast -y install trojita
+
+#### bum
+sudo apt-fast -y install bum
+
+#### thewindowfactory (twf)
+#sudo apt-fast -y install thewindowfactory (twf)
+ 
+ 
+ 
+ 

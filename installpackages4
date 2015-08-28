@@ -43,68 +43,14 @@ sudo apt-fast -y install sbackup-plugins-fuse grsync unison-gtk freefilesync	#ht
 
 ########OS & Utilities
 
-#### cairo-dock - TO TEST
-#Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
-#sudo add-apt-repository -y ppa:cairo-dock-team/ppa
-sudo add-apt-repository -y ppa:cairo-dock-team/weekly
-sudo apt-fast -y update
-sudo apt-fast -y install cairo-dock
-mkdir ~/.config/autostart
-rm ~/.config/autostart/cairo-dock.desktop
-test -f ~/.config/autostart/cairo-dock.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=cairo-dock -W
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[es_ES]=Cairo Dock
-Name=Cairo Dock
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/cairo-dock.desktop'
-
 # Disable bug error notifications
 sudo sed -i s/enabled=1/enabled=0/g /etc/default/apport
-
-#### unattended-upgrades - NOT WORKING
-#http://almamu.com/wordpress/configurar-las-actualizaciones-automaticas-en-ubuntu-server/
-#http://241931348f64b1d1.wordpress.com/2013/01/24/how-to-configure-automatic-update-on-ubuntu-server/
-#http://www.redeszone.net/2014/12/12/habilita-las-actualizaciones-de-seguridad-automaticas-en-ubuntu/
-#http://www.taringa.net/posts/linux/13681417/Instalar-automaticamente-actualizaciones-en-Ubuntu.html
-#http://askubuntu.com/questions/172524/how-can-i-check-if-automatic-updates-are-enabled#172527
-sudo apt-fast -y install unattended-upgrades
-sudo dpkg-reconfigure -plow unattended-upgrades
-
-## /etc/apt/apt.conf.d/10periodic
-
-#Replace this:
-
-#APT::Periodic::Update-Package-Lists "1";
-#APT::Periodic::Download-Upgradeable-Packages "0";
-#APT::Periodic::AutocleanInterval "0";
-
-#With this:
-
-#APT::Periodic::Enable "1";
-#APT::Periodic::Update-Package-Lists "1";
-#APT::Periodic::Download-Upgradeable-Packages "1";
-#APT::Periodic::AutocleanInterval "5";
-#APT::Periodic::Unattended-Upgrade "1";
-#APT::Periodic::RandomSleep "1800";
-
-## /etc/apt/apt.conf.d/50unattended-upgrades
-#uncomment - "${distro_id}:${distro_codename}-updates";
 
 #### VirtualBox (1)
 wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
 test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
 sudo apt-fast -y update
 sudo apt-fast -y install virtualbox-5.0 #virtualbox-4.3 dkms
-
-#### VirtualBox (2)
-#wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/virtualbox.org.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y upgrade
-#sudo apt-fast -y install virtualbox-4.3 virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
 
 #### PlayOnLinux
 sudo add-apt-repository -y ppa:noobslab/apps
@@ -160,16 +106,6 @@ sudo add-apt-repository -y ppa:colingille/freshlight
 sudo apt-fast -y update
 sudo apt-fast -y install winusb
 
-#### Ubuplus - PRECISE
-#sudo add-apt-repository -y ppa:luismtc20/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install ubuplus
-
-#### jupiter	#POSSIBLY DEPRECATED
-#sudo add-apt-repository -y ppa:webupd8team/jupiter
-#sudo apt-fast -y update
-#sudo apt-fast -y install jupiter
-
 #### Psensor
 sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
 sudo apt-fast -y update
@@ -184,7 +120,7 @@ sudo apt-fast -y install voice-commands
 #### Various
 sudo apt-fast -y install inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
 sudo apt-fast -y install laptop-mode-tools	#gksu lmt-config-gui - This to launch it
-sudo apt-fast -y install libfile-mimeinfo-perl catfish bleachbit
+sudo apt-fast -y install libfile-mimeinfo-perl catfish
 sudo apt-fast -y install qtnx usb-imagewriter gddrescue testdisk baobab gsmartcontrol calendar-indicator
 sudo apt-fast -y install gnome-system-tools gnome-tweak-tool
 #sudo apt-fast -y install checkbox-qt - SYSTEM TESTING APP
@@ -354,11 +290,6 @@ sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
 #sudo apt-fast -y update
 #sudo apt-fast -y install vlc
 
-#### natron
-#https://natron.inria.fr/
-wget http://skylink.dl.sourceforge.net/project/natron/Natron_Linux_x86_64bits_v1.1.0.tar.gz
-#more...
-
 #### Popcorn Time
 sudo add-apt-repository -y ppa:webupd8team/popcorntime
 sudo apt-fast -y update
@@ -506,11 +437,6 @@ sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
 sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 sudo apt-fast -y update
 sudo apt-fast -y install chromium-browser chromium-browser-l10n
-
-#### PPA for Ubuntu Mozilla Security Team
-sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install firefox
 
 #### firefox developer edition ( aurora - fx10)
 sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora

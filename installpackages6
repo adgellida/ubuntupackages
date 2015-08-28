@@ -117,7 +117,7 @@ sudo apt-fast -y install muon
 #sudo apt-fast -y install mountmanager ntfsprogs  #### ERROR
 #sudo apt-fast -y install wally wallch
 
-####uninstallpackages
+#### uninstallpackages
 #### ONLY FOR UBUNTU
 #sudo apt-fast remove -y webbrowser-app unity-lens* unity-scope*
 

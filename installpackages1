@@ -8,6 +8,7 @@
 #sudo apt-get -y update
 #sudo apt-get -y upgrade
 ##sudo apt-get -y dist-upgrade
+##sudo apt-get -y install xxx --no-remove --force-yes
 
 ######## Backup & Sync
 
@@ -28,26 +29,28 @@ sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
 sudo apt-fast -y update
 sudo apt-fast -y install y-ppa-manager
 
-#### Getdeb (1)
-wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb &&
-wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb &&
-sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-rm -f playdeb_0.3-1~getdeb1_all.deb
+#### getdeb
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+sudo apt-fast -y update
+
+#### playdeb
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/playdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb games" >> /etc/apt/sources.list.d/playdeb.list'
+sudo apt-fast -y update
 
 #### mtp support
 #sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
 #sudo apt-fast -y update & dist-upgrade
 sudo apt-fast -y install mtp-tools mtpfs
 
-#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#### plank testing PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
 #sudo add-apt-repository -y ppa:docky-core/stable
 sudo add-apt-repository -y ppa:ricotz/docky
 sudo apt-fast -y update
 sudo apt-fast -y install plank
 
-#### Xorg Edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+#### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
 sudo add-apt-repository -y ppa:xorg-edgers/ppa
 sudo apt-fast -y update
 sudo apt-fast -y dist-upgrade
@@ -59,9 +62,48 @@ sudo add-apt-repository -y ppa:oibaf/graphics-drivers
 sudo apt-fast -y update
 sudo apt-fast -y dist-upgrade
 
-#### Various
-sudo apt-fast -y install ubuntu-restricted-extras ttf-ancient-fonts synaptic preload prelink gdebi ppa-purge gnome-disk-utility gparted
-sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
+#### graphics-drivers-team - Possibly Unstable
+sudo add-apt-repository -y ppa:graphics-drivers/ppa
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
+
+#### keepassx daily
+sudo add-apt-repository -y ppa:keepassx/daily
+sudo apt-fast -y update
+sudo apt-fast -y install keepassx
+
+#### keepassx stable
+#sudo apt-fast -y install keepassx
+
+#### ubuntu-restricted-extras
+sudo apt-fast -y install ubuntu-restricted-extras
+
+#### ttf-ancient-fonts
+sudo apt-fast -y install ttf-ancient-fonts
+
+#### synaptic
+sudo apt-fast -y install synaptic
+
+#### preload
+sudo apt-fast -y install preload
+
+#### prelink
+sudo apt-fast -y install prelink
+
+#### gdebi
+sudo apt-fast -y install gdebi
+
+#### ppa-purge
+sudo apt-fast -y install ppa-purge
+
+#### gnome-disk-utility
+sudo apt-fast -y install gnome-disk-utility
+
+#### gparted
+sudo apt-fast -y install gparted
+
+#### mate-tweak
+sudo apt-fast -y install mate-tweak
 
 ######## Desktop Environment
 
@@ -75,14 +117,12 @@ sudo apt-fast -y update
 sudo apt-fast install vibrancy-colors
 
 ######## Language packages
-#sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
-#sudo apt-fast -y install myspell-en-gb myspell-en-us
 sudo apt-fast -y install aspell aspell-en aspell-es
 
 ######## Security & Privacy
 
-#### Various
-sudo apt-fast -y install gufw mate-tweak
+#### gufw
+sudo apt-fast -y install gufw
 
 ######## CD/DVD Tools
 
@@ -104,8 +144,11 @@ sudo apt-fast -y update
 sudo apt-fast -y install krita-2.9
 sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/
 
-#### Various
-sudo apt-fast -y install gnome-exe-thumbnailer shutter
+#### gnome-exe-thumbnailer
+sudo apt-fast -y install gnome-exe-thumbnailer
+
+#### shutter
+sudo apt-fast -y install shutter
 
 ######## Audio & Music
 
@@ -122,12 +165,15 @@ sudo apt-fast -y install gnome-exe-thumbnailer shutter
 #sudo apt-fast -y update
 sudo apt-fast -y install ffmpeg
 
-#### Various
-
-####vlc
-sudo add-apt-repository -y ppa:videolan/stable-daily
+#### vlc daily
+sudo add-apt-repository -y ppa:videolan/master-daily
 sudo apt-fast -y update
 sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
+
+#### vlc stable
+#sudo add-apt-repository -y ppa:videolan/stable-daily
+#sudo apt-fast -y update
+#sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
 
 ######## Development
 
@@ -136,15 +182,24 @@ sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 sudo apt-fast -y update
 sudo apt-fast -y install notepadqq
 
-####openjdk-8
+#### openjdk-8
 #sudo add-apt-repository -y ppa:maarten-fonville/ppa
 sudo add-apt-repository -y ppa:mamarley/updates
 sudo apt-fast -y update
 sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjdk-7-jre icedtea-9-plugin openjdk-9-jre
 
+#### openjdk-7
+#sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre
+
+#### openjdk-9
+#sudo apt-fast -y install icedtea-9-plugin openjdk-9-jre
+
+#### Qt dependencies
+sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev	
+
 ######## Web Browsers
 
-#### google-chrome
+#### google-chrome-stable
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 #test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 #sudo apt-fast -y update
@@ -156,8 +211,13 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjd
 #sudo apt-fast -y update
 #sudo apt-fast -y install google-chrome-unstable
 
-#### chromium
+#### chromium stable
 sudo apt-fast -y install chromium-browser chromium-browser-l10n
+
+#### PPA for Ubuntu Mozilla Security Team
+sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install firefox firefox-locale-es
 
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos
@@ -167,9 +227,9 @@ sudo apt-fast -y install pepperflashplugin-nonfree
 ##sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
 #### pepper-flash - for firefox
-#sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-fast -y update
-#sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+sudo apt-fast -y update
+sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin
 
 ######## Social
 
@@ -177,15 +237,16 @@ sudo apt-fast -y install pepperflashplugin-nonfree
 
 ######## File Management
 
-#### Various
-sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
+#### Compress/Uncompress utils
+sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mpack arj cabextract
 
 ######## File Sharing
 
-#### jdownloader
-#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
+#### jdownloader stable
 #sudo add-apt-repository -y ppa:jd-team/jdownloader
-#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
+#sudo apt-fast -y install jdownloader
+
+#### jdownloader beta
 wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
 chmod +rwx JD2SilentSetup_x64.sh
 su usuario -c ./JD2SilentSetup_x64.sh
@@ -198,8 +259,7 @@ rm JD2SilentSetup_x64.sh
 ######## Office & Productivity
 
 #### libreoffice
-#sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
-sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
+#sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 sudo add-apt-repository -y ppa:libreoffice/ppa
 sudo apt-fast -y update
 sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
@@ -211,7 +271,8 @@ sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+sudo apt-fast -y remove tilda  pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+#sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Upgrading system
 #sudo apt-get -y upgrade
