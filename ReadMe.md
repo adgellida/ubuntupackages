@@ -34,12 +34,9 @@ Important
 =============================================
 * It hasn't been tested 100% yet. Give feedback!
 * The desktop environment recommended tested right now is to use MATE desktop.
-* Be careful with unstables repos, comment them if you want, for example:
- * Xorg Edgers
- * WebUpd8 Unstable - only for 13.10 or less
-By default these two are disabled now.
+* Be careful with unstables repos, comment them if you want.
 * If there are connectivity problems select your best server on Software & Updates!
-* If you want to know more, go to the wiki of this repo [here](https://github.com/tonigellida/ubuntupackages/wiki).
+* If you want to know more, go to the wiki of this repo [here](https://github.com/adgellida/ubuntupackages/wiki).
 
 TO DO
 =============================================

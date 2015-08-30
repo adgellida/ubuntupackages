@@ -193,15 +193,10 @@ sudo apt-fast -y install e20 terminology
 
 ########Themes
 
-#### azure-gtk-theme
+#### azure-gtk-theme lhun-magol-theme ambiance-grey ambiance-dark-blue ambiance-dark-red ultra-flat-theme
 sudo add-apt-repository -y ppa:noobslab/themes
 sudo apt-fast -y update
-sudo apt-fast -y install azure-gtk-theme
-
-#### lhun-magol-theme
-sudo add-apt-repository -y ppa:noobslab/themes
-sudo apt-fast -y update
-sudo apt-fast -y install lhun-magol-theme
+sudo apt-fast -y install azure-gtk-theme lhun-magol-theme ambiance-grey ambiance-dark-blue ambiance-dark-red ultra-flat-theme
 
 #### paper-gtk-theme
 sudo add-apt-repository -y ppa:snwh/pulp
@@ -214,11 +209,6 @@ sudo apt-fast -y update
 sudo apt-fast -y install ambiance-colors radiance-colors ubuntu-mono
 sudo apt-fast -y install ambiance-blackout-flat-colors
 sudo apt-fast -y install ambiance-flat-colors radiance-flat-colors
-
-#### ambiance-grey ambiance-dark-blue ambiance-dark-red
-sudo add-apt-repository -y ppa:noobslab/themes
-sudo apt-fast -y update
-sudo apt-fast -y install ambiance-grey ambiance-dark-blue ambiance-dark-red
 
 ######## Security & Privacy
 sudo apt-fast -y install seahorse

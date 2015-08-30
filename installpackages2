@@ -8,6 +8,28 @@ test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://me
 sudo apt-fast -y update
 sudo apt-fast -y install megasync
 
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/megasync.desktop
+test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=/home/usuario/.megasync/megasync
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[es_ES]=megasync
+Name=megasync
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/megasync.desktop'
+
+mkdir ~/.megasync
+rm ~/.megasync/megasync.sh
+test -f ~/.megasync/megasync.sh || sh -c 'echo "#!/bin/bash
+
+#https://www.reddit.com/r/MEGA/comments/323bti/megasyncno_icon/
+
+sleep 20
+megasync &" >> ~/.megasync/megasync.sh'
+
 #### DirSyncPro
 sudo mkdir /opt/DirSyncPro
 sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
@@ -66,6 +88,14 @@ Name[es_ES]=clipit
 Name=clipit
 Comment[es_ES]=
 Comment=" >> ~/.config/autostart/clipit.desktop'
+
+#### haguichi
+sudo add-apt-repository -y ppa:webupd8team/haguichi
+sudo apt-fast -y update
+sudo apt-fast -y install haguichi
+
+wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
+sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
 
 ######## Desktop Environment
 

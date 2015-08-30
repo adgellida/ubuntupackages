@@ -271,7 +271,7 @@ sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove tilda  pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+sudo apt-fast -y remove tilda pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Upgrading system
