@@ -526,11 +526,6 @@ sudo apt-fast -y install gnucash (python-gnucash) grisbi hombank skrooge abtrans
 
 ######## Games
 
-#### Steam Login
-sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
-sudo apt-fast -y update
-sudo apt-fast -y install steam steam-login
-
 #### 0ad
 sudo add-apt-repository -y ppa:wfg/0ad
 sudo apt-fast -y update

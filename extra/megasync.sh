@@ -2,5 +2,5 @@
 
 #https://www.reddit.com/r/MEGA/comments/323bti/megasyncno_icon/
 
-sleep 20
+sleep 30
 megasync &
