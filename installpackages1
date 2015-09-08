@@ -220,7 +220,7 @@ sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev
 #sudo apt-fast -y install google-chrome-unstable
 
 #### chromium stable
-sudo apt-fast -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
 #### PPA for Ubuntu Mozilla Security Team
 sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa

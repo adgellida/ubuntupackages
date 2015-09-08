@@ -3,3 +3,5 @@ The simple way to skip this error (taken for similar bug with portal 2) is renam
 home/your user/.HON installation folder/libs-x86_64/
 · libgcc_s.so.1
 · libstdc++.so.6
+
+And copy libxml2... attached files on it

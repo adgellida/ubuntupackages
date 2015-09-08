@@ -4,31 +4,31 @@
 ######## Backup & Sync
 
 #### megasync
-test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
-sudo apt-fast -y update
-sudo apt-fast -y install megasync
+#test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install megasync
 
 #add at boot
-mkdir ~/.config/autostart
-rm ~/.config/autostart/megasync.desktop
-test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=/home/usuario/.megasync/megasync
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[es_ES]=megasync
-Name=megasync
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/megasync.desktop'
+#mkdir ~/.config/autostart
+#rm ~/.config/autostart/megasync.desktop
+#test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Exec=/home/usuario/.megasync/megasync
+#Hidden=false
+#X-MATE-Autostart-enabled=true
+#Name[es_ES]=megasync
+#Name=megasync
+#Comment[es_ES]=
+#Comment=" >> ~/.config/autostart/megasync.desktop'
 
-mkdir ~/.megasync
-rm ~/.megasync/megasync.sh
-test -f ~/.megasync/megasync.sh || sh -c 'echo "#!/bin/bash
+#mkdir ~/.megasync
+#rm ~/.megasync/megasync.sh
+#test -f ~/.megasync/megasync.sh || sh -c 'echo "#!/bin/bash
 
 #https://www.reddit.com/r/MEGA/comments/323bti/megasyncno_icon/
 
-sleep 30
-megasync &" >> ~/.megasync/megasync.sh'
+#sleep 30
+#megasync &" >> ~/.megasync/megasync.sh'
 
 #### DirSyncPro
 sudo mkdir /opt/DirSyncPro
@@ -48,6 +48,12 @@ Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.deskt
 ##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
 
 ######## OS & Utilities
+
+#### Teamviewer - POSSIBLY ERROR
+#http://www.teamviewer.com/es/download/linux.aspx
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo dpkg -i teamviewer_i386.deb
+rm teamviewer_i386.deb
 
 #### synapse
 sudo add-apt-repository -y ppa:synapse-core/testing
