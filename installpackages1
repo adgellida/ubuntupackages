@@ -203,7 +203,7 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjd
 #sudo apt-fast -y install icedtea-9-plugin openjdk-9-jre
 
 #### Qt dependencies
-sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev	
+sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev
 
 ######## Web Browsers
 

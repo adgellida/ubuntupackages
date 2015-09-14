@@ -164,7 +164,7 @@ sudo apt-fast -y install muon
 #### Various
 #sudo apt-fast -y install acroread-common acroread acroread-fonts
 #sudo apt-fast -y install aptoncd
-#sudo apt-fast -y install blender gadmin-rsync mate-core
+#sudo apt-fast -y install gadmin-rsync mate-core
 #sudo apt-fast -y install mounty ddrescue  #### NEED TO ADD PPA
 #sudo apt-fast -y install eog eog-plugins
 #sudo apt-fast -y install metacity

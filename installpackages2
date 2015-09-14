@@ -3,6 +3,17 @@
 
 ######## Backup & Sync
 
+#### backintime testing
+sudo add-apt-repository -y ppa:bit-team/testing
+sudo apt-fast -y update
+#sudo apt-fast -y install backintime-gnome
+sudo apt-fast -y install backintime-qt4
+
+#### Unstable synaptic, guake...
+sudo add-apt-repository -y ppa:webupd8team/unstable
+sudo apt-fast -y update
+sudo apt-fast -y install synaptic guake
+
 #### megasync
 #test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
 #sudo apt-fast -y update
@@ -138,9 +149,21 @@ sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
 
 ######## Development
 
+#### blender
+sudo add-apt-repository -y ppa:thomas-schiex/blender
+sudo apt-fast -y update
+sudo apt-fast -y install blender
+
 #### arduino ide - http://arduino-er.blogspot.com.es/2014/08/arduino-ide-error-avrdude-seropen-cant.html
+#1.7.6
 #wget http://download.arduino.org/IDE/1.7.6/arduino-1.7.6.org-linux64.tar.xz
 #tar -xf arduino-1.7.6.org-linux64.tar.xz
+#sudo usermod -a -G dialout usuario
+#sudo chmod a+rw /dev/ttyUSB0
+
+#1.6.5
+#wget https://www.arduino.cc/download_handler.php?f=/arduino-1.6.5-r5-linux64.tar.xz
+#tar -xf arduino-1.6.5-r5-linux64.tar.xz
 #sudo usermod -a -G dialout usuario
 #sudo chmod a+rw /dev/ttyUSB0
 
