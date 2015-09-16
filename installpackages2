@@ -149,6 +149,11 @@ sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
 
 ######## Development
 
+#### dia
+sudo add-apt-repository -y ppa:dreibh/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install dia
+
 #### blender
 sudo add-apt-repository -y ppa:thomas-schiex/blender
 sudo apt-fast -y update
@@ -202,7 +207,10 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 
 ######## Web Browsers
 
-#
+#### tor-browser
+sudo add-apt-repository -y ppa:webupd8team/tor-browser
+sudo apt-fast -y update
+sudo apt-fast -y install tor-browser
 
 ######## Social
 

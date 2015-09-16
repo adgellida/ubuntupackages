@@ -197,11 +197,6 @@ sudo apt-fast -y install ambiance-flat-colors radiance-flat-colors
 ######## Security & Privacy
 sudo apt-fast -y install seahorse
 
-#### tor-browser
-sudo add-apt-repository -y ppa:webupd8team/tor-browser
-sudo apt-fast -y update
-sudo apt-fast -y install tor-browser
-
 ######## CD/DVD Tools
 
 #### Various
