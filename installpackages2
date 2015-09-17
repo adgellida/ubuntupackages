@@ -9,11 +9,6 @@ sudo apt-fast -y update
 #sudo apt-fast -y install backintime-gnome
 sudo apt-fast -y install backintime-qt4
 
-#### Unstable synaptic, guake...
-sudo add-apt-repository -y ppa:webupd8team/unstable
-sudo apt-fast -y update
-sudo apt-fast -y install synaptic guake
-
 #### megasync
 #test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
 #sudo apt-fast -y update
@@ -60,7 +55,17 @@ Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.deskt
 
 ######## OS & Utilities
 
-#### Teamviewer - POSSIBLY ERROR
+#### ddrescue-gui
+sudo add-apt-repository -y ppa:hamishmb/myppa
+sudo apt-fast -y update
+sudo apt-fast -y install ddrescue-gui
+
+#### Unstable synaptic, guake...
+sudo add-apt-repository -y ppa:webupd8team/unstable
+sudo apt-fast -y update
+sudo apt-fast -y install synaptic guake
+
+#### Teamviewer
 #http://www.teamviewer.com/es/download/linux.aspx
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo dpkg -i teamviewer_i386.deb

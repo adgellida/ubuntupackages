@@ -55,10 +55,10 @@ sudo apt-get -y install playonlinux
 #sudo dpkg -i PlayOnLinux*.deb
 #rm PlayOnLinux*.deb
 
-#### Intel Linux Graphics Installer - Official
+#### Intel Linux Graphics Installer - Official - https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
 wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
 wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo "deb https://download.01.org/gfx/ubuntu/14.10/main/ utopic main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo "deb https://download.01.org/gfx/ubuntu/15.04/main/ utopic main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
 
 #### muCommander (unstable)
 sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
@@ -405,7 +405,7 @@ sudo apt-fast -y install mono-complete mono-basic-dbg
 sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
 sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
 sudo apt-fast -y update
-sudo apt-fast -y install chromium-browser chromium-browser-l10n
+sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
 #### firefox developer edition ( aurora - fx10)
 sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
