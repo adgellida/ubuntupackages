@@ -240,6 +240,14 @@ sudo apt-fast -y install pogo
 
 ######## Videos & Movies
 
+#### kodi
+sudo apt-get install software-properties-common
+#sudo add-apt-repository -y ppa:team-xbmc/ppa
+#sudo add-apt-repository -y ppa:team-xbmc/unstable
+sudo add-apt-repository -y ppa:team-xbmc/xbmc-nightly
+sudo apt-fast -y update
+sudo apt-fast -y install kodi
+
 #### qmmp
 #sudo add-apt-repository -y ppa:forkotov02/ppa
 #sudo apt-fast -y update
