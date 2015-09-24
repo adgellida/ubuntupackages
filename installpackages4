@@ -249,11 +249,24 @@ sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
 
 ######## Videos & Movies
 
-#### Kazam - In official stable repo
+#### obs-studio
+#sudo add-apt-repository -y ppa:obsproject/obs-studio
+#sudo apt-fast -y update
+#sudo apt-fast -y install obs-studio
+
+#### recordmydesktop
+#sudo apt-fast -y install recordmydesktop gtk-recordmydesktop
+
+#### kazam - In official stable repo
 #sudo add-apt-repository -y ppa:kazam-team/stable-series
 #sudo add-apt-repository -y ppa:kazam-team/unstable-series
 #sudo apt-fast -y update
 #sudo apt-fast -y install kazam
+
+#### simplescreenrecorder
+#sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
+#sudo apt-fast -y update
+#sudo apt-fast -y install simplescreenrecorder
 
 #### VLC #### only compatible with 14.04
 #sudo add-apt-repository -y ppa:ed10vi86/video
@@ -423,6 +436,24 @@ sudo apt-fast -y install firefox-trunk
 sudo add-apt-repository -y ppa:midori/midori-dev
 sudo apt-fast -y update
 sudo apt-fast -y install midori
+
+#### iridium-browser
+#wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+#test -f /etc/apt/sources.list.d/iridium-browser.list || sudo sh -c 'echo "deb https://downloads.iridiumbrowser.de/ubuntu vivid main" >> /etc/apt/sources.list.d/iridium-browser.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y install iridium-browser
+
+#### liri-browser
+#wget https://github.com/liri-browser/liri-browser/releases/download/v0.3/liri-browser_0.3-1.deb
+#sudo dpkg -i liri-browser_0.3-1.deb
+
+#### superbird-browser - not working, needs a library
+#wget http://superbird-browser.com/download/superbird-32-amd64.deb
+#sudo dpkg -i superbird-32-amd64.deb
+
+#### srware-iron-browser - to add more steps
+#wget http://www.srware.net/downloads/iron64.deb
+#sudo dpkg -i iron64.deb
 
 ######## Social
 

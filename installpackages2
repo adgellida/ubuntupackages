@@ -4,10 +4,10 @@
 ######## Backup & Sync
 
 #### backintime testing
-sudo add-apt-repository -y ppa:bit-team/testing
-sudo apt-fast -y update
-#sudo apt-fast -y install backintime-gnome
-sudo apt-fast -y install backintime-qt4
+#sudo add-apt-repository -y ppa:bit-team/testing
+#sudo apt-fast -y update
+##sudo apt-fast -y install backintime-gnome
+#sudo apt-fast -y install backintime-qt4
 
 #### megasync
 #test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
@@ -56,14 +56,14 @@ Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.deskt
 ######## OS & Utilities
 
 #### ddrescue-gui
-sudo add-apt-repository -y ppa:hamishmb/myppa
-sudo apt-fast -y update
-sudo apt-fast -y install ddrescue-gui
+#sudo add-apt-repository -y ppa:hamishmb/myppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install ddrescue-gui
 
 #### Unstable synaptic, guake...
-sudo add-apt-repository -y ppa:webupd8team/unstable
-sudo apt-fast -y update
-sudo apt-fast -y install synaptic guake
+#sudo add-apt-repository -y ppa:webupd8team/unstable
+#sudo apt-fast -y update
+#sudo apt-fast -y install synaptic guake
 
 #### Teamviewer
 #http://www.teamviewer.com/es/download/linux.aspx
@@ -77,10 +77,10 @@ sudo apt-fast -y update
 sudo apt-fast -y install synapse
 
 #### tlp
-sudo add-apt-repository -y ppa:linrunner/tlp
-sudo apt-fast -y update
-sudo apt-fast -y install tlp tlp-rdw
-#sudo tlp start
+#sudo add-apt-repository -y ppa:linrunner/tlp
+#sudo apt-fast -y update
+#sudo apt-fast -y install tlp tlp-rdw
+##sudo tlp start
 
 #### grub-customizer
 sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
@@ -112,12 +112,12 @@ Comment[es_ES]=
 Comment=" >> ~/.config/autostart/clipit.desktop'
 
 #### haguichi
-sudo add-apt-repository -y ppa:webupd8team/haguichi
-sudo apt-fast -y update
-sudo apt-fast -y install haguichi
+#sudo add-apt-repository -y ppa:webupd8team/haguichi
+#sudo apt-fast -y update
+#sudo apt-fast -y install haguichi
 
-wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
-sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
+#wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
+#sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
 
 ######## Desktop Environment
 
@@ -195,6 +195,10 @@ sudo apt-fast -y install git
 #### git-gui
 sudo apt-fast -y install git-gui #git-cola qgit 
 
+#### smartgit
+wget http://www.syntevo.com/downloads/smartgit/smartgit-7_0_2.deb
+sudo dpkg -i smartgit-7_0_2.deb
+
 #### Qt Linux
 ####Qt dependencies on installpackages1
 #wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
@@ -216,24 +220,6 @@ sudo apt-fast -y install meld
 sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 ######## Web Browsers
-
-#### iridium-browser
-wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
-test -f /etc/apt/sources.list.d/iridium-browser.list || sudo sh -c 'echo "deb https://downloads.iridiumbrowser.de/ubuntu vivid main" >> /etc/apt/sources.list.d/iridium-browser.list'
-sudo apt-fast -y update
-sudo apt-fast -y install iridium-browser
-
-#### liri-browser
-#wget https://github.com/liri-browser/liri-browser/releases/download/v0.3/liri-browser_0.3-1.deb
-#sudo dpkg -i liri-browser_0.3-1.deb
-
-#### superbird-browser - not working
-#wget http://superbird-browser.com/download/superbird-32-amd64.deb
-#sudo dpkg -i superbird-32-amd64.deb
-
-#### srware-iron-browser - to add more steps
-#wget http://www.srware.net/downloads/iron64.deb
-#sudo dpkg -i iron64.deb
 
 #### tor-browser
 sudo add-apt-repository -y ppa:webupd8team/tor-browser
@@ -310,17 +296,7 @@ sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbin
 
 ######## Games
 
-#### Steam
-#http://askubuntu.com/questions/614422/problem-with-installing-steam-on-ubuntu-15-04/614458#614458
-sudo apt-fast -y install steam
-#to fix bad value error...
-#find $HOME/.steam/root/ubuntu12_32/steam-runtime/*/usr/lib/ -name "libstdc++.so.6" -exec mv "{}" "{}.bak" \; -print
-
-#### Steam Login
-#http://repo.steampowered.com/steam/archive/precise/steam_latest.deb
-sudo add-apt-repository -y ppa:thor27-gmail/steam-desktop
-sudo apt-fast -y update
-sudo apt-fast -y install steam steam-login
+#
 
 ######## Extra
 
