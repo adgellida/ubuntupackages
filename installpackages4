@@ -217,7 +217,7 @@ sudo apt-fast -y install photo
 #### Various
 sudo apt-fast -y install shotwell
 sudo apt-fast -y install xnviewmp xsane
-sudo apt-fast -y install inkscape karbon scribus gwenview		#scribus-ng - DEV VERSION
+sudo apt-fast -y install karbon scribus gwenview		#scribus-ng - DEV VERSION
 
 ######## Audio & Music
 
