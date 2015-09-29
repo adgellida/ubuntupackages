@@ -38,11 +38,11 @@
 
 #### DirSyncPro
 sudo mkdir /opt/DirSyncPro
-sudo wget http://kent.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.50/DirSyncPro-1.50-Linux.zip -O /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
+sudo wget http://netcologne.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.51/DirSyncPro-1.51-Linux.tar.gz -O /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
 sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
-sudo unzip /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip -d /opt/DirSyncPro
-sudo rm /opt/DirSyncPro/DirSyncPro-1.50-Linux.zip
-sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
+sudo tar -xf /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz -d /opt/DirSyncPro
+sudo rm /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
+sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.51-Linux/dirsyncpro.jar
 
 test -f /usr/share/applications/dirsyncpro.desktop || sudo sh -c 'echo "[Desktop Entry]
 Type=Application
@@ -60,12 +60,12 @@ Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.deskt
 #sudo apt-fast -y update
 #sudo apt-fast -y install ddrescue-gui
 
-#### Unstable synaptic, guake...
+#### unstable synaptic, guake...
 #sudo add-apt-repository -y ppa:webupd8team/unstable
 #sudo apt-fast -y update
 #sudo apt-fast -y install synaptic guake
 
-#### Teamviewer
+#### teamviewer
 #http://www.teamviewer.com/es/download/linux.aspx
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo dpkg -i teamviewer_i386.deb
@@ -87,7 +87,7 @@ sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
 sudo apt-fast -y update
 sudo apt-fast -y install grub-customizer
 
-#### UNetbootin
+#### unetbootin
 #sudo add-apt-repository -y ppa:n-muench/programs-ppa
 #sudo apt-fast -y update
 #sudo apt-fast -y install unetbootin
@@ -217,10 +217,10 @@ sudo dpkg -i smartgit-7_0_2.deb
 
 #### Qt Linux
 ####Qt dependencies on installpackages1
-#wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
-#chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
-#~/qt-opensource-linux-x64-5.4.0.run
-#rm ~/qt-opensource-linux-x64-5.4.0.run
+#wget http://download.qt.io/official_releases/qt/5.5/5.5.0/qt-opensource-linux-x64-5.5.0-2.run
+#chmod +rwx ~/qt-opensource-linux-x64-5.5.0-2.run
+#~/qt-opensource-linux-x64-5.5.0-2.run
+#rm ~/qt-opensource-linux-x64-5.5.0-2.run
 
 #### kicad
 #sudo add-apt-repository -y ppa:js-reynaud/kicad-package-daily-stable
