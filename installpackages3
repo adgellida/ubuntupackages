@@ -4,179 +4,81 @@
 ######## Backup & Sync
 
 #### systemback
-sudo apt-add-repository -y ppa:nemh/systemback
-sudo apt-fast -y update
-sudo apt-fast -y install systemback
+apps3/systemback
 
 #### syncany
-#curl -sL https://get.syncany.org/debian/ | sh
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys A3002F0613D342687D70AEEE3F6B7F13651D12BD
-sudo sh -c "echo deb http://get.syncany.org/apt/release/ release main > /etc/apt/sources.list.d/syncany.list"
-sudo apt-fast -y update
-sudo apt-fast -y install syncany
+apps3/syncany
 
 #### sparkleshare
-#sudo apt-add-repository -y ppa:git-core/ppa
-sudo apt-add-repository -y ppa:rebuntu16/sparkleshare+unofficial
-sudo apt-fast -y update
-sudo apt-fast -y install sparkleshare
+apps3/sparkleshare
 
 #### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
-#sudo apt-add-repository -y ppa:teejee2008/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install aptik
+apps3/aptik
 
-#### TimeShift
-#http://www.howtogeek.com/206491/how-to-restore-your-ubuntu-linux-system-to-its-previous-state/
-#sudo add-apt-repository -y ppa:teejee2008/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install timeshift
+#### timeShift
+apps3/timeshift
 
 #### syncthing-gtk
-#sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-fast -y update
-#sudo apt-fast -y install syncthing-gtk
+apps3/syncthing-gtk
 
 ######## OS & Utilities
 
 #### cairo-dock
-#Run cairo-dock at startup in compatibility transparency mode with a few window managers - http://glx-dock.org/ww_page.php?p=Recurrents%20problems&lang=en
-##sudo add-apt-repository -y ppa:cairo-dock-team/weekly
-#sudo add-apt-repository -y ppa:cairo-dock-team/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install cairo-dock cairo-dock-plug-ins
-
-#add at boot
-#mkdir ~/.config/autostart
-#rm ~/.config/autostart/cairo-dock.desktop
-#test -f ~/.config/autostart/cairo-dock.desktop || sh -c 'echo "[Desktop Entry]
-#Type=Application
-#Exec=cairo-dock -W
-#Hidden=false
-#X-MATE-Autostart-enabled=true
-#Name[es_ES]=Cairo Dock
-#Name=Cairo Dock
-#Comment[es_ES]=
-#Comment=" >> ~/.config/autostart/cairo-dock.desktop'
-
-#### Canonical Partners Repo
-#test -f /etc/apt/sources.list.d/ubuntu-partner.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
-#sudo apt-fast -y update
+apps3/cairo-dock
 
 #### gnome-pie
-#sudo add-apt-repository -y ppa:simonschneegans/testing
-#sudo apt-fast -y update
-#sudo apt-fast -y install gnome-pie
+apps3/gnome-pie
 
 #### qterminal
-#sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
-#sudo apt-fast -y update
-#sudo apt-fast -y install qterminal
+apps3/qterminal
 
 #### recoll
-#sudo add-apt-repository -y ppa:recoll-backports/recoll-1.15-on
-#sudo apt-fast -y update
-#sudo apt-fast -y install recoll
+apps3/recoll
 
 #### burg - https://advancedpcusers.wordpress.com/2012/07/01/replace-grub-with-burg-graphical-boot-loader/
-##http://www.ubuntu-guia.com/2010/07/burg-manager-interfaz-grafica.html?showComment=1281043968113#c4291975126103992232
-##http://www.noobslab.com/2014/09/replace-grub-with-burg-to-beautify-boot.html
-#sudo add-apt-repository -y ppa:n-muench/burg
-#sudo apt-fast -y update
-#sudo apt-fast -y install burg burg-themes
-
-#sudo burg-install "(hd0)"
-#sudo burg-install /dev/sda
-
-### After installation you can run burg-emu to choose theme and change resolution (You also can do it while you are in actual BURG). To change themes use F2 and to change resolution use F3
-##To revert back to GRUB enter following commands:
-##sudo apt-fast remove --purge burg burg-themes
-##sudo add-apt-repository -r ppa:n-muench/burg
-##sudo update-grub
+apps3/burg
 
 #### customizer (u-customizer)
-#https://github.com/clearkimura/Customizer
-#wget https://github.com/clearkimura/Customizer/archive/4.1.1.tar.gz
-#tar xzvf 4.1.1.tar.gz
-#sudo apt-fast -y install git build-essential fakeroot make binutils g++ python python-dev python-qt4 pyqt4-dev-tools squashfs-tools xorriso x11-xserver-utils xserver-xephyr qemu-kvm dpkg-dev debhelper qt4-dev-tools qt4-linguist-tools --no-install-recommends
-#make && sudo make install
-#sudo customizer-gui
+apps3/customizer
 
 #### gnome-multiwriter
-#sudo apt-fast -y install gnome-common yelp-tools libcanberra-gtk3-dev libudisks2-dev gobject-introspection
-#cd /tmp
-#rm -rf GNOME_MULTI_WRITER*
-#wget --no-check-certificate https://github.com/GNOME/gnome-multi-writer/tarball/master -O GNOME_MULTI_WRITER.tar.gz
-#tar xzf GNOME_MULTI_WRITER.tar.gz
-#cd gnome-multi-writer-GNOME_MULTI_WRITER_*
-##execute
+apps3/gnome-multiwrite
 
 #### ubuntu-touch-coreapps
-sudo add-apt-repository -y ppa:ubuntu-touch-coreapps-drivers/daily
-sudo apt-fast -y update
-#sudo apt-fast -y install calendar-app music-app help-app reminders-app ubuntu-clock-app ubuntu-docviewer-app ubuntu-rssreader-app ubuntu-terminal-app ubuntu-weather-app sudoku-app dropping-letters-app
+apps3/ubuntu-touch-coreapps
 
 #### pushbullet-indicator
-sudo add-apt-repository -y ppa:atareao/atareao
-sudo apt-fast -y update
-sudo apt-fast -y install pushbullet-indicator
+apps3/pushbullet-indicator
 
 #### albert
-sudo apt-add-repository -y ppa:nilarimogard/webupd8
-sudo apt-fast -y update
-sudo apt-fast -y install albert
+apps3/albert
 
 #### mutate
-sudo apt-add-repository -y ppa:mutate/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install mutate
+apps3/mutate
 
 #### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
 sudo apt-fast -y install undistract-me
 
 #### appgrid
-sudo add-apt-repository -y ppa:appgrid/stable
-sudo apt-fast -y update
-sudo apt-fast -y install appgrid
+apps3/appgrid
 
 #### ubuntu-after-install
-sudo add-apt-repository -y ppa:thefanclub/ubuntu-after-install
-sudo apt-fast -y update
-sudo apt-fast -y install ubuntu-after-install
+apps3/ubuntu-after-install
 
 #### ubutricks
-#http://www.tuxarena.com/apps/ubutricks/
-#sudo apt-fast -y install zenity gksu
-#wget http://www.tuxarena.com/intro/files/ubutricks.sh
-#chmod +x ubutricks.sh
-#./ubutricks.sh
+apps3/ubutricks
 
 #### postinstallerf
-## latest version
-wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
-wget -c http://sourceforge.net/projects/postinstaller/files/fedora/releases/23/x86_64/postinstallerf-1.5-34.20150812gitdcdc05d.fc23.noarch.rpm
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt-fast -y update
-sudo apt-fast -y install yad packagekit
-sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
-sudo apt-fast -y install alien dpkg-dev debhelper build-essential
-sudo alien postinstallerf-1.5-34.20150812gitdcdc05d.fc23.noarch.rpm
-sudo dpkg -i postinstallerf_1.5-35.20150812_all.deb 
+apps3/postinstallerf
 
-#### variety-peterlevi
-#sudo add-apt-repository -y ppa:peterlevi/ppa
-#sudo add-apt-repository -y ppa:variety/next
-sudo add-apt-repository -y ppa:variety/daily
-sudo apt-fast -y update
-sudo apt-fast -y install variety
+#### variety-peterlevi-daily
+apps3/variety-peterlevi-daily
 
 #### HP
 sudo apt-fast -y install hplip hplip-gui
 
-#### Bible Time!
-sudo add-apt-repository -y ppa:unit193/crosswire
-sudo apt-fast -y update
-sudo apt-fast -y install xiphos bibletime #sword biblesync
+#### bibletime
+apps3/bibletime
 
 #### ubuntu customization kit
 sudo apt-fast -y install uck
@@ -188,20 +90,7 @@ sudo apt-fast -y install uck
 ######## Themes
 
 #### folder-color
-sudo add-apt-repository -y ppa:costales/folder-color
-sudo apt-fast -y update
-#### nautilus
-#sudo apt-fast -y install folder-color
-#nautilus -q
-#### nemo
-#sudo apt-fast -y install folder-color-nemo
-#nemo -q
-#### caja
-sudo apt-fast -y install folder-color-caja
-caja -q
-#fix if proceed
-sudo ln -s /usr/lib/x86_64-linux-gnu/girepository-1.0/Caja-2.0.typelib /usr/lib/girepository-1.0/Caja-2.0.typelib
-caja -q
+apps3/folder-color
 
 ######## Language packages
 
@@ -222,97 +111,54 @@ caja -q
 ######## Audio & Music
 
 #### tomahawk
-#sudo add-apt-repository -y ppa:tomahawk/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install tomahawk
+apps3/tomahawk
 
-#### nuvolaplayer 3 devel
-#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
-##test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-#test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install nuvolaplayer3
+#### nuvolaplayer3-devel
+apps3/nuvolaplayer3-devel
 
 #### pogo
-sudo add-apt-repository -y ppa:pogo-dev/stable
-sudo apt-fast -y update
-sudo apt-fast -y install pogo
+apps3/pogo
 
 ######## Videos & Movies
 
-#### kodi
-sudo apt-get install software-properties-common
-#sudo add-apt-repository -y ppa:team-xbmc/ppa
-#sudo add-apt-repository -y ppa:team-xbmc/unstable
-sudo add-apt-repository -y ppa:team-xbmc/xbmc-nightly
-sudo apt-fast -y update
-sudo apt-fast -y install kodi
+#### kodi-nightly
+apps3/kodi-nightly
 
 #### qmmp
-#sudo add-apt-repository -y ppa:forkotov02/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install qmmp qmmp-plugin-pack
+apps3/qmmp
 
 #### lmms
-#wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.1.0~kxstudio1_all.deb
-#sudo dpkg -i kxstudio-repos_9.1.0~kxstudio1_all.deb
-#sudo apt-fast -y install lmms
-
-#### lmms (to test)
-#sudo add-apt-repository -y ppa:kxstudio-debian/apps
-#sudo add-apt-repository -y ppa:kxstudio-debian/libs
-#sudo add-apt-repository -y ppa:kxstudio-debian/music
-#sudo add-apt-repository -y ppa:kxstudio-debian/plugins
-#sudo apt-fast -y update
-#sudo apt-fast -y install lmms
+apps3/lmms
 
 #### muse
-#sudo apt-fast -y install muse
+sudo apt-fast -y install muse
 
-#### Audacity
-#sudo add-apt-repository -y ppa:audacity-team/daily
-#sudo add-apt-repository -y ppa:ubuntuhandbook1/audacity
-#sudo apt-fast -y update
-#sudo apt-fast -y upgrade
-#sudo apt-fast -y install audacity
+#### audacity
+apps3/audacity
 
 #### ocenaudio
-#wget http://www.ocenaudio.com.br/start_download/ocenaudio64.deb
-#sudo dpkg -i ocenaudio64.deb
-#rm ocenaudio64.deb
+apps3/ocenaudio
 
-#### Hydrogen
-#sudo apt-fast -y install hydrogen
+#### hydrogen
+sudo apt-fast -y install hydrogen
 
 #### natron
-#sudo apt-fast -y install libegl1-mesa
-#wget -c https://sourceforge.net/projects/natron/files/Natron_Linux_x86-64bits_v1.2.1.tar.gz
-#tar xzvf Natron_Linux_x86*
-#./Natron_*
+apps3/natron
 
 #### cinelerra
-#sudo add-apt-repository -y ppa:cinelerra-ppa/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install cinelerra-cv
+apps3/cinelerra
 
 #### kdenlive - CAREFULL, a lot of kde packages
-#sudo add-apt-repository -y ppa:sunab/kdenlive-svn
-#sudo apt-fast -y update
-#sudo apt-fast -y install kdenlive
+apps3/kdenlive
 
 #### openshot
-#sudo apt-fast -y install openshot
+sudo apt-fast -y install openshot
 
 #### pitivi
-#sudo apt-fast -y install pitivi
+sudo apt-fast -y install pitivi
 
 #### shotcut
-#http://media-opensource.blogspot.com.es/2015/04/install-shotcut-1504-video-editor-on.html
-#https://www.youtube.com/watch?v=cNGILOoadX0
-wget https://github.com/mltframework/shotcut/releases/download/v15.06/shotcut-debian7-x86_64-150601.tar.bz2
-tar -xjvf shotcut-debian7-x86_64-150601.tar.bz2
-sudo rm -rf /home/usuario/Shotcut
-sudo mv Shotcut /home/usuario
+apps3/shotcut
 
 ######## All multimedia content
 
@@ -326,19 +172,12 @@ sudo mv Shotcut /home/usuario
 sudo apt-fast -y install ubuntu-emulator
 
 #### freecad
-#sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
-sudo add-apt-repository -y ppa:freecad-maintainers/freecad-daily
-sudo apt-fast -y update
-sudo apt-fast -y install freecad
+apps3/freecad
 
 ######## Web Browsers
 
 #### i2p
-sudo add-apt-repository -y ppa:i2p-maintainers/i2p
-sudo apt-fast -y update
-sudo apt-fast -y install i2p i2p-router i2pd
-#i2prouter start
-#http://localhost:7657
+apps3/i2p
 
 ######## Social
 
@@ -350,21 +189,14 @@ sudo apt-fast -y install i2p i2p-router i2pd
 
 ######## File Sharing
 
-##### Frostwire
-#http://www.frostwire.com/
-#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.1.3.amd64.deb
-#sudo dpkg -i frostwire*.deb
-#rm frostwire*.deb
+##### frostwire
+apps3/frostwire
 
-##### Tribler
-#wget https://github.com/Tribler/tribler/releases/download/v6.4.3/tribler_6.4.3_all.deb
-#sudo dpkg -i tribler*.deb
-#rm tribler*.deb
+##### tribler
+apps3/tribler
 
 #### xdman
-sudo add-apt-repository -y ppa:noobslab/apps
-sudo apt-fast -y update
-sudo apt-fast -y install xdman
+apps3/xdman
 
 ######## News & Books
 
@@ -373,45 +205,27 @@ sudo apt-fast -y install xdman
 ######## Office & Productivity
 
 ##### lothumbnailer
-#sudo add-apt-repository -y ppa:atareao/thumbnailers
-#sudo apt-fast -y update
-#sudo apt-fast -y install lothumbnailer
-
-#rm ~/.cache/thumbnails/fail/gnome-thumbnail-factory/*
-#rm ~/.cache/thumbnails/large/*
-#rm ~/.cache/thumbnails/normal/*
-#killall nautilus
+apps3/lothumbnailer
 
 ##### gscan2pdf
-#sudo add-apt-repository -y ppa:jeffreyratcliffe/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install gscan2pdf tesseract-ocr tesseract-ocr-spa
+apps3/gscan2pdf
 
 #### geary
-sudo add-apt-repository -y ppa:yorba/daily-builds
-sudo apt-fast -y update
-sudo apt-fast -y install geary
+apps3/geary
 
 #### evolution
-sudo add-apt-repository -y ppa:fta/gnome3
-sudo apt-fast -y update
-sudo apt-fast -y install evolution
+apps3/evolution
 
 #### claws-mail
-sudo add-apt-repository -y ppa:claws-mail/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install claws-mail claws-mail-extra-plugins
+apps3/claws-mail
 
 ######## Games
+
 #### openra - install getdeb before
-#sudo apt-fast -y install openra
+sudo apt-fast -y install openra
 
 #### zandronum
-test -f /etc/apt/sources.list.d/zandronum.list || sudo sh -c 'echo "deb http://debian.drdteam.org/ stable multiverse" >> /etc/apt/sources.list.d/zandronum.list'
-wget -O - http://debian.drdteam.org/drdteam.gpg | sudo apt-key add -
-sudo apt-fast -y update
-sudo apt-fast -y install zandronum doomseeker-zandronum
-#Install IWADs to ~/.zandronum/ -> http://zdoom.org/wiki/IWAD
+apps3/zandronum
 
 #### Various
 sudo apt-fast -y install violetland bofh

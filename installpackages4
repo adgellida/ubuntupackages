@@ -3,103 +3,52 @@
 
 ######## Backup & Sync
 
-#### Holo Backup
-sudo mkdir "/opt/Holo Backup"
-wget https://codeload.github.com/omegavesko/SimpleADBBackup/legacy.tar.gz/master -O "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
-tar xvfz "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa%20.tar.gz"
-sudo chmod +rwx "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
-sudo sh -c 'echo "[Desktop Entry]
-Type=Application
-Name=Holo Backup
-Comment=Backup your droid!
-Categories=System
-Exec="/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux"
-Icon='
-##sudo ln -s "/opt/Holo Backup/omegavesko-SimpleADBBackup-0aac4aa/HoloBackupLinux" "~/Escritorio/Holo Backup"
+#### holo-backup
+apps4/holo-backup
 
-#### Insync
-wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/insync.list || sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
-sudo apt-fast -y update
-sudo apt-fast -y install insync insync-caja
-##referal
-#https://www.insynchq.com/r/106908789160316075573
+#### insync
+apps4/insync
 
-#### Spideroak
-#http://www.rubynginx.com/index.php/2012/10/11/install-spideroak-on-ubuntu-12-04/																												
-#https://spideroak.com/faq/questions/65/what_are_the_apt_sources_lines_for_spideroak/																												
-wget -qO - https://spideroak.com/dist/spideroak-apt-2013.asc | sudo apt-key add -
-test -f /etc/apt/sources.list.d/spideroak.list || sudo sh -c 'echo "deb http://apt.spideroak.com/ubuntu-spideroak-hardy/ release restricted" >> /etc/apt/sources.list.d/spideroak.list'
-sudo apt-fast -y update
-sudo apt-fast -y install spideroak
+#### spideroak
+apps4/spideroak
 
 #### Various
 sudo apt-fast -y install sbackup-plugins-fuse grsync unison-gtk freefilesync	#http://planetubuntu.es/post/como-sincronizar-2-equipos-de-manera-bidireccional-con-unison
 
 ########OS & Utilities
 
-# Disable bug error notifications
-sudo sed -i s/enabled=1/enabled=0/g /etc/default/apport
+#### virtualbox
+apps4/virtualbox
 
-#### VirtualBox (1)
-wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
-sudo apt-fast -y update
-sudo apt-fast -y install virtualbox-5.0 #virtualbox-4.3 dkms
+#### playonlinux
+apps4/playonlinux
 
-#### PlayOnLinux
-sudo add-apt-repository -y ppa:noobslab/apps
-sudo apt-get -y update
-sudo apt-get -y install playonlinux
-#wget http://www.playonlinux.com/script_files/PlayOnLinux/4.2.5/PlayOnLinux_4.2.5.deb
-#sudo dpkg -i PlayOnLinux*.deb
-#rm PlayOnLinux*.deb
+#### intel-linux-graphics-installer - Official - https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
+apps4/intel-linux-graphics-installer
 
-#### Intel Linux Graphics Installer - Official - https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
-wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg -O - | sudo apt-key add -
-wget --no-check-certificate https://download.01.org/gfx/RPM-GPG-KEY-ilg-2 -O - | sudo apt-key add -
-test -f /etc/apt/sources.list.d/intellinuxgraphics.list || sudo sh -c 'echo "deb https://download.01.org/gfx/ubuntu/15.04/main/ utopic main" >> /etc/apt/sources.list.d/intellinuxgraphics.list'
+#### mucommander-unstable
+apps4/mucommander-unstable
 
-#### muCommander (unstable)
-sudo wget -O - http://apt.mucommander.com/apt.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/mucommander.list || sudo sh -c 'echo "deb http://apt.mucommander.com unstable main non-free contrib " >> /etc/apt/sources.list.d/mucommander.list'
-sudo apt-fast -y update
-sudo apt-fast -y install mucommander
+#### gnome3-team
+apps4/gnome3-team
 
-#### GNOME3 Extra Apps: Nautilus, etc
-sudo add-apt-repository -y ppa:gnome3-team/gnome3
-sudo apt-fast -y update
+#### apt-new
+apps4/apt-new
 
-#### New apt
-sudo add-apt-repository -y ppa:mvo/apt-src-ftparchive
-sudo apt-fast -y update
-
-#### X Updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
-sudo add-apt-repository -y ppa:ubuntu-x-swat/x-updates
-sudo apt-fast -y update
-sudo apt-fast -y dist-upgrade
+#### x-updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
+apps4/x-updates
 
 #### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
-sudo add-apt-repository -y ppa:gambas-team/gambas3
-sudo add-apt-repository -y ppa:i-nex-development-team/stable
-sudo apt-fast -y update
-sudo apt-fast -y install i-nex
+apps4/i-nex
 
 #### winusb
-sudo add-apt-repository -y ppa:colingille/freshlight
-sudo apt-fast -y update
-sudo apt-fast -y install winusb
+apps4/winusb
 
-#### Psensor
-sudo add-apt-repository -y ppa:alexmurray/indicator-sensors
-sudo apt-fast -y update
-sudo apt-fast -y install psensor 
+#### psensor
+apps4/psensor 
 
 #### voice-commands
-#http://www.noobslab.com/2014/06/control-your-ubuntulinux-mint-system.html
-sudo add-apt-repository -y ppa:baitsart/voice-commands
-sudo apt-fast -y update
-sudo apt-fast -y install voice-commands
+apps4/voice-commands
 
 #### Various
 sudo apt-fast -y install inxi	# http://lamiradadelreplicante.com/2014/10/27/toda-la-informacion-de-tu-sistema-linux-con-inxi/
@@ -115,84 +64,39 @@ sudo apt-fast -y install alarm-clock gmrun lm-sensors tmux xbindkeys xbindkeys-c
 ########Desktop Environment
 
 #### unity8
-sudo add-apt-repository -y ppa:unity8-desktop-session-team/unity8-preview-lxc
-sudo apt-fast -y update
-sudo apt-fast -y upgrade
-sudo apt-fast -y install unity8-lxc
-sudo unity8-lxc-setup
+apps4/unity8
 
 #### gnome-session-fallback
 sudo apt-fast -y install gnome-session-fallback
 
 #### lxqt
-#http://entornosgnulinux.com/2014/05/16/i-lxqt-0-7-0-en-ubuntu-14-04-lts-trusty-configuracion-qt/
-sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
-sudo apt-fast -y update
-sudo apt-fast -y install lxqt-metapackage lxqt-panel gtk2-engines-qtcurve pcmanfm kdelibs5-plugins lxappearance lxappearance-obconf openbox
+apps4/lxqt
 
 #### budgie-desktop
-#sudo add-apt-repository -y ppa:sukso96100/budgie-desktop
-sudo add-apt-repository -y ppa:evolve-os/ppa	#POSSIBLY LATEST
-sudo apt-fast -y update
-sudo apt-fast -y install budgie-desktop
+apps4/budgie-desktop
 
 #### razorqt
-sudo add-apt-repository -y ppa:razor-qt/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install razorqt razorqt-config
+apps4/razorqt
 
 #### cinnamon
-#sudo add-apt-repository -y ppa:lestcape/cinnamon	#### stable for 14.04
-#sudo add-apt-repository -y ppa:tsvetko.tsvetkov/cinnamon	#### stable for 14.04 & 12.04
-sudo add-apt-repository -y ppa:gwendal-lebihan-dev/cinnamon-nightly		#### nightly for 14.10 & 14.04
-sudo apt-fast -y update
-sudo apt-fast -y install cinnamon
+apps4/cinnamon
 
-#### MATE Desktop Environment (1)
-sudo apt-fast --yes --force-yes install mate-archive-keyring
-test -f /etc/apt/sources.list.d/MATE.list || sudo sh -c 'echo "deb http://packages.mate-desktop.org/repo/ubuntu raring main" >> /etc/apt/sources.list.d/MATE.list'
-sudo apt-fast -y update
-sudo apt-fast -y install mate-desktop-environment
-
-#### MATE Desktop Environment (2) - http://wiki.mate-desktop.org/download - http://wiki.mate-desktop.org/replace_unity_by_mate
-#echo "deb http://repo.mate-desktop.org/archive/1.8/ubuntu $(lsb_release -cs) #main" | sudo tee /etc/apt/sources.list.d/mate-desktop.list
-#wget -qO - http://mirror1.mate-desktop.org/debian/mate-archive-keyring.gpg | sudo apt-key add -
-#sudo add-apt-repository -y ppa:ravefinity-project/ppa
-#sudo apt-fast -y update
-#sudo apt-fast install --no-install-recommends mate-desktop-environment mate-desktop-environment-extra caja-gksu caja-sendto mate-indicator-applet mate-icon-theme-faenza
-#sudo apt-fast install mate-notification-daemon mate-media-pulse mate-system-tools mate-system-tools-common mate-system-monitor-common
-#sudo apt-fast install ambiance-colors radiance-colors
-#sudo apt-fast remove gcalctool gnome-screenshot gedit file-roller eog gnome-system-monitor gnome-system-log baobab gnome-terminal gnome-applets gnome-media gnome-power-manager gnome-screensaver
-#sudo apt-fast remove gnome-calculator evince
+#### mate-desktop-environment
+apps4/mate-desktop-environment
 
 #### enlightenment
-##e20
-sudo add-apt-repository -y ppa:enlightenment-git/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install e20 terminology
-##e19
-#sudo add-apt-repository -y ppa:martinx/enlightenment
-#sudo apt-fast -y update
-#sudo apt-fast -y install enlightenment terminology
+apps4/enlightenment
 
 ########Themes
 
-#### azure-gtk-theme lhun-magol-theme ambiance-grey ambiance-dark-blue ambiance-dark-red ultra-flat-theme
-sudo add-apt-repository -y ppa:noobslab/themes
-sudo apt-fast -y update
-sudo apt-fast -y install azure-gtk-theme lhun-magol-theme ambiance-grey ambiance-dark-blue ambiance-dark-red ultra-flat-theme
+#### noobslab-themes
+apps4/noobslab-themes
 
 #### paper-gtk-theme
-sudo add-apt-repository -y ppa:snwh/pulp
-sudo apt-fast -y update
-sudo apt-fast -y install paper-gtk-theme
+apps4/paper-gtk-theme
 
-#### ambiance and radiance themes
-sudo add-apt-repository -y ppa:ravefinity-project/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install ambiance-colors radiance-colors ubuntu-mono
-sudo apt-fast -y install ambiance-blackout-flat-colors
-sudo apt-fast -y install ambiance-flat-colors radiance-flat-colors
+#### ambiance-radiance-themes
+apps4/ambiance-radiance-themes
 
 ######## Security & Privacy
 sudo apt-fast -y install seahorse
@@ -204,15 +108,11 @@ sudo apt-fast -y install furiusisomount devede isomaster k3b acetoneiso
 
 ######## Photos & Graphics
 
-#### Gthumb - only for 13.04 or less
-sudo add-apt-repository -y ppa:webupd8team/gthumb
-sudo apt-fast -y update
-sudo apt-fast -y install gthumb
+#### gthumb
+apps4/gthumb
 
 #### photo
-sudo add-apt-repository -y ppa:samrog131/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install photo 
+apps4/photo 
 
 #### Various
 sudo apt-fast -y install shotwell
@@ -222,27 +122,13 @@ sudo apt-fast -y install karbon scribus gwenview		#scribus-ng - DEV VERSION
 ######## Audio & Music
 
 #### spotify - ONLY FOR 64 BITS - TO USE 32 GO TO http://repository.spotify.com/pool/non-free/s/spotify/
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886
-test -f /etc/apt/sources.list.d/spotify.list || sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
-sudo apt-fast -y update
-sudo apt-fast -y install spotify-client
-#temporal solution
-wget http://security.ubuntu.com/ubuntu/pool/main/libg/libgcrypt11/libgcrypt11_1.5.4-2ubuntu1.1_amd64.deb
-sudo dpkg -i libgcrypt11_1.5.4-2ubuntu1.1_amd64.deb
+apps4/spotify
 
 #### blockify
-#http://kuboosoft.blogspot.com.es/2015/01/quita-los-molestos-anuncios-de-spotify.html
-sudo apt-fast -y install python-pip python-wnck
-sudo pip install http://github.com/mikar/blockify/archive/v1.7.2.zip
-echo -e '[Desktop Entry]\nName=Blockify\nComment=Blocks Spotify commercials\nExec=blockify-ui\nIcon='$(python -c 'import pkg_resources; print pkg_resources.resource_filename("blockify", "data/icon-red-512.png")')'\nType=Application\nCategories=AudioVideo' | sudo tee /usr/share/applications/blockify.desktop
+apps4/blockify
 
-#### PyKaraoke
-#wget http://heanet.dl.sourceforge.net/project/pykaraoke/pykaraoke/0.7.5/pykaraoke-0.7.5.zip
-#unzip pykaraoke-0.7.5.zip
-#sudo apt-fast -y install python-dev python-pygame libwxgtk-python libsdl-dev python-mutagen
-#cd pykaraoke-0.7.5
-#python setup.py install
-#pykaraoke
+#### pykaraoke
+apps4/pykaraoke
 
 #### Various
 sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
@@ -250,43 +136,27 @@ sudo apt-fast -y install sound-juicer mixxx qtractor ardour3 performous
 ######## Videos & Movies
 
 #### obs-studio
-#sudo add-apt-repository -y ppa:obsproject/obs-studio
-#sudo apt-fast -y update
-#sudo apt-fast -y install obs-studio
+apps4/obs-studio
 
 #### recordmydesktop
-#sudo apt-fast -y install recordmydesktop gtk-recordmydesktop
+sudo apt-fast -y install recordmydesktop gtk-recordmydesktop
 
-#### kazam - In official stable repo
-#sudo add-apt-repository -y ppa:kazam-team/stable-series
-#sudo add-apt-repository -y ppa:kazam-team/unstable-series
-#sudo apt-fast -y update
-#sudo apt-fast -y install kazam
+#### kazam-unstable
+apps4/kazam-unstable
 
 #### simplescreenrecorder
-#sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
-#sudo apt-fast -y update
-#sudo apt-fast -y install simplescreenrecorder
+apps4/simplescreenrecorder
 
-#### VLC #### only compatible with 14.04
-#sudo add-apt-repository -y ppa:ed10vi86/video
-#sudo apt-fast -y update
-#sudo apt-fast -y install vlc
-
-#### Popcorn Time
-sudo add-apt-repository -y ppa:webupd8team/popcorntime
-sudo apt-fast -y update
-sudo apt-fast -y install popcorn-time
+#### popcorn-time
+apps4/popcorn-time
 
 #### waifu
-wget http://www.waifu.ca/waifu-linux64.tar.gz
-#more...
+apps4/waifu
 
 ####All multimedia content
 
 ##best performance on flash
 #http://blog.timvalenta.com/2013/01/chromes-fullscreen-flash-performance-is-slow-laggy-and-heartwrenching/
-
 sudo apt-fast -y install non-free-codecs libxine1-ffmpeg gxine mencoder libmpcdec6 libquicktime2 flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg libmp4v2-2 icedax tagtool easytag id3tool lame libmad0 libjpeg-progs
 sudo apt-fast -y install libavcodec-extra libdvdread4 libappindicator1 x264 uudeview
 sudo /usr/share/doc/libdvdread4/./install-css.sh
@@ -298,106 +168,26 @@ sudo apt-fast -y install gsfonts gsfonts-x11 ttf-liberation ttf-droid ttf-dejavu
 ##### enigma - http://enigma-dev.org/docs/Wiki/Install:Linux
 #more...
 
-##### MakeHuman
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-fast -y update
-sudo apt-fast -y install makehuman
+##### makehuman
+apps4/makehuman
 
 #### ubuntu-make - (new android studio) http://www.webupd8.org/2014/12/ubuntu-developer-tools-center-renamed.html
-##Android Studio from web
-#RECOMMENDED - TO IMPROVE - https://developer.android.com/sdk/installing/index.html?pkg=studio
-wget https://dl.google.com/dl/android/studio/ide-zips/1.0.1/android-studio-ide-135.1641136-linux.zip
-unzip android-studio-ide-135.1641136-linux.zip -d /home/usuario/tools/android
-sudo /home/usuario/tools/android/android-studio/bin/studio.sh
+apps4/ubuntu-make
 
-sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
-sudo apt-fast -y update
-sudo apt-fast -y install ubuntu-make
-##Android Studio using Ubuntu Make
-#sudo umake android
-#sudo umake android --remove	#TO REMOVE
-##Eclipse using Ubuntu Make
-#sudo umake ide eclipse
-#sudo umake ide eclipse --remove	#TO REMOVE
+#### wine
+apps4/wine
 
-#### Wine
-sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install wine1.7
-
-#### Wine Staging
-sudo apt-fast -y install wine
-sudo add-apt-repository -y ppa:pipelight/stable
-sudo apt-fast -y update
-sudo apt-fast -y install --install-recommends wine-staging
-sudo apt-fast -y install wine-staging-compat
-
-## Wine config
-#sudo apt-fast -y install q4wine winetricks
-#export WINEPREFIX=prefix32
-#export WINEARCH=win32
-#winecfg
+#### wine-staging
+apps4/wine-staging
 
 #### atom
-sudo add-apt-repository -y ppa:webupd8team/atom
-sudo apt-fast -y update
-sudo apt-fast -y install atom
+apps4/atom
 
 #### sublime-text
-#http://www.webupd8.org/2013/07/sublime-text-3-ubuntu-ppa-now-available.html
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
-sudo apt-fast -y update
-sudo apt-fast -y install sublime-text-installer
+apps4/sublime-text
 
-#### Ubuntu phone sdk - With problems
-#sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
-#sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
-#sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper - DEPRECATED, NEVER USE
-#sudo add-apt-repository -y ppa:ui-toolkit/ppa - DEPRECATED, NEVER USE
-#sudo apt-fast -y update
-#sudo apt-fast -y install ubuntu-sdk qml
-#qtmultimedia5-examples
-#sudo apt-fast -y install qtcreator qt5-default - DON'T USE
-
-#### openjdk6
-#sudo apt-fast -y install openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
-
-#### openjdk7
-#sudo apt-fast -y install openjdk-7-jre openjdk-7-jdk icedtea-7-plugin
-
-#### openjdk8
-#sudo apt-fast -y install openjdk-8-jre openjdk-8-jdk icedtea-8-plugin
-
-#### openjdk9
-#sudo apt-fast -y install openjdk-9-jre openjdk-9-jdk icedtea-9-plugin
-
-#### Oracle Java 6 7 8
-#sudo add-apt-repository -y ppa:webupd8team/java
-#sudo apt-fast -y update
-
-#### Oracle Java 6
-#sudo apt-fast -y install oracle-java6-installer
-#sudo apt-fast install oracle-java6-set-default
-
-#### Oracle Java 7
-#sudo echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-#sudo apt-fast -y install oracle-java7-installer
-#sudo update-java-alternatives -s java-7-oracle
-#sudo apt-fast install oracle-java7-set-default
-
-#### Oracle Java 8
-#sudo echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-#sudo apt-fast -y install oracle-java8-installer
-#sudo update-java-alternatives -s java-8-oracle
-#sudo apt-fast install oracle-java8-set-default
-
-#### Oracle Java 9
-#sudo add-apt-repository -y ppa:webupd8team/java
-#sudo apt-get -y update
-#sudo apt-get -y install oracle-java9-installer
-#sudo apt-get -y install oracle-java9-set-default
+#### oracle-java
+apps4/oracle-java
 
 #### Various
 #sudo apt-fast -y install ia32-libs lib32asound2		#REMOVED 
@@ -415,83 +205,50 @@ sudo apt-fast -y install mono-complete mono-basic-dbg
 
 ######## Web Browsers
 
-#### Chromium dev & beta channel - Select
-sudo add-apt-repository -y ppa:saiarcot895/chromium-dev
-sudo add-apt-repository -y ppa:saiarcot895/chromium-beta
-sudo apt-fast -y update
-sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
+#### chromium-dev
+apps4/chromium-dev
 
-#### firefox developer edition ( aurora - fx10)
-sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
-sudo apt-fast -y update
-sudo apt-fast -y install firefox
+#### chromium-beta
+apps4/chromium-beta
 
-#### firefox daily
-sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install firefox-trunk
+#### firefox-dev (aurora - fx10)
+apps4/firefox-dev
 
-#### Midori
-##sudo add-apt-repository -y ppa:midori/ppa
-sudo add-apt-repository -y ppa:midori/midori-dev
-sudo apt-fast -y update
-sudo apt-fast -y install midori
+#### firefox-daily
+apps4/firefox-daily
+
+#### midori
+apps4/midori
 
 #### iridium-browser
-#wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
-#test -f /etc/apt/sources.list.d/iridium-browser.list || sudo sh -c 'echo "deb https://downloads.iridiumbrowser.de/ubuntu vivid main" >> /etc/apt/sources.list.d/iridium-browser.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install iridium-browser
+apps4/iridium-browser
 
 #### liri-browser
-#wget https://github.com/liri-browser/liri-browser/releases/download/v0.3/liri-browser_0.3-1.deb
-#sudo dpkg -i liri-browser_0.3-1.deb
+apps4/liri-browser
 
 #### superbird-browser - not working, needs a library
-#wget http://superbird-browser.com/download/superbird-32-amd64.deb
-#sudo dpkg -i superbird-32-amd64.deb
+apps4/superbird-browser
 
 #### srware-iron-browser - to add more steps
-#wget http://www.srware.net/downloads/iron64.deb
-#sudo dpkg -i iron64.deb
+apps4/srware-iron-browser
 
 ######## Social
 
-##### Skype
-#http://www.skype.com/es/download-skype/skype-for-linux/
-wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
-sudo dpkg -i skype*.deb
-rm skype*.deb
+#### hotot - May be in official repo
+apps4/hotot
 
-#### Hotot - May be in official repo
-sudo add-apt-repository -y ppa:jimmyxu/hotot
-sudo apt-fast -y update
-sudo apt-fast -y install hotot
-
-#### pidgin
-sudo add-apt-repository -y ppa:pidgin-developers/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install pidgin pidgin-plugin-pack pidgin-twitter pidgin-libnotify pidgin-guifications 
-##skype - FROM WEB OR http://www.noobslab.com/2014/01/skype-released-new-version-install-in.html
+#### pidgin-developers
+apps4/pidgin-developers
 
 #### telegram-purple
-#http://www.webupd8.org/2014/11/add-telegram-support-to-pidgin-with.html
-#sudo add-apt-repository -y ppa:nilarimogard/webupd8
-#sudo apt-fast -y update
-#sudo apt-fast -y install telegram-purple
-##sudo apt-fast dist-upgrade
+apps4/telegram-purple
 
 #### Various
 sudo apt-fast -y install choqok xchat
 
 ######## File Management
 
-#### SpaceFM - problems
-#sudo add-apt-repository -y ppa:mati75/lubuntu
-#sudo apt-fast -y update
-#sudo apt-fast -y install spacefm
-
-#### Thunar
+#### thunar
 sudo apt-fast -y install thunar thunar-data thunar-volman libthunarx-2-0 thunar-archive-plugin thunar-media-tags-plugin ffmpegthumbnailer
 sudo apt-fast -y install xfce4-goodies
 
@@ -501,16 +258,10 @@ sudo apt-fast -y install lhasa filezilla mc
 ######## File Sharing
 
 ##### qbittorrent
-sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
-sudo apt-fast -y update
-sudo apt-fast -y install qbittorrent
+apps4/qbittorrent
 
-##### Vuze
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-sudo apt-fast -y update
-sudo apt-fast -y install vuze
+##### vuze
+apps4/vuze
 
 #### Various
 sudo apt-fast -y install amule deluge axel
@@ -518,9 +269,7 @@ sudo apt-fast -y install amule deluge axel
 ######## News & Books
 
 #### quiterss
-sudo add-apt-repository -y ppa:quiterss/quiterss
-sudo apt-fast -y update
-sudo apt-fast -y install quiterss
+apps4/quiterss
 
 #### Various
 sudo apt-fast -y install gpodder calibre newsbeuter rssowl
@@ -538,20 +287,13 @@ sudo apt-fast -y install gnucash (python-gnucash) grisbi hombank skrooge abtrans
 ######## Games
 
 #### 0ad
-sudo add-apt-repository -y ppa:wfg/0ad
-sudo apt-fast -y update
-sudo apt-fast -y install 0ad
+apps4/0ad
 
 #### lutris
-#https://lutris.net/games/
-wget http://lutris.net/releases/lutris_0.3.6.3_all.deb
-sudo dpkg -i lutris*.deb
-rm lutris*.deb
+apps4/lutris
 
 #### dustrac
-sudo add-apt-repository -y ppa:jussi-lind/dustrac
-sudo apt-fast -y update
-sudo apt-fast -y install dustrac
+apps4/dustrac
 
 #### Various
 #sudo apt-fast -y install true-combat-elite

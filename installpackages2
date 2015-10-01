@@ -3,121 +3,46 @@
 
 ######## Backup & Sync
 
-#### backintime testing
-#sudo add-apt-repository -y ppa:bit-team/testing
-#sudo apt-fast -y update
-##sudo apt-fast -y install backintime-gnome
-#sudo apt-fast -y install backintime-qt4
+#### backintime-testing
+#apps2/backintime-testing
 
 #### megasync
-#test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install megasync
-
-#add at boot
-#mkdir ~/.config/autostart
-#rm ~/.config/autostart/megasync.desktop
-#test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
-#Type=Application
-#Exec=/home/usuario/.megasync/megasync
-#Hidden=false
-#X-MATE-Autostart-enabled=true
-#Name[es_ES]=megasync
-#Name=megasync
-#Comment[es_ES]=
-#Comment=" >> ~/.config/autostart/megasync.desktop'
-
-#mkdir ~/.megasync
-#rm ~/.megasync/megasync.sh
-#test -f ~/.megasync/megasync.sh || sh -c 'echo "#!/bin/bash
-
-#https://www.reddit.com/r/MEGA/comments/323bti/megasyncno_icon/
-
-#sleep 30
-#megasync &" >> ~/.megasync/megasync.sh'
+#apps2/megasync
 
 #### DirSyncPro
-sudo mkdir /opt/DirSyncPro
-sudo wget http://netcologne.dl.sourceforge.net/project/directorysync/DirSync%20Pro%20%28stable%29/1.51/DirSyncPro-1.51-Linux.tar.gz -O /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
-sudo wget http://dirsyncpro.org/images/dirsyncpro.png -O /opt/DirSyncPro/dirsyncpro.png
-sudo tar -xf /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz -d /opt/DirSyncPro
-sudo rm /opt/DirSyncPro/DirSyncPro-1.51-Linux.tar.gz
-sudo chmod +rwx /opt/DirSyncPro/DirSyncPro-1.51-Linux/dirsyncpro.jar
-
-test -f /usr/share/applications/dirsyncpro.desktop || sudo sh -c 'echo "[Desktop Entry]
-Type=Application
-Name=DirSyncPro
-Comment=Sync your files!
-Categories=System
-Exec=/opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar
-Icon=/opt/DirSyncPro/dirsyncpro.png" >> /usr/share/applications/dirsyncpro.desktop'
-##sudo ln -s /opt/DirSyncPro/DirSyncPro-1.50-Linux/dirsyncpro.jar ~/Escritorio/DirSyncPro
+#apps2/dirsyncpro
 
 ######## OS & Utilities
 
 #### ddrescue-gui
-#sudo add-apt-repository -y ppa:hamishmb/myppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install ddrescue-gui
+#apps2/ddrescue-gui
 
-#### unstable synaptic, guake...
-#sudo add-apt-repository -y ppa:webupd8team/unstable
-#sudo apt-fast -y update
-#sudo apt-fast -y install synaptic guake
+#### guake
+#apps2/guake
 
 #### teamviewer
-#http://www.teamviewer.com/es/download/linux.aspx
-wget http://download.teamviewer.com/download/teamviewer_i386.deb
-sudo dpkg -i teamviewer_i386.deb
-rm teamviewer_i386.deb
+apps2/teamviewer
 
 #### synapse
-sudo add-apt-repository -y ppa:synapse-core/testing
-sudo apt-fast -y update
-sudo apt-fast -y install synapse
+apps2/synapse
 
 #### tlp
-#sudo add-apt-repository -y ppa:linrunner/tlp
-#sudo apt-fast -y update
-#sudo apt-fast -y install tlp tlp-rdw
-##sudo tlp start
+#apps2/tlp
 
 #### grub-customizer
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-sudo apt-fast -y update
-sudo apt-fast -y install grub-customizer
+apps2/grub-customizer
 
 #### unetbootin
-#sudo add-apt-repository -y ppa:n-muench/programs-ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install unetbootin
+#apps2/unetbootin
 
 #### bleachbit
 sudo apt-fast -y install bleachbit
 
 #### clipit
-sudo apt-fast -y install clipit
-
-#add at boot
-mkdir ~/.config/autostart
-rm ~/.config/autostart/clipit.desktop
-test -f ~/.config/autostart/clipit.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=clipit
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[es_ES]=clipit
-Name=clipit
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/clipit.desktop'
+apps2/clipit
 
 #### haguichi
-#sudo add-apt-repository -y ppa:webupd8team/haguichi
-#sudo apt-fast -y update
-#sudo apt-fast -y install haguichi
-
-#wget https://secure.logmein.com/labs/logmein-hamachi_2.1.0.139-1_amd64.deb
-#sudo dpkg -i logmein-hamachi_2.1.0.139-1_amd64.deb
+#apps2/haguichi
 
 ######## Desktop Environment
 
@@ -155,79 +80,40 @@ Comment=" >> ~/.config/autostart/clipit.desktop'
 ######## Development
 
 #### dia
-sudo add-apt-repository -y ppa:dreibh/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install dia
+apps2/dia
 
 #### blender
-sudo add-apt-repository -y ppa:thomas-schiex/blender
-sudo apt-fast -y update
-sudo apt-fast -y install blender
+apps2/blender
 
 ##### fritzing
-sudo add-apt-repository -y ppa:ehbello/fritzing
-sudo apt-fast -y update
-sudo apt-fast -y install fritzing
+apps2/fritzing
 
 #### uecide
-#sudo apt-key adv --keyserver keys.gnupg.net --recv-key CA9F00A1
-#test -f /etc/apt/sources.list.d/uecide.list || sudo sh -c 'echo "deb http://dist.majenko.co.uk/ stable main" >> /etc/apt/sources.list.d/uecide.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install uecide
+#apps2/uecide
 
-#### arduino ide - http://arduino-er.blogspot.com.es/2014/08/arduino-ide-error-avrdude-seropen-cant.html
+#### arduino-ide
+#apps2/arduino-ide
 
-#1.7.6
-#wget http://download.arduino.org/IDE/1.7.6/arduino-1.7.6.org-linux64.tar.xz
-#tar -xf arduino-1.7.6.org-linux64.tar.xz
-#sudo usermod -a -G dialout usuario
-#sudo chmod a+rw /dev/ttyUSB0
+#### arduino-studio
+#apps2/arduino-studio
 
-#1.6.5
-#wget https://www.arduino.cc/download_handler.php?f=/arduino-1.6.5-r5-linux64.tar.xz
-#tar -xf arduino-1.6.5-r5-linux64.tar.xz
-#sudo usermod -a -G dialout usuario
-#sudo chmod a+rw /dev/ttyUSB0
+#### git-stable
+apps2/git-stable
 
-#### arduino studio
-
-#0.0.4 alpha
-#wget http://download.arduino.org/studio/bundle/0.0.4/arduinostudio-0.0.4-linux64.tar.gz
-#tar -xf arduinostudio-0.0.4-linux64.tar.gz
-#sudo apt-fast -y install libgcrypt11
-#sudo usermod -a -G dialout usuario
-#sudo chmod a+rw /dev/ttyUSB0
-
-#### git stable
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install git
-
-#### git rc's
-#sudo add-apt-repository -y ppa:git-core/candidate
-#sudo apt-fast -y update
-#sudo apt-fast -y install git
+#### git-rc
+#apps2/git-rc
 
 #### git-gui
 sudo apt-fast -y install git-gui #git-cola qgit 
 
 #### smartgit
-wget http://www.syntevo.com/downloads/smartgit/smartgit-7_0_2.deb
-sudo dpkg -i smartgit-7_0_2.deb
+#apps2/smartgit
 
-#### Qt Linux
-####Qt dependencies on installpackages1
-#wget http://download.qt.io/official_releases/qt/5.5/5.5.0/qt-opensource-linux-x64-5.5.0-2.run
-#chmod +rwx ~/qt-opensource-linux-x64-5.5.0-2.run
-#~/qt-opensource-linux-x64-5.5.0-2.run
-#rm ~/qt-opensource-linux-x64-5.5.0-2.run
+#### Qt-Linux
+#apps2/Qt-Linux
 
 #### kicad
-#sudo add-apt-repository -y ppa:js-reynaud/kicad-package-daily-stable
-#sudo add-apt-repository -y ppa:adamwolf/kicad-trusty-backports
-sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
-sudo apt-fast -y update
-sudo apt-fast -y install kicad
+apps2/kicad
 
 #### meld
 sudo apt-fast -y install meld
@@ -238,53 +124,30 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 ######## Web Browsers
 
 #### tor-browser
-sudo add-apt-repository -y ppa:webupd8team/tor-browser
-sudo apt-fast -y update
-sudo apt-fast -y install tor-browser
+apps2/tor-browser
 
 ######## Social
 
+#### skype
+apps2/skype
+
+##### mumble
+#apps2/mumble
+
 ##### qtox
-wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/tox.list || sudo sh -c 'echo "deb https://pkg.tox.chat/debian nightly release" >> /etc/apt/sources.list.d/tox.list'
-sudo apt-fast -y update
-sudo apt-fast -y install apt-transport-https qtox
+#apps2/qtox
+
+##### utox
+#apps2/utox
 
 ##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
-mkdir /home/usuario/Telegram
-wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
-
-wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
-cd /home/usuario
-tar -xf telegram.tar.xz
-
-rm /home/usuario/telegram.tar.xz
-
-#add at boot
-mkdir ~/.config/autostart
-rm ~/.config/autostart/telegram.desktop
-test -f ~/.config/autostart/telegram.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=/home/usuario/Telegram/Telegram -startintray %u
-Hidden=false
-X-MATE-Autostart-enabled=true
-Name[es_ES]=Telegram
-Name=Telegram
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/telegram.desktop'
+apps2/telegram
 
 ##### Facebook-Messenger-Desktop
-##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
-wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.3.3/Messenger_linux64.deb
-sudo dpkg -i Messenger_linux64.deb
-rm Messenger_linux64.deb
+apps2/Facebook-Messenger-Desktop
 
 ##### WhatsApp-Desktop
-wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb
-sudo dpkg -i UnofficialWhatsApp_linux64.deb
-rm UnofficialWhatsApp_linux64.deb
-##another way https://rhoconlinux.wordpress.com/2015/06/27/whatsapp-en-ubuntu-como-instalarlo-y-configurarlo-super-facil/
-#cd /tmp/ && clear ; wget https://github.com/Aluxian/WhatsApp-Desktop/releases/download/v1.1.0/UnofficialWhatsApp_linux64.deb -O whatsapp.deb && sudo apt-get install gdebi -y ; sudo gdebi -n whatsapp.deb ; cd ; clear
+apps2/WhatsApp-Desktop
 
 ######## File Management
 
@@ -293,15 +156,7 @@ rm UnofficialWhatsApp_linux64.deb
 ######## File Sharing
 
 #### peerflix
-#sudo add-apt-repository -y ppa:chris-lea/node.js
-#sudo add-apt-repository -y ppa:rwky/nodejs
-#sudo apt-fast -y update
-sudo apt-fast -y install nodejs npm
-sudo npm install -g peerflix
-sudo ln -s /usr/bin/nodejs /usr/bin/node	#way 1 - /usr/bin/env: node: No existe el archivo o el directorio
-####Changed line #!/usr/bin/env node to #!/usr/bin/nodejs in file /usr/local/lib/node_modules/peerflix/app.js and everything works.		#way 2
-##peerflix "magnet url" --vlc
-##peerflix "torrent url" --vlc
+apps2/peerflix
 
 #### samba
 ##sudo smbpasswd -a usuario

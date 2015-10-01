@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### fritzing
+sudo add-apt-repository -y ppa:ehbello/fritzing
+sudo apt-fast -y update
+sudo apt-fast -y install fritzing

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### smartgit
+wget http://www.syntevo.com/downloads/smartgit/smartgit-7_0_2.deb
+sudo dpkg -i smartgit-7_0_2.deb

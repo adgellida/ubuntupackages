@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### backintime testing
+sudo add-apt-repository -y ppa:bit-team/testing
+sudo apt-fast -y update
+##sudo apt-fast -y install backintime-gnome
+sudo apt-fast -y install backintime-qt4

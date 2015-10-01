@@ -17,71 +17,37 @@
 ######## OS & Utilities
 
 #### apt-fast
-#http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
-#http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
-##sudo add-apt-repository -y ppa:apt-fast/stable
-sudo add-apt-repository -y ppa:saiarcot895/myppa
-sudo apt-get -y update
-sudo apt-get -y install apt-fast
+apps1/apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo apt-fast -y update
-sudo apt-fast -y install y-ppa-manager
+apps1/y-ppa-manager
 
 #### getdeb
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
-sudo apt-fast -y update
+apps1/getdeb
 
 #### playdeb
-wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/playdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb games" >> /etc/apt/sources.list.d/playdeb.list'
-sudo apt-fast -y update
+apps1/playdeb
 
-#### mtp support
-#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
-#sudo apt-fast -y update & dist-upgrade
-sudo apt-fast -y install mtp-tools mtpfs
+#### mtp-support
+apps1/mtp-support
 
-#### plank testing PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-##sudo add-apt-repository -y ppa:docky-core/stable
-#sudo add-apt-repository -y ppa:ricotz/docky
-#sudo apt-fast -y update
-#sudo apt-fast -y install plank
-
-#### Install ati propietary driver cmd
-#https://help.ubuntu.com/community/BinaryDriverHowto/AMD
-
-#### Install nvidia propietary driver cmd
-##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
+#### plank-testing - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#apps1/plank-testing
 
 #### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-#sudo add-apt-repository -y ppa:xorg-edgers/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
-
-#how to uninstall unstable packages
-#way 1 -> sudo ppa-purge -y ppa:xorg-edgers/ppa ppa:oibaf/graphics-drivers ppa:graphics-drivers/ppa
-#way 2 -> sudo ppa-purge -y xorg-edgers oibaf graphics-drivers
+apps1/xorg-edgers
 
 #### oibaf - Possibly Unstable
-#sudo add-apt-repository -y ppa:oibaf/graphics-drivers
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
+apps1/oibaf
 
 #### graphics-drivers-team - Possibly Unstable
-#sudo add-apt-repository -y ppa:graphics-drivers/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
+#apps1/graphics-drivers-team
 
-#### keepassx stable
+#### keepassx-stable
 #sudo apt-fast -y install keepassx
 
-#### keepassx daily
-sudo add-apt-repository -y ppa:keepassx/daily
-sudo apt-fast -y update
-sudo apt-fast -y install keepassx
+#### keepassx-daily
+apps1/keepassx-daily
 
 #### ubuntu-restricted-extras
 sudo apt-fast -y install ubuntu-restricted-extras
@@ -120,9 +86,7 @@ sudo apt-fast -y install mate-tweak
 ######## Themes
 
 #### vibrancy-colors icon theme
-sudo add-apt-repository -y ppa:ravefinity-project/ppa
-sudo apt-fast -y update
-sudo apt-fast install vibrancy-colors
+apps1/vibrancy-colors
 
 ######## Language packages
 sudo apt-fast -y install aspell aspell-en aspell-es
@@ -139,28 +103,16 @@ sudo apt-fast -y install gufw
 ######## Photos & Graphics
 
 #### gimp
-#sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
-#sudo apt-fast -y update
-#sudo apt-fast -y install gimp gimp-plugin-registry gimp-help-es
+#apps1/gimp
 
 #### gimp-edge
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp-edge
-sudo apt-fast -y update
-sudo apt-fast -y install gimp gimp-plugin-registry gimp-help-es
+apps1/gimp-edge
 
-#### krita bleeding edge build
-#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
-sudo add-apt-repository -y ppa:dimula73/krita		
-sudo apt-fast -y update
-sudo apt-fast -y install krita-2.9
-sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/
+#### krita-bleeding-edge build
+apps1/krita-bleeding-edge
 
 #### krita-testing
-#sudo add-apt-repository -y ppa:dimula73/krita
-#sudo apt-fast -y update
-#sudo apt-fast -y install krita-testing
-#sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/
+#apps1/krita-testing
 
 #### gnome-exe-thumbnailer
 sudo apt-fast -y install gnome-exe-thumbnailer
@@ -168,15 +120,11 @@ sudo apt-fast -y install gnome-exe-thumbnailer
 #### shutter
 sudo apt-fast -y install shutter
 
-#### inkscape stable
-#sudo add-apt-repository -y ppa:inkscape.dev/stable
-#sudo apt-fast -y update
-#sudo apt-fast -y install inkscape
+#### inkscape-stable
+#apps1/inkscape-stable
 
-#### inkscape trunk
-sudo add-apt-repository -y ppa:inkscape.dev/trunk
-sudo apt-fast -y update
-sudo apt-fast -y install inkscape-trunk
+#### inkscape-trunk
+apps1/inkscape-trunk
 
 ######## Audio & Music
 
@@ -189,75 +137,44 @@ sudo apt-fast -y install inkscape-trunk
 ######## All multimedia content
 
 #### ffmpeg
-#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
-#sudo apt-fast -y update
 sudo apt-fast -y install ffmpeg
 
-#### vlc stable
-#sudo add-apt-repository -y ppa:videolan/stable-daily
-#sudo apt-fast -y update
-#sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
+#### vlc-stable
+#apps/vlc-stable
 
-#### vlc daily
-sudo add-apt-repository -y ppa:videolan/master-daily
-sudo apt-fast -y update
-sudo apt-fast -y install vlc vlc-plugin-pulse libvlc5
+#### vlc-daily
+apps1/vlc-daily
 
 ######## Development
 
 #### notepadqq
-sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
-sudo apt-fast -y update
-sudo apt-fast -y install notepadqq notepadqq-gtk
+apps1/notepadqq
 
 #### openjdk-8
-#sudo add-apt-repository -y ppa:maarten-fonville/ppa
-sudo add-apt-repository -y ppa:mamarley/updates
-sudo apt-fast -y update
-sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre #icedtea-7-plugin openjdk-7-jre icedtea-9-plugin openjdk-9-jre
+apps1/openjdk-8
 
 #### openjdk-7
 #sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre
 
-#### openjdk-9
-#sudo apt-fast -y install icedtea-9-plugin openjdk-9-jre
-
-#### Qt dependencies
-sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev
-
 ######## Web Browsers
 
 #### google-chrome-stable
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install google-chrome-stable
+#apps1/google-chrome-stable
 
 #### google-chrome-unstable
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/google-chrome-unstable.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome-unstable.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install google-chrome-unstable
+#apps1/google-chrome-unstable
 
 #### chromium stable
 sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
-#### PPA for Ubuntu Mozilla Security Team
-sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install firefox firefox-locale-es
+#### ubuntu-mozilla-security
+apps1/ubuntu-mozilla-security
 
-#### pepper-flash - for chromium
-##pepper-flash-player from official repos
-##http://www.webupd8.org/2014/01/pepper-flash-player-installer-for.html
+#### pepper-flash-for-chromium
 sudo apt-fast -y install pepperflashplugin-nonfree
-##sudo update-pepperflashplugin-nonfree --install
-##sudo update-pepperflashplugin-nonfree --uninstall - TO UNINSTALL
 
-#### pepper-flash - for firefox
-sudo add-apt-repository -y ppa:nilarimogard/webupd8
-sudo apt-fast -y update
-sudo apt-fast -y install pepperflashplugin-nonfree freshplayerplugin
+#### pepper-flash-for-firefox
+apps1/pepper-flash-for-firefox
 
 ######## Social
 
@@ -270,15 +187,11 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mp
 
 ######## File Sharing
 
-#### jdownloader stable
-#sudo add-apt-repository -y ppa:jd-team/jdownloader
-#sudo apt-fast -y install jdownloader
+#### jdownloader-stable
+#apps1/jdownloader-stable
 
-#### jdownloader beta
-wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-chmod +rwx JD2SilentSetup_x64.sh
-su usuario -c ./JD2SilentSetup_x64.sh
-rm JD2SilentSetup_x64.sh
+#### jdownloader-beta
+apps1/jdownloader-beta
 
 ######## News & Books
 
@@ -287,10 +200,7 @@ rm JD2SilentSetup_x64.sh
 ######## Office & Productivity
 
 #### libreoffice
-#sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
-sudo add-apt-repository -y ppa:libreoffice/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+apps1/libreoffice
 
 #### qpdfview
 sudo apt-fast -y install qpdfview

@@ -1,0 +1,15 @@
+#### Install ati propietary driver cmd
+#https://help.ubuntu.com/community/BinaryDriverHowto/AMD
+
+#### Install nvidia propietary driver cmd
+##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
+
+#how to uninstall unstable packages
+#way 1 -> sudo ppa-purge -y ppa:xorg-edgers/ppa ppa:oibaf/graphics-drivers ppa:graphics-drivers/ppa
+#way 2 -> sudo ppa-purge -y xorg-edgers oibaf graphics-drivers
+
+#### Install an RPM Package on Ubuntu Linux
+#http://www.howtogeek.com/howto/ubuntu/install-an-rpm-package-on-ubuntu-linux/
+#sudo apt-fast -y install alien dpkg-dev debhelper build-essential
+#sudo alien packagename.rpm
+#sudo dpkg -i packagename.deb

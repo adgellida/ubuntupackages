@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### teamviewer
+#http://www.teamviewer.com/es/download/linux.aspx
+sudo dpkg --add-architecture i386
+sudo apt-fast -y update
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo dpkg -i teamviewer_i386.deb
+rm teamviewer_i386.deb

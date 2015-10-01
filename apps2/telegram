@@ -1,0 +1,24 @@
+#!/bin/bash
+
+##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
+mkdir /home/usuario/Telegram
+wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
+
+wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
+cd /home/usuario
+tar -xf telegram.tar.xz
+
+rm /home/usuario/telegram.tar.xz
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/telegram.desktop
+test -f ~/.config/autostart/telegram.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=/home/usuario/Telegram/Telegram -startintray %u
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[es_ES]=Telegram
+Name=Telegram
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/telegram.desktop'

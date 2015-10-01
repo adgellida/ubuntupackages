@@ -1,7 +1,37 @@
 #!/bin/bash
 ######## installpackages - Installs packages & necessary repos - script 6
 
-#### SyncDrive - dependencies error
+#### sigram - MATE PROBLEM
+sudo add-apt-repository -y ppa:sialan/desktop
+sudo apt-fast -y update
+sudo apt-fast -y install sigram
+
+#### cutegram - MATE PROBLEM
+sudo add-apt-repository -y ppa:aseman/desktop-apps
+sudo apt-fast -y update
+sudo apt-fast -y install cutegram libqtelegram
+
+#### indicator-usb - tested and fail!
+sudo add-apt-repository -y ppa:yunnxx/gnome3
+sudo apt-fast -y update
+sudo apt-fast -y install indicator-usb
+
+#### SpaceFM - problems
+sudo add-apt-repository -y ppa:mati75/lubuntu
+sudo apt-fast -y update
+sudo apt-fast -y install spacefm
+
+#### Ubuntu phone sdk - With problems
+#sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
+#sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
+#sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper - DEPRECATED, NEVER USE
+#sudo add-apt-repository -y ppa:ui-toolkit/ppa - DEPRECATED, NEVER USE
+#sudo apt-fast -y update
+#sudo apt-fast -y install ubuntu-sdk qml
+#qtmultimedia5-examples
+#sudo apt-fast -y install qtcreator qt5-default - DON'T USE
+
+#### syncdrive - dependencies error
 sudo add-apt-repository -y ppa:nemh/gambas3
 sudo add-apt-repository -y ppa:noobslab/pear-apps
 sudo apt-fast -y update
@@ -20,7 +50,7 @@ rm ualinux*.deb
 sudo apt-fast -y update
 sudo apt-fast -y dist-upgrade
 
-#### Compiz + Cairo-dock + Emerald
+#### compiz + cairo-dock + emerald
 sudo apt-fast -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
 sudo apt-fast -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
 
@@ -30,10 +60,10 @@ sudo apt-fast -y update
 sudo apt-fast -y install emerald
 
 #### remastersys - PRECISE but works on RARING - systemback is preferible
-#wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/remastersys.list || sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
+wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/remastersys.list || sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
+sudo apt-fast -y update
+sudo apt-fast -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
 
 #### multisystem
 wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
@@ -41,7 +71,7 @@ test -f /etc/apt/sources.list.d/multisystem.list || sudo sh -c 'echo "deb http:/
 sudo apt-fast -y update
 sudo apt-fast -y install multisystem
 
-#### UltraStar Deluxe - http://ultrastardx.sourceforge.net/usdx-downloads/usdx/ - dependencies error
+#### ultraStar-deluxe - http://ultrastardx.sourceforge.net/usdx-downloads/usdx/ - dependencies error
 #https://launchpad.net/~jon-severinsson/+archive/ubuntu/ffmpeg
 #https://launchpad.net/~tobydox/+archive/ubuntu/ultrastardx
 
@@ -52,63 +82,6 @@ sudo apt-fast -y install multisystem
 #### http://www.opera.com/download/guide/?os=linux
 
 #### http://www.time4popcorn.eu/
-
-######## ONLY FOR UBUNTU WITH UNITY SURELY
-
-#### tint2 - http://www.howtogeek.com/189819/how-to-add-a-taskbar-to-the-desktop-in-ubuntu-14.04/
-sudo apt-fast -y install tint2
-#at start:
-#Taskbar - Tint2
-#tint2
-#Windows-like Taskbar
-
-#### classicmenu-indicator & Unsettings
-sudo add-apt-repository -y ppa:diesch/testing
-sudo apt-fast -y update
-sudo apt-fast -y install classicmenu-indicator unsettings
-
-#### unity-tweak-tool
-#sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily #14.04
-sudo apt-fast -y update
-sudo apt-fast -y install unity-tweak-tool
-
-#### window-list - indicator-places - http://www.noobslab.com/2014/08/useful-panel-indicators-collection-for.html
-#http://askubuntu.com/questions/38505/how-can-i-see-a-list-of-all-open-windows-in-a-panel-in-unity
-#https://launchpad.net/~jwigley/+archive/ubuntu/window-list
-sudo add-apt-repository -y ppa:noobslab/indicators
-sudo apt-fast -y update
-sudo apt-fast -y install window-list indicator-places
-
-#### indicator-systemtray-unity
-sudo apt-add-repository -y ppa:fixnix/indicator-systemtray-unity
-sudo apt-fast -y update
-sudo apt-get install indicator-systemtray-unity
-#sudo apt-get -y purge indicator-systemtray-unity
-
-#### ubuntu-tweak
-#sudo add-apt-repository -y ppa:tualatrix/next #NEW
-#sudo add-apt-repository -y ppa:tualatrix/ppa #ANCIENT 2
-#sudo add-apt-repository -y ppa:freyja-dev/tualatrix #ANCIENT 1
-#sudo apt-fast -y update
-sudo apt-fast -y install ubuntu-tweak
-
-#### gnome-tweak-tool
-sudo apt-fast -y install gnome-tweak-tool
-
-#### CPU Frequency Scaling
-sudo add-apt-repository -y ppa:artfwo/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install indicator-multiload indicator-cpufreq
-
-#### my-weather-indicator
-sudo add-apt-repository -y ppa:atareao/atareao
-sudo apt-fast -y update
-sudo apt-fast -y install my-weather-indicator 
-
-######## ONLY FOR KUBUNTU
-
-#### Various
-sudo apt-fast -y install muon
 
 ######## ERROR - PROBLEMS
 #sudo apt-fast -y install quickly quickly-widgets
@@ -132,28 +105,28 @@ sudo apt-fast -y install muon
 
 ######## installpackagesproblematic
 
-#### Audacious, unity-reboot, etc
+#### audacious, unity-reboot, etc
 #sudo add-apt-repository -y ppa:nilarimogard/webupd8
 #sudo apt-fast -y update
 #sudo apt-fast -y install unity-reboot audacious
 
-#### DockBarX
+#### dockbarx
 #sudo add-apt-repository -y ppa:dockbar-main/ppa
 #sudo apt-fast -y update
 #sudo apt-fast -y install dockbarx
  
-#### Docky Development PPA & stable
+#### docky-development PPA & stable
 #sudo add-apt-repository -y ppa:docky-core/ppa
 #sudo add-apt-repository -y ppa:docky-core/stable
 #sudo apt-fast -y update
 #sudo apt-fast -y install docky
 
-#### Gnome Do
+#### gnome-do
 #sudo add-apt-repository -y ppa:do-testers/ppa
 #sudo apt-fast -y update
 #sudo apt-fast -y install gnome-do
 
-#### avant window navigator
+#### avant-window-navigator
 #sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
 #sudo apt-fast -y update
 #sudo apt-fast -y install avant-window-navigator

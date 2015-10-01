@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### krita-testing
+sudo add-apt-repository -y ppa:dimula73/krita
+sudo apt-fast -y update
+sudo apt-fast -y install krita-testing
+sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/

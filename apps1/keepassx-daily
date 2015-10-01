@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### keepassx-daily
+sudo add-apt-repository -y ppa:keepassx/daily
+sudo apt-fast -y update
+sudo apt-fast -y install keepassx

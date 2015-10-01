@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### arduino-studio - 0.0.4 alpha
+#wget http://download.arduino.org/studio/bundle/0.0.4/arduinostudio-0.0.4-linux64.tar.gz
+#tar -xf arduinostudio-0.0.4-linux64.tar.gz
+#sudo apt-fast -y install libgcrypt11
+#sudo usermod -a -G dialout usuario
+#sudo chmod a+rw /dev/ttyUSB0

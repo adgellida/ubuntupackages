@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### vibrancy-colors icon theme
+sudo add-apt-repository -y ppa:ravefinity-project/ppa
+sudo apt-fast -y update
+sudo apt-fast install vibrancy-colors

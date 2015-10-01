@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### evolution
+sudo add-apt-repository -y ppa:fta/gnome3
+sudo apt-fast -y update
+sudo apt-fast -y install evolution

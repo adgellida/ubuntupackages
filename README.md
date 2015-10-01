@@ -23,8 +23,8 @@ Go to your selected script and modified it.
 * "installpackages3" if you want to check my extra proposed packages.
 * "installpackages4" if you want to check more extra packages.
 * "installpackages5" if you want to check the test packages.
-* "installpackages6" if you want to check more extra packages(2).
-* "installpackages7" if you want to check more extra ancient packages.
+* "installpackages6" if you want to check problematic packages.
+* "installpackages7" if you want to check more alternative modes to install packages. To test yet.
 1. Execute it.
 1. (Optional) Check all the other content.
 

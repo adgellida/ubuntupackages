@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### libreoffice
+#sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
+sudo add-apt-repository -y ppa:libreoffice/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
