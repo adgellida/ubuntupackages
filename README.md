@@ -32,7 +32,7 @@ Remember to add exec permissions to all scripts!
 
 Important
 =============================================
-* It hasn't been tested 100% yet. Give feedback!
+* You can crash your system. It hasn't been tested 100% yet. Give feedback!
 * The desktop environment recommended tested right now is to use MATE desktop.
 * Be careful with unstables repos, comment them if you want.
 * If there are connectivity problems select your best server on Software & Updates!

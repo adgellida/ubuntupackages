@@ -105,7 +105,7 @@ apps2/git-stable
 #apps2/git-rc
 
 #### git-gui
-sudo apt-fast -y install git-gui #git-cola qgit 
+#sudo apt-fast -y install git-gui #git-cola qgit 
 
 #### smartgit
 #apps2/smartgit
