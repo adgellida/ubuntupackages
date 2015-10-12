@@ -73,6 +73,11 @@ sudo apt-fast -y install ppa-purge
 #### gnome-disk-utility
 sudo apt-fast -y install gnome-disk-utility
 
+#### gnome-disk-utility
+sudo apt-fast -y install gnome-schedule
+#sudo crontab -e
+#sudo gnome-schedule
+
 #### gparted
 sudo apt-fast -y install gparted
 
