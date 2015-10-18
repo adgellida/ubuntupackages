@@ -6,7 +6,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Designed for 15.04 (Vivid).
+Designed for 15.04 (Vivid). For 15.10 (Wily Werewolf) in a few days...
 
 Instructions
 =============================================
@@ -15,7 +15,7 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-Go to your selected script and modified it.
+Go to your selected script and modify it.
 
 * "installpackages1" if you want to install some basic packages.
 * "installpackages2" if you want to check my extra installed packages.
@@ -28,6 +28,9 @@ Go to your selected script and modified it.
 1. (Optional) Check all the other content.
 
 Remember to add exec permissions to all scripts!
+
+"sudo chmod 777 archiveName"
+"sudo chmod 777 folderName"
 
 Important
 =============================================
