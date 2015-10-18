@@ -30,6 +30,7 @@ Go to your selected script and modify it.
 Remember to add exec permissions to all scripts!
 
 "sudo chmod 777 archiveName"
+
 "sudo chmod 777 folderName"
 
 Important
