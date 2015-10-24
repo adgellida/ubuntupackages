@@ -17,7 +17,7 @@
 ######## OS & Utilities
 
 #### apt-fast
-apps1/apt-fast
+apps1/moddedRepo/apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
@@ -77,6 +77,8 @@ sudo apt-fast -y install gnome-disk-utility
 sudo apt-fast -y install gnome-schedule
 #sudo crontab -e
 #sudo gnome-schedule
+#update
+#sudo apt-fast -y update && sudo apt-fast -y upgrade
 
 #### gparted
 sudo apt-fast -y install gparted
@@ -129,7 +131,7 @@ sudo apt-fast -y install shutter
 #apps1/inkscape-stable
 
 #### inkscape-trunk
-apps1/inkscape-trunk
+#apps1/inkscape-trunk
 
 ######## Audio & Music
 
@@ -208,7 +210,7 @@ apps1/jdownloader-beta
 apps1/libreoffice
 
 #### qpdfview
-sudo apt-fast -y install qpdfview
+#sudo apt-fast -y install qpdfview
 
 ######## Games
 
@@ -217,7 +219,7 @@ sudo apt-fast -y install qpdfview
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove atril tilda pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+sudo apt-fast -y remove tilda pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell*
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Upgrading system

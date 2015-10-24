@@ -3,6 +3,9 @@
 
 ######## Backup & Sync
 
+#### spideroak
+apps4/spideroak
+
 #### backintime-testing
 #apps2/backintime-testing
 
@@ -30,7 +33,7 @@ apps2/synapse
 #apps2/tlp
 
 #### grub-customizer
-apps2/grub-customizer
+#apps2/grub-customizer
 
 #### unetbootin
 #apps2/unetbootin
@@ -71,7 +74,8 @@ apps2/clipit
 
 ######## Audio & Music
 
-#
+#### qmmp
+apps3/qmmp
 
 ######## Videos & Movies
 
@@ -81,13 +85,13 @@ apps2/clipit
 ######## Development
 
 #### dia
-apps2/dia
+#apps2/dia
 
 #### blender
-apps2/blender
+#apps2/blender
 
 ##### fritzing
-apps2/fritzing
+#apps2/fritzing
 
 #### uecide
 #apps2/uecide
@@ -114,7 +118,7 @@ apps2/git-stable
 #apps2/Qt-Linux
 
 #### kicad
-apps2/kicad
+#apps2/kicad
 
 #### meld
 sudo apt-fast -y install meld
@@ -125,7 +129,7 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 ######## Web Browsers
 
 #### tor-browser
-apps2/tor-browser
+#apps2/tor-browser
 
 ######## Social
 

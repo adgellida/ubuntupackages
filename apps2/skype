@@ -9,7 +9,7 @@ sudo apt-fast -y update
 wget http://download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
 sudo dpkg -i skype*.deb
 ##sudo apt-fast -y install -f
-#rm skype*.deb
+rm skype*.deb
 
 #### skype (2) - Canonical Partners Repo way
 #http://www.skype.com/es/download-skype/skype-for-linux/

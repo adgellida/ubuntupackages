@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo rename 's/jessie/vivid/' *jessie.list
+sudo rename 's/jessie/vivid/' *jessie.list.save
+#sudo rename 's/jessie/vivid/' *jessie.*

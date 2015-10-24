@@ -6,7 +6,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Designed for 15.04 (Vivid). For 15.10 (Wily Werewolf) in a few days...
+Porting to 15.10 (Wily Werewolf). Not all the 3rd pary are compatible with 15.10. In process to solve it.
 
 Instructions
 =============================================
