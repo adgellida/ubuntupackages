@@ -1,12 +1,12 @@
 ####ubuntupackages
 =============================================
-![](http://www.omgubuntu.co.uk/wp-content/uploads/2014/10/vervet.jpg)
+![](http://www.muylinux.com/wp-content/uploads/2015/05/wiliwerewolf.jpg)
 
 Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Porting to 15.10 (Wily Werewolf). Not all the 3rd pary are compatible with 15.10. In process to solve it.
+Porting to 15.10 (Wily Werewolf). Not all the 3rd party are compatible with 15.10. In process to solve it.
 
 Instructions
 =============================================
@@ -44,8 +44,6 @@ Important
 TO DO
 =============================================
 * Create app and integrate selectable boxes.
-* Add less brightness script.
-* Add gksudo.
 
 Release notes
 =============================================
