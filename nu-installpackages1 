@@ -81,7 +81,7 @@ sudo apt-fast -y install gnome-schedule
 #sudo apt-fast -y update && sudo apt-fast -y upgrade
 
 #### gparted
-sudo apt-fast -y install gparted
+#sudo apt-fast -y install gparted
 
 #### mate-tweak
 sudo apt-fast -y install mate-tweak
@@ -110,13 +110,13 @@ sudo apt-fast -y install gufw
 ######## Photos & Graphics
 
 #### gimp
-#apps1/gimp
+apps1/gimp
 
 #### gimp-edge
-apps1/gimp-edge
+#apps1/gimp-edge
 
 #### krita-bleeding-edge build
-apps1/krita-bleeding-edge
+#apps1/krita-bleeding-edge
 
 #### krita-testing
 #apps1/krita-testing
@@ -166,19 +166,19 @@ apps1/openjdk-8
 ######## Web Browsers
 
 #### google-chrome-stable
-#apps1/google-chrome-stable
+apps1/google-chrome-stable
 
 #### google-chrome-unstable
 #apps1/google-chrome-unstable
 
 #### chromium stable
-sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
+#sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
 #### ubuntu-mozilla-security
 apps1/ubuntu-mozilla-security
 
 #### pepper-flash-for-chromium
-sudo apt-fast -y install pepperflashplugin-nonfree
+#sudo apt-fast -y install pepperflashplugin-nonfree
 
 #### pepper-flash-for-firefox
 apps1/pepper-flash-for-firefox

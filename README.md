@@ -15,7 +15,7 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
-Go to your selected script and modify it.
+1.Go to your selected script and modify it.
 
 * "installpackages1" if you want to install some basic packages.
 * "installpackages2" if you want to check my extra installed packages.
@@ -24,8 +24,11 @@ Go to your selected script and modify it.
 * "installpackages5" if you want to check the test packages.
 * "installpackages6" if you want to check problematic packages.
 * "installpackages7" if you want to check more alternative modes to install packages. To test yet.
-1. Execute it.
-1. (Optional) Check all the other content.
+
+* "nu-installpackages1" if you want to install some basic packages for normal users.
+* "nu-installpackages2" if you want to install more basic packages for normal users.
+
+2. Execute it.
 
 Remember to add exec permissions to all scripts!
 
@@ -35,6 +38,7 @@ Remember to add exec permissions to all scripts!
 
 Important
 =============================================
+* apt-fast modded from vivid to work on wily.
 * You can crash your system. It hasn't been tested 100% yet. Give feedback!
 * The desktop environment recommended tested right now is to use MATE desktop.
 * Be careful with unstables repos, comment them if you want.

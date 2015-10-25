@@ -4,7 +4,7 @@
 ######## Backup & Sync
 
 #### spideroak
-apps4/spideroak
+#apps4/spideroak
 
 #### backintime-testing
 #apps2/backintime-testing
@@ -27,7 +27,7 @@ apps4/spideroak
 apps2/teamviewer
 
 #### synapse
-apps2/synapse
+#apps2/synapse
 
 #### tlp
 #apps2/tlp
@@ -39,10 +39,10 @@ apps2/synapse
 #apps2/unetbootin
 
 #### bleachbit
-sudo apt-fast -y install bleachbit
+#sudo apt-fast -y install bleachbit
 
 #### clipit
-apps2/clipit
+#apps2/clipit
 
 #### haguichi
 #apps2/haguichi
@@ -103,7 +103,7 @@ apps2/qmmp
 #apps2/arduino-studio
 
 #### git-stable
-apps2/git-stable
+#apps2/git-stable
 
 #### git-rc
 #apps2/git-rc
@@ -121,10 +121,10 @@ apps2/git-stable
 #apps2/kicad
 
 #### meld
-sudo apt-fast -y install meld
+#sudo apt-fast -y install meld
 
 #### Dev Utils
-sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
+#sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 ######## Web Browsers
 
@@ -146,13 +146,13 @@ apps2/skype
 #apps2/utox
 
 ##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
-apps2/telegram
+#apps2/telegram
 
 ##### Facebook-Messenger-Desktop
-apps2/Facebook-Messenger-Desktop
+#apps2/Facebook-Messenger-Desktop
 
 ##### WhatsApp-Desktop
-apps2/WhatsApp-Desktop
+#apps2/WhatsApp-Desktop
 
 ######## File Management
 
@@ -161,11 +161,11 @@ apps2/WhatsApp-Desktop
 ######## File Sharing
 
 #### peerflix
-apps2/peerflix
+#apps2/peerflix
 
 #### samba
 ##sudo smbpasswd -a usuario
-sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
+#sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
 
 ######## News & Books
 
