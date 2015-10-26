@@ -185,7 +185,7 @@ apps2/skype
 #
 
 #### Repairing system 2/2
-sudo apt-fast -f install
+sudo apt-fast -f -y install
 
 #### Upgrading system
 #sudo apt-fast -y upgrade

@@ -110,10 +110,10 @@ sudo apt-fast -y install gufw
 ######## Photos & Graphics
 
 #### gimp
-apps1/gimp
+#apps1/gimp
 
 #### gimp-edge
-#apps1/gimp-edge
+apps1/gimp-edge
 
 #### krita-bleeding-edge build
 #apps1/krita-bleeding-edge
@@ -223,7 +223,7 @@ sudo apt-fast -y remove tilda pidgin* thunderbird* adobe-flashplugin flashplugin
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Repairing system 2/2
-sudo apt-fast -f install
+sudo apt-fast -f -y install
 
 #### Upgrading system
 #sudo apt-fast -y upgrade

@@ -223,7 +223,7 @@ sudo apt-fast -y remove tilda pidgin* thunderbird* adobe-flashplugin flashplugin
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Repairing system 2/2
-sudo apt-fast -f install
+sudo apt-fast -f -y install
 
 #### Upgrading system
 #sudo apt-fast -y upgrade
