@@ -17,6 +17,9 @@ apps4/spideroak
 
 ######## OS & Utilities
 
+#### furiusisomount
+sudo apt-fast -y install furiusisomount
+
 #### ddrescue-gui
 #apps2/ddrescue-gui
 

@@ -16,17 +16,20 @@
 
 ######## OS & Utilities
 
-#### apt-fast
+#### apt-fast (15.04)
 apps1/moddedRepo/apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
 
-#### getdeb
-apps1/getdeb
+#### go-for-it
+apps1/go-for-it
 
-#### playdeb
-apps1/playdeb
+#### getdeb (15.04)
+#apps1/getdeb
+
+#### playdeb (15.04)
+#apps1/playdeb
 
 #### mtp-support
 apps1/mtp-support
@@ -110,13 +113,13 @@ sudo apt-fast -y install gufw
 ######## Photos & Graphics
 
 #### gimp
-#apps1/gimp
+apps1/gimp
 
 #### gimp-edge
-apps1/gimp-edge
+#apps1/gimp-edge
 
 #### krita-bleeding-edge build
-apps1/krita-bleeding-edge
+#apps1/krita-bleeding-edge
 
 #### krita-testing
 #apps1/krita-testing
@@ -147,10 +150,10 @@ sudo apt-fast -y install shutter
 sudo apt-fast -y install ffmpeg
 
 #### vlc-stable
-#apps/vlc-stable
+apps/vlc-stable
 
 #### vlc-daily
-apps1/vlc-daily
+#apps1/vlc-daily
 
 ######## Development
 
