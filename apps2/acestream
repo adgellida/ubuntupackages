@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### acestream (14.04)
+
+#sudo wget -O - http://repo.acestream.org/keys/acestream.public.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/acestream.list || sudo sh -c 'echo "deb http://repo.acestream.org/ubuntu/ trusty main" >> /etc/apt/sources.list.d/acestream.list'
+#sudo apt-fast -y update
+s#udo apt-fast -y install acestream-full

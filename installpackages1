@@ -17,13 +17,13 @@
 ######## OS & Utilities
 
 #### apt-fast (15.04)
-apps1/moddedRepo/apt-fast
+apps1/apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
 
-#### go-for-it
-apps1/go-for-it
+#### wily-mate
+apps1/wily-mate
 
 #### getdeb (15.04)
 #apps1/getdeb
@@ -33,9 +33,6 @@ apps1/go-for-it
 
 #### mtp-support
 apps1/mtp-support
-
-#### plank-testing - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-#apps1/plank-testing
 
 #### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
 apps1/xorg-edgers
