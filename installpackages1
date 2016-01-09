@@ -80,6 +80,9 @@ sudo apt-fast -y install gnome-schedule
 #update
 #sudo apt-fast -y update && sudo apt-fast -y upgrade
 
+#### partitionmanager (kde)
+sudo apt-fast -y install partitionmanager
+
 #### gparted
 sudo apt-fast -y install gparted
 
