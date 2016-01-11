@@ -169,6 +169,7 @@ apps2/peerflix
 #### samba
 ##sudo smbpasswd -a usuario
 sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
+sudo touch /etc/libuser.conf	#fixes a bug
 
 ######## News & Books
 

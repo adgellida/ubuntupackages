@@ -105,6 +105,7 @@ sudo apt-fast -y install aspell aspell-en aspell-es
 
 #### gufw
 sudo apt-fast -y install gufw
+sudo ufw enable
 
 ######## CD/DVD Tools
 
