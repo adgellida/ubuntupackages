@@ -6,7 +6,7 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Porting to 15.10 (Wily Werewolf). Not all the 3rd party are compatible with 15.10. In process to solve it.
+Highly compatible with 15.10 (Wily Werewolf). Not all the 3rd party are compatible. Test it.
 
 Instructions
 =============================================
@@ -25,9 +25,6 @@ Then do these basics steps:
 * "installpackages6" if you want to check problematic packages.
 * "installpackages7" if you want to check more alternative modes to install packages. To test yet.
 
-* "nu-installpackages1" if you want to install some basic packages for normal users.
-* "nu-installpackages2" if you want to install more basic packages for normal users.
-
 2. Execute it.
 
 Remember to add exec permissions to all scripts!
@@ -38,7 +35,6 @@ Remember to add exec permissions to all scripts!
 
 Important
 =============================================
-* apt-fast modded from vivid to work on wily.
 * You can crash your system. It hasn't been tested 100% yet. Give feedback!
 * The desktop environment recommended tested right now is to use MATE desktop.
 * Be careful with unstables repos, comment them if you want.

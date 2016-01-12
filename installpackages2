@@ -4,10 +4,10 @@
 ######## Backup & Sync
 
 #### spideroak
-apps4/spideroak
+#apps4/spideroak
 
-#### backintime-testing
-#apps2/backintime-testing
+#### backintime-stable
+apps2/backintime-stable
 
 #### megasync
 #apps2/megasync

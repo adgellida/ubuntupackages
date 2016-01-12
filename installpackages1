@@ -87,7 +87,7 @@ sudo apt-fast -y install partitionmanager
 sudo apt-fast -y install gparted
 
 #### mate-tweak
-sudo apt-fast -y install mate-tweak
+#sudo apt-fast -y install mate-tweak
 
 ######## Desktop Environment
 
@@ -163,10 +163,10 @@ sudo apt-fast -y install vlc
 apps1/notepadqq
 
 #### openjdk-8
-apps1/openjdk-8
+#apps1/openjdk-8
 
 #### openjdk-7
-#sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre
+sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jre-headless
 
 ######## Web Browsers
 
