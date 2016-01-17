@@ -35,10 +35,10 @@ apps1/wily-mate
 apps1/mtp-support
 
 #### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-apps1/xorg-edgers
+#apps1/xorg-edgers
 
 #### oibaf - Possibly Unstable
-apps1/oibaf
+#apps1/oibaf
 
 #### graphics-drivers-team - Possibly Unstable
 #apps1/graphics-drivers-team
