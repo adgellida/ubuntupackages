@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### thunderbird-trunk
+sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
+sudo apt-get -y update
+sudo apt-get -y install thunderbird-trunk thunderbird-locale-es
