@@ -35,6 +35,9 @@ apps3/qterminal
 #### recoll
 apps3/recoll
 
+#### zenmap
+sudo apt-fast -y install zenmap
+
 #### burg - https://advancedpcusers.wordpress.com/2012/07/01/replace-grub-with-burg-graphical-boot-loader/
 apps3/burg
 
