@@ -10,7 +10,7 @@ apps4/holo-backup
 apps4/insync
 
 #### Various
-sudo apt-fast -y install sbackup-plugins-fuse grsync unison-gtk freefilesync	#http://planetubuntu.es/post/como-sincronizar-2-equipos-de-manera-bidireccional-con-unison
+sudo apt-fast -y install sbackup-plugins-fuse grsync unison-gtk		#http://planetubuntu.es/post/como-sincronizar-2-equipos-de-manera-bidireccional-con-unison
 
 ########OS & Utilities
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### handbrake
+sudo add-apt-repository -y ppa:stebbins/handbrake-releases
+sudo apt-fast -y update
+sudo apt-fast -y install handbrake-gtk

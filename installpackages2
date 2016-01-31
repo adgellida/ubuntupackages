@@ -15,6 +15,9 @@ apps2/backintime-stable
 #### DirSyncPro
 #apps2/dirsyncpro
 
+#### freefilesync
+sudo apt-fast -y install freefilesync
+
 ######## OS & Utilities
 
 #### furiusisomount
@@ -50,6 +53,9 @@ apps2/clipit
 #### haguichi
 #apps2/haguichi
 
+#### screenfetch
+sudo apt-fast -y install screenfetch
+
 ######## Desktop Environment
 
 #
@@ -84,6 +90,9 @@ apps2/qmmp
 
 #### smplayer + mpv support
 #apps2/smplayer
+
+#### handbrake
+sudo apt-fast -y install handbrake
 
 ######## Development
 

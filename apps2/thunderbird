@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#### thunderbird-stable
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-stable
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-next (44)
+sudo add-apt-repository -y ppa:mozillateam/thunderbird-next
+sudo apt-get -y update
+sudo apt-get -y dist-upgrade
+sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-aurora (45)
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-aurora
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird thunderbird-locale-es
+
+#### thunderbird-trunk (nightly) (47)
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
+#sudo apt-get -y update
+#sudo apt-get -y dist-upgrade
+#sudo apt-get -y install thunderbird-trunk thunderbird-locale-es

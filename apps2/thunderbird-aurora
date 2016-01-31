@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### thunderbird-aurora
-sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-aurora
-sudo apt-get -y update
-sudo apt-get -y install thunderbird thunderbird-locale-es

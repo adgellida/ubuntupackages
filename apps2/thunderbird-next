@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### thunderbird-next
-sudo add-apt-repository -y ppa:mozillateam/thunderbird-next
-sudo apt-get -y update
-sudo apt-get -y install thunderbird thunderbird-locale-es
