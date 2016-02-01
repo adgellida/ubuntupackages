@@ -81,13 +81,16 @@ sudo apt-fast -y install gnome-schedule
 #sudo apt-fast -y update && sudo apt-fast -y upgrade
 
 #### partitionmanager (kde)
-sudo apt-fast -y install partitionmanager
+#sudo apt-fast -y install partitionmanager
 
 #### gparted
 sudo apt-fast -y install gparted
 
 #### mate-tweak
 #sudo apt-fast -y install mate-tweak
+
+#### mate-tweak
+sudo apt-fast -y install k3b brasero
 
 ######## Desktop Environment
 

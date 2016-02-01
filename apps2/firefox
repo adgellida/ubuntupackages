@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#### firefox-dev (aurora - fx10 - alpha) (45)
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/firefox-aurora
+#### firefox-next (beta) (45)
+sudo add-apt-repository -y ppa:mozillateam/firefox-next
+sudo apt-fast -y update
+sudo apt-fast -y install firefox
+
+#### firefox-daily (47)
+#sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install firefox-trunk

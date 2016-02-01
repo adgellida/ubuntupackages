@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### firefox-daily
-sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
-sudo apt-fast -y update
-sudo apt-fast -y install firefox-trunk
