@@ -227,7 +227,7 @@ apps1/libreoffice
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove tilda pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell*
+sudo apt-fast -y remove tilda pidgin* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell* gnome-orca onboard onboard-data xzoom
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 #sudo apt-add-repository -y --remove ppa:xxx/xxx
 #sudo ppa-purge -y ppa:xxx/xxx
