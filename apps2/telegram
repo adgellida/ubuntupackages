@@ -18,6 +18,7 @@ Type=Application
 Exec=$HOME/Telegram/Telegram -startintray %u
 Hidden=false
 X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
 Name[es_ES]=Telegram
 Name=Telegram
 Comment[es_ES]=

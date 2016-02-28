@@ -2,5 +2,5 @@
 
 #### playdeb
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/playdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb games" >> /etc/apt/sources.list.d/playdeb.list'
+test -f /etc/apt/sources.list.d/playdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu wily-getdeb games" >> /etc/apt/sources.list.d/playdeb.list'
 sudo apt-fast -y update

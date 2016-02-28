@@ -2,5 +2,5 @@
 
 #### getdeb
 wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu vivid-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
+test -f /etc/apt/sources.list.d/getdeb.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu wily-getdeb apps" >> /etc/apt/sources.list.d/getdeb.list'
 sudo apt-fast -y update

@@ -5,5 +5,9 @@
 sudo dpkg --add-architecture i386
 sudo apt-fast -y update
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
-sudo dpkg -i teamviewer_i386.deb
+sudo gdebi teamviewer_i386.deb
+#sudo dpkg --remove-architecture i386
+#sudo apt-fast -f -y install
 rm teamviewer_i386.deb
+
+##wait a few moments, costs to init

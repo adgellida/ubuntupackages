@@ -16,20 +16,21 @@
 
 ######## OS & Utilities
 
-#### apt-fast (15.04)
-apps1/apt-fast
+#### apt-fast (15.10)
+#apps1/apt-fast
+apps1/apt-fast_for_newer_releases
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
 
 #### wily-mate
-apps1/wily-mate
+#apps1/wily-mate
 
-#### getdeb (15.04)
-#apps1/getdeb
+#### getdeb (15.10)
+apps1/getdeb
 
-#### playdeb (15.04)
-#apps1/playdeb
+#### playdeb (15.10)
+apps1/playdeb
 
 #### mtp-support
 apps1/mtp-support
@@ -47,7 +48,7 @@ apps1/mtp-support
 #sudo apt-fast -y install keepassx
 
 #### keepassx-daily
-apps1/keepassx-daily
+#apps1/keepassx-daily
 
 #### ubuntu-restricted-extras
 sudo apt-fast -y install ubuntu-restricted-extras
@@ -74,7 +75,7 @@ sudo apt-fast -y install ppa-purge
 sudo apt-fast -y install gnome-disk-utility
 
 #### gnome-schedule
-sudo apt-fast -y install gnome-schedule
+#sudo apt-fast -y install gnome-schedule
 #sudo crontab -e
 #sudo gnome-schedule
 #update
@@ -89,8 +90,14 @@ sudo apt-fast -y install gparted
 #### mate-tweak
 #sudo apt-fast -y install mate-tweak
 
-#### mate-tweak
-sudo apt-fast -y install k3b brasero
+#### brasero
+sudo apt-fast -y install brasero
+
+#### k3b
+#sudo apt-fast -y install k3b
+
+#### gtkorphan
+sudo apt-fast -y install gtkorphan
 
 ######## Desktop Environment
 
@@ -100,6 +107,9 @@ sudo apt-fast -y install k3b brasero
 
 #### vibrancy-colors icon theme
 apps1/vibrancy-colors
+
+#### flatabulous theme (not working)
+#apps1/flatabulous-theme
 
 ######## Language packages
 sudo apt-fast -y install aspell aspell-en aspell-es
@@ -163,13 +173,15 @@ sudo apt-fast -y install vlc
 ######## Development
 
 #### notepadqq
-apps1/notepadqq
+#apps1/notepadqq (15.10)
+apps1/notepadqq_for_newer_releases
 
 #### openjdk-8
 #apps1/openjdk-8
+sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless
 
 #### openjdk-7
-sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jre-headless
+#sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jre-headless
 
 ######## Web Browsers
 
@@ -189,7 +201,8 @@ apps1/ubuntu-mozilla-security
 sudo apt-fast -y install pepperflashplugin-nonfree
 
 #### pepper-flash-for-firefox
-apps1/pepper-flash-for-firefox
+#apps1/pepper-flash-for-firefox
+sudo apt-fast -y install browser-plugin-freshplayer-pepperflash
 
 ######## Social
 
@@ -227,17 +240,21 @@ apps1/libreoffice
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove tilda pidgin* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell* gnome-orca onboard onboard-data xzoom
+sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank libplank hexchat*
+#sudo apt-fast -y remove adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 #sudo apt-add-repository -y --remove ppa:xxx/xxx
 #sudo ppa-purge -y ppa:xxx/xxx
 
 #### Repairing system 2/2
 sudo apt-fast -f -y install
+#sudo dpkg --configure -a
+#sudo apt-fast -y --fix-broken install
 
 #### Upgrading system
 #sudo apt-fast -y upgrade
 #sudo apt-fast -y dist-upgrade
+#sudo do-release-update
 
 #### Cleaning system
 sudo apt-fast -y autoremove

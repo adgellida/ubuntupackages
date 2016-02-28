@@ -23,3 +23,17 @@ sudo apt-get -y install thunderbird thunderbird-locale-es
 #sudo apt-get -y update
 #sudo apt-get -y dist-upgrade
 #sudo apt-get -y install thunderbird-trunk thunderbird-locale-es
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/thunderbird.desktop
+test -f ~/.config/autostart/thunderbird.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=thunderbird
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=Thunderbird
+Name=Thunderbird
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/thunderbird.desktop'
