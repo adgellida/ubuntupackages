@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### recoll
-sudo add-apt-repository -y ppa:recoll-backports/recoll-1.15-on
-sudo apt-fast -y update
-sudo apt-fast -y install recoll

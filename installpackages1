@@ -99,6 +99,9 @@ sudo apt-fast -y install brasero
 #### gtkorphan
 sudo apt-fast -y install gtkorphan
 
+#### gtkorphan
+sudo apt-fast -y install recoll
+
 ######## Desktop Environment
 
 #
@@ -197,12 +200,12 @@ sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-
 #### ubuntu-mozilla-security
 apps1/ubuntu-mozilla-security
 
-#### pepper-flash-for-chromium
-sudo apt-fast -y install pepperflashplugin-nonfree
+#### pepper-flash-for-chromium (Not working)
+#sudo apt-fast -y install pepperflashplugin-nonfree
 
-#### pepper-flash-for-firefox
-#apps1/pepper-flash-for-firefox
-sudo apt-fast -y install browser-plugin-freshplayer-pepperflash
+#### pepper-flash-for-firefox (Not working)
+##apps1/pepper-flash-for-firefox
+#sudo apt-fast -y install browser-plugin-freshplayer-pepperflash
 
 ######## Social
 

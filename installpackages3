@@ -32,9 +32,6 @@ apps3/gnome-pie
 #### qterminal
 apps3/qterminal
 
-#### recoll
-apps3/recoll
-
 #### zenmap
 sudo apt-fast -y install zenmap
 
