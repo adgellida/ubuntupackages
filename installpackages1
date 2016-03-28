@@ -16,9 +16,8 @@
 
 ######## OS & Utilities
 
-#### apt-fast (15.10)
-#apps1/apt-fast
-apps1/apt-fast_for_newer_releases
+#### apt-fast
+apps1/apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
@@ -176,8 +175,7 @@ sudo apt-fast -y install vlc
 ######## Development
 
 #### notepadqq
-#apps1/notepadqq (15.10)
-apps1/notepadqq_for_newer_releases
+apps1/notepadqq
 
 #### openjdk-8
 #apps1/openjdk-8
