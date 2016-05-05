@@ -20,6 +20,9 @@ sudo apt-fast -y install freefilesync
 
 ######## OS & Utilities
 
+#### fish-shell
+apps2/fish-shell
+
 #### furiusisomount
 #sudo apt-fast -y install furiusisomount
 
@@ -87,6 +90,9 @@ sudo apt-fast -y install screenfetch
 apps2/qmmp
 
 ######## Videos & Movies
+
+#### sopcast
+#apps2/sopcast
 
 #### smplayer + mpv support
 #apps2/smplayer

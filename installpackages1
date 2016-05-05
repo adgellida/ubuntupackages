@@ -190,10 +190,10 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless
 #apps1/google-chrome-stable
 
 #### google-chrome-unstable
-#apps1/google-chrome-unstable
+apps1/google-chrome-unstable
 
 #### chromium stable
-sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
+#sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
 #### ubuntu-mozilla-security
 apps1/ubuntu-mozilla-security
