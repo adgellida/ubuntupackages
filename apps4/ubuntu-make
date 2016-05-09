@@ -2,10 +2,12 @@
 
 #### ubuntu-make - (new android studio) http://www.webupd8.org/2014/12/ubuntu-developer-tools-center-renamed.html
 ##Android Studio from web
-#RECOMMENDED - TO IMPROVE - https://developer.android.com/sdk/installing/index.html?pkg=studio
-wget https://dl.google.com/dl/android/studio/ide-zips/1.0.1/android-studio-ide-135.1641136-linux.zip
-unzip android-studio-ide-135.1641136-linux.zip -d /home/usuario/tools/android
-sudo /home/usuario/tools/android/android-studio/bin/studio.sh
+#RECOMMENDED - TO IMPROVE FORM - https://developer.android.com/sdk/installing/index.html?pkg=studio
+#wget https://dl.google.com/dl/android/studio/ide-zips/1.0.1/android-studio-ide-135.1641136-linux.zip
+#unzip android-studio-ide-135.1641136-linux.zip -d /home/usuario/tools/android
+#sudo /home/usuario/tools/android/android-studio/bin/studio.sh
+
+#sudo apt-fast -y install lib32z1 lib32ncurses5 lib32bz2-1.0 lib32stdc++6
 
 sudo add-apt-repository -y ppa:ubuntu-desktop/ubuntu-make
 sudo apt-fast -y update
