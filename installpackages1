@@ -98,8 +98,11 @@ sudo apt-fast -y install brasero
 #### gtkorphan
 sudo apt-fast -y install gtkorphan
 
-#### gtkorphan
+#### recoll
 sudo apt-fast -y install recoll
+
+#### mintStick
+apps1/mintStick
 
 ######## Desktop Environment
 
