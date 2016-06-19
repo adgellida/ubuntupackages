@@ -102,6 +102,9 @@ sudo apt-fast -y install handbrake
 
 ######## Development
 
+#### flatpak
+#apps2/flatpak
+
 #### dia
 #apps2/dia
 

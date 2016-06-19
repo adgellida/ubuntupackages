@@ -8,4 +8,5 @@ sudo apt-fast -y update
 #sudo apt-fast -y install acestream-full
 sudo apt-fast -y install acestream-engine
 
+#to use acestream, execute:
 #acestreamengine --client-console

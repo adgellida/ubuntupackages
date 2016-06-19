@@ -22,8 +22,8 @@ apps1/apt-fast
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
 
-#### wily-mate
-#apps1/wily-mate
+#### xenial-mate
+#apps1/xenial-mate
 
 #### getdeb (15.10)
 apps1/getdeb
@@ -43,11 +43,12 @@ apps1/mtp-support
 #### graphics-drivers-team - Possibly Unstable
 #apps1/graphics-drivers-team
 
-#### keepassx-stable
-#sudo apt-fast -y install keepassx
+#### KeeWeb
+apps1/KeeWeb
 
-#### keepassx-daily
-#apps1/keepassx-daily
+#### keepassx
+#ppa:keepassx/daily - not updated
+sudo apt-fast -y install keepassx
 
 #### ubuntu-restricted-extras
 sudo apt-fast -y install ubuntu-restricted-extras
@@ -103,6 +104,18 @@ sudo apt-fast -y install recoll
 
 #### mintStick
 apps1/mintStick
+
+#### extundelete
+#http://rootear.com/ubuntu-linux/recuperar-archivos-borrados-extundelete
+sudo apt-fast -y install extundelete
+
+#### manpages-es
+#http://ubunlog.com/poner-las-guias-man-espanol-ubuntu/?utm_source=feedburner&utm_medium=%24%7Bfeed%2C+email%7D&utm_campaign=Feed%3A+%24%7BUbunlog%7D+%28%24%7BUbunlog%7D%29
+sudo apt-fast install -f manpages-es manpages-es-extra
+sudo dpkg-reconfigure locales
+#Las teclas de subir y bajar servirán justamente para lo que indica su nombre.
+#La tecla Q nos sacará del manual.
+#La tecla H nos mostrará información adicional (incluidos estos tres puntos).
 
 ######## Desktop Environment
 
@@ -188,6 +201,9 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless
 #sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre openjdk-7-jre-headless
 
 ######## Web Browsers
+
+#### vivaldi-browser
+apps1/vivaldi-browser
 
 #### google-chrome-stable
 #apps1/google-chrome-stable

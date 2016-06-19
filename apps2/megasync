@@ -1,13 +1,14 @@
 #!/bin/bash
 
 #### megasync
-#test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_15.10/ ./" >> /etc/apt/sources.list.d/megasync.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install megasync
+test -f /etc/apt/sources.list.d/megasync.list || sudo sh -c 'echo "deb http://mega.nz/linux/MEGAsync/xUbuntu_16.04/ ./" >> /etc/apt/sources.list.d/megasync.list'
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 23ACD201
+sudo apt-fast -y update
+sudo apt-fast -y install megasync
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_15.10/amd64/megasync-xUbuntu_15.10_amd64.deb
-sudo dpkg -i megasync-xUbuntu_15.10_amd64.deb
-rm megasync*.deb
+#wget https://mega.nz/linux/MEGAsync/xUbuntu_16.04/amd64/megasync-xUbuntu_16.04_amd64.deb
+#sudo dpkg -i megasync-xUbuntu_15.10_amd64.deb
+#rm megasync*.deb
 
 #add at boot
 mkdir ~/.config/autostart
@@ -18,8 +19,8 @@ Exec=megasync
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=megasync
-Name=megasync
+Name[es_ES]=Megasync
+Name=Megasync
 Comment[es_ES]=
 Comment=" >> ~/.config/autostart/megasync.desktop'
 
