@@ -124,8 +124,11 @@ apps3/pogo
 
 ######## Videos & Movies
 
+#### kodi-nightly
+apps3/kodi-nightly
+
 #### kodi-stable
-apps3/kodi-stable
+#apps3/kodi-stable
 
 #### lmms
 apps3/lmms

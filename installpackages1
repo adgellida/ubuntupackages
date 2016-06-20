@@ -145,16 +145,13 @@ sudo ufw enable
 ######## Photos & Graphics
 
 #### gimp
-apps1/gimp
+#apps1/gimp
 
 #### gimp-edge
-#apps1/gimp-edge
+apps1/gimp-edge
 
-#### krita-bleeding-edge build
-#apps1/krita-bleeding-edge
-
-#### krita-testing
-#apps1/krita-testing
+#### krita
+#apps1/krita/krita3
 
 #### gnome-exe-thumbnailer
 sudo apt-fast -y install gnome-exe-thumbnailer
@@ -214,6 +211,9 @@ apps1/google-chrome-unstable
 #### chromium stable
 #sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
+#### firefox-trunk
+apps1/firefox-trunk
+
 #### ubuntu-mozilla-security
 apps1/ubuntu-mozilla-security
 
@@ -260,7 +260,7 @@ apps1/libreoffice
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat*
+sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat* firefox gimp
 #sudo apt-fast -y remove adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
 #sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 #sudo apt-add-repository -y --remove ppa:xxx/xxx
