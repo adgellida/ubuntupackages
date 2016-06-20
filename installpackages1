@@ -151,7 +151,8 @@ sudo ufw enable
 apps1/gimp-edge
 
 #### krita
-#apps1/krita/krita3
+#apps1/krita/krita-testing
+#apps1/krita/krita.appimage
 
 #### gnome-exe-thumbnailer
 sudo apt-fast -y install gnome-exe-thumbnailer
