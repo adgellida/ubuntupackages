@@ -180,11 +180,11 @@ sudo apt-fast -y install shutter
 sudo apt-fast -y install ffmpeg
 
 #### vlc-stable
-sudo apt-fast -y install vlc
+#sudo apt-fast -y install vlc
 #apps/vlc-stable
 
 #### vlc-daily
-#apps1/vlc-daily
+apps1/vlc-daily
 
 ######## Development
 

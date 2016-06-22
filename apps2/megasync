@@ -19,8 +19,8 @@ Exec=megasync
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Megasync
-Name=Megasync
+Name[es_ES]=Megasync DELAYED
+Name=Megasync DELAYED
 Comment[es_ES]=
 Comment=" >> ~/.config/autostart/megasync.desktop'
 

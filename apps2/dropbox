@@ -11,12 +11,12 @@ mkdir ~/.config/autostart
 rm ~/.config/autostart/dropbox.desktop
 test -f ~/.config/autostart/dropbox.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
-Exec=dropbox
+Exec=dropbox start -i
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Dropbox
-Name=Dropbox
+Name[es_ES]=Dropbox DELAYED
+Name=Dropbox DELAYED
 Comment[es_ES]=
 Comment=" >> ~/.config/autostart/dropbox.desktop'
 
