@@ -3,25 +3,46 @@
 
 ######## Backup & Sync
 
-#### spideroak
-#apps4/spideroak
+#### freefilesync
+sudo apt-fast -y install freefilesync
+
+#### dropbox
+apps2/dropbox
+
+#### megasync - personal
+#apps2/megasync
 
 #### backintime-stable
 #apps2/backintime-stable
 
-#### megasync
-apps2/megasync
-
 #### DirSyncPro
 #apps2/dirsyncpro
 
-#### freefilesync
-sudo apt-fast -y install freefilesync
-
 ######## OS & Utilities
 
+#### teamviewer
+apps2/teamviewer
+
+#### grub-customizer
+apps2/converseen
+
+#### synapse
+apps2/synapse
+
+#### grub-customizer
+apps2/grub-customizer
+
+#### bleachbit
+sudo apt-fast -y install bleachbit
+
+#### clipit
+apps2/clipit
+
+#### screenfetch
+sudo apt-fast -y install screenfetch
+
 #### fish-shell
-apps2/fish-shell
+#apps2/fish-shell
 
 #### furiusisomount
 #sudo apt-fast -y install furiusisomount
@@ -32,32 +53,14 @@ apps2/fish-shell
 #### guake
 #apps2/guake
 
-#### teamviewer
-apps2/teamviewer
-
-#### synapse
-apps2/synapse
-
 #### tlp
 #apps2/tlp
-
-#### grub-customizer
-#apps2/grub-customizer
 
 #### unetbootin
 #apps2/unetbootin
 
-#### bleachbit
-sudo apt-fast -y install bleachbit
-
-#### clipit
-apps2/clipit
-
 #### haguichi
 #apps2/haguichi
-
-#### screenfetch
-sudo apt-fast -y install screenfetch
 
 ######## Desktop Environment
 
@@ -98,9 +101,21 @@ apps2/qmmp
 #apps2/smplayer
 
 #### handbrake
-sudo apt-fast -y install handbrake
+#sudo apt-fast -y install handbrake
 
 ######## Development
+
+#### meld
+sudo apt-fast -y install meld
+
+#### Dev Utils
+sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
+
+#### git-stable - personal
+#apps2/git-stable
+
+#### smartgit - personal
+#apps2/smartgit
 
 #### flatpak
 #apps2/flatpak
@@ -111,7 +126,7 @@ sudo apt-fast -y install handbrake
 #### blender
 #apps2/blender
 
-##### fritzing
+#### fritzing
 #apps2/fritzing
 
 #### uecide
@@ -123,29 +138,17 @@ sudo apt-fast -y install handbrake
 #### arduino-studio
 #apps2/arduino-studio
 
-#### git-stable
-apps2/git-stable
-
 #### git-rc
 #apps2/git-rc
 
 #### git-gui
 #sudo apt-fast -y install git-gui #git-cola qgit 
 
-#### smartgit
-apps2/smartgit
-
 #### Qt-Linux
 #apps2/Qt-Linux
 
 #### kicad
 #apps2/kicad
-
-#### meld
-sudo apt-fast -y install meld
-
-#### Dev Utils
-sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 ######## Web Browsers
 
@@ -166,14 +169,14 @@ apps2/skype
 ##### utox
 #apps2/utox
 
-##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
-apps2/telegram
+##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/ - personal
+#apps2/telegram
 
-##### Facebook-Messenger-Desktop
-apps2/Facebook-Messenger-Desktop
+##### Facebook-Messenger-Desktop - personal
+#apps2/Facebook-Messenger-Desktop
 
-##### WhatsApp-Desktop
-apps2/WhatsApp-Desktop
+##### WhatsApp-Desktop - personal
+#apps2/WhatsApp-Desktop
 
 ######## File Management
 
@@ -181,7 +184,7 @@ apps2/WhatsApp-Desktop
 
 ######## File Sharing
 
-#### peerflix
+#### peerflix - personal
 #apps2/peerflix
 
 #### samba

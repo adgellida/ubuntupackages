@@ -2,9 +2,12 @@
 
 #latest nightly - working - https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/
 #example
-#wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
-#tar xvfj $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
-#mv $HOME/thunderbird $HOME/thunderbird-app
+sudo apt-fast -y remove thunderbird thunderbird-locale-es
+cd $HOME
+wget https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
+tar xvfj $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
+mv $HOME/thunderbird $HOME/thunderbird-app
+rm $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
 
 #### thunderbird-stable
 #sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/thunderbird-stable

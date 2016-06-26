@@ -44,7 +44,7 @@ apps1/mtp-support
 #apps1/graphics-drivers-team
 
 #### KeeWeb
-apps1/KeeWeb
+#apps1/KeeWeb
 
 #### keepassx
 #ppa:keepassx/daily - not updated
@@ -152,7 +152,7 @@ apps1/gimp-edge
 
 #### krita
 #apps1/krita/krita-testing
-#apps1/krita/krita.appimage
+apps1/krita/krita.appimage
 
 #### gnome-exe-thumbnailer
 sudo apt-fast -y install gnome-exe-thumbnailer
@@ -200,20 +200,23 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless
 
 ######## Web Browsers
 
-#### vivaldi-browser
+#### vivaldi-browser - in script pepperflash is added
 apps1/vivaldi-browser
 
 #### google-chrome-stable
-#apps1/google-chrome-stable
+apps1/google-chrome-stable
 
 #### google-chrome-unstable
-apps1/google-chrome-unstable
+#apps1/google-chrome-unstable
 
 #### chromium stable
 #sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra
 
+#### firefox
+sudo apt-fast -y install firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
+
 #### firefox-trunk
-apps1/firefox-trunk
+#apps1/firefox-trunk
 
 #### ubuntu-mozilla-security
 apps1/ubuntu-mozilla-security
@@ -261,9 +264,8 @@ apps1/libreoffice
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat* firefox gimp
+sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat* firefox gimp thunderbird thunderbird-locale-es
 #sudo apt-fast -y remove adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
-#sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 #sudo apt-add-repository -y --remove ppa:xxx/xxx
 #sudo ppa-purge -y ppa:xxx/xxx
 
