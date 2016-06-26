@@ -41,6 +41,9 @@ apps2/clipit
 #### screenfetch
 sudo apt-fast -y install screenfetch
 
+#### ANGRYsearch
+apps2/ANGRYsearch
+
 #### fish-shell
 #apps2/fish-shell
 

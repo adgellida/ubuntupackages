@@ -117,6 +117,12 @@ sudo dpkg-reconfigure locales
 #La tecla Q nos sacará del manual.
 #La tecla H nos mostrará información adicional (incluidos estos tres puntos).
 
+#### regexxer
+#sudo apt-fast -y install regexxer
+
+#### regexxer
+#sudo apt-fast -y install searchmonkey
+
 ######## Desktop Environment
 
 #
