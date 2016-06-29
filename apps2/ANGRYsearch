@@ -10,3 +10,4 @@ rm $HOME/v0.9.9.tar.gz
 cd $HOME/ANGRYsearch/ANGRYsearch-0.9.9
 chmod +x install.sh
 sudo ./install.sh
+rm -rf $HOME/ANGRYsearch

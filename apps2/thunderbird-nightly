@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#latest nightly - working - https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/
+#### thunderbird-nightly - working - https://ftp.mozilla.org/pub/thunderbird/nightly/latest-comm-central/
 #example
 sudo apt-fast -y remove thunderbird thunderbird-locale-es
 cd $HOME
