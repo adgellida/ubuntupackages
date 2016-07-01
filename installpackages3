@@ -78,6 +78,9 @@ apps3/variety-peterlevi-daily
 sudo apt-fast -y install hplip hplip-gui
 
 #### bibletime
+apps3/phoronix-test-suite
+
+#### bibletime
 apps3/bibletime
 
 #### ubuntu customization kit

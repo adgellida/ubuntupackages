@@ -23,7 +23,7 @@ apps4/virtualbox
 #### playonlinux
 apps4/playonlinux
 
-#### intel-linux-graphics-installer - Official - https://download.01.org/gfx/ubuntu/15.04/main/pool/main/i/intel-linux-graphics-installer/intel-linux-graphics-installer_1.2.0-0intel1_amd64.deb
+#### intel-linux-graphics-installer - Official - Not compatible with 16.04 - Now 15.10
 apps4/intel-linux-graphics-installer
 
 #### mucommander-unstable
