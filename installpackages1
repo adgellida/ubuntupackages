@@ -87,6 +87,9 @@ sudo apt-fast -y install gnome-disk-utility
 #### gparted
 sudo apt-fast -y install gparted
 
+#### gkrellm
+sudo apt-fast -y install gkrellm
+
 #### mate-tweak
 #sudo apt-fast -y install mate-tweak
 

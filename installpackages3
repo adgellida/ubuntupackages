@@ -77,7 +77,7 @@ apps3/variety-peterlevi-daily
 #### HP
 sudo apt-fast -y install hplip hplip-gui
 
-#### bibletime
+#### phoronix-test-suite
 apps3/phoronix-test-suite
 
 #### bibletime
@@ -181,6 +181,9 @@ sudo apt-fast -y install ubuntu-emulator
 apps3/freecad
 
 ######## Web Browsers
+
+#### qutebrowser
+apps3/qutebrowser
 
 #### i2p
 apps3/i2p
