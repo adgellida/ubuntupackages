@@ -181,7 +181,8 @@ sudo apt-fast -y install shutter
 
 ######## Videos & Movies
 
-#
+#### kazam
+sudo apt-fast -y install kazam
 
 ######## All multimedia content
 
