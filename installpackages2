@@ -44,6 +44,9 @@ sudo apt-fast -y install screenfetch
 #### ANGRYsearch
 apps2/ANGRYsearch
 
+#### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
+apps2/i-nex
+
 #### fish-shell
 #apps2/fish-shell
 
@@ -206,4 +209,4 @@ apps2/thunderbird-nightly
 
 ######## Games
 
-#
+apps2/steam

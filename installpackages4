@@ -38,9 +38,6 @@ apps4/apt-new
 #### x-updates - only recommended for latest graphic cards drivers - less updated than ppa:xorg-edgers/ppa
 apps4/x-updates
 
-#### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
-apps4/i-nex
-
 #### winusb
 apps4/winusb
 

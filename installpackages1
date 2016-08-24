@@ -102,11 +102,20 @@ sudo apt-fast -y install brasero
 #### gtkorphan
 sudo apt-fast -y install gtkorphan
 
+#### byobu - for remove old kernels - sudo purge-old-kernels
+sudo apt-fast -y install byobu
+
 #### recoll
 sudo apt-fast -y install recoll
 
+#### gsmartcontrol
+sudo apt-fast -y install gsmartcontrol
+
 #### mintStick
 apps1/mintStick
+
+#### mintStick
+apps1/mate-dock-applet
 
 #### extundelete
 #http://rootear.com/ubuntu-linux/recuperar-archivos-borrados-extundelete
