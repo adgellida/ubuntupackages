@@ -111,6 +111,15 @@ sudo apt-fast -y install recoll
 #### gsmartcontrol
 sudo apt-fast -y install gsmartcontrol
 
+#### software-center
+sudo apt-fast -y install software-center
+
+#### gnome-software
+sudo apt-fast -y install gnome-software
+
+#### appgrid
+apps1/appgrid
+
 #### mintStick
 apps1/mintStick
 

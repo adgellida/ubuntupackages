@@ -59,9 +59,6 @@ apps3/mutate
 #### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
 sudo apt-fast -y install undistract-me
 
-#### appgrid
-apps3/appgrid
-
 #### ubuntu-after-install
 apps3/ubuntu-after-install
 
