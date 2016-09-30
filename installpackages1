@@ -22,8 +22,8 @@ apps1/apt-fast
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
 apps1/y-ppa-manager
 
-#### xenial-mate
-apps1/xenial-mate
+#### xenial-mate - on 16.10 not necessary
+#apps1/xenial-mate
 
 #### getdeb
 apps1/getdeb
@@ -42,9 +42,6 @@ apps1/mtp-support
 
 #### graphics-drivers-team - Possibly Unstable
 #apps1/graphics-drivers-team
-
-#### KeeWeb
-#apps1/KeeWeb
 
 #### keepassx
 #ppa:keepassx/daily - not updated
@@ -74,21 +71,11 @@ sudo apt-fast -y install ppa-purge
 #### gnome-disk-utility
 sudo apt-fast -y install gnome-disk-utility
 
-#### gnome-schedule
-#sudo apt-fast -y install gnome-schedule
-#sudo crontab -e
-#sudo gnome-schedule
-#update
-#sudo apt-fast -y update && sudo apt-fast -y upgrade
-
-#### partitionmanager (kde)
-#sudo apt-fast -y install partitionmanager
-
 #### gparted
 sudo apt-fast -y install gparted
 
 #### gkrellm
-sudo apt-fast -y install gkrellm
+#sudo apt-fast -y install gkrellm
 
 #### mate-tweak
 #sudo apt-fast -y install mate-tweak
@@ -105,9 +92,6 @@ sudo apt-fast -y install gtkorphan
 #### byobu - for remove old kernels - sudo purge-old-kernels
 sudo apt-fast -y install byobu
 
-#### recoll
-sudo apt-fast -y install recoll
-
 #### gsmartcontrol
 sudo apt-fast -y install gsmartcontrol
 
@@ -123,7 +107,7 @@ apps1/appgrid
 #### mintStick
 apps1/mintStick
 
-#### mintStick
+#### mate-dock-applet
 apps1/mate-dock-applet
 
 #### extundelete
@@ -137,12 +121,6 @@ sudo dpkg-reconfigure locales
 #Las teclas de subir y bajar servirán justamente para lo que indica su nombre.
 #La tecla Q nos sacará del manual.
 #La tecla H nos mostrará información adicional (incluidos estos tres puntos).
-
-#### regexxer
-#sudo apt-fast -y install regexxer
-
-#### searchmonkey
-#sudo apt-fast -y install searchmonkey
 
 ######## Desktop Environment
 
@@ -229,7 +207,7 @@ sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless
 ######## Web Browsers
 
 #### vivaldi-browser - in script pepperflash is added
-apps1/vivaldi-browser
+#apps1/vivaldi-browser
 
 #### google-chrome-stable
 #apps1/google-chrome-stable
@@ -267,17 +245,20 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mp
 
 ######## File Sharing
 
-#### jdownloader-stable
-#apps1/jdownloader-stable
-
 #### jdownloader-beta
 #apps1/jdownloader-beta
+
+#### jdownloader-stable
+#apps1/jdownloader-stable
 
 ######## News & Books
 
 #
 
 ######## Office & Productivity
+
+#### evolution
+sudo apt-fast -y install evolution
 
 #### libreoffice
 apps1/libreoffice
@@ -293,7 +274,7 @@ apps1/libreoffice
 
 #### uninstallpackages
 sudo apt-fast -y remove tilda pidgin* shotwell* gnome-orca onboard* xzoom plank hexchat* rhythmbox
-sudo apt-fast -y remove thunderbird thunderbird-locale-es thunderbird-locale-en
+#sudo apt-fast -y remove thunderbird thunderbird-locale-es thunderbird-locale-en
 sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 #sudo apt-fast -y remove adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer
 #sudo apt-add-repository -y --remove ppa:xxx/xxx

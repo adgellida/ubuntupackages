@@ -12,18 +12,12 @@ apps2/dropbox
 #### megasync - personal
 #apps2/megasync
 
-#### backintime-stable
-#apps2/backintime-stable
-
-#### DirSyncPro
-#apps2/dirsyncpro
-
 ######## OS & Utilities
 
 #### teamviewer
 apps2/teamviewer
 
-#### grub-customizer
+#### converseen
 apps2/converseen
 
 #### synapse
@@ -42,7 +36,7 @@ apps2/clipit
 sudo apt-fast -y install screenfetch
 
 #### ANGRYsearch
-apps2/ANGRYsearch
+#apps2/ANGRYsearch
 
 #### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
 apps2/i-nex
@@ -56,17 +50,8 @@ apps2/i-nex
 #### ddrescue-gui
 #apps2/ddrescue-gui
 
-#### guake
-#apps2/guake
-
-#### tlp
-#apps2/tlp
-
 #### unetbootin
 #apps2/unetbootin
-
-#### haguichi
-#apps2/haguichi
 
 ######## Desktop Environment
 
@@ -164,16 +149,10 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 ######## Social
 
 #### skype
-apps2/skype
+#apps2/skype
 
 ##### mumble
 #apps2/mumble
-
-##### qtox
-#apps2/qtox
-
-##### utox
-#apps2/utox
 
 ##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/ - personal
 #apps2/telegram
@@ -181,8 +160,8 @@ apps2/skype
 ##### Facebook-Messenger-Desktop - personal
 #apps2/Facebook-Messenger-Desktop
 
-##### WhatsApp-Desktop - personal
-#apps2/WhatsApp-Desktop
+##### Whatsie - personal
+#apps2/Whatsie
 
 ######## File Management
 
@@ -205,8 +184,9 @@ apps2/skype
 ######## Office & Productivity
 
 ##### Thunderbird-nightly
-apps2/thunderbird-nightly
+#apps2/thunderbird-nightly
 
 ######## Games
 
-apps2/steam
+##### steam
+#apps2/steam

@@ -3,6 +3,12 @@
 
 ######## Backup & Sync
 
+#### backintime-stable
+apps3/backintime-stable
+
+#### DirSyncPro
+apps3/dirsyncpro
+
 #### systemback
 apps3/systemback
 
@@ -29,8 +35,39 @@ apps3/cairo-dock
 #### gnome-pie
 apps3/gnome-pie
 
+#### KeeWeb
+apps3/KeeWeb
+
+#### gnome-schedule
+#sudo apt-fast -y install gnome-schedule
+#sudo crontab -e
+#sudo gnome-schedule
+#update
+#sudo apt-fast -y update && sudo apt-fast -y upgrade
+
+#### partitionmanager (kde)
+sudo apt-fast -y install partitionmanager
+
+#### recoll
+sudo apt-fast -y install recoll
+
 #### qterminal
 apps3/qterminal
+
+#### regexxer
+sudo apt-fast -y install regexxer
+
+#### searchmonkey
+sudo apt-fast -y install searchmonkey
+
+#### haguichi
+apps3/haguichi
+
+#### guake
+apps3/guake
+
+#### tlp
+apps3/tlp
 
 #### zenmap
 sudo apt-fast -y install zenmap
@@ -109,6 +146,12 @@ apps3/folder-color
 #
 
 ######## Audio & Music
+
+#### flowblade
+#sudo apt-fast -y install flowblade
+#Read https://github.com/jliljebl/flowblade/blob/master/flowblade-trunk/docs/INSTALLING.md
+#wget ...
+#sudo dpkg -i ./flowblade-1.8.0-1_all.deb
 
 #### lightworks
 apps3/gradio
@@ -190,7 +233,11 @@ apps3/i2p
 
 ######## Social
 
-#
+##### qtox
+apps3/qtox
+
+##### utox
+apps3/utox
 
 ######## File Management
 
@@ -222,8 +269,11 @@ apps3/gscan2pdf
 #### geary
 apps3/geary
 
-#### evolution
-apps3/evolution
+#### pantheon-mail
+apps3/pantheon-mail
+
+#### evolution-staging
+apps3/evolution-staging
 
 #### claws-mail
 apps3/claws-mail
