@@ -32,6 +32,9 @@ apps3/syncthing-gtk
 #### cairo-dock
 apps3/cairo-dock
 
+#### alltray
+sudo apt-fast -y install alltray
+
 #### gnome-pie
 apps3/gnome-pie
 

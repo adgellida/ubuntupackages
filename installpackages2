@@ -10,12 +10,12 @@ sudo apt-fast -y install freefilesync
 apps2/dropbox
 
 #### megasync - personal
-#apps2/megasync
+apps2/megasync
 
 ######## OS & Utilities
 
-#### teamviewer
-apps2/teamviewer
+#### teamviewer - ERROR
+#apps2/teamviewer
 
 #### converseen
 apps2/converseen
@@ -35,11 +35,11 @@ apps2/clipit
 #### screenfetch
 sudo apt-fast -y install screenfetch
 
-#### ANGRYsearch
-#apps2/ANGRYsearch
-
 #### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
 apps2/i-nex
+
+#### ANGRYsearch
+#apps2/ANGRYsearch
 
 #### fish-shell
 #apps2/fish-shell
@@ -80,8 +80,8 @@ apps2/i-nex
 
 ######## Audio & Music
 
-#### qmmp
-apps2/qmmp
+#### qmmp - ERROR
+#apps2/qmmp
 
 ######## Videos & Movies
 
@@ -100,13 +100,13 @@ apps2/qmmp
 sudo apt-fast -y install meld
 
 #### Dev Utils
-sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
+#sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 #### git-stable - personal
 #apps2/git-stable
 
 #### smartgit - personal
-#apps2/smartgit
+apps2/smartgit
 
 #### flatpak
 #apps2/flatpak
@@ -155,13 +155,13 @@ sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscri
 #apps2/mumble
 
 ##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/ - personal
-#apps2/telegram
+apps2/telegram
 
 ##### Facebook-Messenger-Desktop - personal
-#apps2/Facebook-Messenger-Desktop
+apps2/Facebook-Messenger-Desktop
 
 ##### Whatsie - personal
-#apps2/Whatsie
+apps2/Whatsie
 
 ######## File Management
 

@@ -2,6 +2,6 @@
 
 ##### Facebook-Messenger-Desktop
 ##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
-wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.5.0-beta.1/Messenger_linux64_V150_beta1.deb
-sudo dpkg -i Messenger_linux64.deb
-rm Messenger_linux64.deb
+wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v2.0.1/messengerfordesktop-2.0.1-linux-amd64.deb
+sudo dpkg -i messengerfordesktop*.deb
+rm messengerfordesktop*.deb

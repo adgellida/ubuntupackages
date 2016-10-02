@@ -101,8 +101,8 @@ sudo apt-fast -y install software-center
 #### gnome-software
 sudo apt-fast -y install gnome-software
 
-#### appgrid
-apps1/appgrid
+#### appgrid - ERROR
+#apps1/appgrid
 
 #### mintStick
 apps1/mintStick
@@ -155,9 +155,9 @@ sudo ufw enable
 #### gimp-edge
 apps1/gimp-edge
 
-#### krita
-apps1/krita/krita-testing
-#apps1/krita/krita.appimage
+#### krita - ERROR
+##apps1/krita/krita.appimage
+#apps1/krita-testing
 
 #### gnome-exe-thumbnailer
 sudo apt-fast -y install gnome-exe-thumbnailer
@@ -225,7 +225,7 @@ apps1/google-chrome-unstable
 apps1/firefox-trunk
 
 #### ubuntu-mozilla-security
-apps1/ubuntu-mozilla-security
+#apps1/ubuntu-mozilla-security
 
 #### pepper-flash-for-chromium (Not working)
 #sudo apt-fast -y install pepperflashplugin-nonfree
@@ -246,7 +246,7 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mp
 ######## File Sharing
 
 #### jdownloader-beta
-#apps1/jdownloader-beta
+apps1/jdownloader-beta
 
 #### jdownloader-stable
 #apps1/jdownloader-stable
@@ -258,7 +258,7 @@ sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mp
 ######## Office & Productivity
 
 #### evolution
-sudo apt-fast -y install evolution
+sudo apt-fast -y install evolution mail-notification-evolution #evolution-indicator
 
 #### libreoffice
 apps1/libreoffice

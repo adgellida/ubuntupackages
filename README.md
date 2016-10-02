@@ -1,12 +1,12 @@
 ####ubuntupackages
 =============================================
-![](http://www.omgubuntu.co.uk/wp-content/uploads/2016/01/ubuntu-1604-lts-350x200.png)
+![](http://news.tecmint.com/wp-content/uploads/2016/04/Yakkety-Yak-Ubuntu-16.10.png)
 
 Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Highly compatible with 16.04 (Xenial Xerus). Not all the 3rd party are compatible. Test it.
+Highly compatible with 16.10 (Yakkety Yak). Not all the 3rd party are compatible. Test it.
 
 Instructions
 =============================================
@@ -44,6 +44,21 @@ Important
 TO DO
 =============================================
 * Create app and integrate selectable boxes.
+
+Be care
+=============================================
+* errors
+appgrid - disabled
+qmmp - disabled
+teamviewer - disabled
+krita - disabled
+* modified with ancient repos, on future all news
+playdeb
+getdeb
+notepadqq
+y-ppa-manager
+grub-customizer
+vibrancy-colors
 
 Release notes
 =============================================

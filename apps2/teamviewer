@@ -9,5 +9,6 @@ sudo gdebi teamviewer_i386.deb
 #sudo dpkg --remove-architecture i386
 #sudo apt-fast -f -y install
 rm teamviewer_i386.deb
+sudo dpkg --remove-architecture i386
 
 ##wait a few moments, costs to init
