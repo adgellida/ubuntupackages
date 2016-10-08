@@ -48,16 +48,27 @@ TO DO
 Be care
 =============================================
 * errors
+
 appgrid - disabled
+
 qmmp - disabled
+
 teamviewer - disabled
+
 krita - disabled
+
 * modified with ancient repos, on future all news
+
 playdeb
+
 getdeb
+
 notepadqq
+
 y-ppa-manager
+
 grub-customizer
+
 vibrancy-colors
 
 Release notes

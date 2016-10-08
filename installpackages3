@@ -51,9 +51,6 @@ apps3/KeeWeb
 #### partitionmanager (kde)
 sudo apt-fast -y install partitionmanager
 
-#### recoll
-sudo apt-fast -y install recoll
-
 #### qterminal
 apps3/qterminal
 

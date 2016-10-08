@@ -80,6 +80,9 @@ sudo apt-fast -y install gparted
 #### mate-tweak
 #sudo apt-fast -y install mate-tweak
 
+#### recoll
+sudo apt-fast -y install recoll
+
 #### brasero
 sudo apt-fast -y install brasero
 
@@ -121,6 +124,13 @@ sudo dpkg-reconfigure locales
 #Las teclas de subir y bajar servirán justamente para lo que indica su nombre.
 #La tecla Q nos sacará del manual.
 #La tecla H nos mostrará información adicional (incluidos estos tres puntos).
+
+#### asterisk on cli passwords
+sudo sed -i -e 's/env_reset/env_reset,pwfeedback/g' /etc/sudoers
+
+#### disable system crash reports
+#sudo sed -i -e 's/enabled=1/enabled=0/g' /etc/default/apport
+#sudo service apport stop
 
 ######## Desktop Environment
 
@@ -258,7 +268,7 @@ apps1/jdownloader-beta
 ######## Office & Productivity
 
 #### evolution
-sudo apt-fast -y install evolution mail-notification-evolution #evolution-indicator
+sudo apt-fast -y install evolution #mail-notification-evolution evolution-indicator
 
 #### libreoffice
 apps1/libreoffice
