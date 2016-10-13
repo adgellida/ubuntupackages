@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### openjdk-8
-#sudo add-apt-repository -y ppa:maarten-fonville/ppa
-sudo add-apt-repository -y ppa:mamarley/updates
-sudo apt-fast -y update
-sudo apt-fast -y install icedtea-8-plugin openjdk-8-jre openjdk-8-jre-headless

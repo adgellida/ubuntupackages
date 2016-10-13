@@ -29,9 +29,6 @@ apps3/syncthing-gtk
 
 ######## OS & Utilities
 
-#### cairo-dock
-apps3/cairo-dock
-
 #### alltray
 sudo apt-fast -y install alltray
 
@@ -96,15 +93,6 @@ apps3/mutate
 #### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
 sudo apt-fast -y install undistract-me
 
-#### ubuntu-after-install
-apps3/ubuntu-after-install
-
-#### ubutricks
-apps3/ubutricks
-
-#### postinstallerf
-apps3/postinstallerf
-
 #### variety-peterlevi-daily
 apps3/variety-peterlevi-daily
 
@@ -119,6 +107,9 @@ apps3/bibletime
 
 #### ubuntu customization kit
 sudo apt-fast -y install uck
+
+#### xenial-mate on 16.04 - on 16.10 not necessary
+#apps3/xenial-mate
 
 ######## Desktop Environment
 

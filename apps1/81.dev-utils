@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### dev-utils
+sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass

@@ -43,7 +43,12 @@ Important
 
 TO DO
 =============================================
-* Create app and integrate selectable boxes.
+* Create app and integrate selectable boxes
+* Install
+* Uninstall
+* Detect installed packages
+* Generate a file to import or export
+* Add more apps by user, not only programmer
 
 Be care
 =============================================
@@ -51,13 +56,13 @@ Be care
 
 appgrid - disabled
 
-qmmp - disabled
-
-teamviewer - disabled
-
 krita - disabled
 
+ubuntu-after-install - disabled
+
 * modified with ancient repos, on future all news
+
+ubuntu-after-install
 
 playdeb
 

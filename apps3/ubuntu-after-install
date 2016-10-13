@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### ubuntu-after-install
-sudo add-apt-repository -y ppa:thefanclub/ubuntu-after-install
-sudo apt-fast -y update
-sudo apt-fast -y install ubuntu-after-install
