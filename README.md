@@ -56,8 +56,6 @@ Be care
 
 appgrid - disabled
 
-krita - disabled
-
 ubuntu-after-install - disabled
 
 * modified with ancient repos, on future all news

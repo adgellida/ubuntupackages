@@ -101,7 +101,9 @@ apps1/25.brasero
 apps1/27.gtkorphan
 
 #### 28.byobu - official repositories
-## for remove old kernels - sudo purge-old-kernels
+## for remove old kernels:
+#byobu
+#sudo purge-old-kernels
 apps1/28.byobu
 
 #### 29.gsmartcontrol - official repositories
@@ -122,6 +124,12 @@ apps1/32.test
 
 #### 34.mintStick - deb
 apps1/34.mintStick
+
+#### 130.spaceview - ppa
+apps1/130.spaceview
+
+#### 132.ukku - deb
+apps1/132.ukku
 
 #### 35.mate-dock-applet - ppa
 apps1/35.mate-dock-applet
@@ -232,9 +240,8 @@ apps1/61.gufw
 apps1/63.gimp-edge
 
 #### 64.krita-testing - ppa
-## ERROR
 ##apps1/krita/krita.appimage
-#apps1/64.krita-testing
+apps1/64.krita-testing
 
 #### 65.gnome-exe-thumbnailer - official repositories
 apps1/65.gnome-exe-thumbnailer
