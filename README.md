@@ -1,6 +1,6 @@
 ####ubuntupackages
 =============================================
-![](http://news.tecmint.com/wp-content/uploads/2016/04/Yakkety-Yak-Ubuntu-16.10.png)
+<img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" width="80">
 
 Compatible with any Debian based system:
 
