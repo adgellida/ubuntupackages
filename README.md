@@ -1,6 +1,8 @@
-####ubuntupackages
+# ubuntupackages
 =============================================
 <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" width="80">
+
+A simple script to install ubuntu packages.
 
 Compatible with any Debian based system:
 
