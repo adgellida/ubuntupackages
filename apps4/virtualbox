@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#### virtualbox
-wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-test -f /etc/apt/sources.list.d/virtualbox.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc)  contrib" >> /etc/apt/sources.list.d/virtualbox.list'
-sudo apt-fast -y update
-sudo apt-fast -y install virtualbox-5.0 #virtualbox-4.3 dkms

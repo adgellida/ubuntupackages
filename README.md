@@ -19,8 +19,9 @@ Then do these basics steps:
 
 1.Go to your selected script and modify it.
 
-* "installpackages1" if you want to install some basic packages.
-* "installpackages2" if you want to check my extra installed packages.
+* "installpackages1" if you want to install some basic packages. Recommended for a little advanced users.
+* "installpackages1-minimal" if you want to install some minimal packages. Recommended for normal users.
+* "installpackages2" - migrated into 1.
 * "installpackages3" if you want to check my extra proposed packages.
 * "installpackages4" if you want to check more extra packages.
 * "installpackages5" if you want to check the test packages.

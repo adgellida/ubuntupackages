@@ -17,12 +17,6 @@ sudo apt-fast -y install sbackup-plugins-fuse grsync unison-gtk		#http://planetu
 
 ########OS & Utilities
 
-#### virtualbox
-apps4/virtualbox
-
-#### playonlinux
-apps4/playonlinux
-
 #### intel-linux-graphics-installer - Official - Not compatible with 16.04 - Now 15.10
 apps4/intel-linux-graphics-installer
 

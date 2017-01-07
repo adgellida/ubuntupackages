@@ -13,13 +13,13 @@
 ######## Backup & Sync
 
 #### 1.freefilesync - official repositories
-apps1/1.freefilesync
+#apps1/1.freefilesync
 
 #### 2.dropbox - deb
-apps1/2.dropbox
+#apps1/2.dropbox
 
 #### 3.megasync - deb
-apps1/3.megasync
+#apps1/3.megasync
 
 ######## OS & Utilities
 
@@ -126,10 +126,10 @@ apps1/31.gnome-software
 apps1/34.mintStick
 
 #### 130.spaceview - ppa
-apps1/130.spaceview
+#apps1/130.spaceview
 
 #### 132.ukku - deb
-apps1/132.ukku
+#apps1/132.ukku
 
 #### 35.mate-dock-applet - ppa
 apps1/35.mate-dock-applet
@@ -167,7 +167,7 @@ apps1/44.grub-customizer
 apps1/45.bleachbit
 
 #### 46.clipit - ppa
-apps1/46.clipit
+#apps1/46.clipit
 
 #### 47.screenfetch - official repositories
 apps1/47.screenfetch
@@ -307,7 +307,7 @@ apps1/80.meld
 #apps1/82.git-stable
 
 #### 83.smartgit - deb
-apps1/83.smartgit
+#apps1/83.smartgit
 
 #### 84.flatpak - ppa
 #apps1/84.flatpak
@@ -390,13 +390,13 @@ apps1/105.firefox-trunk
 
 ##### 113.telegram - tar.xz
 ## http://deshack.net/install-telegram-for-linux-as-an-application/
-apps1/113.telegram
+#apps1/113.telegram
 
 ##### 114.Facebook-Messenger-Desktop - deb
-apps1/114.Facebook-Messenger-Desktop
+#apps1/114.Facebook-Messenger-Desktop
 
 ##### 115.Whatsie - ppa
-apps1/115.Whatsie
+#apps1/115.Whatsie
 
 ######## File Management
 
