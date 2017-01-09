@@ -20,10 +20,8 @@ mkdir ~/.config/autostart
 rm ~/.config/autostart/megasync.desktop
 test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
-Exec=megasync
+Exec=bash -c "sleep 20 ; megasync"
 Hidden=false
-X-MATE-Autostart-enabled=true
-X-MATE-Autostart-Delay=35
 Name[es_ES]=Megasync DELAYED
 Name=Megasync DELAYED
 Comment[es_ES]=

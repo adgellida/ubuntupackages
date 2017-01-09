@@ -281,10 +281,10 @@ apps1/74.ffmpeg
 
 #### 75.vlc-stable - ppa
 #sudo apt-fast -y install vlc
-#apps/75.vlc-stable
+apps/75.vlc-stable
 
 #### 76.vlc-daily - ppa
-apps1/76.vlc-daily
+#apps1/76.vlc-daily
 
 ######## Development
 

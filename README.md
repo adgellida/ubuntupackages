@@ -34,7 +34,9 @@ Remember to add exec permissions to all scripts!
 
 "sudo chmod 777 archiveName"
 
-"sudo chmod 777 folderName"
+"sudo chmod 777 -R folderName"
+
+"sudo chmod 777 -R ./ubuntupackages-master"
 
 Important
 =============================================
