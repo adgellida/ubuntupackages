@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### dekko - http://www.omgubuntu.co.uk/2017/01/install-dekko-ubuntu-email-app-snap
+sudo snap install --edge --devmode ubuntu-app-platform
+sudo snap install --edge --devmode dekko
+
+##run
+#snap run dekko

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### keepassxc
+sudo snap install keepassxc
+snap run keepassxc
