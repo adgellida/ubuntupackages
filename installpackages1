@@ -154,6 +154,9 @@ apps1/036.extundelete
 #### 041.teamviewer - deb
 apps1/041.teamviewer
 
+#### 149.remmina - official repositories
+apps1/149.remmina
+
 #### 042.converseen - ppa
 apps1/042.converseen
 
@@ -234,10 +237,10 @@ apps1/061.gufw
 ######## Photos & Graphics
 
 #### 062.gimp - ppa
-#apps1/062.gimp
+apps1/062.gimp
 
 #### 063.gimp-edge - ppa
-apps1/063.gimp-edge
+#apps1/063.gimp-edge
 
 #### 064.krita-testing - ppa
 ##apps1/krita/krita.appimage

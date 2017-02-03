@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#ANGRYsearch
+#angyysearch
 sudo apt-fast -y install python3-pyqt5
 cd $HOME
 wget https://github.com/DoTheEvo/ANGRYsearch/archive/v0.9.9.tar.gz

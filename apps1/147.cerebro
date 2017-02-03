@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### cerebro - http://blog.desdelinux.net/aumentar-la-productividad-en-linux/#
+
+wget https://github.com/KELiON/cerebro/releases/download/v0.2.3/cerebro_0.2.3_amd64.deb
+sudo gdebi cerebro*.deb
+rm cerebro*.deb

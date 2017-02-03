@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### Whatsie
+##### whatsie
 #gpg --keyserver pool.sks-keyservers.net --recv-keys 1537994D
 #gpg --export --armor 1537994D | sudo apt-key add -
 sudo apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 1537994D

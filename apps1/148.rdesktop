@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### rdesktop
+sudo apt-fast -y install rdesktop grdesktop
