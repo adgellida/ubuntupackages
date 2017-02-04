@@ -234,14 +234,13 @@ apps1/61.gufw
 ######## Photos & Graphics
 
 #### 62.gimp - ppa
-#apps1/62.gimp
+apps1/62.gimp
 
 #### 63.gimp-edge - ppa
-apps1/63.gimp-edge
+#apps1/63.gimp-edge
 
 #### 64.krita-testing - ppa
-##apps1/krita/krita.appimage
-apps1/64.krita-testing
+#apps1/64.krita-testing
 
 #### 65.gnome-exe-thumbnailer - official repositories
 apps1/65.gnome-exe-thumbnailer

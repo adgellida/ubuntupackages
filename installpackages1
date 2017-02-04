@@ -243,7 +243,6 @@ apps1/062.gimp
 #apps1/063.gimp-edge
 
 #### 064.krita-testing - ppa
-##apps1/krita/krita.appimage
 apps1/064.krita-testing
 
 #### 065.gnome-exe-thumbnailer - official repositories
