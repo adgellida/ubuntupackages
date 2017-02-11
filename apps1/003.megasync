@@ -17,17 +17,17 @@ rm megasync-xUbuntu_16.10_amd64.deb
 
 #add at boot
 mkdir ~/.config/autostart
-rm ~/.config/autostart/megasync.desktop
-test -f ~/.config/autostart/megasync.desktop || sh -c 'echo "[Desktop Entry]
+rm ~/.config/autostart/1.megasync-ubuntupackages.desktop
+test -f ~/.config/autostart/1.megasync-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=megasync
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Megasync DELAYED
-Name=Megasync DELAYED
+Name[es_ES]=1.megasync-ubuntupackages
+Name=1.megasync-ubuntupackages
 Comment[es_ES]=
-Comment=" >> ~/.config/autostart/megasync.desktop'
+Comment=" >> ~/.config/autostart/1.megasync-ubuntupackages.desktop'
 
 #mkdir ~/.megasync
 #rm ~/.megasync/megasync.sh

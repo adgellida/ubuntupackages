@@ -9,13 +9,14 @@ sudo apt-fast -y install cairo-dock cairo-dock-plug-ins
 
 #add at boot
 mkdir ~/.config/autostart
-rm ~/.config/autostart/cairo-dock.desktop
-test -f ~/.config/autostart/cairo-dock.desktop || sh -c 'echo "[Desktop Entry]
+rm ~/.config/autostart/1.cairo-dock-ubuntupackages.desktop
+test -f ~/.config/autostart/1.cairo-dock-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=cairo-dock -W
 Hidden=false
 X-MATE-Autostart-enabled=true
-Name[es_ES]=Cairo Dock
-Name=Cairo Dock
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.cairo-dock-ubuntupackages
+Name=1.cairo-dock-ubuntupackages
 Comment[es_ES]=
-Comment=" >> ~/.config/autostart/cairo-dock.desktop'
+Comment=" >> ~/.config/autostart/1.cairo-dock-ubuntupackages.desktop'

@@ -35,14 +35,14 @@ rm $HOME/thunderbird-50.0a1.en-US.linux-x86_64.tar.bz2
 
 #add at boot
 mkdir ~/.config/autostart
-rm ~/.config/autostart/thunderbird.desktop
-test -f ~/.config/autostart/thunderbird.desktop || sh -c 'echo "[Desktop Entry]
+rm ~/.config/autostart/1.thunderbird-nightly-ubuntupackages.desktop
+test -f ~/.config/autostart/1.thunderbird-nightly-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=/home/usuario/thunderbird-app/thunderbird %u
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Thunderbird Daily DELAYED
-Name=Thunderbird Daily DELAYED
+Name[es_ES]=1.thunderbird-nightly-ubuntupackages
+Name=1.thunderbird-nightly-ubuntupackages
 Comment[es_ES]=
-Comment=" >> ~/.config/autostart/thunderbird.desktop'
+Comment=" >> ~/.config/autostart/1.thunderbird-nightly-ubuntupackages.desktop'

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#### insync
+wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/insync.list || sudo sh -c 'echo "deb http://apt.insynchq.com/ubuntu trusty non-free contrib" >> /etc/apt/sources.list.d/insync.list'
+sudo apt-fast -y update
+sudo apt-fast -y install insync insync-caja
+##referal
+#https://www.insynchq.com/r/106908789160316075573
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.insync-ubuntupackages.desktop
+test -f ~/.config/autostart/1.insync-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=insync start
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.insync-ubuntupackages
+Name=1.insync-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.insync-ubuntupackages.desktop'

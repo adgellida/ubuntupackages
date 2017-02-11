@@ -2,3 +2,17 @@
 
 #### evolution
 sudo apt-fast -y install evolution #mail-notification-evolution evolution-indicator
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.evolution-ubuntupackages.desktop
+test -f ~/.config/autostart/1.evolution-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=evolution --online
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.evolution-ubuntupackages
+Name=1.evolution-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.evolution-ubuntupackages.desktop'

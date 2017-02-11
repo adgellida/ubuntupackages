@@ -12,14 +12,14 @@ rm $HOME/telegram.tar.xz
 
 #add at boot
 mkdir ~/.config/autostart
-rm ~/.config/autostart/telegram.desktop
-test -f ~/.config/autostart/telegram.desktop || sh -c 'echo "[Desktop Entry]
+rm ~/.config/autostart/1.telegram-ubuntupackages.desktop
+test -f ~/.config/autostart/1.telegram-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=$HOME/Telegram/Telegram -startintray %u
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Telegram DELAYED
-Name=Telegram DELAYED
+Name[es_ES]=1.telegram-ubuntupackages
+Name=1.telegram-ubuntupackages
 Comment[es_ES]=
-Comment=" >> ~/.config/autostart/telegram.desktop'
+Comment=" >> ~/.config/autostart/1.telegram-ubuntupackages.desktop'

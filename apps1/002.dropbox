@@ -14,18 +14,17 @@ rm dropbox_2015.10.28_amd64.deb
 
 #add at boot
 mkdir ~/.config/autostart
-rm ~/.config/autostart/dropbox.desktop
-rm ~/.config/autostart/dropbox-del.desktop
-test -f ~/.config/autostart/dropbox-del.desktop || sh -c 'echo "[Desktop Entry]
+rm ~/.config/autostart/1.dropbox-ubuntupackages.desktop
+test -f ~/.config/autostart/1.dropbox-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
 Exec=dropbox start -i
 Hidden=false
 X-MATE-Autostart-enabled=true
 X-MATE-Autostart-Delay=50
-Name[es_ES]=Dropbox DELAYED
-Name=Dropbox DELAYED
+Name[es_ES]=1.dropbox-ubuntupackages
+Name=1.dropbox-ubuntupackages
 Comment[es_ES]=
-Comment=" >> ~/.config/autostart/dropbox-del.desktop'
+Comment=" >> ~/.config/autostart/1.dropbox-ubuntupackages.desktop'
 
 #wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
 #sudo dpkg -i dropbox*.deb

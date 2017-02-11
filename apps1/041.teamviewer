@@ -18,9 +18,25 @@ rm teamviewer_i386.deb
 
 sudo teamviewer --daemon enable
 
+###In advanced - not show contacts at boot
+
 ##not working
 #sudo cp /opt/teamviewer/tv_bin/script/teamviewerd.service /etc/init.d/teamviewerd
 #sudo service teamviewerd start
 #sudo update-rc.d teamviewerd defaults
 
 ##wait a few moments, costs to init
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.teamviewer-ubuntupackages.desktop
+test -f ~/.config/autostart/1.teamviewer-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=teamviewer
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.teamviewer-ubuntupackages
+Name=1.teamviewer-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.teamviewer-ubuntupackages.desktop'
