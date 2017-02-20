@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### discord-canary
+wget https://discordapp.com/api/download/canary?platform=linux --output-document discord-canary.deb
+sudo gdebi discord-canary.deb
+rm discord-canary.deb

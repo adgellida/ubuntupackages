@@ -16,10 +16,13 @@
 apps1/001.freefilesync
 
 #### 002.dropbox - deb
-apps1/002.dropbox
+#apps1/002.dropbox
 
 #### 003.megasync - deb
 apps1/003.megasync
+
+#### 151.insync - deb
+apps1/151.insync
 
 ######## OS & Utilities
 
@@ -110,10 +113,10 @@ apps1/028.byobu
 apps1/029.gsmartcontrol
 
 #### 030.software-center - official repositories
-apps1/030.software-center
+#apps1/030.software-center
 
 #### 031.gnome-software - official repositories
-apps1/031.gnome-software
+#apps1/031.gnome-software
 
 #### 032.test
 #apps1/032.test
@@ -129,10 +132,10 @@ apps1/034.mintStick
 apps1/130.spaceview
 
 #### 132.ukku - deb
-apps1/132.ukku
+#apps1/132.ukku
 
 #### 035.mate-dock-applet - ppa
-apps1/035.mate-dock-applet
+#apps1/035.mate-dock-applet
 
 #### 036.extundelete - official repositories
 ##http://rootear.com/ubuntu-linux/recuperar-archivos-borrados-extundelete
@@ -177,7 +180,7 @@ apps1/047.screenfetch
 
 #### 048.i-nex - ppa
 ##http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
-apps1/048.i-nex
+#apps1/048.i-nex
 
 #### 049.ANGRYsearch - tar.gz
 #apps1/049.ANGRYsearch
@@ -242,8 +245,8 @@ apps1/062.gimp
 #### 063.gimp-edge - ppa
 #apps1/063.gimp-edge
 
-#### 064.krita-testing - ppa
-apps1/064.krita-testing
+#### 161.krita-stable - ppa
+apps1/161.krita-stable - ppa
 
 #### 065.gnome-exe-thumbnailer - official repositories
 apps1/065.gnome-exe-thumbnailer
@@ -303,7 +306,7 @@ apps1/078.openjdk-8
 apps1/080.meld
 
 #### 081.dev-utils - official repositories
-#apps1/081.dev-utils
+apps1/081.dev-utils
 
 #### 082.git-stable - ppa
 #apps1/082.git-stable
@@ -363,7 +366,7 @@ apps1/102.google-chrome-unstable
 #apps1/104.firefox
 
 #### 105.firefox-trunk - ppa
-apps1/105.firefox-trunk
+#apps1/105.firefox-trunk
 
 #### 106.ubuntu-mozilla-security - ppa
 #apps1/106.ubuntu-mozilla-security
@@ -395,7 +398,7 @@ apps1/105.firefox-trunk
 apps1/113.telegram
 
 ##### 114.Facebook-Messenger-Desktop - deb
-apps1/114.Facebook-Messenger-Desktop
+#apps1/114.Facebook-Messenger-Desktop
 
 ##### 115.Whatsie - ppa
 apps1/115.Whatsie

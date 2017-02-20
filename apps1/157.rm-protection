@@ -1,0 +1,5 @@
+#!/bin/bash
+
+##### rm-protection - http://blog.desdelinux.net/rm-protection-una-alternativa-segura-la-hora-borrar-archivos/
+sudo pip install rm-protection
+#sudo pip uninstall rm-protection

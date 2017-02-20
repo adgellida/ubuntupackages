@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### harmony
+wget https://github.com/vincelwt/harmony/releases/download/v0.4.5/harmony-0.4.5-amd64.deb
+sudo gdebi harmony*.deb
+rm harmony*.deb

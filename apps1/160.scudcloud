@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### slingscold
+sudo add-apt-repository -y ppa:rael-gc/scudcloud
+sudo apt-fast -y update
+sudo apt-fast -y install scudcloud
