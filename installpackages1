@@ -106,7 +106,7 @@ apps1/027.gtkorphan
 #### 028.byobu - official repositories
 ## for remove old kernels:
 #byobu
-#sudo purge-old-kernels
+#sudo purge-old-kernels -y
 apps1/028.byobu
 
 #### 029.gsmartcontrol - official repositories
@@ -314,6 +314,9 @@ apps1/081.dev-utils
 #### 083.smartgit - deb
 apps1/083.smartgit
 
+#### 093.Qt-Linux - wget + official repositories
+apps1/093.Qt-Linux
+
 #### 084.flatpak - ppa
 #apps1/084.flatpak
 
@@ -354,10 +357,10 @@ apps1/083.smartgit
 #apps1/100.vivaldi-browser
 
 #### 101.google-chrome-stable - ppa
-#apps1/101.google-chrome-stable
+apps1/101.google-chrome-stable
 
 #### 102.google-chrome-unstable - ppa
-apps1/102.google-chrome-unstable
+#apps1/102.google-chrome-unstable
 
 #### 103.chromium stable - official repositories
 #apps1/103.chromium

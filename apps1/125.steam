@@ -1,9 +1,24 @@
 #!/bin/bash
 
-#### steam
-wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
-sudo dpkg -i steam.deb
-rm steam.deb
+#### steam - https://ubuntuforums.org/showthread.php?t=2233005
+#wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+#sudo dpkg -i steam.deb
+#rm steam.deb
+
+
+
+
+sudo apt-fast -y install steam
+#sudo notepadqq /etc/ld.so.conf.d/steam.conf
+
+#/usr/lib32
+#/usr/lib/i386-linux-gnu/mesa
+
+#sudo ldconfig
+#sudo apt-get install --reinstall libgl1-mesa-glx:i386
+
+
+
 
 #sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B05498B7
 #sudo sh -c 'echo "deb http://repo.steampowered.com/steam/ precise steam" >> /etc/apt/sources.list.d/steam.list'

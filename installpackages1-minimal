@@ -98,13 +98,13 @@ apps1/25.brasero
 #apps1/26.k3b
 
 #### 27.gtkorphan - official repositories
-apps1/27.gtkorphan
+#apps1/27.gtkorphan
 
 #### 28.byobu - official repositories
 ## for remove old kernels:
 #byobu
 #sudo purge-old-kernels
-apps1/28.byobu
+#apps1/28.byobu
 
 #### 29.gsmartcontrol - official repositories
 apps1/29.gsmartcontrol
@@ -136,7 +136,7 @@ apps1/35.mate-dock-applet
 
 #### 36.extundelete - official repositories
 ##http://rootear.com/ubuntu-linux/recuperar-archivos-borrados-extundelete
-apps1/36.extundelete
+#apps1/36.extundelete
 
 #### 37.cairo-dock - ppa
 #apps1/37.cairo-dock
@@ -155,13 +155,13 @@ apps1/36.extundelete
 apps1/41.teamviewer
 
 #### 42.converseen - ppa
-apps1/42.converseen
+#apps1/42.converseen
 
 #### 43.synapse - ppa
 apps1/43.synapse
 
 #### 44.grub-customizer - ppa
-apps1/44.grub-customizer
+#apps1/44.grub-customizer
 
 #### 45.bleachbit - official repositories
 apps1/45.bleachbit
@@ -170,11 +170,11 @@ apps1/45.bleachbit
 #apps1/46.clipit
 
 #### 47.screenfetch - official repositories
-apps1/47.screenfetch
+#apps1/47.screenfetch
 
 #### 48.i-nex - ppa
 ##http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
-apps1/48.i-nex
+#apps1/48.i-nex
 
 #### 49.ANGRYsearch - tar.gz
 #apps1/49.ANGRYsearch
@@ -297,7 +297,7 @@ apps1/78.openjdk-8
 #apps1/79.openjdk-7
 
 #### 80.meld - official repositories
-apps1/80.meld
+#apps1/80.meld
 
 #### 81.dev-utils - official repositories
 #apps1/81.dev-utils
@@ -348,10 +348,10 @@ apps1/80.meld
 #apps1/100.vivaldi-browser
 
 #### 101.google-chrome-stable - ppa
-#apps1/101.google-chrome-stable
+apps1/101.google-chrome-stable
 
 #### 102.google-chrome-unstable - ppa
-apps1/102.google-chrome-unstable
+#apps1/102.google-chrome-unstable
 
 #### 103.chromium stable - official repositories
 #apps1/103.chromium
@@ -360,7 +360,7 @@ apps1/102.google-chrome-unstable
 #apps1/104.firefox
 
 #### 105.firefox-trunk - ppa
-apps1/105.firefox-trunk
+#apps1/105.firefox-trunk
 
 #### 106.ubuntu-mozilla-security - ppa
 #apps1/106.ubuntu-mozilla-security
