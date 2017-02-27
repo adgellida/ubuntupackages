@@ -2,7 +2,7 @@
 
 #### getdeb way 1
 wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
-sudo gdebi getdeb-repository_0.1-1~getdeb1_all.deb
+sudo gdebi --non-interactive getdeb-repository_0.1-1~getdeb1_all.deb
 rm getdeb-repository_0.1-1~getdeb1_all.deb
 
 sudo sed -i 's/yakkety/xenial/g' /etc/apt/sources.list.d/getdeb.list
