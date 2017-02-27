@@ -10,6 +10,9 @@
 ##sudo apt-fast -y dist-upgrade
 ##sudo apt-fast -y install xxx --no-remove --force-yes
 
+#### Exec permissions
+sudo chmod 777 -R ../ubuntupackages-master
+
 ######## Backup & Sync
 
 #### 001.freefilesync - official repositories

@@ -1,5 +1,11 @@
 #!/bin/bash
+
+#NEED RELINK
+
 ######## installpackages - Installs packages & necessary repos - script 4
+
+#### Exec permissions
+sudo chmod 777 -R ../ubuntupackages-master
 
 ######## Backup & Sync
 
