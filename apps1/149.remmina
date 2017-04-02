@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#### rdesktop
-sudo apt-fast -y install rdesktop grdesktop
+#### remmina
+sudo apt-fast -y install remmina
