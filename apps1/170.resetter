@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### resetter
+wget https://github.com/gaining/Resetter/releases/download/v0.1.3-beta/resetter_0.1.3-beta_all.deb
+sudo dpkg -i resetter*.deb
+rm resetter*.deb

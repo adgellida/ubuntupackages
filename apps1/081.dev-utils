@@ -1,5 +1,9 @@
 #!/bin/bash
 
 #### dev-utils
+## general practically
 sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr bzr-explorer ant fastjar gawk gcc gdb ssh-askpass
-sudo apt-get install pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev
+sudo apt-fast -y install pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev
+## android
+sudo apt-fast -y install cpu-checker android-tools-adb android-tools-fastboot android-tools-fsutils gradle mesa-utils libgl1-mesa-dev g++-arm-linux-gnueabihf openjdk-8-jdk #default-jdk
+sudo apt-fast -y install libstdc++6:i386 libgcc1:i386 zlib1g:i386 libncurses5:i386 libsdl1.2debian:i386
