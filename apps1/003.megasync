@@ -8,7 +8,7 @@
 
 wget https://mega.nz/linux/MEGAsync/xUbuntu_16.10/amd64/megasync-xUbuntu_16.10_amd64.deb
 
-sudo gdebi megasync-xUbuntu_16.10_amd64.deb
+sudo gdebi --non-interactive megasync-xUbuntu_16.10_amd64.deb
 rm megasync-xUbuntu_16.10_amd64.deb
 
 #wget https://mega.nz/linux/MEGAsync/xUbuntu_16.04/amd64/megasync-xUbuntu_16.04_amd64.deb

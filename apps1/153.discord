@@ -2,5 +2,5 @@
 
 ##### discord
 wget https://discordapp.com/api/download?platform=linux&format=deb --output-document discord.deb
-sudo gdebi discord.deb
+sudo gdebi --non-interactive discord.deb
 rm discord.deb

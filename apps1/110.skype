@@ -2,7 +2,7 @@
 
 ##### skype
 wget https://repo.skype.com/latest/skypeforlinux-64-alpha.deb
-sudo gdebi skypeforlinux*.deb
+sudo gdebi --non-interactive skypeforlinux*.deb
 rm skypeforlinux*.deb
 
 ##### skype (1) - Download way

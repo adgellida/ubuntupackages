@@ -3,8 +3,8 @@
 ##### stacer
 #http://blog.desdelinux.net/optimizar-debian-ubuntu-linux-mint-derivados-stacer/
 wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.6/Stacer_1.0.6_amd64.deb
-#sudo gdebi Stacer*.deb
-sudo dpkg -i Stacer*.deb && sudo apt install -f
+sudo gdebi --non-interactive Stacer*.deb
+#sudo dpkg -i Stacer*.deb && sudo apt install -f
 rm Stacer*.deb
 #/usr/share/stacer/Stacer - CHANGE
 
