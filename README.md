@@ -21,22 +21,21 @@ Then do these basics steps:
 
 * "installpackages1" if you want to install some basic packages. Recommended for a little advanced users.
 * "installpackages1-minimal" if you want to install some minimal packages. Recommended for normal users.
-* "installpackages2" - migrated into 1.
-* "installpackages3" if you want to check my extra proposed packages.
-* "installpackages4" if you want to check more extra packages.
-* "installpackages5" if you want to check the test packages.
-* "installpackages6" if you want to check problematic packages.
-* "installpackages7" if you want to check more alternative modes to install packages. To test yet.
+* "installpackages2" if you want to check my extra proposed packages.
+* "installpackages3" if you want to check more extra packages.
+* "installpackages4" if you want to check the test packages.
+* "installpackages5" if you want to check problematic packages.
+* "installpackages6" if you want to check more alternative modes to install packages. To test yet.
 
 2. Execute it.
 
 Remember to add exec permissions to all scripts!
 
-"sudo chmod 777 archiveName"
+`sudo chmod 777 archiveName`
 
-"sudo chmod 777 -R folderName"
+`sudo chmod 777 -R folderName`
 
-"sudo chmod 777 -R ./ubuntupackages-master"
+`sudo chmod 777 -R ./ubuntupackages-master`
 
 Important
 =============================================

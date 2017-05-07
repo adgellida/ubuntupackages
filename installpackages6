@@ -1,143 +1,128 @@
 #!/bin/bash
 ######## installpackages - Installs packages & necessary repos - script 6
 
-#### sigram - MATE PROBLEM
-sudo add-apt-repository -y ppa:sialan/desktop
-sudo apt-fast -y update
-sudo apt-fast -y install sigram
+#### getdeb
+#wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+#sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
+#rm -f getdeb-repository_0.1-1~getdeb1_all.deb
 
-#### cutegram - MATE PROBLEM
-sudo add-apt-repository -y ppa:aseman/desktop-apps
-sudo apt-fast -y update
-sudo apt-fast -y install cutegram libqtelegram
+#### playdeb
+#wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb
+#sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb
+#rm -f playdeb_0.3-1~getdeb1_all.deb
 
-#### indicator-usb - tested and fail!
-sudo add-apt-repository -y ppa:yunnxx/gnome3
-sudo apt-fast -y update
-sudo apt-fast -y install indicator-usb
+#### krita testing
+#sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n		#testing
+#sudo restart lightdm
+#to execute run "krita"
+#sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es	# official
+#sudo add-apt-repository ppa:kubuntu-ppa/backports		# another method
+#sudo apt-fast update
+#sudo apt-fast install krita kritasketch
 
-#### SpaceFM - problems
-sudo add-apt-repository -y ppa:mati75/lubuntu
-sudo apt-fast -y update
-sudo apt-fast -y install spacefm
-
-#### Ubuntu phone sdk - With problems
-#sudo add-apt-repository -y ppa:ubuntu-sdk-team/ppa
-#sudo add-apt-repository -y ppa:alexey-ivanov/qtcreator - BE CAREFUL
-#sudo add-apt-repository -y ppa:canonical-qt5-edgers/qt5-proper - DEPRECATED, NEVER USE
-#sudo add-apt-repository -y ppa:ui-toolkit/ppa - DEPRECATED, NEVER USE
+#### pepper-flash - for chromium (2)
+#https://launchpad.net/~skunk/+archive/ubuntu/pepper-flash
+#sudo add-apt-repository -y ppa:skunk/pepper-flash
 #sudo apt-fast -y update
-#sudo apt-fast -y install ubuntu-sdk qml
-#qtmultimedia5-examples
-#sudo apt-fast -y install qtcreator qt5-default - DON'T USE
+#sudo apt-fast -y install pepflashplugin-nonfree
+#/etc/chromium-browser/default
+#. /usr/lib/pepflashplugin-installer/pepflashplayer.sh
+#chromium restart
 
-#### syncdrive - dependencies error
-sudo add-apt-repository -y ppa:nemh/gambas3
-sudo add-apt-repository -y ppa:noobslab/pear-apps
-sudo apt-fast -y update
-sudo apt-fast -y install syncdrive
-
-#### grive-tools
-sudo add-apt-repository -y ppa:thefanclub/grive-tools
-sudo apt-fast -y update
-sudo apt-fast -y install grive-tools
-
-#### ualinux
-#http://www.ualinux.com/en/how-to-connect # Be careful, it installs a special search google provider
-wget http://archive.ualinux.com/ubuntu/main/all/ualinux-repository.deb
-sudo dpkg -i ualinux*.deb
-rm ualinux*.deb
-sudo apt-fast -y update
-sudo apt-fast -y dist-upgrade
-
-#### compiz + cairo-dock + emerald
-sudo apt-fast -y install compizconfig-settings-manager compiz fusion-icon compiz-plugins
-sudo apt-fast -y install cairo-dock cairo-dock-plug-ins-data cairo-dock-plug-ins cairo-dock-data cairo-dock-core cairo-dock-plug-ins-integration cairo-dock-plug-ins-dbus-interface-python libgldi3
-
-#### emerald
-sudo add-apt-repository -y ppa:brainpower/testing
-sudo apt-fast -y update
-sudo apt-fast -y install emerald
-
-#### remastersys - PRECISE but works on RARING - systemback is preferible
-wget -O - http://www.remastersys.com/ubuntu/remastersys.gpg.key | sudo apt-key add -
-test -f /etc/apt/sources.list.d/remastersys.list || sudo sh -c 'echo "deb http://www.remastersys.com/ubuntu precise main" >> /etc/apt/sources.list.d/remastersys.list'
-sudo apt-fast -y update
-sudo apt-fast -y install remastersys remastersys-gui ubiquity-frontend-gtk ubiquity-slideshow-lubuntu bootchart 
-
-#### multisystem
-wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
-test -f /etc/apt/sources.list.d/multisystem.list || sudo sh -c 'echo "deb http://liveusb.info/multisystem/depot all main" >> /etc/apt/sources.list.d/multisystem.list'
-sudo apt-fast -y update
-sudo apt-fast -y install multisystem
-
-#### ultraStar-deluxe - http://ultrastardx.sourceforge.net/usdx-downloads/usdx/ - dependencies error
-#https://launchpad.net/~jon-severinsson/+archive/ubuntu/ffmpeg
-#https://launchpad.net/~tobydox/+archive/ubuntu/ultrastardx
-
-######## TO INSTALL MANUALLY
-
-#### http://labs.sialan.org/projects/limoo
-
-#### http://www.opera.com/download/guide/?os=linux
-
-#### http://www.time4popcorn.eu/
-
-######## ERROR - PROBLEMS
-#sudo apt-fast -y install quickly quickly-widgets
-#sudo apt-fast -y install python-snippets acire libvte-2.90-dev libvte-dev python-vte desktopcouch  #### ERROR
-#sudo apt-fast -y install cairo-compmgr cairo-compmgr-plugins  #### POSSIBLY DEPENDENCIES ERROR
-#sudo apt-fast -y install mountmanager ntfsprogs  #### ERROR
-#sudo apt-fast -y install wally wallch
-
-#### uninstallpackages
-#### ONLY FOR UBUNTU
-#sudo apt-fast remove -y webbrowser-app unity-lens* unity-scope*
-
-######## Possibly needless programs
-#sudo apt-fast -y remove openjdk-6-jre openjdk-6-jdk icedtea-6-plugin
-
-######## ONLY FOR LUBUNTU
-#sudo apt-fast remove -y chromium-browser firefox
-#sudo apt-fast remove -y abiword-common abiword libabiword-2.9 sylpheed sylpheed-plugins sylpheed-doc sylpheed-i18n gnumeric-common gnumeric xpad mtpaint evince-common evince ace-of-penguins
-#sudo apt-fast remove -y gxine libxine1 libxine1-x mplayer2
-#sudo apt-fast remove -y libgmtk0 libgmtk0-data libgmlib0
-
-######## installpackagesproblematic
-
-#### audacious, unity-reboot, etc
-#sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#### nuvolaplayer 2 - ONLY 14.10
+#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
 #sudo apt-fast -y update
-#sudo apt-fast -y install unity-reboot audacious
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y install nuvolaplayer
 
-#### dockbarx
-#sudo add-apt-repository -y ppa:dockbar-main/ppa
+#### gnoduino	14.04
+#sudo add-apt-repository -y ppa:pmjdebruijn/gnoduino-release
 #sudo apt-fast -y update
-#sudo apt-fast -y install dockbarx
- 
-#### docky-development PPA & stable
-#sudo add-apt-repository -y ppa:docky-core/ppa
-#sudo add-apt-repository -y ppa:docky-core/stable
+#sudo apt-fast -y install gnoduino
+
+##### Telegram (1b)
+#Exec=bash -c "unset QT_STYLE_OVERRIDE ; /home/usuario/Telegram/Telegram -- %u"
+
+#test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Name=Telegram
+#Comment=Official desktop version of Telegram messaging app
+#Categories=Network
+#Exec=/home/usuario/Telegram/Telegram -- %u
+#Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/telegram.desktop'
+
+##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+##/opt/telegram/Telegram -- %u
+#sudo add-apt-repository -y ppa:atareao/telegram
 #sudo apt-fast -y update
-#sudo apt-fast -y install docky
+#sudo apt-fast -y install telegram
 
-#### gnome-do
-#sudo add-apt-repository -y ppa:do-testers/ppa
+##### Telegram (3) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
+#sudo add-apt-repository -y ppa:noobslab/apps
 #sudo apt-fast -y update
-#sudo apt-fast -y install gnome-do
+#sudo apt-fast -y install telegram-desktop
 
-#### avant-window-navigator
-#sudo add-apt-repository -y ppa:awn-testing/ppa - not for 14.04
+##### Frostwire - go to web or getdeb - ancient version
+#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
+#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
 #sudo apt-fast -y update
-#sudo apt-fast -y install avant-window-navigator
+#sudo apt-fast -y install frostwire
 
-######## Not free codecs
-#sudo apt-fast -y install nautilus-script-audio-convert flashplugin-nonfree-extrasound:i386 icedtea-plugin w32codecs
+#### unattended-upgrades - NOT WORKING
+#http://almamu.com/wordpress/configurar-las-actualizaciones-automaticas-en-ubuntu-server/
+#http://241931348f64b1d1.wordpress.com/2013/01/24/how-to-configure-automatic-update-on-ubuntu-server/
+#http://www.redeszone.net/2014/12/12/habilita-las-actualizaciones-de-seguridad-automaticas-en-ubuntu/
+#http://www.taringa.net/posts/linux/13681417/Instalar-automaticamente-actualizaciones-en-Ubuntu.html
+#http://askubuntu.com/questions/172524/how-can-i-check-if-automatic-updates-are-enabled#172527
+sudo apt-fast -y install unattended-upgrades
+sudo dpkg-reconfigure -plow unattended-upgrades
 
-#### Various
-#sudo apt-fast -y install acroread-common acroread acroread-fonts
-#sudo apt-fast -y install aptoncd
-#sudo apt-fast -y install gadmin-rsync mate-core
-#sudo apt-fast -y install mounty ddrescue  #### NEED TO ADD PPA
-#sudo apt-fast -y install eog eog-plugins
-#sudo apt-fast -y install metacity
+## /etc/apt/apt.conf.d/10periodic
+
+#Replace this:
+
+#APT::Periodic::Update-Package-Lists "1";
+#APT::Periodic::Download-Upgradeable-Packages "0";
+#APT::Periodic::AutocleanInterval "0";
+
+#With this:
+
+#APT::Periodic::Enable "1";
+#APT::Periodic::Update-Package-Lists "1";
+#APT::Periodic::Download-Upgradeable-Packages "1";
+#APT::Periodic::AutocleanInterval "5";
+#APT::Periodic::Unattended-Upgrade "1";
+#APT::Periodic::RandomSleep "1800";
+
+## /etc/apt/apt.conf.d/50unattended-upgrades
+#uncomment - "${distro_id}:${distro_codename}-updates";
+
+#### canonical-kernel-team - Possibly Unstable - Not recommendable
+#sudo add-apt-repository -y ppa:canonical-kernel-team/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y dist-upgrade
+
+#### VirtualBox (2)
+#wget -q -O - http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc | sudo apt-key add -
+#test -f /etc/apt/sources.list.d/virtualbox.org.list || sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian utopic non-free contrib" >> /etc/apt/sources.list.d/virtualbox.org.list'
+#sudo apt-fast -y update
+#sudo apt-fast -y upgrade
+#sudo apt-fast -y install virtualbox-4.3 virtualbox-guest-additions-iso virtualbox-guest-utils virtualbox-guest-x11 virtualbox-qt
+
+#### syncthing - OUTDATED
+#sudo add-apt-repository -y ppa:ytvwld/syncthing
+#sudo apt-fast -y update
+#sudo apt-fast -y install syncthing
+
+#### Ubuplus - PRECISE
+#sudo add-apt-repository -y ppa:luismtc20/ppa
+#sudo apt-fast -y update
+#sudo apt-fast -y install ubuplus
+
+#### jupiter	#POSSIBLY DEPRECATED
+#sudo add-apt-repository -y ppa:webupd8team/jupiter
+#sudo apt-fast -y update
+#sudo apt-fast -y install jupiter
+
+

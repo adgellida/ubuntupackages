@@ -1,0 +1,285 @@
+#!/bin/bash
+
+#NEED RELINK
+
+######## installpackages - Installs packages & necessary repos - script 2
+
+#### Exec permissions
+sudo chmod 777 -R ../ubuntupackages-master
+
+######## Backup & Sync
+
+#### backintime-stable
+apps2/backintime-stable
+
+#### DirSyncPro
+apps2/dirsyncpro
+
+#### systemback
+apps2/systemback
+
+#### syncany
+apps2/syncany
+
+#### sparkleshare
+apps2/sparkleshare
+
+#### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
+apps2/aptik
+
+#### timeShift
+apps2/timeshift
+
+#### syncthing-gtk
+apps2/syncthing-gtk
+
+######## OS & Utilities
+
+#### alltray
+sudo apt-fast -y install alltray
+
+#### gnome-pie
+apps2/gnome-pie
+
+#### KeeWeb
+apps2/KeeWeb
+
+#### gnome-schedule
+#sudo apt-fast -y install gnome-schedule
+#sudo crontab -e
+#sudo gnome-schedule
+#update
+#sudo apt-fast -y update && sudo apt-fast -y upgrade
+
+#### partitionmanager (kde)
+sudo apt-fast -y install partitionmanager
+
+#### qterminal
+apps2/qterminal
+
+#### regexxer
+sudo apt-fast -y install regexxer
+
+#### searchmonkey
+sudo apt-fast -y install searchmonkey
+
+#### haguichi
+apps2/haguichi
+
+#### guake
+apps2/guake
+
+#### tlp
+apps2/tlp
+
+#### zenmap
+sudo apt-fast -y install zenmap
+
+#### burg - https://advancedpcusers.wordpress.com/2012/07/01/replace-grub-with-burg-graphical-boot-loader/
+apps2/burg
+
+#### customizer (u-customizer)
+apps2/customizer
+
+#### gnome-multiwriter
+apps2/gnome-multiwrite
+
+#### ubuntu-touch-coreapps
+apps2/ubuntu-touch-coreapps
+
+#### pushbullet-indicator
+apps2/pushbullet-indicator
+
+#### albert
+apps2/albert
+
+#### mutate
+apps2/mutate
+
+#### undistract-me - http://lamiradadelreplicante.com/2015/01/15/undistract-me-nos-avisa-cuando-un-comando-ha-terminado-de-ejecutarse-en-la-terminal/
+sudo apt-fast -y install undistract-me
+
+#### variety-peterlevi-daily
+apps2/variety-peterlevi-daily
+
+#### HP
+sudo apt-fast -y install hplip hplip-gui
+
+#### phoronix-test-suite
+apps2/phoronix-test-suite
+
+#### bibletime
+apps2/bibletime
+
+#### ubuntu customization kit
+sudo apt-fast -y install uck
+
+#### xenial-mate on 16.04 - on 16.10 not necessary
+#apps2/xenial-mate
+
+######## Desktop Environment
+
+#
+
+######## Themes
+
+#### folder-color
+apps2/folder-color
+
+######## Language packages
+
+#
+
+######## Security & Privacy
+
+#
+
+######## CD/DVD Tools
+
+#
+
+######## Photos & Graphics
+
+#
+
+######## Audio & Music
+
+#### flowblade
+#sudo apt-fast -y install flowblade
+#Read https://github.com/jliljebl/flowblade/blob/master/flowblade-trunk/docs/INSTALLING.md
+#wget ...
+#sudo dpkg -i ./flowblade-1.8.0-1_all.deb
+
+#### lightworks
+apps2/gradio
+
+#### lightworks
+apps2/lightworks
+
+#### tomahawk
+apps2/tomahawk
+
+#### nuvolaplayer3-devel
+apps2/nuvolaplayer3-devel
+
+#### pogo
+apps2/pogo
+
+######## Videos & Movies
+
+#### kodi-nightly
+apps2/kodi-nightly
+
+#### kodi-stable
+#apps2/kodi-stable
+
+#### lmms
+apps2/lmms
+
+#### muse
+sudo apt-fast -y install muse
+
+#### audacity
+apps2/audacity
+
+#### ocenaudio
+apps2/ocenaudio
+
+#### hydrogen
+sudo apt-fast -y install hydrogen
+
+#### natron
+apps2/natron
+
+#### cinelerra
+apps2/cinelerra
+
+#### kdenlive - CAREFULL, a lot of kde packages
+apps2/kdenlive
+
+#### openshot
+sudo apt-fast -y install openshot
+
+#### pitivi
+sudo apt-fast -y install pitivi
+
+#### shotcut
+apps2/shotcut
+
+######## All multimedia content
+
+#
+
+######## Development
+
+#### ubuntu-emulator
+#http://www.webupd8.org/2014/03/ubuntu-touch-emulator-installation-and.html
+#http://www.webupd8.org/2013/11/experimental-ubuntu-touch-emulator.html
+sudo apt-fast -y install ubuntu-emulator
+
+#### freecad
+apps2/freecad
+
+######## Web Browsers
+
+#### qutebrowser
+apps2/qutebrowser
+
+######## Social
+
+##### qtox
+apps2/qtox
+
+##### utox
+apps2/utox
+
+######## File Management
+
+#
+
+######## File Sharing
+
+##### frostwire
+apps2/frostwire
+
+##### tribler
+apps2/tribler
+
+#### xdman
+apps2/xdman
+
+######## News & Books
+
+#
+
+######## Office & Productivity
+
+##### lothumbnailer
+apps2/lothumbnailer
+
+##### gscan2pdf
+apps2/gscan2pdf
+
+#### geary
+apps2/geary
+
+#### pantheon-mail
+apps2/pantheon-mail
+
+#### evolution-staging
+apps2/evolution-staging
+
+#### claws-mail
+apps2/claws-mail
+
+######## Games
+
+#### openra - install getdeb before
+sudo apt-fast -y install openra
+
+#### zandronum
+apps2/zandronum
+
+#### Various
+sudo apt-fast -y install violetland bofh
+#sudo apt-fast -y install scourge csmash cdogs-sdl djl
