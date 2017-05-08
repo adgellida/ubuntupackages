@@ -5,5 +5,7 @@
 #http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
 ##sudo add-apt-repository -y ppa:apt-fast/stable
 sudo add-apt-repository -y ppa:saiarcot895/myppa
+#necessary / real
+sudo sed -i 's/zesty/yakkety/g' /etc/apt/sources.list.d/saiarcot895-ubuntu-myppa-zesty.list
 sudo apt-get -y update
 sudo apt-get -y install apt-fast

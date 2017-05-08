@@ -1,6 +1,6 @@
 #!/bin/bash
 
 #### smartgit
-wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-17_0_2.deb
+wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-17_0_3.deb
 sudo dpkg -i smartgit-*.deb
 rm smartgit*.deb
