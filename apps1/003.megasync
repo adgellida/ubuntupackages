@@ -6,10 +6,10 @@
 #sudo apt-fast -y update
 #sudo apt-fast -y install megasync
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_16.10/amd64/megasync-xUbuntu_16.10_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_17.04/amd64/megasync-xUbuntu_17.04_amd64.deb
 
-sudo gdebi --non-interactive megasync-xUbuntu_16.10_amd64.deb
-rm megasync-xUbuntu_16.10_amd64.deb
+sudo gdebi --non-interactive megasync-xUbuntu_17.04_amd64.deb
+rm megasync-xUbuntu_17.04_amd64.deb
 
 #wget https://mega.nz/linux/MEGAsync/xUbuntu_16.04/amd64/megasync-xUbuntu_16.04_amd64.deb
 #sudo dpkg -i megasync-xUbuntu_15.10_amd64.deb
