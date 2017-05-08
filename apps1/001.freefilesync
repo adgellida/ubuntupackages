@@ -1,4 +1,8 @@
 #!/bin/bash
 
-#### freefilesync
-sudo apt-fast -y install freefilesync
+##### freefilesync
+mkdir $HOME/FreeFileSync
+wget http://download1313.mediafireuserdownload.com/a20ud51ss2kg/1nug276qyd1l1xw/FreeFileSync_9.0_Ubuntu_17.04_64-bit.tar.gz -O $HOME/FreeFileSync_9.0_Ubuntu_17.04_64-bit.tar.gz
+cd $HOME
+tar -xf FreeFileSync_9.0_Ubuntu_17.04_64-bit.tar.gz
+rm $HOME/FreeFileSync_9.0_Ubuntu_17.04_64-bit.tar.gz
