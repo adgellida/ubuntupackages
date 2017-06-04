@@ -3,4 +3,5 @@
 #### notepadqq
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 sudo apt-fast -y update
-sudo apt-fast -y install notepadqq notepadqq-gtk
+sudo apt-fast -y install notepadqq #notepadqq-gtk
+#sudo apt-fast -y remove notepadqq-gtk
