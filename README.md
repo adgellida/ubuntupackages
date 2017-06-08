@@ -8,7 +8,9 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
 
-Highly compatible with 16.10 (Yakkety Yak). Not all the 3rd party are compatible. Test it.
+Highly compatible with 17.04 (Zesty). Not all the 3rd party are compatible. Test it.
+
+**Used on [ubunsys](https://github.com/adgellida/ubunsys)**
 
 Instructions
 =============================================
