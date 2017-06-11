@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#### katoolin - https://github.com/LionSec/katoolin
+#https://ubunlog.com/katoolin-herramientas-kali-ubuntu/
+#sudo su
+sudo git clone https://github.com/LionSec/katoolin.git
+sudo cp katoolin/katoolin.py /usr/bin/katoolin
+sudo chmod +x /usr/bin/katoolin
+sudo katoolin
