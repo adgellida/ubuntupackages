@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### indicator-ppa-download-statistics
+sudo add-apt-repository -y ppa:thebernmeister/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install indicator-ppa-download-statistics
