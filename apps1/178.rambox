@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### rambox
+wget https://github.com/saenzramiro/rambox/releases/download/0.5.9/Rambox_0.5.9-x64.deb
+sudo gdebi --non-interactive Rambox*.deb
+rm Rambox*.deb
