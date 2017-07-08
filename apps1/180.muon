@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### muon
+sudo apt-fast -y install muon
