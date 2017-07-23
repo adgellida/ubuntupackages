@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### apt-select
+sudo apt-fast -y install pip
+sudo pip install apt-select
+
+#apt-select --country ES
+##apt-select --country US
