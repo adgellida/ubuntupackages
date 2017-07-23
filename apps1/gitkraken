@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### gitkraken
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo gdebi --non-interactive gitkraken*.deb
+rm gitkraken*.deb

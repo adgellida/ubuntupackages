@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### webcatalog
+wget https://github.com/webcatalog/webcatalog/releases/download/v6.1.0/WebCatalog_6.1.0_amd64.deb
+sudo gdebi --non-interactive WebCatalog*.deb
+rm WebCatalog*.deb
