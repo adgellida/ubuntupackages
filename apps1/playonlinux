@@ -4,6 +4,12 @@
 #sudo add-apt-repository -y ppa:noobslab/apps
 #sudo apt-get -y update
 #sudo apt-get -y install playonlinux
+
+#wget -q "http://deb.playonlinux.com/public.gpg" -O- | sudo apt-key add -
+#sudo wget http://deb.playonlinux.com/playonlinux_xenial.list -O /etc/apt/sources.list.d/playonlinux.list
+#sudo apt-get update
+#sudo apt-get install playonlinux
+
 wget https://www.playonlinux.com/script_files/PlayOnLinux/4.2.12/PlayOnLinux_4.2.12.deb
 sudo gdebi --non-interactive PlayOnLinux*.deb
 rm PlayOnLinux*.deb
