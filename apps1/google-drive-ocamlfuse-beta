@@ -21,3 +21,19 @@ sudo apt-fast -y install google-drive-ocamlfuse
 
 #add at boot
 #https://github.com/astrada/google-drive-ocamlfuse/wiki/Automounting
+
+#google-drive-ocamlfuse "/home/YOURUSER/googledrive"
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop
+test -f ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=/home/$USER/googledrive
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.google-drive-ocamlfuse-ubuntupackages
+Name=1.google-drive-ocamlfuse-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop'
