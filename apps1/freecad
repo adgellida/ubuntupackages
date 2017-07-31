@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### freecad
+sudo apt-fast -y install freecad

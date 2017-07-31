@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### KeeWeb
+wget https://github.com/keeweb/keeweb/releases/download/v1.5.4/KeeWeb-1.5.4.linux.x64.deb
+sudo gdebi --non-interactive KeeWeb*.deb
+rm KeeWeb*.deb

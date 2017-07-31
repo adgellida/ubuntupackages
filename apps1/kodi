@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#### kodi-stable
+#### kodi
 #http://askubuntu.com/questions/763364/how-to-watch-acestream-sopcast-ubuntu-16-04-lts
 sudo apt-fast -y install software-properties-common
 sudo add-apt-repository -y ppa:team-xbmc/ppa

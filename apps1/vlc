@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#### vlc-stable-daily
+#### vlc
 #sudo add-apt-repository -y ppa:videolan/stable-daily - NOT WORKING
 #installing stable version
 sudo apt-fast -y update

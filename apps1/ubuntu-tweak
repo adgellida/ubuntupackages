@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### ubuntu-tweak
+#sudo add-apt-repository -y ppa:tualatrix/next #NEW
+#sudo add-apt-repository -y ppa:tualatrix/ppa #ANCIENT 2
+#sudo add-apt-repository -y ppa:freyja-dev/tualatrix #ANCIENT 1
+#sudo apt-fast -y update
+
+#### getdeb way 1
+wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+sudo gdebi --non-interactive getdeb-repository_0.1-1~getdeb1_all.deb
+rm getdeb-repository_0.1-1~getdeb1_all.deb
+
+sudo apt-fast -y install ubuntu-tweak

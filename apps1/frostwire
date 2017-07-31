@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### frostwire
+#http://www.frostwire.com/
+wget http://dl4.frostwire.com/frostwire/6.5.4/frostwire-6.5.4.all.deb
+sudo gdebi --non-interactive frostwire*.deb
+#rm frostwire*.deb

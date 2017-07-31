@@ -5,32 +5,29 @@ A simple script to install ubuntu packages.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Xubuntu, Ubuntu Kylin, Edubuntu...
 
-Highly compatible with 17.04 (Zesty). Not all the 3rd party are compatible. Test it.
+Highly compatible with 17.04 (Zesty). Not all lower versions are compatible. Test it.
+
+**Not all scripts works 100% ok.** I'm not liable for damages.
 
 **Used on [ubunsys](https://github.com/adgellida/ubunsys)**
 
 Instructions
 =============================================
+
+Is more desirable that you use "Scripts Manager" functionality of[ubunsys](https://github.com/adgellida/ubunsys) to execute these scripts.
+
+Nowadays if you want to do it "manual way"...
+
+**Manual**
+
 Do a backup of your "/etc/apt/sources.list.d" folder. Coming soon automatic...
 Read the code and do your modifications.
 
 Then do these basics steps:
 
-1.Go to your selected script and modify it.
-
-* "installpackages1" if you want to install some basic packages. Recommended for a little advanced users.
-* "installpackages1-minimal" if you want to install some minimal packages. Recommended for normal users.
-* "installpackages2" if you want to check my extra proposed packages.
-* "installpackages3" if you want to check more extra packages.
-* "installpackages4" if you want to check the test packages.
-* "installpackages5" if you want to check problematic packages.
-* "installpackages6" if you want to check more alternative modes to install packages. To test yet.
-
-2. Execute it.
-
-Remember to add exec permissions to all scripts!
+1. Add exec permissions to all scripts!
 
 `sudo chmod 777 archiveName`
 
@@ -38,8 +35,11 @@ Remember to add exec permissions to all scripts!
 
 `sudo chmod 777 -R ./ubuntupackages-master`
 
+2. Go to your selected script, execute it or modify it.
+
 Important
 =============================================
+
 * You can crash your system. It hasn't been tested 100% yet. Give feedback!
 * The desktop environment recommended tested right now is to use MATE desktop.
 * Be careful with unstables repos, comment them if you want.
@@ -48,15 +48,21 @@ Important
 
 TO DO
 =============================================
-* Create app and integrate selectable boxes
+
 * Install
 * Uninstall
 * Detect installed packages
 * Generate a file to import or export
 * Add more apps by user, not only programmer
 
+DONE
+=============================================
+
+* Create app and integrate selectable boxes - [ubunsys](https://github.com/adgellida/ubunsys)
+
 Be care
 =============================================
+
 * errors
 
 appgrid - disabled
@@ -67,18 +73,7 @@ ubuntu-after-install - disabled
 
 ubuntu-after-install
 
-playdeb
-
-getdeb
-
-notepadqq
-
-y-ppa-manager
-
-grub-customizer
-
-vibrancy-colors
-
 Release notes
 =============================================
+
 You can check it [here](https://github.com/adgellida/ubuntupackages/releases)

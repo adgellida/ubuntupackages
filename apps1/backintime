@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#### backintime stable
+#### backintime
 #sudo add-apt-repository -y ppa:bit-team/testing
 sudo add-apt-repository -y ppa:bit-team/stable
 #sudo add-apt-repository -y ppa:bit-team/daily

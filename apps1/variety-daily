@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#### variety-peterlevi-daily
+#### variety-daily
 #sudo add-apt-repository -y ppa:peterlevi/ppa
 #sudo add-apt-repository -y ppa:variety/next
 sudo add-apt-repository -y ppa:variety/daily
