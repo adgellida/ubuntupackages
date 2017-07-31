@@ -1,9 +1,12 @@
 #!/bin/bash
 
 ##### hyper-star-wars
+#https://github.com/hyper-pokemon/hyper-star-wars
+#for now follow instructions and do manual process
 rm linux_deb linux_deb*
 wget https://hyper-updates.now.sh/download/linux_deb
 sudo gdebi --non-interactive linux_deb
 rm linux_deb linux_deb*
+sudo apt-fast -y install npm nodejs
 sudo npm install -g hpm-cli
 sudo hpm install hyper-star-wars
