@@ -16,7 +16,7 @@ Highly compatible with 17.04 (Zesty). Not all lower versions are compatible. Tes
 Instructions
 =============================================
 
-Is more desirable that you use "Scripts Manager" functionality of[ubunsys](https://github.com/adgellida/ubunsys) to execute these scripts.
+Is more desirable that you use "Scripts Manager" functionality of [ubunsys](https://github.com/adgellida/ubunsys) to execute these scripts.
 
 Nowadays if you want to do it "manual way"...
 
