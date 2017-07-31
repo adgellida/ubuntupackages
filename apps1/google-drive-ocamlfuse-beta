@@ -16,8 +16,11 @@ sudo apt-fast -y install google-drive-ocamlfuse
 #mount
 #google-drive-ocamlfuse ~/googledrive
 
+#mount for multiaccount
+#google-drive-ocamlfuse -label label mountpoint
+
 #unmount
-#fusermount -u ~/google-drive
+#fusermount -u ~/googledrive
 
 #add at boot
 #https://github.com/astrada/google-drive-ocamlfuse/wiki/Automounting
