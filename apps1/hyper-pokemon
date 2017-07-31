@@ -2,7 +2,7 @@
 
 ##### hyper-pokemon
 wget https://hyper-updates.now.sh/download/linux_deb
-sudo gdebi --non-interactive hyper.deb
-rm hyper.deb
+sudo gdebi --non-interactive linux_deb
+rm linux_deb
 sudo npm install -g hpm-cli
 sudo hpm install hyper-pokemon
