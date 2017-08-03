@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### ramme
+wget https://github.com/terkelg/ramme/releases/download/v3.2.3/Ramme_3.2.3_amd64.deb
+sudo gdebi --non-interactive Ramme*.deb
+rm Ramme*.deb
