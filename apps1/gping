@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### gping
+sudo snap install gping && sudo snap connect gping:network-observe
+#gping
+#gping address

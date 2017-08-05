@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### exa
+#rust
+#curl https://sh.rustup.rs -sSf | sh
+#sudo apt-fast -y install libhttp-parser2.1
+#wget https://the.exa.website/releases/exa-linux-x86_64-0.7.0.zip
+#unzip exa-linux-x86_64-0.7.0.zip
+#sudo mv exa-linux-x86_64 /usr/local/bin/
+
+curl https://sh.rustup.rs -sSf | sh
+sudo apt-get install libgit2-dev cmake git libhttp-parser2.1
+git clone https://github.com/ogham/exa.git
+sudo make install
