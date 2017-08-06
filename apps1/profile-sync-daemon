@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#### profile-sync-daemon
+#http://www.webupd8.org/2013/02/keep-your-browser-profiles-in-tmpfs-ram.html
+#https://wiki.archlinux.org/index.php/Profile-sync-daemon#Edit_the_config_file
+sudo add-apt-repository -y ppa:graysky/utils
+sudo apt-fast -y update
+sudo apt-fast -y install profile-sync-daemon
+
+#psd
+#systemctl --user start psd.service
+#profile-sync-daemon parse
