@@ -11,4 +11,5 @@ wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.d
 sudo gdebi --non-interactive getdeb-repository_0.1-1~getdeb1_all.deb
 rm getdeb-repository_0.1-1~getdeb1_all.deb
 
+sudo apt-fast -y update
 sudo apt-fast -y install ubuntu-tweak

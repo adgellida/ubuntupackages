@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### makehuman
+#### meteo-qt
 
 #### getdeb way 1
 wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
@@ -8,4 +8,4 @@ sudo gdebi --non-interactive getdeb-repository_0.1-1~getdeb1_all.deb
 rm getdeb-repository_0.1-1~getdeb1_all.deb
 
 sudo apt-fast -y update
-sudo apt-fast -y install makehuman
+sudo apt-fast -y install meteo
