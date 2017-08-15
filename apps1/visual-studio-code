@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### visual-studio-code
+wget https://go.microsoft.com/fwlink/?LinkID=760868 - code_amd64.deb
+sudo gdebi --non-interactive code_amd64.deb
+rm code_amd64.deb
