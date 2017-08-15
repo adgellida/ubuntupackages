@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### RPCS3
+##### rpcs3
 wget https://rpcs3.net/cdn/builds/rpcs3-v0.0.3-2017-07-27-f613901-7417_linux64.AppImage
 sudo chmod a+x ./rpcs3-*_linux64.AppImage
 ./rpcs3-*_linux64.AppImage
