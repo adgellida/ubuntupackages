@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### canonical-kernel-team-ppa
+sudo add-apt-repository -y ppa:canonical-kernel-team/ppa
+sudo apt-get -y update
+sudo apt-get -y upgrade
