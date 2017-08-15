@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#### cysboard
+#https://ubunlog.com/cysboard-alternativa-ligera/
+git clone https://github.com/mike168m/Cysboard.git
+cd Cysboard/
+mkdir build
+sudo apt-fast -y install gtk+-3.0
+cmake .
+sudo make 

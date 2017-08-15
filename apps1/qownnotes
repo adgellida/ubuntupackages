@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### qownnotes
+sudo apt-add-repository -y ppa:pbek/qownnotes
+sudo apt-fast -y update
+sudo apt-fast -y install qownnotes

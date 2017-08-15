@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#### mps-youtube
+#https://ubunlog.com/mps-youtube-videos-terminal/
+sudo apt-fast -y install python3-pip
+sudo apt-fast -y update
+sudo pip3 install youtube-dl
+sudo apt-fast -y install mps-youtube mplayer
+
+#mpsyt
+#set player mplayer
+#set search_music false
+#set show_video true
+#mps-youtube resultados de búsqueda
+#.nirvana
+#d ITEM-NUMBER
