@@ -2,5 +2,14 @@
 
 ##### rpcs3
 sudo wget https://rpcs3.net/cdn/builds/rpcs3-v0.0.3-2017-08-21-37bc2b3-7763_linux64.AppImage -O /usr/local/bin/rpcs3-v0.0.3-2017-08-21-37bc2b3-7763_linux64.AppImage
-#sudo chmod a+x ./rpcs3-*_linux64.AppImage
-#./rpcs3-*_linux64.AppImage --install
+sudo chmod a+x /usr/local/bin/rpcs3-v0.0.3-2017-08-21-37bc2b3-7763_linux64.AppImage
+
+test -f ~/.local/share/applications/rpcs3.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Icon=
+Exec=/usr/local/bin/rpcs3-v0.0.3-2017-08-21-37bc2b3-7763_linux64.AppImage
+Categories=Game
+Name[es_ES]=rpcs3
+Name=rpcs3
+Comment[es_ES]=
+Comment=" >> ~/.local/share/applications/rpcs3.desktop'

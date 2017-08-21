@@ -2,5 +2,14 @@
 
 ##### upterm
 sudo wget https://github.com/railsware/upterm/releases/download/v0.3.2/upterm-0.3.2-x86_64-linux.AppImage -O /usr/local/bin/upterm-0.3.2-x86_64-linux.AppImage
-#sudo chmod a+x ./upterm-*-linux.AppImage
-#./upterm-*-linux.AppImage
+sudo chmod a+x /usr/local/bin/upterm-0.3.2-x86_64-linux.AppImage
+
+test -f ~/.local/share/applications/upterm.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Icon=
+Exec=/usr/local/bin/upterm-0.3.2-x86_64-linux.AppImage
+Categories=System
+Name[es_ES]=upterm
+Name=upterm
+Comment[es_ES]=
+Comment=" >> ~/.local/share/applications/upterm.desktop'
