@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### mellowplayer
+sudo wget https://github.com/ColinDuquesnoy/MellowPlayer/releases/download/Continuous/MellowPlayer-x86_64.AppImage -O /usr/local/bin/MellowPlayer-x86_64.AppImage
+#sudo chmod a+x ./MellowPlayer-*.AppImage
+#./MellowPlayer-*.AppImage --install

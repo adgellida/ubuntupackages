@@ -1,6 +1,6 @@
 #!/bin/bash
 
 ##### upterm
-wget https://github.com/railsware/upterm/releases/download/v0.3.2/upterm-0.3.2-x86_64-linux.AppImage
-sudo chmod a+x ./upterm-*-linux.AppImage
-./upterm-*-linux.AppImage
+sudo wget https://github.com/railsware/upterm/releases/download/v0.3.2/upterm-0.3.2-x86_64-linux.AppImage -O /usr/local/bin/upterm-0.3.2-x86_64-linux.AppImage
+#sudo chmod a+x ./upterm-*-linux.AppImage
+#./upterm-*-linux.AppImage

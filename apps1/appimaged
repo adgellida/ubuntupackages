@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### appimaged
+wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimaged-x86_64.AppImage
+sudo chmod a+x appimaged-x86_64.AppImage
+sudo ./appimaged-x86_64.AppImage --install
