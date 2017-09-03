@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### sandman
+wget https://github.com/alexanderepstein/Sandman/releases/download/v1.9.2/Sandman_1.9.2_amd64.deb
+sudo gdebi --non-interactive Sandman*.deb
+rm Sandman*.deb

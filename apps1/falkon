@@ -1,0 +1,5 @@
+#!/bin/bash
+
+##### falkon
+sudo snap install kde-frameworks-5
+sudo snap install falkon --edge

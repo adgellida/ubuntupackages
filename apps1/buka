@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### buka
+wget https://github.com/oguzhaninan/Buka/releases/download/v1.0.0/Buka_1.0.0_amd64.deb
+sudo gdebi --non-interactive Buka_*.deb
+rm Buka_*.deb

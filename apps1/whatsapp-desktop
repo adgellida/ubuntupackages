@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### buka
+wget https://github.com/Enrico204/Whatsapp-Desktop/releases/download/v0.3.13/whatsapp-desktop_0.3.13-1_amd64.deb
+sudo gdebi --non-interactive whatsapp*.deb
+rm whatsapp*.deb

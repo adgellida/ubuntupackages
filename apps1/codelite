@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### codelite
+sudo add-apt-repository -y ppa:eugenesan/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install codelite

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### apart-gtk
+wget https://github.com/alexheretic/apart-gtk/releases/download/v0.14/apart-gtk_0.14_amd64.deb
+sudo gdebi --non-interactive apart*.deb
+rm apart*.deb
