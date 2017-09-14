@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### atom-ide-ui
+sudo npm install atom-ide-ui

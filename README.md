@@ -8,7 +8,8 @@
     <a href="https://github.com/adgellida/ubuntupackages/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubuntupackages.svg" alt="open issues"></a>
     <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntupackages/total.svg" alt="total downloads"></a>
     <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntupackages/v2017.09.09/total.svg" alt="total downloads latest release"></a>
-    <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a> <img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/commits/master" target="_blank"><img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
     <a href="https://github.com/adgellida/ubuntupackages/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://github.com/adgellida/ubuntupackages/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
 </p>
