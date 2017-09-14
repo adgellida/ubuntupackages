@@ -1,6 +1,18 @@
 <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" width="80"> ubuntupackages
 =============================================
 
+<p align="center">
+    <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/ubuntupackages.svg" alt="stars"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/ubuntupackages.svg" alt="forks"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/ubuntupackages.svg" alt="open issues"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntupackages/total.svg" alt="total downloads"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/ubuntupackages/v2017.09.09/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a> <img src="https://img.shields.io/maintenance/yes/2017.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
+    <a href="https://github.com/adgellida/ubuntupackages/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+</p>
+
 A simple script to install ubuntu packages.
 
 Compatible with any Debian based system:
