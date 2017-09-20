@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### sushi-browser
+wget https://sushib.me/dl/sushi-browser_0.4.0_amd64.deb
+sudo gdebi --non-interactive sushi-browser*.deb
+rm sushi-browser*.deb
