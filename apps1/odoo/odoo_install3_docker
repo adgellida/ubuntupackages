@@ -8,19 +8,12 @@ sudo docker pull postgres:9.4
 
 #docker postgres
 
-sudo docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4
+sudo docker run --restart="always" -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4
 
 #docker odoo
 
-sudo docker run -p 0.0.0.0:8069:8069 --name odoo --link db:db -t odoo
+sudo docker run --restart="always" -p 0.0.0.0:8069:8069 --name odoo --link db:db -t odoo
 
-#make bootable
+#service
 
-file=odoo_install3_docker_init
-
-sudo rm /etc/init.d/$file
-sudo cp odoo_install3_docker_init /etc/init.d/$file
-#echo '#!/bin/bash' >> /etc/init.d/$file
-#echo "sudo docker start db & sudo docker start odoo & exit" >> /etc/init.d/$file
-sudo chmod u+x /etc/init.d/$file
 sudo systemctl enable docker
