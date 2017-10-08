@@ -1,6 +1,15 @@
 #!/bin/bash
 
 ##### tribler
-wget https://github.com/Tribler/tribler/releases/download/v7.0.0-rc2/tribler_7.0.0-rc2_all.deb
+
+owner=Tribler
+repo=tribler
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
 sudo gdebi --non-interactive tribler*.deb
 rm tribler*.deb

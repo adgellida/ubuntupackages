@@ -1,6 +1,15 @@
 #!/bin/bash
 
 #### resetter
-wget https://github.com/gaining/Resetter/releases/download/v1.0.0-stable/resetter_1.0.0-stable_all.deb
-sudo dpkg -i resetter*.deb
+
+owner=gaining
+repo=Resetter
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive resetter*.deb
 rm resetter*.deb

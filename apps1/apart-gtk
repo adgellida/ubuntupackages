@@ -1,6 +1,15 @@
 #!/bin/bash
 
 ##### apart-gtk
-wget https://github.com/alexheretic/apart-gtk/releases/download/v0.14/apart-gtk_0.14_amd64.deb
+
+owner=alexheretic
+repo=apart-gtk
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*amd64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
 sudo gdebi --non-interactive apart*.deb
 rm apart*.deb

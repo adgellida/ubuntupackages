@@ -1,6 +1,0 @@
-#!/bin/bash
-
-#### nylas
-wget https://edgehill.nylas.com/download?platform=linux-deb
-sudo dpkg -i NylasMail.deb
-rm NylasMail.deb

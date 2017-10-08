@@ -1,6 +1,15 @@
 #!/bin/bash
 
 ##### sandman
-wget https://github.com/alexanderepstein/Sandman/releases/download/v1.9.2/Sandman_1.9.2_amd64.deb
+
+owner=alexanderepstein
+repo=Sandman
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*amd64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
 sudo gdebi --non-interactive Sandman*.deb
 rm Sandman*.deb

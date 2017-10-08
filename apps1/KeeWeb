@@ -1,6 +1,15 @@
 #!/bin/bash
 
 #### KeeWeb
-wget https://github.com/keeweb/keeweb/releases/download/v1.5.4/KeeWeb-1.5.4.linux.x64.deb
+
+owner=keeweb
+repo=keeweb
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*x64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
 sudo gdebi --non-interactive KeeWeb*.deb
 rm KeeWeb*.deb

@@ -2,6 +2,14 @@
 
 #### cerebro - http://blog.desdelinux.net/aumentar-la-productividad-en-linux/#
 
-wget https://github.com/KELiON/cerebro/releases/download/v0.2.3/cerebro_0.2.3_amd64.deb
+owner=KELiON
+repo=cerebro
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
 sudo gdebi --non-interactive cerebro*.deb
 rm cerebro*.deb

@@ -2,17 +2,15 @@
 
 ##### stacer
 #http://blog.desdelinux.net/optimizar-debian-ubuntu-linux-mint-derivados-stacer/
-wget https://github.com/oguzhaninan/Stacer/releases/download/v1.0.8/stacer_1.0.8_amd64.deb
-sudo gdebi --non-interactive stacer*.deb
-#sudo dpkg -i Stacer*.deb && sudo apt install -f
-rm stacer*.deb
-#/usr/share/stacer/Stacer - CHANGE
 
-######## do
-#[Desktop Entry] 
-#Comment=Stacer 
-#Terminal=false 
-#Name=Stacer 
-#Exec=/usr/share/stacer/Stacer 
-#Type=Application 
-#Categories=Network; 
+owner=oguzhaninan
+repo=Stacer
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive stacer*.deb
+rm stacer*.deb
