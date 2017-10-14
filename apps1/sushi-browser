@@ -1,6 +1,20 @@
 #!/bin/bash
 
 ##### sushi-browser
-wget https://sushib.me/dl/sushi-browser_0.4.0_amd64.deb
+wget https://sushib.me/dl/sushi-browser_0.6.1_amd64.deb
 sudo gdebi --non-interactive sushi-browser*.deb
 rm sushi-browser*.deb
+
+##### sushi-browser
+
+#owner=kura52
+#repo=sushi-browser
+
+#curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+#| grep "browser_download_url.*amd64.deb" \
+#| cut -d : -f 2,3 \
+#| tr -d \" \
+#| wget -qi -
+
+#sudo gdebi --non-interactive sushi-browser*.deb
+#rm sushi-browser*.deb

@@ -27,3 +27,5 @@ else
 	sudo apt-get -y install ubunsys
 
 fi
+
+rm ubunsys*
