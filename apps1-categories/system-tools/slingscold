@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### slingscold
+sudo add-apt-repository -y ppa:noobslab/macbuntu
+sudo apt-fast -y update
+sudo apt-fast -y install slingscold

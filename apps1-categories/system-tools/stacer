@@ -1,0 +1,16 @@
+#!/bin/bash
+
+##### stacer
+#http://blog.desdelinux.net/optimizar-debian-ubuntu-linux-mint-derivados-stacer/
+
+owner=oguzhaninan
+repo=Stacer
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive stacer*.deb
+rm stacer*.deb

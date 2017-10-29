@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### remmina
+sudo apt-fast -y install remmina

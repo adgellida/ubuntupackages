@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### i2p
+#https://sinfallas.wordpress.com/2014/11/23/i2p-en-debian-ubuntu-mint-y-trisquel/
+#http://lamiradadelreplicante.com/2013/01/29/anonimato-en-la-red-i2p-y-su-instalacion-en-gnulinux/
+
+sudo add-apt-repository -y ppa:i2p-maintainers/i2p
+sudo apt-fast -y update
+sudo apt-fast -y install i2p #i2p-router i2pd
+
+##A petición del usuario
+#i2prouter start
+##Como servicio
+#dpkg-reconfigure i2p
+
+#ancient
+#i2prouter start
+#http://localhost:7657

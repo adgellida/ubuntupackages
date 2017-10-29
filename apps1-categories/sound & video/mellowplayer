@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##### mellowplayer
+sudo wget https://github.com/ColinDuquesnoy/MellowPlayer/releases/download/Continuous/MellowPlayer-x86_64.AppImage -O /usr/local/bin/MellowPlayer-x86_64.AppImage
+sudo chmod a+x /usr/local/bin/MellowPlayer-x86_64.AppImage
+
+test -f ~/.local/share/applications/mellowplayer.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Icon=
+Exec=/usr/local/bin/MellowPlayer-x86_64.AppImage
+Categories=AudioVideo
+Name[es_ES]=mellowplayer
+Name=mellowplayer
+Comment[es_ES]=
+Comment=" >> ~/.local/share/applications/mellowplayer.desktop'

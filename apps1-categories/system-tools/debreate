@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### debreate
+sudo add-apt-repository -y ppa:antumdeluge/debreate
+sudo apt-fast -y update
+sudo apt-fast -y install debreate

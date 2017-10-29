@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### lutris
+#https://lutris.net/games/
+#wget http://lutris.net/releases/lutris_0.3.6.3_all.deb
+#sudo dpkg -i lutris*.deb
+#rm lutris*.deb
+
+ver=$(lsb_release -sr); if [ $ver != "17.04" -a $ver != "16.10" -a $ver != "15.10" -a $ver != "16.04" ]; then ver=16.04; fi
+
+echo "deb http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list
+wget -q -O - http://download.opensuse.org/repositories/home:/strycore/xUbuntu_$ver/Release.key | sudo apt-key add -
+sudo apt-fast -y update
+sudo apt-fast -y install lutris

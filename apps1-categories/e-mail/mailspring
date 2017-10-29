@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### mailspring
+wget https://updates.getmailspring.com/download?platform=linuxDeb -O mailspring.deb
+sudo gdebi --non-interactive mailspring.deb
+rm mailspring.deb

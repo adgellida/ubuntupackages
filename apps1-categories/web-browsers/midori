@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### midori
+##sudo add-apt-repository -y ppa:midori/ppa - not updated
+##sudo add-apt-repository -y ppa:midori/midori-dev - not updated to latest
+sudo apt-fast -y update
+sudo apt-fast -y install midori

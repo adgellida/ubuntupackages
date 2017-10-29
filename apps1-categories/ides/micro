@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### micro-text-editor
+
+owner=zyedidia
+repo=micro
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*linux64.tar.gz" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+tar -xvf *linux64.tar.gz
+cd micro-*
+./micro
+sudo cp micro /usr/bin
+sudo apt-fast -y install xclip

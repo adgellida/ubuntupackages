@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### wine
+sudo dpkg --add-architecture i386
+sudo apt-fast -y install wine
+
+## Wine config
+#sudo apt-fast -y install q4wine winetricks
+#export WINEPREFIX=prefix32
+#export WINEARCH=win32
+#winecfg

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### bookworm
+sudo add-apt-repository -y ppa:bookworm-team/bookworm
+sudo apt-fast -y update
+sudo apt-fast -y install bookworm

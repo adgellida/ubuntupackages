@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### shotwell
+sudo add-apt-repository -y ppa:yg-jensge/shotwell
+sudo apt-fast -y update
+sudo apt-fast -y install shotwell

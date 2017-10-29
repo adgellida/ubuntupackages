@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### qdirstat
+sudo add-apt-repository -y ppa:nathan-renniewaldock/qdirstat
+sudo apt-fast -y update
+sudo apt-fast -y install qdirstat

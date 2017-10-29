@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### vineyard
+sudo add-apt-repository -y ppa:cybolic/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install vineyard
+
+#run vineyard-preferences

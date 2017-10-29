@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#### google-drive-ocamlfuse
+#http://www.omgubuntu.co.uk/2017/04/mount-google-drive-ocamlfuse-linux
+#https://github.com/astrada/google-drive-ocamlfuse
+
+sudo add-apt-repository -y ppa:alessandro-strada/ppa
+sudo apt-fast -y update
+sudo apt-fast -y install google-drive-ocamlfuse
+
+#config
+#google-drive-ocamlfuse
+
+#mkdir ~/googledrive
+
+#mount
+#google-drive-ocamlfuse ~/googledrive
+
+#mount for multiaccount
+#google-drive-ocamlfuse -label label mountpoint
+
+#unmount
+#fusermount -u ~/googledrive
+
+#add at boot
+#https://github.com/astrada/google-drive-ocamlfuse/wiki/Automounting
+
+#google-drive-ocamlfuse "/home/YOURUSER/googledrive"
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop
+test -f ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=google-drive-ocamlfuse "/home/$USER/googledrive"
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.google-drive-ocamlfuse-ubuntupackages
+Name=1.google-drive-ocamlfuse-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.google-drive-ocamlfuse-ubuntupackages.desktop'

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### appimaged
+wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimaged_1.0_amd64.deb
+sudo gdebi --non-interactive appimaged*.deb
+rm appimaged*.deb
+systemctl --user enable appimaged
+systemctl --user start appimaged

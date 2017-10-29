@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##### rambox
+
+owner=saenzramiro
+repo=rambox
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*x64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive Rambox*.deb
+rm Rambox*.deb

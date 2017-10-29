@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##### komorebi
+
+owner=iabem97
+repo=komorebi
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*64-bit.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive Komorebi*.deb
+rm Komorebi*.deb

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#### clipit
+sudo apt-fast -y install clipit
+
+#add at boot
+#mkdir ~/.config/autostart
+#rm ~/.config/autostart/1.clipit-ubuntupackages.desktop
+#test -f ~/.config/autostart/1.clipit-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Exec=clipit
+#Hidden=false
+#X-MATE-Autostart-enabled=true
+#X-MATE-Autostart-Delay=50
+#Name[es_ES]=1.clipit-ubuntupackages
+#Name=1.clipit-ubuntupackages
+#Comment[es_ES]=
+#Comment=" >> ~/.config/autostart/1.clipit-ubuntupackages.desktop'

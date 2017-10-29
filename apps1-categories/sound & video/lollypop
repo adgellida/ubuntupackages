@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### lollypop
+sudo add-apt-repository -y ppa:gnumdk/lollypop
+sudo apt-fast -y update
+sudo apt-fast -y install lollypop

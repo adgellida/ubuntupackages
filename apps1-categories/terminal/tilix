@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### terminix
+sudo add-apt-repository -y ppa:webupd8team/terminix
+sudo apt-fast -y update
+sudo apt-fast -y install tilix
+
+#.bashrc 
+#if [ $TERMINIX_ID ] || [ $VTE_VERSION ]; then
+#        source /etc/profile.d/vte.sh
+#fi

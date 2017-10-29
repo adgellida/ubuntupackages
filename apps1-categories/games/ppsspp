@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### ppsspp
+sudo apt-fast -y install libsdl1.2-dev
+sudo add-apt-repository -y ppa:ppsspp/stable
+sudo apt-fast -y update 
+sudo apt-fast -y install ppsspp-qt ppsspp-sdl

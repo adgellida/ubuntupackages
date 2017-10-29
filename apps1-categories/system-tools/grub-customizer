@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### grub-customizer
+sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+sudo apt-fast -y update
+sudo apt-fast -y install grub-customizer

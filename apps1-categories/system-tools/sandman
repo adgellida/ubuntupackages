@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##### sandman
+
+owner=alexanderepstein
+repo=Sandman
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*amd64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive Sandman*.deb
+rm Sandman*.deb

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### caja-extensions
+sudo add-apt-repository -y ppa:costales/caja
+sudo apt-fast -y update
+#sudo apt-fast -y install deja-dup-caja

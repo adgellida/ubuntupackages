@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#### colorls - http://www.omgubuntu.co.uk/2017/07/add-bling-ls-bash-command-colorls
+#### https://nerdfonts.com/#downloads
+#### https://github.com/ryanoasis/nerd-fonts
+#### https://github.com/athityakumar/colorls
+
+sudo apt-fast -y install ruby ruby-dev ruby-colorize
+
+#install here /usr/share/fonts/truetype
+
+sudo apt-fast -y install libncurses5-dev libncursesw5-dev
+
+sudo gem install colorls

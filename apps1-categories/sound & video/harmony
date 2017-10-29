@@ -1,0 +1,15 @@
+#!/bin/bash
+
+##### harmony
+
+owner=vincelwt
+repo=harmony
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*x64.deb" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+sudo gdebi --non-interactive harmony*.deb
+rm harmony*.deb

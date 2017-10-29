@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### green-recorder
+sudo add-apt-repository -y ppa:mhsabbagh/greenproject
+sudo apt-fast -y update
+sudo apt-fast -y install green-recorder

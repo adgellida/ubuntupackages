@@ -1,0 +1,28 @@
+#!/bin/bash
+
+##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
+mkdir $HOME/Telegram
+wget https://tdesktop.com/linux -O $HOME/telegram.tar.xz
+wget https://desktop.telegram.org/img/td_logo.png -O $HOME/Telegram/td_logo.png
+cd $HOME
+tar -xf telegram.tar.xz
+rm $HOME/telegram.tar.xz
+
+#ppa
+#sudo add-apt-repository -y ppa:atareao/telegram
+#sudo apt-fast -y update
+#sudo apt-fast -y install scudcloud
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.telegram-ubuntupackages.desktop
+test -f ~/.config/autostart/1.telegram-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=$HOME/Telegram/Telegram -startintray %u
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.telegram-ubuntupackages
+Name=1.telegram-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.telegram-ubuntupackages.desktop'

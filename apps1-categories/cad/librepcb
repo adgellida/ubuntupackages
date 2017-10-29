@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#### librepcb
+sudo wget https://bintray.com/librepcb/LibrePCB-Nightly/download_file?file_path=LibrePCB-Nightly-Linux-x86_64.AppImage -O /usr/local/bin/LibrePCB-Nightly-Linux-x86_64.AppImage
+sudo chmod a+x /usr/local/bin/LibrePCB-Nightly-Linux-x86_64.AppImage
+
+test -f ~/.local/share/applications/librepcb.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Icon=
+Exec=/usr/local/bin/LibrePCB-Nightly-Linux-x86_64.AppImage
+Categories=Development
+Name[es_ES]=librepcb
+Name=librepcb
+Comment[es_ES]=
+Comment=" >> ~/.local/share/applications/librepcb.desktop'

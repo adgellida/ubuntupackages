@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#### teamviewer
+#http://www.teamviewer.com/es/download/linux.aspx
+#http://www.marcosbox.org/2016/10/installare-teamviewer-ubuntu-16-10.html
+wget http://cz.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_i386.deb
+sudo gdebi --non-interactive libpng12-0_1.2.54-1ubuntu1_i386.deb
+sudo dpkg --add-architecture i386
+sudo apt-fast -y update
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo gdebi --non-interactive teamviewer_i386.deb
+#sudo dpkg --remove-architecture i386
+#sudo apt-fast -f -y install
+rm teamviewer_i386.deb
+#sudo dpkg --remove-architecture i386
+
+#https://thelinuxcauldron.wordpress.com/2013/06/22/fix-this-getting-teamviewer-to-run-on-startup/#more-946
+
+sudo teamviewer --daemon enable
+
+###In advanced - not show contacts at boot
+
+##not working
+#sudo cp /opt/teamviewer/tv_bin/script/teamviewerd.service /etc/init.d/teamviewerd
+#sudo service teamviewerd start
+#sudo update-rc.d teamviewerd defaults
+
+##wait a few moments, costs to init
+
+#add at boot
+mkdir ~/.config/autostart
+rm ~/.config/autostart/1.teamviewer-ubuntupackages.desktop
+test -f ~/.config/autostart/1.teamviewer-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Exec=teamviewer
+Hidden=false
+X-MATE-Autostart-enabled=true
+X-MATE-Autostart-Delay=50
+Name[es_ES]=1.teamviewer-ubuntupackages
+Name=1.teamviewer-ubuntupackages
+Comment[es_ES]=
+Comment=" >> ~/.config/autostart/1.teamviewer-ubuntupackages.desktop'

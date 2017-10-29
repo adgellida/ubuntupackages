@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#angrysearch
+sudo apt-fast -y install python3-pyqt5
+cd $HOME
+
+owner=DoTheEvo
+repo=ANGRYsearch
+
+curl -s https://api.github.com/repos/$owner/$repo/releases/latest \
+| grep "browser_download_url.*tar.gz" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi -
+
+
+mkdir $HOME/ANGRYsearch
+tar zxvf $HOME/*tar.gz -C $HOME/ANGRYsearch
+rm $HOME/*tar.gz
+cd $HOME/ANGRYsearch/ANGRYsearch-*
+chmod +x install.sh
+sudo ./install.sh
+rm -rf $HOME/ANGRYsearch

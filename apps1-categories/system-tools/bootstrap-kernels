@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### bootstrap-kernels
+sudo add-apt-repository -y ppa:canonical-kernel-team/bootstrap
+#necessary / real
+sudo sed -i 's/zesty/artful/g' /etc/apt/sources.list.d/canonical-kernel-team-ubuntu-bootstrap-zesty.list
+sudo apt-fast -y update
+sudo apt-fast -y upgrade

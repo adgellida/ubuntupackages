@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+sudo apt-fast -y update
+sudo apt-fast -y install y-ppa-manager

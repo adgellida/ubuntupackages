@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### systemback
+sudo apt-add-repository -y ppa:nemh/systemback
+#necessary / real
+#sudo sed -i 's/zesty/yakkety/g' /etc/apt/sources.list.d/nemh-ubuntu-systemback-zesty.list
+sudo apt-fast -y update
+sudo apt-fast -y install systemback

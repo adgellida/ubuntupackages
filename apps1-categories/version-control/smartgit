@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### smartgit
+wget http://www.syntevo.com/static/smart/download/smartgit/smartgit-17_0_3.deb
+sudo gdebi --non-interactive smartgit-*.deb
+rm smartgit*.deb
