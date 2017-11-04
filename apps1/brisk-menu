@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### brisk-menu
+
+sudo add-apt-repository -y ppa:flexiondotorg/brisk-menu
+sudo apt-fast -y update
+sudo apt-fast -y install mate-applet-brisk-menu

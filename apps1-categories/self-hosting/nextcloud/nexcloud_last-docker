@@ -6,7 +6,7 @@ sudo curl -sSL https://get.docker.com/ | sh
 
 sudo docker pull nextcloud
 
-sudo docker run --restart="always" -d -p 8080:80 nextcloud --name nextcloud
+sudo docker run --restart="always" -d -p 8080:80 --name nextcloud nextcloud
 
 #sudo docker run --restart="always" -p 0.0.0.0:8069:8069 --name odoo --link db:db -t odoo:10.0
 
