@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### android-file-transfer
+sudo add-apt-repository -y ppa:samoilov-lex/aftl-stable
+sudo apt-fast -y update
+sudo apt-fast -y install android-file-transfer

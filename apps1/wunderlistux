@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### wunderlistux
+wget https://github.com/edipox/wunderlistux/releases/download/Linux-0.0.8/Wunderlistux_0.0.8_amd64.deb
+sudo gdebi --non-interactive Wunderlistux*.deb
+rm Wunderlistux*.deb
