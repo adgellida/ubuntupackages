@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Firts install nodejs manually with ubunsys
+sudo ./nodejs
+#### crontab-ui - https://github.com/alseambusher/crontab-ui
+sudo npm install -g crontab-ui
+#sudo PORT=9001 crontab-ui
