@@ -10,6 +10,3 @@
 #### Qt5 dependencies
 #http://wiki.qt.io/Qt5_dependencies
 sudo apt-fast -y install mesa-common-dev libx11-xcb-dev libglu1-mesa-dev qt5-default
-
-#### Dev Utils
-#Install 081.dev-utils
