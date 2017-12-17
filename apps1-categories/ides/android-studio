@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### android-studio
+sudo add-apt-repository -y ppa:maarten-fonville/android-studio
+sudo apt-fast -y update
+sudo apt-fast -y install android-studio

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### nodejs - https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/#
+sudo apt-fast y install python-software-properties
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-fast -y install nodejs
