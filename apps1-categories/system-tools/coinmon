@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### coinmon
+sudo apt-fast -y install nodejs npm
+sudo npm install -g coinmon
