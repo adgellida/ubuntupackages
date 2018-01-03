@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### fsociety
+git clone https://github.com/Manisso/fsociety.git
+cd fsociety && python fsociety.py
