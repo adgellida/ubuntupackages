@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#sudo apt-fast -y install curl
+
+#sudo curl -sSL https://get.docker.com/ | sh
+
+#sudo docker pull odoo:10.0
+
+#sudo docker pull postgres:9.4
+
+#service
+
+#sudo systemctl enable docker
+
+#docker postgres
+
+sudo docker run --restart always -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4
+
+#docker odoo
+
+sudo docker run --restart always -p 0.0.0.0:8069:8069 -v /home/$USER/odoo-extra-addons:/mnt/extra-addons --name odoo --link db:db -t odoo:10.0
