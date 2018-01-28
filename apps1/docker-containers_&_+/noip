@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker run --restart always --name=noip -d -v /etc/localtime:/etc/localtime -v /home/$USER/noip/config:/config coppit/no-ip
