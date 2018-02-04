@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo snap install nextcloud
-sudo snap set nextcloud ports.http=81
+sudo snap set nextcloud ports.http=8081
