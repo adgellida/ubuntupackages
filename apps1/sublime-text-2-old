@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### sublime-text-2
+sudo add-apt-repository -y ppa:webupd8team/sublime-text-2
+sudo apt-fast -y update
+sudo apt-fast -y install sublime-text

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+USER=usuario
+
 #sudo apt-fast -y install curl
 
 #sudo curl -sSL https://get.docker.com/ | sh
