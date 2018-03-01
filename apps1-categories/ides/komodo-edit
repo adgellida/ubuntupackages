@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#### komodo-edit
+#sudo apt-add-repository -y ppa:mystic-mirage/komodo-edit
+#sudo apt-fast -y update
+#sudo apt-fast -y install komodo-edit
+
+wget http://downloads.activestate.com/Komodo/releases/11.0.2/Komodo-Edit-11.0.2-18122-linux-x86_64.tar.gz
+tar -xzf Komodo-Edit-11.0.2-18122-linux-x86_64.tar.gz
+cd Komodo-Edit-11.0.2-18122-linux-x86_64
+sudo ./install.sh
