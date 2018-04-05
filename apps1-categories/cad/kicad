@@ -4,6 +4,11 @@
 #sudo add-apt-repository -y ppa:js-reynaud/kicad-package-daily-stable
 #sudo add-apt-repository -y ppa:adamwolf/kicad-trusty-backports
 #sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad		#dev
+
 sudo add-apt-repository -y ppa:js-reynaud/kicad-4	#stable
 sudo apt-fast -y update
 sudo apt-fast -y install kicad
+
+#sudo add-apt-repository -y ppa:js-reynaud/kicad-5
+#sudo apt-fast -y update
+#sudo apt-fast -y install kicad kicad-libraries kicad-symbols kicad-templates kicad-footprints
