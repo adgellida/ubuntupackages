@@ -1,5 +1,7 @@
 #! /bin/sh
 sudo apt install -y rkhunter
-sudo rkhunter
+sudo rkhunter --update
+sudo rkhunter --propupd
+sudo rkhunter --check
 echo
 read -p "Press enter to exit" nothing
