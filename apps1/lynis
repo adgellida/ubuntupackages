@@ -1,0 +1,6 @@
+#! /bin/sh
+git clone https://github.com/CISOfy/lynis
+cd lynis
+sudo ./lynis audit system
+echo
+read -p "Press enter to exit" nothing

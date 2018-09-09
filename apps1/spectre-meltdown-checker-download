@@ -1,0 +1,9 @@
+#! /bin/sh
+wget https://meltdown.ovh -O spectre-meltdown-checker.sh
+chmod +x spectre-meltdown-checker.sh
+sudo ./spectre-meltdown-checker.sh
+#sleep 5
+#read -p "Press [Enter] key to start backup..."
+echo
+read -p "Press enter to exit" nothing
+rm spectre-meltdown-checker.sh

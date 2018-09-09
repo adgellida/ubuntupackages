@@ -1,0 +1,6 @@
+#!/bin/bash
+
+wget http://www.rfxn.com/downloads/maldetect-current.tar.gz
+tar -xvf maldetect-current.tar.gz
+cd maldetect-*
+sudo ./install.sh
