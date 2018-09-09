@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sduo apt install -y clamav
+
 cd /tmp
 wget http://www.ispprotect.com/download/ispp_scan.tar.gz
 tar xzf ispp_scan.tar.gz
