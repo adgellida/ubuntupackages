@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /tmp
+wget http://www.ispprotect.com/download/ispp_scan.tar.gz
+tar xzf ispp_scan.tar.gz
+./ispp_scan
+echo
+read -p "Press enter to exit" nothing
