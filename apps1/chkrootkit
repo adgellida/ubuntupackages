@@ -1,5 +1,5 @@
 #! /bin/sh
-sudo apt install chkrootkit
+sudo apt install -y chkrootkit
 sudo chkrootkit
 echo
 read -p "Press enter to exit" nothing

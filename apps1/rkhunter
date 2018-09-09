@@ -1,5 +1,5 @@
 #! /bin/sh
-sudo apt install rkhunter
+sudo apt install -y rkhunter
 sudo rkhunter
 echo
 read -p "Press enter to exit" nothing
