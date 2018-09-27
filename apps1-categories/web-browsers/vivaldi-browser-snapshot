@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#### vivaldi-browser-snapshot
+
+#wget https://downloads.vivaldi.com/stable/vivaldi-stable_1.12.955.36-1_amd64.deb
+#sudo gdebi --non-interactive vivaldi-stable_*.deb
+#rm vivaldi-stable_*.deb
+
+test -f /etc/apt/sources.list.d/vivaldi.list.list || sudo sh -c 'echo "deb http://repo.vivaldi.com/snapshot/deb/ stable main" >> /etc/apt/sources.list.d/vivaldi.list'
+sudo apt-fast -y update
+sudo apt-fast -y install vivaldi-snapshot
+
+sudo apt-fast install -y chromium-codecs-ffmpeg-extra pepperflashplugin-nonfree
