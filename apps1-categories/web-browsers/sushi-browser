@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ##### sushi-browser
-wget https://sushib.me/dl/sushi-browser_0.7.0_amd64.deb
+sudo apt install -y gir1.2-gnomekeyring-1.0
+wget https://sushib.me/dl/sushi-browser_0.22.0_amd64.deb
 sudo gdebi --non-interactive sushi-browser*.deb
 rm sushi-browser*.deb
 
