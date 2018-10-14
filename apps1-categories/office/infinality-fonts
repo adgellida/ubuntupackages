@@ -7,7 +7,7 @@ sudo sed -i 's/bionic/xenial/g' /etc/apt/sources.list.d/*.list
 sudo apt-fast -y update
 sudo apt-fast -y install fontconfig-infinality
 
-#sudo bash /etc/fonts/infinality/infctl.sh setstyle
+sudo bash /etc/fonts/infinality/infctl.sh setstyle
 
 #sudo -H gedit /etc/profile.d/infinality-settings.sh
 #sudo -H pluma /etc/profile.d/infinality-settings.sh
