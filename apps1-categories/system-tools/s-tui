@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### s-tui
+sudo apt-fast -y install gcc python-dev python-pip
+sudo pip install s-tui
