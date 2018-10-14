@@ -3,5 +3,7 @@
 #### i-nex - http://i-nex.linux.pl/install/ - https://launchpad.net/i-nex/+download
 sudo add-apt-repository -y ppa:gambas-team/gambas3
 sudo add-apt-repository -y ppa:i-nex-development-team/daily
+#necessary / real
+sudo sed -i 's/bionic/zesty/g' /etc/apt/sources.list.d/*.list
 sudo apt-fast -y update
 sudo apt-fast -y install i-nex
