@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### qt511
+sudo add-apt-repository -y ppa:beineri/opt-qt-5.11.1-bionic
+sudo apt-fast -y update
+sudo apt-fast -y install qt511base
