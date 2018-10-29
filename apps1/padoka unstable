@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### padoka unstable - Possibly Unstable
+sudo add-apt-repository -y ppa:paulo-miguel-dias/mesa
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade

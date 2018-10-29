@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ubuntu-x-swat - Possibly Unstable
+sudo add-apt-repository -y ppa:ubuntu-x-swat/updates
+sudo apt-fast -y update
+sudo apt-fast -y dist-upgrade
