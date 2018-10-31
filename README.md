@@ -1,4 +1,4 @@
-<img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" width="80"> ubuntupackages
+<img src="https://raw.githubusercontent.com/adgellida/ubuntupackages/master/logo.png" width="80"> ubuntupackages
 =============================================
 
 <p align="center">
