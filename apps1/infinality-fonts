@@ -11,3 +11,4 @@ sudo bash /etc/fonts/infinality/infctl.sh setstyle
 
 #sudo -H gedit /etc/profile.d/infinality-settings.sh
 #sudo -H pluma /etc/profile.d/infinality-settings.sh
+#sudo -H subl /etc/profile.d/infinality-settings.sh

@@ -2,11 +2,11 @@
 
 #### dropbox
 
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O dropbox_2015.10.28_amd64.deb
 
 sudo gdebi --non-interactive dropbox_2015.10.28_amd64.deb
 rm dropbox_2015.10.28_amd64.deb
-
+drobpox autostart n
 #test -f /etc/apt/sources.list.d/dropbox.list || sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ xenial main" >> /etc/apt/sources.list.d/dropbox.list'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 #sudo apt-fast -y update
@@ -17,10 +17,10 @@ mkdir ~/.config/autostart
 rm ~/.config/autostart/1.dropbox-ubuntupackages.desktop
 test -f ~/.config/autostart/1.dropbox-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
 Type=Application
-Exec=dropbox start -i
+Exec=dbus-launch dropbox start
 Hidden=false
 X-MATE-Autostart-enabled=true
-X-MATE-Autostart-Delay=50
+X-MATE-Autostart-Delay=30
 Name[es_ES]=1.dropbox-ubuntupackages
 Name=1.dropbox-ubuntupackages
 Comment[es_ES]=
