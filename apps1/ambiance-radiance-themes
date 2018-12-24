@@ -2,6 +2,11 @@
 
 #### ambiance-radiance-themes
 sudo add-apt-repository -y ppa:ravefinity-project/ppa
+
+#necessary / real
+sudo sed -i 's/cosmic/xenial/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
+sudo rename 's/cosmic/xenial/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
+
 sudo apt-fast -y update
 sudo apt-fast -y install ambiance-colors radiance-colors ubuntu-mono
 sudo apt-fast -y install ambiance-blackout-flat-colors

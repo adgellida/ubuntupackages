@@ -4,8 +4,8 @@
 sudo add-apt-repository -y ppa:ravefinity-project/ppa
 
 #necessary / real
-#sudo sed -i 's/yakkety/xenial/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
-#sudo rename 's/yakkety/xenial/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
+sudo sed -i 's/cosmic/zesty/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
+sudo rename 's/cosmic/zesty/g' /etc/apt/sources.list.d/ravefinity-project-ubuntu-ppa-yakkety.list
 
 sudo apt-fast -y update
 sudo apt-fast install vibrancy-colors

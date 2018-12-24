@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### sqlitebrowser
+sudo apt-fast -y install sqlitebrowser
