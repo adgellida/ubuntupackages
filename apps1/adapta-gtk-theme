@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ambiance-radiance-themes
+sudo add-apt-repository -y ppa:tista/adapta
+sudo apt-fast -y update
+sudo apt-fast -y install adapta-gtk-theme adapta-backgrounds
