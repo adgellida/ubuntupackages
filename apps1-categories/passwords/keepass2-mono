@@ -1,0 +1,4 @@
+#### keepass2-mono
+sudo add-apt-repository -y ppa:jtaylor/keepass
+sudo apt-fast -y update
+sudo apt-fast -y install keepass2
