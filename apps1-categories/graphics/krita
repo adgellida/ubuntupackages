@@ -7,5 +7,5 @@ sudo apt-fast -y update
 #wget http://mirrors.kernel.org/ubuntu/pool/main/b/boost1.58/libboost-system1.58.0_1.58.0+dfsg-5ubuntu3_amd64.deb
 #sudo gdebi --non-interactive libboost-system1.58.0_1.58.0+dfsg-5ubuntu3_amd64.deb
 
-sudo apt-fast -y install krita #krita-l10n
+sudo apt-fast -y install krita krita-l10n
 #sudo mv /usr/share/applications/kde4/krita.desktop /usr/share/applications/

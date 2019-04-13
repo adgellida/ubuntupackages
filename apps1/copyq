@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### copyq
+sudo add-apt-repository -y ppa:hluk/copyq
+sudo apt-fast -y update
+sudo apt-fast -y install copyq
