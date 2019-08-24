@@ -22,7 +22,7 @@ then
 	#### changes installed version for repo version. To get disco version on all ubuntu versions
 	# necessary / real
 	# launchpad / installed
-	sudo sed -i "s/disco/$installed/g" /etc/apt/sources.list.d/*.list
+	sudo sed -i "s/disco/$installed/g" /etc/apt/sources.list.d/adgellida-ubuntu-ubunsys-*.list
 	sudo apt-get -y update
 	sudo apt-get -y install ubunsys
 

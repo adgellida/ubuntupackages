@@ -12,7 +12,7 @@ installed=$(lsb_release -sc)
 #### changes installed version for repo version
 # necessary / real
 # launchpad / installed
-sudo sed -i "s/bionic/$installed/g" /etc/apt/sources.list.d/*.list
+sudo sed -i "s/bionic/$installed/g" /etc/apt/sources.list.d/beineri*.list
 sudo apt-fast -y update
 sudo apt-fast -y install qt512base qt512meta
 
