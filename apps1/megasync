@@ -10,23 +10,27 @@
 #sudo dpkg -i megasync-xUbuntu_17.04_amd64.deb
 #rm megasync*.deb
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
-sudo gdebi --non-interactive megasync-xUbuntu_18.04_amd64.deb
-rm megasync-xUbuntu_18.04_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb
+sudo gdebi --non-interactive megasync-xUbuntu_19.10_amd64.deb
+rm megasync-xUbuntu_19.10_amd64.deb
 
 #add at boot
-mkdir ~/.config/autostart
-rm ~/.config/autostart/1.megasync-ubuntupackages.desktop
-test -f ~/.config/autostart/1.megasync-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=megasync
-Hidden=false
-X-MATE-Autostart-enabled=true
-X-MATE-Autostart-Delay=50
-Name[es_ES]=1.megasync-ubuntupackages
-Name=1.megasync-ubuntupackages
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/1.megasync-ubuntupackages.desktop'
+#mkdir ~/.config/autostart
+#rm ~/.config/autostart/1.megasync-ubuntupackages.desktop
+#test -f ~/.config/autostart/1.megasync-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Exec=megasync
+#Hidden=false
+#X-MATE-Autostart-enabled=true
+#X-MATE-Autostart-Delay=50
+#Name[es_ES]=1.megasync-ubuntupackages
+#Name=1.megasync-ubuntupackages
+#Comment[es_ES]=
+#Comment=" >> ~/.config/autostart/1.megasync-ubuntupackages.desktop'
+
+
+
+
 
 #mkdir ~/.megasync
 #rm ~/.megasync/megasync.sh

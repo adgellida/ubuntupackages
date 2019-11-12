@@ -28,15 +28,15 @@ sudo teamviewer --daemon enable
 ##wait a few moments, costs to init
 
 #add at boot
-mkdir ~/.config/autostart
-rm ~/.config/autostart/1.teamviewer-ubuntupackages.desktop
-test -f ~/.config/autostart/1.teamviewer-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
-Type=Application
-Exec=teamviewer
-Hidden=false
-X-MATE-Autostart-enabled=true
-X-MATE-Autostart-Delay=50
-Name[es_ES]=1.teamviewer-ubuntupackages
-Name=1.teamviewer-ubuntupackages
-Comment[es_ES]=
-Comment=" >> ~/.config/autostart/1.teamviewer-ubuntupackages.desktop'
+#mkdir ~/.config/autostart
+#rm ~/.config/autostart/1.teamviewer-ubuntupackages.desktop
+#test -f ~/.config/autostart/1.teamviewer-ubuntupackages.desktop || sh -c 'echo "[Desktop Entry]
+#Type=Application
+#Exec=teamviewer
+#Hidden=false
+#X-MATE-Autostart-enabled=true
+#X-MATE-Autostart-Delay=50
+#Name[es_ES]=1.teamviewer-ubuntupackages
+#Name=1.teamviewer-ubuntupackages
+#Comment[es_ES]=
+#Comment=" >> ~/.config/autostart/1.teamviewer-ubuntupackages.desktop'
