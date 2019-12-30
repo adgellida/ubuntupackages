@@ -2,7 +2,12 @@
 
 #### alltomp3
 
-sudo pip install -y pathlib
+#sudo pip install pathlib
 
-curl -s https://packagecloud.io/install/repositories/AllToMP3/alltomp3/script.deb.sh | sudo bash
-sudo apt-get install alltomp3
+#curl -s https://packagecloud.io/install/repositories/AllToMP3/alltomp3/script.deb.sh | sudo bash
+#sudo apt-get install alltomp3
+
+wget --content-disposition https://packagecloud.io/AllToMP3/alltomp3/packages/ubuntu/bionic/alltomp3_0.3.11-58_amd64.deb/download.deb
+sudo gdebi --non-interactive alltomp3_*.deb
+rm alltomp3_*.deb
+
