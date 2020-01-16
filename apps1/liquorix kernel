@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### liquorix kernel
+sudo apt-add-repository -y ppa:damentz/liquorix 
+sudo apt-fast -y update
+sudo apt-fast -y install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
