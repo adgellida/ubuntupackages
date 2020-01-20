@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### molly-guard
+sudo apt-fast -y install molly-guard
