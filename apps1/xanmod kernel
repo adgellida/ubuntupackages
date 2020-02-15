@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### xanmod kernel
+echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-kernel.list && wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key add -
+sudo apt-fast -y update
+sudo apt-fast -y install linux-xanmod
+#sudo apt-fast -y install linux-xanmod-edge
