@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### ferdi
+
+wget https://github.com/getferdi/ferdi/releases/download/v5.4.3/ferdi_5.4.3_amd64.deb
+
+sudo gdebi --non-interactive ferdi*.deb
+rm ferdi*.deb
