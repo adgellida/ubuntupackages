@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### ao
+
+wget https://github.com/klaussinani/ao/releases/download/v6.9.0/ao_6.9.0_amd64.deb
+
+sudo gdebi --non-interactive ao*.deb
+rm ao*.deb
