@@ -1,0 +1,17 @@
+﻿#!/bin/bash
+
+#### mdatp
+
+##https://chrisonsecurity.net/2020/02/27/microsoft-defender-atp-for-linux/
+
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/19.10/insiders-fast.list
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/
+
+sudo apt-get install apt-transport-https
+
+sudo apt-get update
+
+sudo apt-get install mdatp

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#### gamemode
+sudo apt-fast -y install meson libsystemd-dev pkg-config ninja-build git libdbus-1-dev dbus-user-session
+
+git clone https://github.com/FeralInteractive/gamemode.git
+ 
+cd gamemode
+ 
+git checkout 1.5
+ 
+./bootstrap.sh
+
+#gamemoderun supertuxkart
+
+#gamemoderun %command%
