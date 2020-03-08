@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### asbru-cm-daily
+sudo add-apt-repository -y ppa:asbru-cm/daily
+sudo apt-fast -y update
+sudo apt-fast -y install asbru-cm
