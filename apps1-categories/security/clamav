@@ -1,2 +1,2 @@
 #! /bin/sh
-sudo apt install -y clamav clamtk
+sudo apt install -y clamav clamav-daemon clamav-freshclam clamtk
