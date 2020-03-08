@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### alacritty
+
+sudo add-apt-repository -y ppa:mmstick76/alacritty
+sudo apt-fast -y update
+sudo apt-fast -y install alacritty
