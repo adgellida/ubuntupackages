@@ -1,2 +1,2 @@
 #! /bin/sh
-sudo apt install -y clamav
+sudo apt install -y clamav clamtk
