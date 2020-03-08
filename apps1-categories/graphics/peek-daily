@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#### inkscape-trunk
+#### peek-daily
 sudo add-apt-repository -y ppa:peek-developers/daily
 sudo apt-fast -y update
 sudo apt-fast -y install peek

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### antiviral
+sudo add-apt-repository -y ppa:atareao/antiviral 
+sudo apt-fast -y update
+sudo apt install -y antiviral antiviral-for-nautilus antiviral-for-nemo antiviral-for-caja
