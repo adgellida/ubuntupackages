@@ -10,7 +10,11 @@ echo debconf apt-fast/maxdownloads string 5 | sudo debconf-set-selections
 echo debconf apt-fast/dlflag boolean true | sudo debconf-set-selections
 echo debconf apt-fast/aptmanager string apt | sudo debconf-set-selections
 
-sudo add-apt-repository -y ppa:apt-fast/stable
-sudo apt-get -y update
-sudo apt-get -y install apt-fast
+#sudo add-apt-repository -y ppa:apt-fast/stable
+#sudo apt-get -y update
+#sudo apt-get -y install apt-fast
 #read
+
+wget https://launchpad.net/~apt-fast/+archive/ubuntu/stable/+files/apt-fast_1.9.8-1~ubuntu19.10.1_all.deb
+sudo gdebi --non-interactive apt-*.deb
+rm apt-*.deb
