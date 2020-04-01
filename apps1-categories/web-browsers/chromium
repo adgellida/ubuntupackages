@@ -1,4 +1,4 @@
 #!/bin/bash
 
-#### mtp-support
+#### chromium
 sudo apt-fast -y install chromium-browser chromium-browser-l10n chromium-codecs-ffmpeg-extra

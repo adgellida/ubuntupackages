@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### dolphin
+sudo apt-fast -y install dolphin ark
