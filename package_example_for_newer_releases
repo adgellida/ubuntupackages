@@ -2,8 +2,8 @@
 
 #### notepadqq
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
-#necessary / real
-#launchpad / installed
+#real         / compatible
+#installed v. / launchpad v.
 sudo sed -i 's/xenial/wily/g' /etc/apt/sources.list.d/*.list
 sudo apt-fast -y update
 sudo apt-fast -y install notepadqq notepadqq-gtk
