@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### inxi
+sudo apt-fast -y install inxi

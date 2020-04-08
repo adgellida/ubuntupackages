@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### openjdk-13-jre
+sudo apt-fast -y install openjdk-13-jre
