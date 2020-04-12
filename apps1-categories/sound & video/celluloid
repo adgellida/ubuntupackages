@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### celluloid
+sudo add-apt-repository -y ppa:xuzhen666/gnome-mpv
+sudo apt-fast -y install celluloid
