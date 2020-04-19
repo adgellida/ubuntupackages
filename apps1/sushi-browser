@@ -1,9 +1,20 @@
 #!/bin/bash
 
 ##### sushi-browser
-sudo apt install -y gir1.2-gnomekeyring-1.0
-wget https://sushib.me/dl/sushi-browser_0.22.0_amd64.deb
-sudo gdebi --non-interactive sushi-browser*.deb
+#sudo apt install -y gir1.2-gnomekeyring-1.0
+wget https://github.com/kura52/sushi-browser/releases/download/0.29.1/sushi-browser_0.29.1_amd64.deb
+##wget http://security.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/gir1.2-gnomekeyring-1.0_3.12.0-1build1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/gir1.2-gnomekeyring-1.0_3.12.0-1build1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring0_3.12.0-1build1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring0_3.12.0-1build1_amd64.deb
+
+sudo gdebi --non-interactive gir1.2-gnomekeyring-1.0_3.12.0-1build1_amd64.deb
+sudo gdebi --non-interactive libgnome-keyring/libgnome-keyring0_3.12.0-1build1_amd64.deb
+sudo gdebi --non-interactive multiarch-support_2.27-3ubuntu1_amd64.deb
+sudo gdebi --non-interactive libgnome-keyring0_3.12.0-1build1_amd64.deb
+sudo gdebi --non-interactive sushi-browser_0.29.1_amd64.deb
+
 rm sushi-browser*.deb
 
 ##### sushi-browser
