@@ -2,12 +2,17 @@
 
 #### infinality-fonts - http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html
 sudo add-apt-repository -y ppa:no1wantdthisname/ppa
-#necessary / real
-sudo sed -i 's/bionic/xenial/g' /etc/apt/sources.list.d/*.list
-sudo apt-fast -y update
-sudo apt-fast -y install fontconfig-infinality
+#real         / compatible
+#installed v. / launchpad v.
 
-sudo bash /etc/fonts/infinality/infctl.sh setstyle
+INSTALLED=$(lsb_release -sc)
+
+sudo sed -i "s/${INSTALLED}/xenial/g" "/etc/apt/sources.list.d/no1wantdthisname-ubuntu-ppa-${INSTALLED}.list"
+#sudo sed -i 's/focal/xenial/g' '/etc/apt/sources.list.d/apt-fast-ubuntu-stable-focal.list'
+sudo apt-get -y update
+sudo apt-get -y install fontconfig-infinality
+
+#sudo bash /etc/fonts/infinality/infctl.sh setstyle
 
 #sudo -H gedit /etc/profile.d/infinality-settings.sh
 #sudo -H pluma /etc/profile.d/infinality-settings.sh
