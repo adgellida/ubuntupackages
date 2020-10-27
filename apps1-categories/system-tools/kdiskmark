@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### kdiskmark
+wget https://github.com/JonMagon/KDiskMark/releases/download/2.0.0/kdiskmark_2.0.0_amd64.deb
+sudo gdebi --non-interactive https://github.com/JonMagon/KDiskMark/releases/download/2.0.0/kdiskmark_2.0.0_amd64.deb
+rm kdiskmark_2.0.0_amd64.deb

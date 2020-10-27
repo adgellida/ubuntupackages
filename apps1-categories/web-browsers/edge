@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### edge
+wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_88.0.673.0-1_amd64.deb
+sudo gdebi --non-interactive microsoft-edge-dev_88.0.673.0-1_amd64.deb
+rm microsoft-edge-dev_88.0.673.0-1_amd64.deb

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### drill
+wget https://github.com/yatima1460/Drill/releases/download/v566/Drill-v566-x86_64.deb
+sudo gdebi --non-interactive Drill-v566-x86_64.deb
+rm Drill-v566-x86_64.deb.deb

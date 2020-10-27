@@ -2,10 +2,10 @@
 
 #### dropbox
 
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb -O dropbox_2015.10.28_amd64.deb
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb -O dropbox_2020.03.04_amd64.deb
 
-sudo gdebi --non-interactive dropbox_2015.10.28_amd64.deb
-rm dropbox_2015.10.28_amd64.deb
+sudo gdebi --non-interactive dropbox_2020.03.04_amd64.deb
+rm dropbox_2020.03.04_amd64.deb
 dropbox autostart n
 #test -f /etc/apt/sources.list.d/dropbox.list || sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ xenial main" >> /etc/apt/sources.list.d/dropbox.list'
 #sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
