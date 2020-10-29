@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### konsole
+sudo apt-fast -y install konsole

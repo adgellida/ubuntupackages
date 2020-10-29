@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ulauncher
+sudo apt-add-repository -y ppa:agornostal/ulauncher
+sudo apt-fast -y update
+sudo apt-fast -y install ulauncher

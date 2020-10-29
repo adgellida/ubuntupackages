@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### thunderbird
+sudo apt-fast -y install thunderbird thunderbird-locale-es
