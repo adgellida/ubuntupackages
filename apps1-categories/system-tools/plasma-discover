@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### plasma-discover
+sudo apt-fast -y install plasma-discover

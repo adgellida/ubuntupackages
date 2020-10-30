@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#### glimpse
+sudo wget https://github.com/glimpse-editor/Glimpse/releases/download/continuous/Glimpse_Image_Editor-6.git-903c9f0-x86_64.AppImage -O /usr/local/bin/Glimpse_Image_Editor-6.git-903c9f0-x86_64.AppImage
+sudo chmod a+x /usr/local/bin/LibrePCB-Nightly-Linux-x86_64.AppImage
+
+test -f ~/.local/share/applications/librepcb.desktop || sh -c 'echo "[Desktop Entry]
+Type=Application
+Icon=
+Exec=/usr/local/bin/Glimpse_Image_Editor-6.git-903c9f0-x86_64.AppImage
+Categories=Development
+Name[es_ES]=glimpse
+Name=glimpse
+Comment[es_ES]=
+Comment=" >> ~/.local/share/applications/glimpse.desktop'
