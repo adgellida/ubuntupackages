@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### twm
+sudo apt-fast -y install twm

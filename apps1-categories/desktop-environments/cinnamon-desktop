@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### cinnamon-desktop
+sudo apt-fast -y cinnamon-desktop-environment

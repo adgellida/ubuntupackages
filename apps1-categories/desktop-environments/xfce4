@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### xfce4
+sudo apt-fast -y install xfce4
+
+#sudo apt-fast -y install tasksel
+#sudo tasksel install xubuntu-desktop

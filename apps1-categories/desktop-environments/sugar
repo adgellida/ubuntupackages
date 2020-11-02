@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### sugar
+sudo apt-fast -y install sugar

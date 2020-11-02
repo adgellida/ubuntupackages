@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### jwm
+sudo apt-fast -y install jwm

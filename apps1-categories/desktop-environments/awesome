@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### awesome
+sudo apt-fast -y install awesome

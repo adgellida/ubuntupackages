@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### icewm
+sudo apt-fast -y install icewm

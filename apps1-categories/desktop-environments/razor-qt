@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### razor-qt
+sudo apt-fast -y install razor-qt

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### kde-plasma-desktop
+sudo apt-fast -y install plasma-desktop

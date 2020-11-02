@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### fvwm
+sudo apt-fast -y install fvwm

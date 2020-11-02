@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### gnome-session
+sudo apt-fast -y install gnome-session gdm3

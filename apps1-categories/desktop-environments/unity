@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### unity
+sudo apt-fast -y install ubuntu-unity-desktop --install-suggests

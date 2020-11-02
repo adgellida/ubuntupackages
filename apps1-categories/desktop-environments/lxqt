@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### lxqt
+sudo apt-fast -y install lxqt sddm

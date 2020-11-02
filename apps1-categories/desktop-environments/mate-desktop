@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### ubuntu-mate-desktop
+sudo apt-fast -y install tasksel
+sudo tasksel install ubuntu-mate-desktop

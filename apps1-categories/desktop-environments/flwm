@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### flwm
+sudo apt-fast -y install flwm

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### wmaker
+sudo apt-fast -y install wmaker

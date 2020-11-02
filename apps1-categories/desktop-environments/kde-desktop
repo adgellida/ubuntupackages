@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### kde-desktop
+sudo add-apt-repository -y ppa:kubuntu-ppa/backports
+sudo apt-fast -y update
+sudo apt dist-upgrade
+sudo apt-fast -y install kubuntu-desktop

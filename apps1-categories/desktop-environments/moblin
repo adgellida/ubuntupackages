@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### moblin
+sudo apt-fast -y install moblin

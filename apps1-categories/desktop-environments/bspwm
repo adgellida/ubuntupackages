@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### bspwm
+sudo apt-fast -y install bspwm

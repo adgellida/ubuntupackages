@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### pearl
+sudo apt-fast -y install pearl

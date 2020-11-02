@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### consort
+sudo apt-fast -y consort

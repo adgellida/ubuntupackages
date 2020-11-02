@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### i3
+sudo apt-fast -y install i3

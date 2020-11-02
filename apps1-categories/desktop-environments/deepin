@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### deepin
+sudo apt-fast -y deepin

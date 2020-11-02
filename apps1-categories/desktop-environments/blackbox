@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### blackbox
+sudo apt-fast -y install blackbox

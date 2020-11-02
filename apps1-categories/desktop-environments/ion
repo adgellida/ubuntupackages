@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### ion
+sudo apt-fast -y install ion

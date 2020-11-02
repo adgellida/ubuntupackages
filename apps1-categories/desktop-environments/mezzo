@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### mezzo
+sudo apt-fast -y install mezzo

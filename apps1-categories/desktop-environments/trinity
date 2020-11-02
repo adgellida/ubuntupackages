@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### trinity
+sudo apt-fast -y install trinity

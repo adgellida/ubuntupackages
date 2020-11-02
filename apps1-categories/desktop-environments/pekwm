@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### pekwm
+sudo apt-fast -y install pekwm

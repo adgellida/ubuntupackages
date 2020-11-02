@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### hackedbox
+sudo apt-fast -y install hackedbox

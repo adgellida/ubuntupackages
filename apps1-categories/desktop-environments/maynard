@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### maynard
+sudo apt-fast -y install maynard

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### wmi
+sudo apt-fast -y install wmi

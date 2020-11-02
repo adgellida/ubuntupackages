@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### dwm
+sudo apt-fast -y dwm

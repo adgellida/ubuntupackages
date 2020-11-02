@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### budgie-desktop
+sudo apt-fast -y budgie-desktop
