@@ -13,6 +13,6 @@
 #sudo apt-fast -y update
 #sudo apt-fast -y install kicad kicad-libraries kicad-symbols kicad-templates kicad-footprints
 
-sudo add-apt-repository -y ppa:js-reynaud/ppa-kicad
+sudo add-apt-repository -y ppa:kicad/kicad-5.1-releases
 sudo apt-fast -y update
-sudo apt-fast -y install kicad
+sudo apt-fast -y install kicad kicad-demos

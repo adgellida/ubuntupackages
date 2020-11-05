@@ -1,0 +1,7 @@
+﻿#!/bin/bash
+
+#### zoom
+
+wget --content-disposition https://zoom.us/client/latest/zoom_amd64.deb
+sudo gdebi --non-interactive zoom_amd64.deb
+rm zoom_amd64.deb

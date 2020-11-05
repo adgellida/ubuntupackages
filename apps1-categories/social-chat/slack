@@ -1,0 +1,6 @@
+#!/bin/bash
+
+##### slack
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.10.3-amd64.deb
+sudo gdebi --non-interactive slack-desktop-*.deb
+rm slack-desktop-*.deb

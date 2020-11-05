@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### ts3client
+sudo add-apt-repository -y ppa:beardoverflow/ts3client
+sudo apt-fast -y update
+sudo apt-fast -y install ts3client

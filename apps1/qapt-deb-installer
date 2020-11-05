@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### qapt-deb-installer
+sudo apt-fast -y install qapt-deb-installer
