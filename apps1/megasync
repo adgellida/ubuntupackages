@@ -10,9 +10,9 @@
 #sudo dpkg -i megasync-xUbuntu_17.04_amd64.deb
 #rm megasync*.deb
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb
-sudo gdebi --non-interactive megasync-xUbuntu_19.10_amd64.deb
-rm megasync-xUbuntu_19.10_amd64.deb
+wget https://mega.nz/linux/MEGAsync/xUbuntu_20.10/amd64/megasync-xUbuntu_20.10_amd64.deb
+sudo gdebi --non-interactive megasync-xUbuntu_20.10_amd64.deb
+rm megasync-xUbuntu_20.10_amd64.deb
 
 #add at boot
 #mkdir ~/.config/autostart

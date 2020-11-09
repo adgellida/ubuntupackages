@@ -64,7 +64,7 @@
 
 #remote-control
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/anydesk
-~/.ubunsys/downloads/ubuntupackages-master/apps1/remmina
+~/.ubunsys/downloads/ubuntupackages-master/apps1/remmidna
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/teamviewer
 
 #security
@@ -82,7 +82,7 @@
 
 #sound & video
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/alltomp3
-~/.ubunsys/downloads/ubuntupackages-master/apps1/kodi
+#~/.ubunsys/downloads/ubuntupackages-master/apps1/kodi
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/obs-studio
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/qmmp
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/spotify
@@ -97,11 +97,11 @@
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/dev-utils
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/drill
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/mintStick
-~/.ubunsys/downloads/ubuntupackages-master/apps1/plasma-discover
+#~/.ubunsys/downloads/ubuntupackages-master/apps1/plasma-discover
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/ppa-purge
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/stacer
-~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys
-~/.ubunsys/downloads/ubuntupackages-master/apps1/ubuntu-restricted-extrasa
+#~/.ubunsys/downloads/ubuntupackages-master/apps1/ubunsys
+~/.ubunsys/downloads/ubuntupackages-master/apps1/ubuntu-restricted-extras
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/ulauncher
 
 #terminal
@@ -118,7 +118,7 @@
 
 #versiona-control
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/git
-~/.ubunsys/downloads/ubuntupackages-master/apps1/smart-git
+~/.ubunsys/downloads/ubuntupackages-master/apps1/smartgit
 
 #web-browsers
 ~/.ubunsys/downloads/ubuntupackages-master/apps1/google-chrome-stable
@@ -131,5 +131,6 @@
 ##~/.ubunsys/downloads/ubuntupackages-master/apps1/notepadqq
 ##~/.ubunsys/downloads/ubuntupackages-master/apps1/mtp-support
 ##~/.ubunsys/downloads/ubuntupackages-master/apps1/gdebi
+
 
 
