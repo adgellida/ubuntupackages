@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### authy
+sudo snap install authy --beta
