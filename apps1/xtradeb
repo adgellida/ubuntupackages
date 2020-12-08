@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#### 0ad
+sudo add-apt-repository -y ppa:xtradeb/play 
+sudo apt-fast -y update

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#### losslesscut
+sudo snap install losslesscut
