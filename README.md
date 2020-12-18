@@ -18,7 +18,7 @@ A simple script to install ubuntu packages.
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Xubuntu, Ubuntu Kylin, Edubuntu...
+Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu...
 
 Highly compatible with 17.04 (Zesty). Not all lower versions are compatible. Test it.
 

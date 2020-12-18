@@ -4,7 +4,8 @@
 #example
 sudo apt-fast -y remove thunderbird thunderbird-locale-es
 cd $HOME
-wget https://archive.mozilla.org/pub/thunderbird/releases/65.0b3/linux-x86_64/es-ES/thunderbird-65.0b3.tar.bz2
+wget https://archive.mozilla.org/pub/thunderbird/releases/78.6.0/linux-x86_64/es-ES/thunderbird-78.6.0.tar.bz2
+#wget https://archive.mozilla.org/pub/thunderbird/releases/84.0b3/linux-x86_64/es-ES/thunderbird-84.0b3.tar.bz2
 tar xvfj $HOME/thunderbird*.tar.bz2
 mv $HOME/thunderbird $HOME/thunderbird-app
 rm $HOME/thunderbird*.tar.bz2
