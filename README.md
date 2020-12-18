@@ -20,8 +20,6 @@ Compatible with any Debian based system:
 
 Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu...
 
-Highly compatible with 17.04 (Zesty). Not all lower versions are compatible. Test it.
-
 **Not all scripts works 100% ok.** I'm not liable for damages.
 
 **Used on [ubunsys](https://github.com/adgellida/ubunsys)**
