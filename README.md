@@ -29,6 +29,12 @@ Instructions
 
 Is more desirable that you use "Scripts Manager" functionality of [ubunsys](https://github.com/adgellida/ubunsys) to execute these scripts.
 
+I recommend you:
+
+* Download [this](https://github.com/adgellida/ubuntupackages/blob/master/packages%20to%20install/packagesToInstall_20211016.list)
+* Then modify this file with your needs
+* Finally go to ubunsys app and do this -> Packages-Open-Run saved script and select your modified file to install all with one click
+
 Nowadays if you want to do it "manual way"...
 
 **Manual**
@@ -37,6 +43,8 @@ Do a backup of your "/etc/apt/sources.list.d" folder. Coming soon automatic...
 Read the code and do your modifications.
 
 Then do these basics steps:
+
+
 
 1. Add exec permissions to all scripts!
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
 #### smartgit
-wget https://www.syntevo.com/downloads/smartgit/smartgit-20_1_5.deb
+wget https://www.syntevo.com/downloads/smartgit/smartgit-21_1_2.deb
 sudo gdebi --non-interactive smartgit-*.deb
 rm smartgit*.deb
