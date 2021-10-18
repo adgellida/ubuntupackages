@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#### brightness-controller
+sudo add-apt-repository -y ppa:apandada1/brightness-controller
+sudo apt-fast -y update
+sudo apt-fast -y install brightness-controller
